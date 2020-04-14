@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb://heroku_289j5w4s:mevhganp5rt2iu2co704mtetn1@ds241895.mlab.com:41895/heroku_289j5w4s",
+  "jwtSecret": "publicToken",
+  "githubClientId": "a4c97b360ce0a1abc3d4",
+  "githubSecret": "64ef40d79645e4acae776a5f1378dd2e06baaab4"
+}
