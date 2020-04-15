@@ -13,7 +13,7 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
             <Link to='/profiles' className='nav-link'><i className='fas fa-users'/></Link>
             <Link to='/dashboard' className='nav-link'><i className='fas fa-tachometer-alt'/></Link>
             <div className='border-left ml-4'>
-                <a onClick={logout} className='nav-link'><i className="fas fa-sign-out-alt"/>{" "}Logout</a>
+                <a onClick={logout} className='nav-link' style={{cursor:'pointer'}}><i className="fas fa-sign-out-alt"/>{" "}Logout</a>
             </div>
         </Nav>
 
