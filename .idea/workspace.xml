@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/actions/covid.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/covid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/covid/Covids.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/covid/Covids.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,7 @@
       <updated>1586896883673</updated>
       <workItem from="1586896892172" duration="2050000" />
       <workItem from="1586939372572" duration="18334000" />
-      <workItem from="1586971595718" duration="12903000" />
+      <workItem from="1586971595718" duration="13917000" />
     </task>
     <servers />
   </component>

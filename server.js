@@ -9,6 +9,11 @@ connectDB();
 
 //Initalize middleware
 app.use(express.json({ extended: false }));
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", process.env.ORIGIN || "*");
+  next();
+});
 //Define routes
 app.use("/api/users",cors(), require("./routes/api/users"));
 app.use("/api/posts", require("./routes/api/posts"));

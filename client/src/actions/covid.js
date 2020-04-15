@@ -8,8 +8,12 @@ import {
 //Get Covid
 export const getCovid = () => async dispatch => {
     try {
-
-        const res = await axios.get(`https://api.kawalcovid19.id/v1/api/case/summary`);
+        const config = {
+            headers: {
+                "Origin":"https://kawalcovid19.id"
+            }
+        };
+        const res = await axios.get(`https://api.kawalcovid19.id/v1/api/case/summary`, config);
 
         dispatch({
             type: GET_COVID,
