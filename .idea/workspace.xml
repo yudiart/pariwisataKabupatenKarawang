@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/assets/DuaBall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/Spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/SpinnerBall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/SpinnerDuaBall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/SpinnerInterwind.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/DuaBall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/SpinnerBall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/SpinnerDuaBall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/SpinnerInterwind.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/skripsi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/skripsi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/production.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/production.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Landing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Spinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Spinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +40,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1aXzmIliuqWDilbepkqYmRvPLY3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,8 +54,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/layout" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\components\layout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,11 +75,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586896883673</updated>
-      <workItem from="1586896892172" duration="1339000" />
+      <workItem from="1586896892172" duration="2050000" />
+      <workItem from="1586939372572" duration="6277000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586941216336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586941216336" />
   </component>
 </project>

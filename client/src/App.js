@@ -6,7 +6,7 @@ import Landing from "./components/layout/Landing";
 import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 import Routes from "./components/routing/Routes";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 //Redux related imports, connects to react
 import { Provider } from "react-redux";
 import store from "./store";
