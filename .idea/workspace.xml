@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/actions/covid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/covid/Covids.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/reducers/covid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api/covid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/covid/Covids.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/covid/Covids.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +50,7 @@
       <updated>1586896883673</updated>
       <workItem from="1586896892172" duration="2050000" />
       <workItem from="1586939372572" duration="18334000" />
-      <workItem from="1586971595718" duration="8196000" />
+      <workItem from="1586971595718" duration="8438000" />
     </task>
     <servers />
   </component>

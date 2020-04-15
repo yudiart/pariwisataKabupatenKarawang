@@ -17,8 +17,8 @@ const Covids = ({
             recovered,
             metadata
         }
-        ,loading
-}}) => {
+
+},loading}) => {
     useEffect(() => {
         getCovid();
     }, [getCovid]);
