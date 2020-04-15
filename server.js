@@ -6,11 +6,11 @@ const app = express();
 //Connect DB
 connectDB();
 
-app.use(cors());
+
 //Initalize middleware
 app.use(express.json({ extended: false }));
 //Define routes
-app.use("/api/users", require("./routes/api/users"));
+app.use("/api/users",cors(), require("./routes/api/users"));
 app.use("/api/posts", require("./routes/api/posts"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));

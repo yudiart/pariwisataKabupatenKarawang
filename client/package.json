@@ -38,7 +38,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5005",
+  "proxy": "http://localhost:5005 && https://kawalcovid19.id",
   "devDependencies": {
     "prop-types": "^15.7.2"
   }

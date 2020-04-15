@@ -31,8 +31,8 @@ const Covids = ({
                     <Row>
                         <Col md={3} className="text-center">
                             <p style={{fontSize:'20px'}}>Terkonfirmasi</p>
-                            <div className="jumbotron">
-                                    <h1 className='text-primary text-center'>
+                            <div className="jumbotron bg-primary">
+                                    <h1 className='text-light text-center'>
                                         {confirmed}
 
                                     </h1>
@@ -41,8 +41,8 @@ const Covids = ({
                         </Col>
                         <Col md={3} className="text-center">
                             <p style={{fontSize:'20px'}}>Dalam Perawatan</p>
-                            <div className="jumbotron">
-                                <h1 className='text-warning text-center'>
+                            <div className="jumbotron bg-warning">
+                                <h1 className='text-light text-center'>
                                     {activeCare}
 
                                 </h1>
@@ -51,8 +51,8 @@ const Covids = ({
                         </Col>
                         <Col md={3} className="text-center">
                             <p style={{fontSize:'20px'}}>Sembuh</p>
-                            <div className="jumbotron">
-                                <h1 className='text-success text-center'>
+                            <div className="jumbotron bg-success">
+                                <h1 className='text-light text-center'>
                                     {recovered}
 
                                 </h1>
@@ -61,8 +61,8 @@ const Covids = ({
                         </Col>
                         <Col md={3} className="text-center">
                             <p style={{fontSize:'20px'}}>Meninggal</p>
-                            <div className="jumbotron">
-                                <h1 className='text-danger text-center'>
+                            <div className="jumbotron bg-danger">
+                                <h1 className='text-light text-center'>
                                     {deceased}
 
                                 </h1>
@@ -72,7 +72,7 @@ const Covids = ({
                     </Row>
                     <div className='jumbotron'>
                         <h2 className='font-weight-bold'>LAST UPDATED</h2>
-                        <h3><Moment format="LL">{metadata && metadata.lastUpdatedAt}</Moment></h3>
+                        <h3><Moment startOf="hour" fromNow>{metadata && metadata.lastUpdatedAt}</Moment></h3>
                         <p>Sumber <a href='https://kawalcovid19.id/' target='_blank'>Kawal Covid 19</a></p>
                     </div>
                 </div>
