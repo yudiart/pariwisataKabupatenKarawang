@@ -10,7 +10,8 @@ export const getCovid = () => async dispatch => {
     try {
         const config = {
             headers: {
-                'Origin': '*'
+                // 'Access-Control-Allow-Origin': '*',
+                'Origin': 'https://kawalcovid19.id'
             }
         };
         const res = await axios.get(`https://api.kawalcovid19.id/v1/api/case/summary`, config);

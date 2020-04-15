@@ -73,7 +73,7 @@ const Covids = ({
                     <div className='jumbotron'>
                         <h2 className='font-weight-bold'>LAST UPDATED</h2>
                         <h3><Moment format="LL">{metadata && metadata.lastUpdatedAt}</Moment></h3>
-                        <p>Sumber <Link to='https://kawalcovid19.id/'>Kawal Covid 19</Link></p>
+                        <p>Sumber <a href='https://kawalcovid19.id/' target='_blank'>Kawal Covid 19</a></p>
                     </div>
                 </div>
                 }
