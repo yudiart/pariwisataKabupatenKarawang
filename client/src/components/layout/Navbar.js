@@ -11,8 +11,8 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <Nav>
             <Link to='/posts' className='nav-link'><i className='mdi mdi-file-outline'/></Link>
             <Link to='/profiles' className='nav-link'><i className='fas fa-users'/></Link>
-            <Link to='/dashboard' className='nav-link'><i className='fas fa-tachometer-alt'/></Link>
-            <div className='border-left ml-4'>
+            <Link to='/dashboard' className='nav-link mr-4'><i className='fas fa-tachometer-alt'/></Link>
+            <div className=''>
                 <a onClick={logout} className='nav-link' style={{cursor:'pointer'}}><i className="fas fa-sign-out-alt"/>{" "}Logout</a>
             </div>
         </Nav>
@@ -35,7 +35,7 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="mr-auto">
-                      <Nav.Link href="#features">Features</Nav.Link>
+                      <Nav.Link href="/covid">Covid</Nav.Link>
                       <Nav.Link href="#pricing">Pricing</Nav.Link>
                       <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

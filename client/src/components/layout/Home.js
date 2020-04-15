@@ -66,10 +66,10 @@ const Home = ({
       loading && profile === null ? (<Spinner/>
       ):(
     <section className="landing">
-      <div className="dark-overlay">
-        <div className="jumbotron bg-gradient text-light" style={{borderRadius:'0px'}}>
+      <div className="dark-overlay ">
+        <div className="jumbotron bg-gradient text-light header-jumbotron" style={{borderRadius:'0px'}}>
           <div className="container">
-            <h1 className="large font-weight-bold" style={{fontFamily:"arial"}}>Pariwisata KAB.Karawang</h1>
+            <h1 className="large font-weight-bold" style={{fontFamily:"arial",fontSize:'200%'}}>Pariwisata KAB.Karawang</h1>
             <p className="lead">Untuk memenuhi tugas akhir skripsi.</p>
             <div className="buttons">
             </div>
