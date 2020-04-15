@@ -27,38 +27,43 @@ const Login = ({ login, isAuthenticated }) => {
   }
 
   return (
-    <Fragment>
-      <h1 className="large text-primary">Sign In</h1>
-      <p className="lead">
-        <i className="fas fa-user" /> Sign Into Account
-      </p>
-      <form className="form" onSubmit={e => onSubmit(e)}>
-        <div className="form-group">
-          <input
-            type="email"
-            placeholder="Email Address"
-            name="email"
-            value={email}
-            onChange={e => onChange(e)}
-            required
-          />
+      <Fragment>
+        <div className="container mt-2 col-lg-6">
+          <form className="mt-5" onSubmit={e => onSubmit(e)}>
+            <h1 className="text-center">Login</h1>
+            <div className="dropdown-divider"> </div>
+            <div className="form-group">
+              <label>Email</label>
+              <input className="form-control"
+                     type="email"
+                     placeholder="Email Address"
+                     name="email"
+                     value={email}
+                     onChange={e => onChange(e)}
+                     required
+              />
+            </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input className="form-control"
+                     type="password"
+                     placeholder="Password"
+                     name="password"
+                     value={password}
+                     onChange={e => onChange(e)}
+                     minLength="6"
+              />
+            </div>
+            <input type="submit" className="btn btn-primary" value="Login" />
+          </form>
+          <div>
+            <p>Belum punya akun? <Link to="/register" className="text-primary">Click me</Link></p>
+          </div>
+
         </div>
-        <div className="form-group">
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            value={password}
-            onChange={e => onChange(e)}
-            minLength="6"
-          />
-        </div>
-        <input type="submit" className="btn btn-primary" value="Login" />
-      </form>
-      <p className="my-1">
-        Do you not have an account? <Link to="/register">Sign Up</Link>
-      </p>
-    </Fragment>
+
+      </Fragment>
+
   );
 };
 

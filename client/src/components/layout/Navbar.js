@@ -10,6 +10,7 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
         <Nav>
             <Link to='/profiles' className='nav-link'><i className='fas fa-users'/>Profiles</Link>
+            <Link to='/dashboard' className='nav-link'><i className='fas fa-tachometer-alt'/>Dashboard</Link>
             <a onClick={logout} className='nav-link'><i className="fas fa-sign-out-alt"/>{" "}Logout</a>
         </Nav>
 
@@ -25,7 +26,7 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
   );
 
   return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" className=''>
           <div className="container">
               <Navbar.Brand href="/">Vodo<span style={{color:'red'}}>nesia</span> </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -48,7 +49,10 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
                   </Nav>
               </Navbar.Collapse>
           </div>
+
       </Navbar>
+
+
 
 
   );

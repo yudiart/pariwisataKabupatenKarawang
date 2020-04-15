@@ -1,12 +1,16 @@
 import React, { Fragment, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
-import Landing from "./components/layout/Landing";
+import Landing from "./components/layout/Home";
 
 import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 import Routes from "./components/routing/Routes";
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/assets/icon/css/materialdesignicons.min.css';
+
 //Redux related imports, connects to react
 import { Provider } from "react-redux";
 import store from "./store";
@@ -26,10 +30,10 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
-          <Navbar />
+          <Navbar className={"mb-4"}/>
           <Switch>
-            <Route exact path="/" component={Landing} />
-            <Route component={Routes} />
+              <Route exact path="/" component={Landing} />
+              <Route component={Routes} />
           </Switch>
         </Fragment>
       </Router>

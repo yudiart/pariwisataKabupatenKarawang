@@ -14,7 +14,6 @@ import Post from "../post/Post";
 import Profiles from "../profiles/Profiles";
 import NotFound from "../layout/NotFound";
 import Profile from "../profile/Profile";
-import Landing from "../layout/Landing";
 
 export const Routes = () => {
   return (
