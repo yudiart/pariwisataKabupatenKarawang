@@ -1,10 +1,12 @@
-import React from "react";
+import React, {Fragment, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Container from "react-bootstrap/Container";
-import {Row, Col} from "react-bootstrap";
+import {Row, Col, Nav} from "react-bootstrap";
 import { Dropdown } from 'semantic-ui-react';
+import {deleteAccount, getCurrentProfile, getProfileById} from "../../actions/profile";
+import Spinner from "./Spinner";
 
 const countryOptions = [
   { key: 'bs', value: 'bs', text: 'Banyusari' },
@@ -37,12 +39,37 @@ const countryOptions = [
   { key: 'tj', value: 'tj', text: 'Tirtajaya' },
   { key: 'tm', value: 'tm', text: 'Tirtamulya' }
 ];
-const Home = () => {  return (
+const Home = ({
+    getCurrentProfile,
+    auth: { isAuthenticated, user },
+    profile: { profile, loading }
+}) => {
+  useEffect(() => {
+    getCurrentProfile();
+  }, [getCurrentProfile]);
+
+  const authLinks = (
+      <div>
+        <Link to={'/dashboard'} className='nav-link'><button type='button' className='btn btn-block'><i className='mdi mdi-account text-primary'/>{user && user.name}</button></Link>
+      </div>
+
+  );
+
+  const guestLinks = (
+      <div>
+
+      </div>
+
+
+  );
+  return (
+      loading && profile === null ? (<Spinner/>
+      ):(
     <section className="landing">
       <div className="dark-overlay">
         <div className="jumbotron bg-gradient text-light" style={{borderRadius:'0px'}}>
           <div className="container">
-            <h1 className="x-large">Pariwisata KAB.Karawang</h1>
+            <h1 className="large font-weight-bold" style={{fontFamily:"arial"}}>Pariwisata KAB.Karawang</h1>
             <p className="lead">Untuk memenuhi tugas akhir skripsi.</p>
             <div className="buttons">
             </div>
@@ -52,15 +79,20 @@ const Home = () => {  return (
           <Row>
             <Col lg={3}>
               <div className="jumbotron _1uz2h">
-                <button type='button' className='btn btn-block'><i className='mdi mdi-account text-primary'/> Account</button>
+                {!loading && (
+                    <div>{isAuthenticated ? authLinks : guestLinks}</div>
+                )}
                 <button type='button' className='btn btn-block'><i className='mdi mdi-home-modern text-primary'/> Villa</button>
                 <button type='button' className='btn btn-block'><i className='mdi mdi-food text-primary'/> Eat & Food</button>
                 <button type='button' className='btn btn-block'><i className='mdi mdi-church text-primary'/> Budaya</button>
                 <button type='button' className='btn btn-block'><i className='mdi mdi-yeast text-primary'/>Product Lokal</button>
               </div>
+              <div className="jumbotron _1uz2h">
+
+              </div>
             </Col>
             <Col lg={9}>
-              <div className="jumbotron _1uz2h">
+              <div className="_1uz2h">
                 <div className="title mt-2 mb-4">
                   <h2><i className='mdi mdi-magnify'/>Lokasi Pariwisata</h2>
                 </div>
@@ -74,30 +106,29 @@ const Home = () => {  return (
                       options={countryOptions}
                       placeholder='Select Kecamatan'/>
                 </>
-                <div className="jumbotron-fluid">
-                  <div className="jumbotron _1uz2h">
-                    <button type='button' className='btn btn-block'><i className='mdi mdi-account text-primary'/> Account</button>
-                    <button type='button' className='btn btn-block'><i className='mdi mdi-home-modern text-primary'/> Villa</button>
-                    <button type='button' className='btn btn-block'><i className='mdi mdi-food text-primary'/> Eat & Food</button>
-                    <button type='button' className='btn btn-block'><i className='mdi mdi-church text-primary'/> Budaya</button>
-                    <button type='button' className='btn btn-block'><i className='mdi mdi-yeast text-primary'/>Product Lokal</button>
-                  </div>
-                </div>
               </div>
             </Col>
           </Row>
         </Container>
       </div>
     </section>
+      )
   );
 };
 
 Home.propTypes = {
-  isAuthenticated: PropTypes.bool
+  getCurrentProfile: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  profile: PropTypes.object.isRequired,
+  deleteAccount: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
-  isAuthenticated: state.auth.isAuthenticated
+  auth: state.auth,
+  profile: state.profile
 });
 
-export default connect(mapStateToProps)(Home);
+export default connect(
+    mapStateToProps,
+    { getCurrentProfile }
+)(Home);

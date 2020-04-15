@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
-import Dashboard from "../dashboard/Dashboard";
+
 import { connect } from "react-redux";
 
 const PrivateRoute = ({

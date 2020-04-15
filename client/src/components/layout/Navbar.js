@@ -9,9 +9,12 @@ import { logout } from "../../actions/auth";
 const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
         <Nav>
-            <Link to='/profiles' className='nav-link'><i className='fas fa-users'/>Profiles</Link>
-            <Link to='/dashboard' className='nav-link'><i className='fas fa-tachometer-alt'/>Dashboard</Link>
-            <a onClick={logout} className='nav-link'><i className="fas fa-sign-out-alt"/>{" "}Logout</a>
+            <Link to='/posts' className='nav-link'><i className='mdi mdi-file-outline'/></Link>
+            <Link to='/profiles' className='nav-link'><i className='fas fa-users'/></Link>
+            <Link to='/dashboard' className='nav-link'><i className='fas fa-tachometer-alt'/></Link>
+            <div className='border-left ml-4'>
+                <a onClick={logout} className='nav-link'><i className="fas fa-sign-out-alt"/>{" "}Logout</a>
+            </div>
         </Nav>
 
   );
