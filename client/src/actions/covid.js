@@ -10,7 +10,7 @@ export const getCovid = () => async dispatch => {
     try {
         const config = {
             headers: {
-                "Origin": "https://kawalcovid19.id"
+                'Origin': '*'
             }
         };
         const res = await axios.get(`https://api.kawalcovid19.id/v1/api/case/summary`, config);
