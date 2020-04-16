@@ -81,6 +81,7 @@ const Covids = ({
 
 Covids.propTypes = {
     getCovid: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
     covid: PropTypes.object.isRequired,
 };
 

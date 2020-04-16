@@ -31,12 +31,12 @@ const NavBar = ({ auth: { isAuthenticated, loading }, logout }) => {
   return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" className=''>
           <div className="container">
-              <Navbar.Brand href="/">Vodo<span style={{color:'red'}}>nesia</span> </Navbar.Brand>
+              <div className='navbar-brand'><Link to='/' className="nav-link" style={{color:"white"}}>Vodo<span style={{color:'red'}}>nesia</span></Link></div>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="mr-auto">
-                      <Nav.Link href="/covid">Covid</Nav.Link>
-                      <Nav.Link href="/villa">Villa</Nav.Link>
+                      <Link to="/covid" className='nav-link'>Covid</Link>
+                      <Link to="/villa" className='nav-link'>Villa</Link>
                       <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                           <NavDropdown.Item href="#action/3.2">Villa</NavDropdown.Item>
