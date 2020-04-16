@@ -110,6 +110,7 @@ const Home = ({
           <div className="container">
             <h1 className="large font-weight-bold" style={{fontFamily:"arial",fontSize:'200%'}}>Pariwisata KAB.Karawang</h1>
             <p className="lead">Untuk memenuhi tugas akhir skripsi.</p>
+            <h3 className={'btn btn-danger'}>WEBSITE SEDANG DALAM DEVELOP</h3>
           </div>
       </div>
         <Container>
