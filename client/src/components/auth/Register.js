@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { connect } from "react-redux";
+import {Form, Button} from 'react-bootstrap';
 import { Link, Redirect } from "react-router-dom";
 import { setAlert } from "../../actions/alert";
 import { register } from "../../actions/auth";
@@ -33,57 +34,61 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Sign Up</h1>
-      <p className='lead'>
-        <i className='fas fa-user'></i> Create Your Account
-      </p>
-      <form className='form' onSubmit={e => onSubmit(e)}>
-        <div className='form-group'>
-          <input
-            type='text'
-            placeholder='Name'
-            name='name'
-            value={name}
-            onChange={e => onChange(e)}
-          />
-        </div>
-        <div className='form-group'>
-          <input
-            type='email'
-            placeholder='Email Address'
-            name='email'
-            value={email}
-            onChange={e => onChange(e)}
-          />
-          <small className='form-text'>
-            This site uses Gravatar so if you want a profile image, use a
-            Gravatar email
-          </small>
-        </div>
-        <div className='form-group'>
-          <input
-            type='password'
-            placeholder='Password'
-            name='password'
-            value={password}
-            onChange={e => onChange(e)}
-          />
-        </div>
-        <div className='form-group'>
-          <input
-            type='password'
-            placeholder='Confirm Password'
-            name='password2'
-            value={password2}
-            onChange={e => onChange(e)}
-          />
-        </div>
-        <input type='submit' className='btn btn-primary' value='Register' />
-      </form>
-      <p className='my-1'>
-        Already have an account? <Link to='/login'>Sign In</Link>
-      </p>
-    </Fragment>
+            <div className="container mt-2 col-lg-6">
+                <Form className="mt-5" onSubmit={e=> onSubmit(e)}>
+                    <h1 className="text-center">Register</h1>
+                    <div className="dropdown-divider"/>
+                    <div className="form-group">
+                        <label>Name</label>
+                        <input className="form-control"
+                               type="text"
+                               name="name"
+                               placeholder="Enter Name"
+                               value={name}
+                               onChange={e => onChange(e)}
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label>Email</label>
+                        <input className="form-control"
+                               type="email"
+                               placeholder="Enter Email"
+                               name="email"
+                               value={email}
+                               onChange={e => onChange(e)}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label>Password</label>
+                        <input className="form-control"
+                               type="password"
+                               placeholder="Password"
+                               name="password"
+                               value={password}
+                               onChange={e => onChange(e)}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label>Retype Password</label>
+                        <input className="form-control"
+                               type="password"
+                               placeholder="Retype Password"
+                               name="password2"
+                               value={password2}
+                               onChange={e => onChange(e)}
+                        />
+                    </div>
+                    <div className="nav-link">
+                        <p>sudah punya akun? <Link to="/login" className="text-primary">Click me</Link></p>
+                    </div>
+                    <Button variant="primary" type="submit">
+                        Submit
+                    </Button>
+                </Form>
+            </div>
+        </Fragment>
+    
   );
 };
 
