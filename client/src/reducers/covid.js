@@ -5,7 +5,7 @@ import {
 
 //Create initial state
 const initialState = {
-    covids: [],
+    covid: [null],
     loading: true,
     error: {}
 };
@@ -17,7 +17,7 @@ export default function(state = initialState, action) {
         case GET_COVID:
             return {
                 ...state,
-                covids: payload,
+                covid: payload,
                 loading: false
             };
 

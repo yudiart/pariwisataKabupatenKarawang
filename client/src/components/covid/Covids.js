@@ -9,8 +9,8 @@ import {Link} from "react-router-dom";
 
 const Covids = ({
     getCovid,
-    covids:{
-        covids:{
+    covid:{
+        covid:{
             confirmed,
             activeCare,
             deceased,
@@ -84,11 +84,11 @@ const Covids = ({
 
 Covids.propTypes = {
     getCovid: PropTypes.func.isRequired,
-    covids: PropTypes.object.isRequired,
+    covid: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = state => ({
-    covids: state.covids
+    covid: state.covid
 });
 
 export default connect(mapStateToProps,{ getCovid })(Covids);
