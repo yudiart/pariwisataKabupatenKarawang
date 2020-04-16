@@ -1,12 +1,14 @@
-import React, {Fragment, useEffect} from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Container from "react-bootstrap/Container";
-import {Row, Col, Nav} from "react-bootstrap";
+import {Row, Col, Carousel} from "react-bootstrap";
+import {Collapse, Button, CardBody, Card, UncontrolledCollapse} from 'reactstrap';
 import { Dropdown } from 'semantic-ui-react';
 import {deleteAccount, getCurrentProfile, getProfileById} from "../../actions/profile";
 import Spinner from "./Spinner";
+import { logout } from "../../actions/auth";
 
 const countryOptions = [
   { key: 'bs', value: 'bs', text: 'Banyusari' },
@@ -40,6 +42,7 @@ const countryOptions = [
   { key: 'tm', value: 'tm', text: 'Tirtamulya' }
 ];
 const Home = ({
+    logout,
     getCurrentProfile,
     auth: { isAuthenticated, user },
     profile: { profile, loading }
@@ -48,31 +51,68 @@ const Home = ({
     getCurrentProfile();
   }, [getCurrentProfile]);
 
+  const [collapse, setCollapse] = useState(false);
+  const [collapse2, setCollapse2] = useState(false);
+  const [status, setStatus] = useState('Closed');
+
+  const onEntering = () => setStatus('Opening...');
+
+  const onEntered = () => setStatus('Opened');
+
+  const onExiting = () => setStatus('Closing...');
+
+  const onExited = () => setStatus('Closed');
+
+  const toggle = () => setCollapse(!collapse);
+  const toggle2 = () => setCollapse2(!collapse2);
   const authLinks = (
       <div>
-        <Link to={'/dashboard'} className='nav-link'><button type='button' className='btn btn-block'><i className='mdi mdi-account text-primary'/>{user && user.name}</button></Link>
+        <a onClick={toggle} className='nav-link'><button type='button' className='btn btn-block'><i className='mdi mdi-account text-primary'/>Account</button></a>
+        <Collapse
+            isOpen={collapse}
+            onEntering={onEntering}
+            onEntered={onEntered}
+            onExiting={onExiting}
+            onExited={onExited}
+        >
+          <Card>
+            <CardBody>
+              <button type='button' className='btn btn-block'><i className='fas fa-tachometer-alt'/> Dashboard</button>
+              <div className='dropdown-divider' />
+              <a id="toggler" className='nav-link mb-1'><button type='button' className='btn btn-block'><i className='mdi mdi-chevron-right'/>Pemesanan</button></a>
+              <UncontrolledCollapse toggler="#toggler">
+                <Card style={{border:'none'}}>
+                  <CardBody>
+                    <button type='button' className='btn btn-block' style={{fontSize:'12px'}}>Menunggu Pembayaran</button>
+                    <button type='button' className='btn btn-block' style={{fontSize:'12px'}}>Daftar Transaksi</button>
+                  </CardBody>
+                </Card>
+              </UncontrolledCollapse>
+
+              <button type='button' className='btn btn-block'><i className='mdi mdi-church text-primary'/> Budaya</button>
+              <button type='button' className='btn btn-block'><i className='mdi mdi-yeast text-primary'/>Product Lokal</button>
+              <div className='dropdown-divider' />
+              <button type='button' onClick={logout} className='btn btn-block' style={{cursor:'pointer'}}><i className="fas fa-sign-out-alt text-danger"/>Logout</button>
+            </CardBody>
+          </Card>
+        </Collapse>
+
       </div>
 
   );
 
   const guestLinks = (
-      <div>
-
-      </div>
-
-
+      <div/>
   );
   return (
     <section className="landing">
       <div className="dark-overlay ">
-        <div className="jumbotron bg-gradient text-light header-jumbotron" style={{borderRadius:'0px'}}>
+        <div className="jumbotron bg-gradient text-light header-jumbotron" style={{borderRadius:'0px',minHeight:'250px'}}>
           <div className="container">
             <h1 className="large font-weight-bold" style={{fontFamily:"arial",fontSize:'200%'}}>Pariwisata KAB.Karawang</h1>
             <p className="lead">Untuk memenuhi tugas akhir skripsi.</p>
-            <div className="buttons">
-            </div>
           </div>
-        </div>
+      </div>
         <Container>
           <Row>
             <Col lg={3}>
@@ -84,9 +124,6 @@ const Home = ({
                 <button type='button' className='btn btn-block'><i className='mdi mdi-food text-primary'/> Eat & Food</button>
                 <button type='button' className='btn btn-block'><i className='mdi mdi-church text-primary'/> Budaya</button>
                 <button type='button' className='btn btn-block'><i className='mdi mdi-yeast text-primary'/>Product Lokal</button>
-              </div>
-              <div className="jumbotron _1uz2h">
-
               </div>
             </Col>
             <Col lg={9}>
@@ -117,6 +154,7 @@ const Home = ({
 Home.propTypes = {
   getCurrentProfile: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
+  logout: PropTypes.func.isRequired,
   profile: PropTypes.object.isRequired,
   deleteAccount: PropTypes.func.isRequired
 };
@@ -128,5 +166,5 @@ const mapStateToProps = state => ({
 
 export default connect(
     mapStateToProps,
-    { getCurrentProfile }
+    { getCurrentProfile,logout }
 )(Home);
