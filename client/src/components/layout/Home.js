@@ -75,29 +75,28 @@ const Home = ({
             onExiting={onExiting}
             onExited={onExited}
         >
-          <Card>
+          <Card style={{border:'none',background:'transparent'}}>
             <CardBody>
-              <button type='button' className='btn btn-block'><i className='fas fa-tachometer-alt'/> Dashboard</button>
+              <Link to={'/dashboard'} className='nav-link'><i className='fas fa-tachometer-alt text-primary'/> Dashboard</Link>
               <div className='dropdown-divider' />
               <a id="toggler" className='nav-link mb-1'><button type='button' className='btn btn-block'><i className='mdi mdi-chevron-right'/>Pemesanan</button></a>
               <UncontrolledCollapse toggler="#toggler">
-                <Card style={{border:'none'}}>
+                <Card style={{border:'none',background:'transparent'}}>
                   <CardBody>
                     <button type='button' className='btn btn-block' style={{fontSize:'12px'}}>Menunggu Pembayaran</button>
                     <button type='button' className='btn btn-block' style={{fontSize:'12px'}}>Daftar Transaksi</button>
                   </CardBody>
                 </Card>
               </UncontrolledCollapse>
-
-              <button type='button' className='btn btn-block'><i className='mdi mdi-church text-primary'/> Budaya</button>
-              <button type='button' className='btn btn-block'><i className='mdi mdi-yeast text-primary'/>Product Lokal</button>
               <div className='dropdown-divider' />
+              <button type='button' className='btn btn-block'><i className='mdi mdi-settings text-primary'/>Setting</button>
               <button type='button' onClick={logout} className='btn btn-block' style={{cursor:'pointer'}}><i className="fas fa-sign-out-alt text-danger"/>Logout</button>
             </CardBody>
           </Card>
         </Collapse>
-
+        <div className='dropdown-divider' />
       </div>
+
 
   );
 
@@ -116,10 +115,11 @@ const Home = ({
         <Container>
           <Row>
             <Col lg={3}>
-              <div className="jumbotron _1uz2h">
+              <div className="jumbotron-fluid _1uz2h">
                 {!loading && (
                     <div>{isAuthenticated ? authLinks : guestLinks}</div>
                 )}
+
                 <button type='button' className='btn btn-block'><i className='mdi mdi-home-modern text-primary'/> Villa</button>
                 <button type='button' className='btn btn-block'><i className='mdi mdi-food text-primary'/> Eat & Food</button>
                 <button type='button' className='btn btn-block'><i className='mdi mdi-church text-primary'/> Budaya</button>
