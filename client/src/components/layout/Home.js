@@ -62,7 +62,7 @@ const Home = ({
 
 
   );
-  return 
+  return (
     <section className="landing">
       <div className="dark-overlay ">
         <div className="jumbotron bg-gradient text-light header-jumbotron" style={{borderRadius:'0px'}}>
@@ -110,7 +110,7 @@ const Home = ({
         </Container>
       </div>
     </section>
-  
+      
   );
 };
 
