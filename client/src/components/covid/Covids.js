@@ -5,7 +5,6 @@ import {getCovid} from '../../actions/covid';
 import Spinner from "../layout/Spinner";
 import {Col, Row} from "react-bootstrap";
 import Moment from "react-moment";
-import {Link} from "react-router-dom";
 
 const Covids = ({
     getCovid,
@@ -25,7 +24,7 @@ const Covids = ({
         <Fragment>
             <div className="jumbotron-fluid text-center">
                 <h4>Data Corona Virus di indonesia</h4>
-                {covid.lentgh === 0 ? <Spinner/>:
+                {covid.length === 0 ? <Spinner/>:
                 <div className='text-center mt-4'>
                     <Row>
                         <Col md={3} className="text-center">
