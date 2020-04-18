@@ -1,5 +1,5 @@
 import React, {Fragment, useEffect, useState} from "react";
-import { Link } from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Container from "react-bootstrap/Container";
@@ -47,9 +47,11 @@ const Home = ({
     auth: { isAuthenticated, user },
     profile: { profile, loading }
 }) => {
+
   useEffect(() => {
     getCurrentProfile();
   }, [getCurrentProfile]);
+
 
   const [collapse, setCollapse] = useState(false);
   const [collapse2, setCollapse2] = useState(false);
@@ -89,8 +91,9 @@ const Home = ({
                 </Card>
               </UncontrolledCollapse>
               <div className='dropdown-divider' />
-              <button type='button' className='btn btn-block'><i className='mdi mdi-settings text-primary'/>Setting</button>
-              <button type='button' onClick={logout} className='btn btn-block' style={{cursor:'pointer'}}><i className="fas fa-sign-out-alt text-danger"/>Logout</button>
+              <button type='button' className='btn btn-block'><i className='mdi mdi-settings text-primary'/>{' '}Setting</button>
+              <div className='dropdown-divider mt-1' />
+              <Link to={'/login'} onClick={logout} className='nav-link' style={{cursor:'pointer'}}><i className="fas fa-sign-out-alt text-danger"/>{' '}Logout</Link>
             </CardBody>
           </Card>
         </Collapse>
@@ -103,6 +106,7 @@ const Home = ({
   const guestLinks = (
       <div/>
   );
+
   return (
     <section className="landing">
       <div className="dark-overlay ">
@@ -118,7 +122,7 @@ const Home = ({
             <Col lg={3}>
               <div className="jumbotron-fluid _1uz2h">
                 {!loading && (
-                    <div>{isAuthenticated ? authLinks : guestLinks}</div>
+                    <div>{isAuthenticated  && user && user.role === 'customer'? authLinks : guestLinks}</div>
                 )}
 
                 <button type='button' className='btn btn-block'><i className='mdi mdi-home-modern text-primary'/> Villa</button>

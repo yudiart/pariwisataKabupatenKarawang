@@ -11,6 +11,8 @@ import {
   CLEAR_PROFILE
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
+import {Redirect} from "react-router-dom";
+import React from "react";
 //Load User
 export const loadUser = () => async dispatch => {
   if (localStorage.token) {
@@ -32,13 +34,13 @@ export const loadUser = () => async dispatch => {
 };
 
 //Registers the user
-export const register = ({ name, email, password }) => async dispatch => {
+export const register = ({ name, email, password, role}) => async dispatch => {
   const config = {
     headers: {
       "Content-Type": "application/json"
     }
   };
-  const body = JSON.stringify({ name, email, password });
+  const body = JSON.stringify({ name, email, password, role});
 
   try {
     const res = await axios.post("/api/users", body, config);
@@ -95,4 +97,5 @@ export const login = (email, password) => async dispatch => {
 export const logout = () => dispatch => {
   dispatch({ type: CLEAR_PROFILE });
   dispatch({ type: LOGOUT });
+
 };

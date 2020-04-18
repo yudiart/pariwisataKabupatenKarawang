@@ -37,7 +37,8 @@ export default function(state = initialState, action) {
         ...state,
         token: null,
         isAuthenticated: false,
-        loading: false
+        loading: false,
+        user:null
       };
     case LOGIN_SUCCESS:
     case REGISTER_SUCCESS:
