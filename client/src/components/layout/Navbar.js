@@ -54,9 +54,9 @@ const NavBar = ({ auth: {user, isAuthenticated, loading }, logout }) => {
                       </NavDropdown>
                   </Nav>
                   <Nav>
-                      !loading (
+                      {!loading (
                           <div>{isAuthenticated ? authLinks : guestLinks}</div>
-                      )
+                      )}
                   </Nav>
               </Navbar.Collapse>
           </div>
