@@ -37,7 +37,7 @@ router.post(
     [
         auth,
         [
-            check("location", "Location is required")
+            check("contact", "Contact is required")
                 .not()
                 .isEmpty()
         ]
@@ -52,8 +52,17 @@ router.post(
 
         //Pull everything out from the body
         const {
-            location,
+            kecamatan,
+            kelurahan,
+            postcode,
+            jalan,
+            kampung,
+            blok,
+            rt,
+            rw,
+            no,
             bio,
+            contact,
             youtube,
             facebook,
             twitter,
@@ -63,8 +72,21 @@ router.post(
         //Build profile object to insert into database
         const villaFields = {};
         villaFields.user = req.user.id;
-        if (location) villaFields.location = location;
         if (bio) villaFields.bio = bio;
+        if (contact) villaFields.contact = contact;
+
+        //Build location
+        villaFields.location={};
+        if (kecamatan) villaFields.location.kecamatan = kecamatan;
+        if (kelurahan) villaFields.location.kelurahan = kelurahan;
+        if (postcode) villaFields.location.postcode = postcode;
+        if (jalan) villaFields.location.jalan = jalan;
+        if (kampung) villaFields.location.kampung = kampung;
+        if (blok) villaFields.location.blok = blok;
+        if (rt) villaFields.location.rt = rt;
+        if (rw) villaFields.location.rw = rw;
+        if (no) villaFields.location.no = no;
+
 
         //Build social object to insert into database
         villaFields.social = {};
@@ -90,7 +112,7 @@ router.post(
             //Create
             villa = new Villa(villaFields);
             await villa.save();
-            res.json(villa);
+            await res.json(villa);
         } catch (err) {
             console.error(err.message);
             res.status(500).send("Server Error in Profile.js");
@@ -112,7 +134,7 @@ router.get("/", async (req, res) => {
     }
 });
 
-//@route Get api/profile/user/user_id
+//@route Get api/villa/profile/villa_id
 //@desc Get user profile by id
 //@access Public
 router.get("/profile/:villa_id", async (req, res) => {

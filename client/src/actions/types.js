@@ -23,8 +23,16 @@ export const GET_POST = "GET_POST";
 export const REMOVE_COMMENT = "REMOVE_COMMENT";
 export const ADD_COMMENT = "ADD_COMMENT";
 
+//VILLA
+export const GET_VILLA = 'GET_VILLA';
+export const VILLA_ERROR = 'VILLA_ERROR';
+export const UPDATE_VILLA = 'UPDATE_VILLA';
+export const CLEAR_VILLA = 'CLEAR_VILLA';
+export const GET_VILLAS = 'GET_VILLAS';
+export const GET_VILLA_KAMAR = 'GET_VILLAS';
+export const GET_VILLAS_KAMAR = 'GET_VILLAS';
 
 
-
+//COVID
 export const GET_COVID = "GET_COVID";
 export const COVID_ERROR = "COVID_ERROR";

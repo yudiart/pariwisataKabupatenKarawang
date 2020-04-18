@@ -4,5 +4,13 @@ import auth from "./auth";
 import profile from "./profile";
 import post from "./post";
 import covid from "./covid";
+import villa from "./villa";
 
-export default combineReducers({ alert, auth, profile, post, covid });
+export default combineReducers({
+    alert,
+    auth,
+    profile,
+    post,
+    covid,
+    villa
+});

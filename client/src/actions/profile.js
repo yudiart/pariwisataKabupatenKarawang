@@ -9,7 +9,7 @@ import {
   GET_PROFILES,
   GET_REPOS
 } from "./types";
-import profile from "../reducers/profile";
+
 
 //Get current user's profile
 export const getCurrentProfile = () => async dispatch => {

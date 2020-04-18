@@ -7,7 +7,41 @@ const VillaSchema = new Schema({
         ref: "users"
     },
     location: {
-        type: String,
+        kecamatan:{
+            type:String,
+            required: true
+        },
+        kelurahan:{
+            type:String,
+            required:true
+        },
+        postcode:{
+          type: Number,
+          required: true
+        },
+        jalan:{
+            type:String,
+            required: true
+        },
+        desa:{
+            type:String
+        },
+        blok:{
+            type:String
+        },
+        rt:{
+            type: Number
+        },
+        rw:{
+            type: Number
+        },
+        no: {
+            type: Number
+        }
+
+    },
+    contact:{
+        type:Number,
         required: true
     },
     bio: {

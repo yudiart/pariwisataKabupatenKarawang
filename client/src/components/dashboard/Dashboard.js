@@ -3,21 +3,17 @@ import {Link, Redirect} from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Spinner from "../layout/Spinner";
-import DashboardActions from "./DashboardActions";
-import Experience from "./Experience";
-import Education from "./Education";
-import { getCurrentProfile, deleteAccount } from "../../actions/profile";
+import { getCurrentVilla } from "../../actions/villa";
 
 const Dashboard = ({
-  getCurrentProfile,
-  deleteAccount,
+    getCurrentVilla,
     isAuthenticated,
   auth: { user },
-  profile: { profile, loading }
+  villa: { villa, loading }
 }) => {
   useEffect(() => {
-    getCurrentProfile();
-  }, [getCurrentProfile]);
+    getCurrentVilla();
+  }, [getCurrentVilla]);
 
   if (isAuthenticated && user && user.role === 'customer'){
     return <Redirect to={'/profile'}/>
@@ -27,24 +23,24 @@ const Dashboard = ({
   ) : (
     <Fragment>
       {user && user.role === 'villa' ?
+        //Villa
         <>
           <h1 className="large text-primary">Dashboard</h1>
           <p className="lead">
             <i className="fas fa-user" /> Welcome {user && user.name}
           </p>
           {user && user.role}
-          {profile !== null? (
+          {villa !== null? (
               <Fragment>
-                <DashboardActions />
-                <Experience experience={profile.experience} />
-                <Education education={profile.education} />
+
                 <div className="my-2">
-                  <button className="btn btn-danger" onClick={() => deleteAccount()}>
+                  <button className="btn btn-danger">
                     <i className="fas fa-user-minus" /> Delete Account
                   </button>
                 </div>
               </Fragment>
           ) : (
+
               <Fragment>
                 <p>You do not have a profile, please setup your profile </p>
                 <Link to="/create-profile" className="btn btn-primary my-1">
@@ -54,26 +50,31 @@ const Dashboard = ({
           )}
         </>
       :(
-        <div><h1>admin</h1></div>
+        //admin
+        <Fragment>
+          <div className="jumbotron">
+            <h1>{user && user.role}</h1>
+          </div>
+        </Fragment>
       )}
     </Fragment>
   );
 };
 
 Dashboard.propTypes = {
-  getCurrentProfile: PropTypes.func.isRequired,
+  getCurrentVilla: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  profile: PropTypes.object.isRequired,
+  villa: PropTypes.object.isRequired,
   deleteAccount: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
   auth: state.auth,
-  profile: state.profile,
+  villa: state.villa,
   isAuthenticated: state.auth.isAuthenticated
 });
 
 export default connect(
   mapStateToProps,
-  { getCurrentProfile, deleteAccount }
+  { getCurrentVilla }
 )(Dashboard);

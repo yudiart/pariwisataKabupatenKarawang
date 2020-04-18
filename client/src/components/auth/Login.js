@@ -3,7 +3,7 @@ import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { login } from "../../actions/auth";
-//import { LOGIN_SUCCESS } from "../../actions/types";
+
 
 const Login = ({login, isAuthenticated,auth:{user},loading }) => {
   const [formData, setFormData] = useState({
@@ -64,7 +64,7 @@ const Login = ({login, isAuthenticated,auth:{user},loading }) => {
                      minLength="6"
               />
             </div>
-            <input type="submit" className="btn btn-primary" value="Login" />
+            <button type="submit" className="btn btn-primary" value="Login">Login</button>
           </form>
           <div>
             <p>Belum punya akun? <Link to="/register" className="text-primary">Click me</Link></p>

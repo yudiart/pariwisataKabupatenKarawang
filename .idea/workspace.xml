@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/actions/villa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/about/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/villa/VillaProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/villa/villa-forms/CreateVillaProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/reducers/villa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/villa.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +49,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\components\villa\villa-forms" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -56,7 +74,7 @@
       <workItem from="1587110402293" duration="3495000" />
       <workItem from="1587128253755" duration="2755000" />
       <workItem from="1587153163180" duration="7791000" />
-      <workItem from="1587202404890" duration="6718000" />
+      <workItem from="1587202404890" duration="23197000" />
     </task>
     <servers />
   </component>
@@ -64,6 +82,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587230350805">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587230350805" />
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586971282317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -76,5 +98,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586983952502" />
+    <state x="1096" y="162" width="670" height="676" key="search.everywhere.popup" timestamp="1587235554483">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1096" y="162" width="670" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587235554483" />
   </component>
 </project>
