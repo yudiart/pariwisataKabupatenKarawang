@@ -8,7 +8,7 @@ import {
   LOGIN_FAIL,
   LOGIN_SUCCESS,
   LOGOUT,
-  CLEAR_PROFILE
+  CLEAR_PROFILE, CLEAR_VILLA
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
 import {Redirect} from "react-router-dom";
@@ -95,7 +95,7 @@ export const login = (email, password) => async dispatch => {
 
 //Logout user and clear the profile
 export const logout = () => dispatch => {
-  dispatch({ type: CLEAR_PROFILE });
+  dispatch({ type: CLEAR_VILLA });
   dispatch({ type: LOGOUT });
 
 };

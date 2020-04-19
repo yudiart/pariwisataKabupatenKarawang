@@ -6,8 +6,8 @@ import Alert from "../layout/Alert";
 import Dashboard from "../dashboard/Dashboard";
 import PrivateRoute from "../routing/PrivateRoute";
 import VillaProfile from "../villa/villa-forms/CreateVillaProfile";
-import EditProfile from "../profile-forms/EditProfile";
-import AddExperience from "../profile-forms/AddExperience";
+import editVilla from "../villa/villa-forms/EditVilla";
+import AddRoom from "../villa/villa-forms/AddRoom";
 import AddEducation from "../profile-forms/AddEducation";
 import Posts from "../posts/Posts";
 import Post from "../post/Post";
@@ -28,8 +28,8 @@ export const Routes = () => {
         <Route exact path="/covid" component={Covid} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <PrivateRoute exact path="/villa-profile" component={VillaProfile} />
-        <PrivateRoute exact path="/edit-profile" component={EditProfile} />
-        <PrivateRoute exact path="/add-experience" component={AddExperience} />
+        <PrivateRoute exact path="/edit-villa" component={editVilla} />
+        <PrivateRoute exact path="/add-room" component={AddRoom} />
         <PrivateRoute exact path="/add-education" component={AddEducation} />
         <PrivateRoute exact path="/posts" component={Posts} />
         <PrivateRoute exact path="/posts/:id" component={Post} />

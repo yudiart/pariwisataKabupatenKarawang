@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Spinner from "../layout/Spinner";
 import { getCurrentVilla } from "../../actions/villa";
+import DashboardActions from "./DashboardActions";
 
 const Dashboard = ({
     getCurrentVilla,
@@ -32,8 +33,8 @@ const Dashboard = ({
           {user && user.role}
           {villa !== null? (
               <Fragment>
-
                 <div className="my-2">
+                  <DashboardActions/>
                   <button className="btn btn-danger">
                     <i className="fas fa-user-minus" /> Delete Account
                   </button>
@@ -65,7 +66,6 @@ Dashboard.propTypes = {
   getCurrentVilla: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   villa: PropTypes.object.isRequired,
-  deleteAccount: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({

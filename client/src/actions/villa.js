@@ -111,7 +111,7 @@ export const getVillaById = villaId => async dispatch => {
 };
 
 //Add Experience for the User
-export const addKamar = (formData, history) => async dispatch => {
+export const addKamar = (formData,setUploadedFile, history) => async dispatch => {
     try {
         const config = {
             headers: {
