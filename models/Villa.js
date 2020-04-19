@@ -23,7 +23,7 @@ const VillaSchema = new Schema({
             type:String,
             required: true
         },
-        desa:{
+        kampung:{
             type:String
         },
         blok:{
@@ -71,19 +71,16 @@ const VillaSchema = new Schema({
                 ref: "villas"
             },
             roomName: {
-                type: String,
-                required: true
+                type: String
             },
             description: {
-                type: String,
-                required: true
+                type: String
             },
             image: {
                 type: String
             },
             limit:{
-                type: Number,
-                required: true
+                type: Number
             },
             fasilitas: {
                 kasur:{
@@ -97,8 +94,7 @@ const VillaSchema = new Schema({
                 }
             },
             harga:{
-                type: Number,
-                required: true
+                type: Number
             },
             wishList:[
                 {

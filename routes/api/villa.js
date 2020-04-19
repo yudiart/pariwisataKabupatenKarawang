@@ -4,7 +4,8 @@ const config = require('config');
 const router = express.Router();
 const { check, validationResult } = require("express-validator");
 const auth = require("../../middleware/auth");
-const Post = require("../../models/Post");
+
+
 const User = require("../../models/User");
 const Villa = require("../../models/Villa");
 
@@ -173,71 +174,41 @@ router.delete("/", auth, async (req, res) => {
         res.status(500).send("Server error in profile.js");
     }
 });
-
-
-
-//@route PUT api/Villa/Kamar
-//@desc Add Villa Kamar
-//@access Private
-router.put(
-    "/kamar",
-    [
-        auth,
-        [
-            check("roomName", "roomName is required!")
-                .not()
-                .isEmpty(),
-            check("description", "description is required!")
-                .not()
-                .isEmpty(),
-            check("harga", "harga date is required!")
-                .not()
-                .isEmpty(),
-            check("limit", "limit is required!")
-                .not()
-                .isEmpty()
-        ]
-    ],
-    async (req, res) => {
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(400).json({ errors: errors.array() });
-        }
-        //destructring
-        const {
-            roomName,
-            description,
-            image,
-            limit,
-            harga,
-            tipeKamar,
-            fasilitas
-        } = req.body;
-        const newKam = {
-            roomName,
-            description,
-            image,
-            limit,
-            harga,
-            tipeKamar,
-            fasilitas
-        };
-
-        try {
-            const villa = await Villa.findOne({ user: req.user.id });
-            //Push
-            villa.kamar.unshift(newKam);
-
-            await villa.save();
-
-            res.json(villa);
-        } catch (err) {
-            console.error(err.message);
-            res.status(500).send("Server error in profile.js");
+const multer = require('multer');
+const storage = multer.diskStorage({
+    destination: (req, file, cb)=>{
+        cb(null, 'uploads/')
+    },
+    filename: (req, file, cb)=>{
+        cb(null, `${Date.now()}_${file.originalname}`)
+    },
+    fileFilter: (req, file, cb, res)=>{
+        const ext = path.extname(file.originalname)
+        if (ext !== '.jpg' || ext !== '.png' || ext !== '.jpeg'){
+            return cb(res.status(400).send('only jpg, png are allowed'),false);
         }
 
     }
-);
+});
+//@route PUT api/Villa/Kamar
+//@desc Add Villa Kamar
+//@access Private
+router.put("/kamar",auth,(req,res)=>{
+    const upload = multer({storage: storage}).single('file');
+    //setelah mendapatkan gambar dari client
+    //we need to save it inside Node server
+
+    //Multer Library
+    upload(req,res, err =>{
+        if(err)return res.json({success:false,err})
+        return res.json({
+            success: true,
+            image: res.req.file.path,
+            fileName:res.req.file.filename
+        })
+    });
+});
+
 
 //@route DELETE api/villa/kamar/:kamar_id
 //@desc Remove a Kamar Villa

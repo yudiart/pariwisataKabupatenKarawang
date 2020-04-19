@@ -1,12 +1,12 @@
-import React, {Fragment, useEffect, useState} from "react";
-import {Link, Redirect} from "react-router-dom";
+import React, { useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Container from "react-bootstrap/Container";
-import {Row, Col, Carousel} from "react-bootstrap";
-import {Collapse, Button, CardBody, Card, UncontrolledCollapse} from 'reactstrap';
+import {Row, Col} from "react-bootstrap";
+import {Collapse, CardBody, Card, UncontrolledCollapse} from 'reactstrap';
 import { Dropdown } from 'semantic-ui-react';
-import {deleteAccount, getCurrentProfile, getProfileById} from "../../actions/profile";
+import {getCurrentProfile, getProfileById} from "../../actions/profile";
 import Spinner from "./Spinner";
 import { logout } from "../../actions/auth";
 

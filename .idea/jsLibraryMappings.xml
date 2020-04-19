@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{all, semantic}" />
+    <file url="PROJECT" libraries="{all, filepond, filepond-plugin-file-encode, filepond-plugin-image-preview, semantic}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

@@ -8,11 +8,10 @@ import {
   LOGIN_FAIL,
   LOGIN_SUCCESS,
   LOGOUT,
-  CLEAR_PROFILE, CLEAR_VILLA
+  CLEAR_VILLA
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
-import {Redirect} from "react-router-dom";
-import React from "react";
+
 //Load User
 export const loadUser = () => async dispatch => {
   if (localStorage.token) {

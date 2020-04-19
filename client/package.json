@@ -9,6 +9,7 @@
     "moment": "^2.24.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-dropzone": "^10.2.2",
     "react-filepond": "^7.0.1",
     "react-images-upload": "^1.2.8",
     "react-moment": "^0.9.6",

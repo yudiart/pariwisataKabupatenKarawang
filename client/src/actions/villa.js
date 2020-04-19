@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios,{useState} from "axios";
 import { setAlert } from "./alert";
 import {
     GET_VILLA,
@@ -111,34 +111,42 @@ export const getVillaById = villaId => async dispatch => {
 };
 
 //Add Experience for the User
-export const addKamar = (formData,setUploadedFile, history) => async dispatch => {
-    try {
-        const config = {
-            headers: {
-                "Content-Type": "application/json"
+export const addKamar = (formData, history,villa,files) => async dispatch => {
+        const[Images, setImages]=useState([]);
+        let formData = new FormData();
+        try {
+            const config = {
+                headers: {'Content-Type': 'multipart/form-data'}
+            };
+            formData.append('files', files[0])
+            //Post request to API/PROFILE
+            const res = await axios.put("api/villa/kamar", formData, config)
+                .then((response) => {
+                    if (response.data.success) {
+                        setImages(...Images, [response.data.image])
+                        villa.refreshFunction([...Images, response.data.image])
+                    } else {
+                        alert('Failed to save the image in server')
+                    }
+                })
+
+            dispatch({
+                type: UPDATE_VILLA,
+                payload: res.data
+            });
+            dispatch(setAlert("Kamar Added", "success"));
+            history.push("./dashboard");
+        } catch (err) {
+            const errors = err.response.data.errors;
+
+            if (errors) {
+                errors.forEach(error => dispatch(setAlert(error.msg, "danger")));
             }
-        };
 
-        //Post request to API/PROFILE
-        const res = await axios.put("api/villa/kamar", formData, config);
-
-        dispatch({
-            type: UPDATE_VILLA,
-            payload: res.data
-        });
-
-        dispatch(setAlert("Kamar Added", "success"));
-        history.push("./dashboard");
-    } catch (err) {
-        const errors = err.response.data.errors;
-
-        if (errors) {
-            errors.forEach(error => dispatch(setAlert(error.msg, "danger")));
+            dispatch({
+                type: VILLA_ERROR,
+                payload: { msg: err.response.statusText, status: err.response.status }
+            });
         }
 
-        dispatch({
-            type: VILLA_ERROR,
-            payload: { msg: err.response.statusText, status: err.response.status }
-        });
-    }
 };
