@@ -40,7 +40,7 @@ function FileUpload  (props){
                         <div onClick={onDelete}>
                             <img
                                 style={{minWidth:"300px",width:"300px",height:"240px",borderRadius:'10px'}}
-                                src={`http://localhost:3000/${image}`}
+                                src={`http://localhost:5005/${image}`}
                                 alt={`Kamar-${index}`}
                             />
                         </div>
@@ -48,7 +48,6 @@ function FileUpload  (props){
                 </div>
             </div>
             <div className='form-row'>
-
                 <div className="row col-lg-6">
                     <Dropzone
                         onDrop={onDrop}
@@ -80,7 +79,6 @@ function FileUpload  (props){
                 </div>
             </div>
         </div>
-
     )
 }
 

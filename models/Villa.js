@@ -61,8 +61,9 @@ const VillaSchema = new Schema({
             type: String
         }
     },
-    avatar: {
-        type: String
+    images: {
+        type: Array,
+        default: []
     },
     kamar: [
         {
@@ -94,7 +95,9 @@ const VillaSchema = new Schema({
                 }
             },
             harga:{
-                type: Number
+                type: Number,
+                maxLength: 30,
+                default: 0
             },
             wishList:[
                 {

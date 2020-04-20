@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/utils/FileUpload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/skripsi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/skripsi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/villa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/layout/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/villa/villa-forms/AddRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/villa/villa-forms/AddRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/FileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/FileUpload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Villa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/villa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/1587335912357_ayana-resort-and-spa.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +64,10 @@
       <workItem from="1587128253755" duration="2755000" />
       <workItem from="1587153163180" duration="7791000" />
       <workItem from="1587202404890" duration="29320000" />
-      <workItem from="1587289845208" duration="34611000" />
+      <workItem from="1587289845208" duration="35091000" />
+      <workItem from="1587361952909" duration="580000" />
+      <workItem from="1587375479053" duration="6188000" />
+      <workItem from="1587407668680" duration="1197000" />
     </task>
     <servers />
   </component>
@@ -122,17 +111,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1587321140781" />
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586983952502">
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587382497457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586983952502" />
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587382497457" />
     <state x="1096" y="235" key="run.anything.popup" timestamp="1587304780566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1096" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587304780566" />
-    <state x="1096" y="162" width="670" height="676" key="search.everywhere.popup" timestamp="1587235554483">
+    <state x="1096" y="162" width="670" height="676" key="search.everywhere.popup" timestamp="1587378926876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1096" y="162" width="670" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587235554483" />
+    <state x="1096" y="162" width="670" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587378926876" />
   </component>
 </project>
