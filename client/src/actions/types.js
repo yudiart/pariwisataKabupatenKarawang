@@ -29,15 +29,15 @@ export const VILLA_ERROR = 'VILLA_ERROR';
 export const UPDATE_VILLA = 'UPDATE_VILLA';
 export const CLEAR_VILLA = 'CLEAR_VILLA';
 export const GET_VILLAS = 'GET_VILLAS';
-export const GET_VILLA_KAMAR = 'GET_VILLAS';
+export const GET_VILLA_KAMAR = 'GET_VILLA_KAMAR';
 
 //KAMAR
-export const GET_KAMARS = 'GET_VILLAS';
-export const KAMAR_ERROR = 'GET_VILLAS';
-export const UPDATE_WISHLIST = 'GET_VILLAS';
-export const DELETE_KAMAR = 'GET_VILLAS';
-export const ADD_KAMAR = 'GET_VILLAS';
-export const GET_KAMAR = 'GET_VILLAS';
+export const GET_KAMARS = 'GET_KAMARS';
+export const KAMAR_ERROR = 'KAMAR_ERROR';
+export const UPDATE_WISHLIST = 'UPDATE_WISHLIST';
+export const DELETE_KAMAR = 'DELETE_KAMAR';
+export const ADD_KAMAR = 'ADD_KAMAR';
+export const GET_KAMAR = 'GET_KAMAR';
 
 //COVID
 export const GET_COVID = "GET_COVID";

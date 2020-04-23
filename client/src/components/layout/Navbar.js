@@ -22,7 +22,10 @@ const NavBar = ({ auth: {user, isAuthenticated, loading }, logout }) => {
                 <Link to='/dashboard' className='nav-link mr-4'><i className='fas fa-tachometer-alt'/></Link>
                 :
                 user && user.role==='villa'?
-                    <Link to='/dashboard' className='nav-link mr-4'><i className='fas fa-tachometer-alt'/></Link>
+                    <>
+                        <Link to='/rooms' className='nav-link'><i className='mdi mdi-bell'/></Link>
+                        <Link to='/dashboard' className='nav-link mr-4'><i className='fas fa-tachometer-alt'/></Link>
+                    </>
                 :(<></>)
             }
             <div className=''>

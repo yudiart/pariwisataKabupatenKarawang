@@ -2,13 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/ChartVilla.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/Rooms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/Villa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/villa/rooms/Rooms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/rooms/RoomItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/rooms/Rooms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/reducers/room.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Room.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/kamar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/layout/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-forms/AddExperience.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-forms/AddExperience.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/villa/villa-forms/AddRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/villa/villa-forms/AddRoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/utils/FileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/FileUpload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Villa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/1587335912357_ayana-resort-and-spa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +61,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/villa" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\src\components\layout" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\components\villa\villa-forms" />
       <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\components\villa" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\layout" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -67,7 +95,11 @@
       <workItem from="1587289845208" duration="35091000" />
       <workItem from="1587361952909" duration="580000" />
       <workItem from="1587375479053" duration="6188000" />
-      <workItem from="1587407668680" duration="1197000" />
+      <workItem from="1587407668680" duration="25293000" />
+      <workItem from="1587467101515" duration="2788000" />
+      <workItem from="1587481000907" duration="24608000" />
+      <workItem from="1587568489166" duration="34775000" />
+      <workItem from="1587637943564" duration="15866000" />
     </task>
     <servers />
   </component>
@@ -83,10 +115,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="177" width="816" height="733" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1587327179439" />
-    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587253559024">
+    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587496588884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587253559024" />
+    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587496588884" />
     <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587230350805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -99,18 +131,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587253140002" />
-    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1587131719341">
+    <state x="1060" y="100" width="760" height="840" key="DiffContextDialog" timestamp="1587415293373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587131719341" />
+    <state x="1060" y="100" width="760" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587415293373" />
+    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1587663156899">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587663156899" />
     <state x="1279" y="239" key="RollbackChangesDialog" timestamp="1587321089704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1279" y="239" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587321089704" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1587321140781">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1587479434167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1587321140781" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1587479434167" />
     <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587382497457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -119,9 +155,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1096" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587304780566" />
-    <state x="1096" y="162" width="670" height="676" key="search.everywhere.popup" timestamp="1587378926876">
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup" timestamp="1587596023532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1096" y="162" width="670" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587378926876" />
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587596023532" />
   </component>
 </project>

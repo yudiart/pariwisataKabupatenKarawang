@@ -65,58 +65,7 @@ const VillaSchema = new Schema({
         type: Array,
         default: []
     },
-    kamar: [
-        {
-            villa: {
-                type: Schema.Types.ObjectId,
-                ref: "villas"
-            },
-            roomName: {
-                type: String
-            },
-            description: {
-                type: String
-            },
-            image: {
-                type: String
-            },
-            limit:{
-                type: Number
-            },
-            fasilitas: {
-                kasur:{
-                    type: String
-                },
-                ac:{
-                    type: String
-                },
-                tv:{
-                    type: String
-                }
-            },
-            harga:{
-                type: Number,
-                maxLength: 30,
-                default: 0
-            },
-            wishList:[
-                {
-                    user:{
-                        type:Schema.Types.ObjectId,
-                        ref: 'users'
-                    }
-                }
-            ],
-            tipeKamar:{
-                type: String
-            },
-            date: {
-                type: Date,
-                default: Date.now
-            }
-        }
-    ],
-    follow: [
+    followers: [
         {
             user: {
                 type: Schema.Types.ObjectId,

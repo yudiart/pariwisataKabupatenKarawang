@@ -1,14 +1,14 @@
 import React, {Fragment, useState} from "react";
 import {withRouter } from "react-router-dom";
-
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { addKamar } from "../../../actions/villa";
-import {Form, Image} from "react-bootstrap";
+import { addRoom } from "../../../actions/room";
+import {Form} from "react-bootstrap";
 import {TextArea} from "semantic-ui-react";
 import FileUpload from "../../../utils/FileUpload";
 
-const AddRoom = ({ addKamar, history }) => {
+
+const AddRoom = ({ addRoom,history}) => {
     const RoomsTypes = [
         {key:1, value:"Standar"},
         {key:2, value:"Deluxe"},
@@ -31,140 +31,90 @@ const AddRoom = ({ addKamar, history }) => {
         {key:2, value:"Double Bed"},
         {key:3, value:"Other"}
     ];
-    //uploads file
-    const [file, setFile]= useState('');
-    const [filename, setFilename] = useState('Choose File');
-    const [uploadedFile, setUploadedFile] = useState({});
-    const [limitRoomValue, setLimitRoomValue] = useState({});
-    const [roomTypeValue, setRoomTypeValue] = useState({});
-    const [bedTypeValue, setBedTypeValue] = useState({});
 
+    const [limitValue, setLimitValue] = useState('');
+    const [roomTypeValue, setRoomTypeValue] = useState('');
+    const [roomNameValue, setroomNameValue] = useState('');
+    const [descriptionValue, setdescriptionValue] = useState('');
+    const [hargaValue, sethargaValue] = useState('');
     const [Images, setImages] =useState([]);
+    const onLimitRoomSelectChange = e=>{setLimitValue(e.target.value)}
+    const onRoomTypeSelectChange = e=>{setRoomTypeValue(e.target.value)}
+    const onRoomNameSelectChange = e=>{setroomNameValue(e.target.value)}
+    const onDescriptionSelectChange = e=>{setdescriptionValue(e.target.value)}
+    const onHargaSelectChange = e=>{sethargaValue(e.target.value)}
+    const updateImages = (newImages)=>{setImages(newImages)}
 
 
-    const [formData, setFormData] = useState({
-        roomName: "",
-        description: "",
-        image: "",
-        limit: "",
-        harga: "",
-        tipeKamar: "",
-        fasilitas:{kasur:"",ac:"",tv:""}
-    });
-    //More destructring
-    const { roomName,description, image,limit,harga,tipeKamar,kasur,ac,tv} = formData;
-
-    const onChange = e =>{
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    }
     const onSubmit =e =>{
+        e.preventDefault();
 
-    }
-
-    const onLimitRoomSelectChange = e=>{
-        setLimitRoomValue(e.target.value)
-    }
-    const onRoomTypeSelectChange = e=>{
-        setRoomTypeValue(e.target.value)
-    }
-
-    const onBedTypeSelectChange = e=>{
-        setBedTypeValue(e.target.value)
-    }
-
-    const updateImages = (newImages)=>{
-        setImages(newImages)
+        const formData ={
+            roomName: roomNameValue,
+            description: descriptionValue,
+            harga: hargaValue,
+            images: Images,
+            tipeKamar: roomTypeValue,
+            limit: limitValue
+        }
+        addRoom(formData,history);
     }
     return (
         <Fragment>
-            <h1 className="large text-primary">Add Room</h1>
             <Form className="form" onSubmit={onSubmit} encType="multipart/form-data">
                 {/*DropZone*/}
                 <FileUpload refreshFunction={updateImages}/>
                 <div className="col-lg-12">
                     <div className="form-row">
-                        <div className="col-lg-6">
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Room Name<span style={{color:'red'}}>*</span></small>
-                                <input
-                                    type="text"
-                                    className='form-control'
-                                    name="roomName"
-                                    value={roomName}
-                                    onChange={e => onChange(e)}
-                                    required
-                                />
-                            </div>
-
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Description<span style={{color:'red'}}>*</span></small>
-                                <TextArea
-                                    name="description"
-                                    style={{borderRadius:'10px'}}
-                                    className='form-control'
-                                    value={description}
-                                    onChange={e => onChange(e)}/>
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Limit Room<span style={{color:'red'}}>*</span></small>
-                                <select onChange={onLimitRoomSelectChange} className='form-control'>
-                                    {LimitRoom.map(item => (
-                                        <option key={item.key} value={item.key}>{item.value}</option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Room Type<span style={{color:'red'}}>*</span></small>
-                                <select className='form-control' onChange={onRoomTypeSelectChange}>
-                                    {RoomsTypes.map(item =>(
-                                        <option key={item.key} value={item.key}>{item.value}</option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div className='form-group row col-lg-12'>
-                                <small className="form-text">Bed Type<span style={{color:'red'}}>*</span></small>
-                                <select className='form-control' onChange={onBedTypeSelectChange}>
-                                    {BedType.map(item =>(
-                                        <option key={item.key} value={item.key}>{item.value}</option>
-                                    ))}
-
-                                </select>
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Harga<span style={{color:'red'}}>*</span></small>
-                                <input
-                                    type="number"
-                                    className='form-control'
-                                    name="harga"
-                                    value={harga}
-                                    onChange={e => onChange(e)}
-                                    required
-                                />
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <div className="col-lg-4">
-                                    <Form.Check
-                                        type="switch"
-                                        name='ac'
-                                        value={ac}
-                                        onChange={e =>onChange(e)}
-                                        id="ac-switch"
-                                        label="AC"
-                                    />
-                                </div>
-                                <div className='col-lg-4'>
-
-                                    <Form.Check
-                                        className={'ml-2'}
-                                        type="switch"
-                                        id="tv-switch"
-                                        name='tv'
-                                        value={tv}
-                                        onChange={e =>onChange(e)}
-                                        label="TV"
-                                    />
-                                </div>
-                            </div>
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Room Name<span style={{color:'red'}}>*</span></small>
+                            <input
+                                type="text"
+                                className='form-control'
+                                name="roomName"
+                                value={roomNameValue}
+                                onChange={onRoomNameSelectChange}
+                                required
+                            />
+                        </div>
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Description<span style={{color:'red'}}>*</span></small>
+                            <TextArea
+                                name="description"
+                                style={{borderRadius:'10px'}}
+                                className='form-control'
+                                value={descriptionValue}
+                                onChange={onDescriptionSelectChange}/>
+                        </div>
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Limit Room<span style={{color:'red'}}>*</span></small>
+                            <select onChange={onLimitRoomSelectChange} className='form-control'>
+                                {LimitRoom.map(item => (
+                                    <option key={item.key} value={item.key}>{item.value}</option>
+                                ))}
+                            </select>
+                        </div>
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Room Type<span style={{color:'red'}}>*</span></small>
+                            <select className='form-control' name='tipeKamar' onChange={onRoomTypeSelectChange}>
+                                {RoomsTypes.map(item =>(
+                                    <option key={item.key} value={item.key}>{item.value}</option>
+                                ))}
+                            </select>
+                        </div>
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Harga<span style={{color:'red'}}>*</span></small>
+                            <input
+                                type="number"
+                                className='form-control'
+                                name="harga"
+                                value={hargaValue}
+                                onChange={onHargaSelectChange}
+                                required
+                            />
+                        </div>
+                        <div className='form-group'>
+                            <input type='submit' className='btn btn-primary' onSubmit={onSubmit}/>
                         </div>
                     </div>
 
@@ -173,12 +123,11 @@ const AddRoom = ({ addKamar, history }) => {
         </Fragment>
     );
 };
-
 AddRoom.propTypes = {
-    addKamar: PropTypes.func.isRequired
+    addRoom: PropTypes.func.isRequired
 };
 
 export default connect(
     null,
-    { addKamar }
+    { addRoom }
 )(withRouter(AddRoom));

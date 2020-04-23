@@ -16,8 +16,9 @@ const Villa = require("../../models/Villa");
 router.get('/me', auth, async(req,res)=>{
     try{
         const villa = await Villa.findOne({user: req.user.id}).populate(
-            "villa",["name","avatar"]
+            "villa",["name"]
         );
+
 
         if (!villa){
             return res.status(400).json({message: "No Villa Profile for this user"});
@@ -174,27 +175,11 @@ router.delete("/", auth, async (req, res) => {
         res.status(500).send("Server error in profile.js");
     }
 });
-const multer = require('multer');
-const storage = multer.diskStorage({
-    destination: (req, file, cb)=>{
-        cb(null, 'uploads/')
-    },
-    filename: (req, file, cb)=>{
-        cb(null, `${Date.now()}_${file.originalname}`)
-    },
-    fileFilter: (req, file, cb, res)=>{
-        const ext = path.extname(file.originalname)
-        if (ext !== '.jpg' || ext !== '.png' || ext !== '.jpeg'){
-            return cb(res.status(400).send('only jpg, png are allowed'),false);
-        }
-
-    }
-});
 //@route PUT api/Villa/Kamar
 //@desc Add Villa Kamar
 //@access Private
-router.put("/kamar",auth,(req,res)=>{
-    const upload = multer({storage: storage}).single('file');
+router.post("/uploadImage",auth,(req,res)=>{
+
     //setelah mendapatkan gambar dari client
     //we need to save it inside Node server
 
@@ -207,6 +192,63 @@ router.put("/kamar",auth,(req,res)=>{
             fileName:res.req.file.filename
         })
     });
+});
+
+//@route PUT api/Villa/Kamar
+//@desc Add Villa Kamar
+//@access Private
+router.put("/kamar", [
+    auth,
+    [
+        check("roomName", "Room Name is required")
+            .not()
+            .isEmpty(),
+        check("description", "Description is required")
+            .not()
+            .isEmpty(),
+        check("harga", "Harga is required")
+            .not()
+            .isEmpty()
+    ]
+], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+    //destructring
+    const {
+        roomName,
+        description,
+        limit,
+        images,
+        harga,
+        tipeKamar
+    } = req.body;
+
+    const newKam = {
+        roomName,
+        description,
+        limit,
+        harga,
+        images,
+        tipeKamar
+    };
+
+    try {
+        const villa = await Villa.findOne({ user: req.user.id });
+        //Push
+        villa.kamar.unshift(newKam);
+        await villa.save((err)=>{
+            if (err) return res.status(400).json({success: false, err})
+            return res.status(200).json({success:true})
+        });
+
+        await res.json(villa);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send("Server error in profile.js");
+    }
+
 });
 
 

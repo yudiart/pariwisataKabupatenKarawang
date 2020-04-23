@@ -7,6 +7,7 @@ import {Row, Col} from "react-bootstrap";
 import {Collapse, CardBody, Card, UncontrolledCollapse} from 'reactstrap';
 import { Dropdown } from 'semantic-ui-react';
 import {getCurrentProfile, getProfileById} from "../../actions/profile";
+import { getCurrentVilla } from "../../actions/villa";
 import Spinner from "./Spinner";
 import { logout } from "../../actions/auth";
 
@@ -44,7 +45,7 @@ const countryOptions = [
 const Home = ({
     logout,
     getCurrentProfile,
-    auth: { isAuthenticated, user },
+    auth: { isAuthenticated, user},
     profile: { profile, loading }
 }) => {
 
@@ -152,7 +153,7 @@ const Home = ({
         </Container>
       </div>
     </section>
-      
+
   );
 };
 

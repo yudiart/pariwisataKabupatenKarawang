@@ -14,10 +14,7 @@ const Post = require("../../models/Post");
 router.get("/me", auth, async (req, res) => {
   try {
     //Profile model, pertains to the database id!
-    const profile = await Profile.findOne({ user: req.user.id }).populate(
-      "user",
-      ["name", "avatar"]
-    );
+    const profile = await Profile.findOne({ user: req.user.id }).populate("user", ["name", "avatar"]);
 
     if (!profile) {
       return res.status(400).json({ message: "No profile for this user" });
@@ -140,7 +137,7 @@ router.get("/user/:user_id", async (req, res) => {
     res.json(profile);
   } catch (err) {
     console.error(err.message);
-    if (err.kind == "ObjectId") {
+    if (err.kind === "ObjectId") {
       return res.status(400).json({ message: "Profile not found!" });
     }
     res.status(500).send("Server error in profile.js");

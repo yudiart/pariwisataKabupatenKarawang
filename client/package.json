@@ -6,6 +6,7 @@
     "axios": "^0.19.0",
     "filepond": "^4.13.4",
     "filepond-plugin-file-encode": "^2.1.5",
+    "fs-react": "0.0.4",
     "moment": "^2.24.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

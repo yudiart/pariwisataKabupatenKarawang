@@ -4,21 +4,28 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Spinner from "../layout/Spinner";
 import { getCurrentVilla } from "../../actions/villa";
-import DashboardActions from "./DashboardActions";
+import { getCurrentRooms } from "../../actions/room";
+import DashboardVilla from "./DashboardVilla";
+import Footer from "./footer/Footer";
 
 const Dashboard = ({
     getCurrentVilla,
+   getCurrentRooms,
     isAuthenticated,
   auth: { user },
+  room:{room},
   villa: { villa, loading }
 }) => {
+
   useEffect(() => {
     getCurrentVilla();
-  }, [getCurrentVilla]);
+    getCurrentRooms();
+  }, [getCurrentVilla,getCurrentRooms]);
 
   if (isAuthenticated && user && user.role === 'customer'){
     return <Redirect to={'/profile'}/>
   }
+
   return loading  ? (
     <Spinner />
   ) : (
@@ -26,20 +33,24 @@ const Dashboard = ({
       {user && user.role === 'villa' ?
         //Villa
         <>
-          <h1 className="large text-primary">Dashboard</h1>
-          <p className="lead">
-            <i className="fas fa-user" /> Welcome {user && user.name}
-          </p>
-          {user && user.role}
+          <div className="jumbotron bg-gradient">
+            <h1 className="large text-center text-white">Welcome {user && user.name}</h1>
+          </div>
           {villa !== null? (
               <Fragment>
-                <div className="my-2">
-                  <DashboardActions/>
-                  <button className="btn btn-danger">
-                    <i className="fas fa-user-minus" /> Delete Account
-                  </button>
+                <Fragment>
+                  <div className='mt-4'>
+                    <DashboardVilla/>
+                  </div>
+                </Fragment>
+              <Fragment>
+                <div className='mt-4'>
+                  <Footer/>
                 </div>
               </Fragment>
+              </Fragment>
+
+
           ) : (
 
               <Fragment>
@@ -49,6 +60,9 @@ const Dashboard = ({
                 </Link>
               </Fragment>
           )}
+          <Fragment>
+
+          </Fragment>
         </>
       :(
         //admin
@@ -64,17 +78,20 @@ const Dashboard = ({
 
 Dashboard.propTypes = {
   getCurrentVilla: PropTypes.func.isRequired,
+  getCurrentRooms: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
+  rooms: PropTypes.array.isRequired,
   villa: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = state => ({
   auth: state.auth,
   villa: state.villa,
+  room: state.room,
   isAuthenticated: state.auth.isAuthenticated
 });
 
 export default connect(
   mapStateToProps,
-  { getCurrentVilla }
+  { getCurrentVilla,getCurrentRooms}
 )(Dashboard);
