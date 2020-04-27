@@ -27,29 +27,9 @@ const FileUpload = (props,{room,history})=>{
                 }
             })
     }
-    const onDelete =(image)=>{
-        const currentIndex =Images.indexOf(image);
-        let newImages = [...Images]
-        newImages.splice(currentIndex,1)
-        setImages(newImages)
-        props.refreshFunction(newImages)
-    }
+
     return (
         <div className="col-lg-12">
-            <div style={{display:"flex", justifyContent:"space-between"}} className={'row mb-2'}>
-                <div style={{display:'flex',width:'300px',height:'260px',overflowX:'auto',overflowY:"hidden",borderRadius:'5px',background:'#FAFAFA',paddingTop:'10px'}}>
-                    {Images.map((image,index)=>(
-                        <div onClick={onDelete}>
-                            <img
-                                style={{minWidth:"300px",width:"300px",height:"240px",borderRadius:'10px'}}
-                                src={`${room && room}`}
-                                alt={`${image}`}
-                            />
-                            <h1>{image}</h1>
-                        </div>
-                    ))}
-                </div>
-            </div>
             <div className='form-row'>
                 <div className="row col-lg-6">
                     {Images.length === 0 ? (

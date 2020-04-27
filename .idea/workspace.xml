@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/fileUpload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/room.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/utils/FileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/FileUpload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Room.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +77,7 @@
       <workItem from="1587637943564" duration="16211000" />
       <workItem from="1587733774930" duration="24343000" />
       <workItem from="1587834680564" duration="48054000" />
-      <workItem from="1587982600200" duration="1579000" />
+      <workItem from="1587982600200" duration="1990000" />
     </task>
     <servers />
   </component>
