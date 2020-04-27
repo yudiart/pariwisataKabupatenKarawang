@@ -5,8 +5,8 @@ const multerS3 = require('multer-s3');
 const config =require('../config/default.json');
 
 aws.config.update({
-    secretAccessKey: config.AWS_ACCESS_KEY,
-    accessKeyId: config.AWS_SECRET_ACCESS,
+    secretAccessKey: process.env.AWS_ACCESS_KEY_ID || config.AWS_ACCESS_KEY_ID,
+    accessKeyId: process.env.AWS_SECRET_ACCESS_KEY || config.AWS_SECRET_ACCESS_KEY,
     region: config.region
 });
 
@@ -27,7 +27,7 @@ const upload = multer({
     filefilter,
     storage: multerS3({
         s3:s3,
-        bucket: 'kamar-images',
+        bucket: process.env.S3_BUCKET_NAME || 'kamar-images',
         acl: 'public-read',
         key: (req,file,cb)=>{
             cb(null, `${Date.now()}_${file.originalname}`)
