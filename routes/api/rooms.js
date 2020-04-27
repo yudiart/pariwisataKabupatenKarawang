@@ -2,8 +2,8 @@ const express = require("express");
 const fs = require('fs');
 const router = express.Router();
 
-const upload = require('../../services/fileUpload');
-const singleUpload = upload.single('image');
+const upload = require('../../services/fileUpload').single('image');
+
 const { check, validationResult } = require("express-validator");
 const auth = require("../../middleware/auth");
 const Room = require("../../models/Room");
@@ -12,7 +12,7 @@ const User = require("../../models/User");
 
 // AWS S3
 router.put("/:_id", auth, (req,res)=>{
-    singleUpload(req,res,async (err)=>{
+    upload(req,res,async (err)=>{
         const newImage = ([req.file.location]);
         try {
             const kamar = await Room.findById( req.params._id);

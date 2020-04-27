@@ -1,13 +1,10 @@
 const aws =require('aws-sdk');
 const multer = require('multer');
 const multerS3 = require('multer-s3');
-
-const config =require('../config/default.json');
-
 aws.config.update({
-    secretAccessKey: process.env.AWS_ACCESS_KEY_ID || config.AWS_ACCESS_KEY_ID,
-    accessKeyId: process.env.AWS_SECRET_ACCESS_KEY || config.AWS_SECRET_ACCESS_KEY,
-    region: config.region
+    secretAccessKey: 'AKIAJIRGSDBNA3YLZ7FA' || process.env.AWS_ACCESS_KEY_ID,
+    accessKeyId: process.env.AWS_SECRET_ACCESS_KEY || '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',
+    region: 'ap-southeast-1'
 });
 
 const s3 = new aws.S3();
