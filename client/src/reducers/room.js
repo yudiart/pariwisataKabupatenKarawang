@@ -4,13 +4,16 @@ import {
     UPDATE_WISHLIST,
     DELETE_KAMAR,
     ADD_KAMAR,
+    ERROR_UPLOAD,IMAGE_UPLOAD,
     GET_KAMARS
 } from "../actions/types";
 
 const initalState = {
     rooms: [],
     room: null,
+    image:null,
     loading: true,
+    success: false,
     error: {}
 };
 
@@ -31,6 +34,7 @@ export default function(state = initalState, action) {
                 loading: false
             };
         case KAMAR_ERROR:
+        case ERROR_UPLOAD:
             return {
                 ...state,
                 error: payload,
@@ -51,11 +55,13 @@ export default function(state = initalState, action) {
                 loading: false
             };
         case ADD_KAMAR:
+        case IMAGE_UPLOAD:
             return {
                 ...state,
-                rooms: [payload, ...state.rooms],
+                room: payload,
                 loading: false
             };
+
         default:
             return state;
     }

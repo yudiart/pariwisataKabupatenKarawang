@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import {Link, withRouter} from "react-router-dom";
 import axios from 'axios';
 import PropTypes from "prop-types";
@@ -6,10 +6,16 @@ import { connect } from "react-redux";
 import { addRoom } from "../../actions/room";
 import {TextArea} from "semantic-ui-react";
 import FileUpload from "../../utils/FileUpload";
+import Axios from "axios";
+import ImageUpload from "./ImageUpload";
 
-const RoomForm = ({addRoom, history,refreshFunction }) => {
+const RoomForm = ({
+    addRoom,history,
+    room:{room}
+}) => {
 
     const limitRoom =[
+        {key:'0', value:'0'},
         {key:'1', value:'1'},
         {key:'2', value:'2'},
         {key:'3', value:'3'},
@@ -18,6 +24,7 @@ const RoomForm = ({addRoom, history,refreshFunction }) => {
         {key:'6', value:'6'},
     ];
     const RoomType = [
+        {key:'0', value:'Room Type'},
         {key:'1', value:'Standar'},
         {key:'2', value:'Deluxe'},
         {key:'3', value:'Super Deluxe'},
@@ -35,21 +42,22 @@ const RoomForm = ({addRoom, history,refreshFunction }) => {
     const onLimitChange = e =>{setLimitValue(e.target.value)}
     const onTipeKamarChange = e =>{setTipeKamarValue(e.target.value)}
 
-    const [Images, setImages] =useState([]);
+    const [Images, setImages] =useState('');
     const updateImages = (newImages)=>{
         setImages(newImages)
     }
     const onSubmit = e => {
         e.preventDefault();
-        const formData ={
-            roomName:roomNameValue,
-            description:descriptionValue,
+
+        const formData = {
+            roomName: roomNameValue,
+            description: descriptionValue,
             harga: hargaValue,
-            limit:limitValue,
+            limit: limitValue,
             tipeKamar: tipeKamarValue,
-            images:Images
+            images: Images,
         }
-        addRoom(formData, history);
+        addRoom(formData,history);
     };
     //
 
@@ -57,7 +65,10 @@ const RoomForm = ({addRoom, history,refreshFunction }) => {
         <Fragment>
             <h1 className="large text-primary">Add  Room</h1>
             <form className="form" onSubmit={onSubmit}>
-                <FileUpload refreshFunction={updateImages} name='images'/>
+                {room && room.images.length === 0 ?
+                    <ImageUpload/>
+                :null}
+
                 {/*DropZone*/}
                 <div className="col-lg-12">
                     <div className="form-row">

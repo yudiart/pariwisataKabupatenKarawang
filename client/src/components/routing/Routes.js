@@ -4,6 +4,8 @@ import Register from "../auth/Register";
 import Login from "../auth/Login";
 import Alert from "../layout/Alert";
 import Dashboard from "../dashboard/Dashboard";
+import uploadImage from '../../components/rooms/ImageUpload';
+
 import PrivateRoute from "../routing/PrivateRoute";
 import VillaProfile from "../villa/villa-forms/CreateVillaProfile";
 import editVilla from "../villa/villa-forms/EditVilla";

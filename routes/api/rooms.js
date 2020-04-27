@@ -1,48 +1,33 @@
 const express = require("express");
 const fs = require('fs');
 const router = express.Router();
+
+const upload = require('../../services/fileUpload');
+const singleUpload = upload.single('image');
 const { check, validationResult } = require("express-validator");
 const auth = require("../../middleware/auth");
 const Room = require("../../models/Room");
 const Villa = require("../../models/Villa");
 const User = require("../../models/User");
 
-
-const multer = require('multer');
-const storage = multer.diskStorage({
-    destination: (req, file, cb)=>{
-        cb(null, 'uploads')
-    },
-    filename: (req, file, cb)=>{
-        cb(null, `${Date.now()}_${file.originalname}`)
-    },
-    fileFilter: (req, file, cb, res)=>{
-        const ext = path.extname(file.originalname)
-        if (ext !== '.jpg' || ext !== '.png' || ext !== '.jpeg'){
-            return cb(res.status(400).send('only jpg, png are allowed'),false);
+// AWS S3
+router.put("/:_id", auth, (req,res)=>{
+    singleUpload(req,res,async (err)=>{
+        const newImage = ([req.file.location]);
+        try {
+            const kamar = await Room.findById( req.params._id);
+            // const newRoom = kamar({
+            //    images : req.file.location
+            // });
+            kamar.images.unshift(newImage);
+            const room = await kamar.save();
+            await res.json(room);
+        } catch (err) {
+            console.error(err.message);
+            res.status(500).send("Server errror in posts.js");
         }
 
-    }
-});
-const upload = multer({storage: storage}).single('file');
-
-//@route PUT api/Villa/Kamar
-//@desc Add Villa Kamar
-//@access Private
-router.post("/uploadImage",auth,(req,res)=>{
-
-    //setelah mendapatkan gambar dari client
-    //we need to save it inside Node server
-
-    //Multer Library
-    upload(req,res, err =>{
-        if(err)return res.json({success:false,err})
-        return res.json({
-            success: true,
-            image: res.req.file.path,
-            fileName:res.req.file.filename
-        })
-    });
+    })
 });
 
 //@route POST api/posts
@@ -74,7 +59,6 @@ router.post(
             roomName,
             description,
             limit,
-            images,
             harga,
             tipeKamar
         } = req.body;
@@ -87,7 +71,6 @@ router.post(
                 roomName: roomName,
                 description:description,
                 limit:limit,
-                images:images,
                 harga: harga,
                 tipeKamar: tipeKamar
             });
@@ -100,7 +83,6 @@ router.post(
         }
     }
 );
-
 //@route GET api/Rooms
 //@desc Get all Rooms
 //@access public
@@ -118,20 +100,20 @@ router.get("/",  async (req, res) => {
 //@route GET api/Room/:id
 //@desc Get a single Room
 //@access Public
-router.get("/:id", auth, async (req, res) => {
+router.get("/:_id", auth, async (req, res) => {
     try {
-        const room = await Room.findById(req.params.id);
+        const room = await Room.findById(req.params._id);
 
 
         if (!room) {
-            return res.status(404).json({ msg: "Post not found" });
+            return res.status(404).json({ msg: "Room not found" });
         }
 
         await res.json(room);
     } catch (err) {
         console.error(err.message);
         if (err.kind === "ObjectId") {
-            return res.status(404).json({ msg: "Post not found" });
+            return res.status(404).json({ msg: "Room not found" });
         }
         res.status(500).send("Server errror in posts.js2");
     }

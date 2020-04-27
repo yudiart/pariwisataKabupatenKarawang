@@ -39,6 +39,11 @@ export const DELETE_KAMAR = 'DELETE_KAMAR';
 export const ADD_KAMAR = 'ADD_KAMAR';
 export const GET_KAMAR = 'GET_KAMAR';
 
+//UPLOAD
+
+export const IMAGE_UPLOAD = 'IMAGE_UPLOAD';
+export const ERROR_UPLOAD = 'ERROR_UPLOAD';
+
 //COVID
 export const GET_COVID = "GET_COVID";
 export const COVID_ERROR = "COVID_ERROR";

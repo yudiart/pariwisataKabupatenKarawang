@@ -6,8 +6,9 @@ import {
     GET_KAMARS,
     UPDATE_WISHLIST,
     DELETE_KAMAR,
-    GET_KAMAR
+    GET_KAMAR, IMAGE_UPLOAD, ERROR_UPLOAD, CLEAR_VILLA
 } from "./types";
+import Axios from "axios";
 
 
 //Get Rooms
@@ -102,29 +103,46 @@ export const deleteRoom = id => async dispatch => {
 
 //Add Room for the User
 //Add a post
-
+//DONE
 export const addRoom = (formData,history) => async dispatch => {
+
     const config = {
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
         }
     };
     try {
-        const res = await axios.post("/api/room/", formData, config);
-
+        const res = await axios.post("/api/room/", formData, config)
+        console.log(res);
         dispatch({
             type: ADD_KAMAR,
             payload: res.data
         });
-
+        dispatch({
+            type: GET_KAMAR,
+            payload: res.data
+        });
         dispatch(setAlert("Room Added", "success"));
-        history.push('/dashboard');
     } catch (err) {
         dispatch({
             type: KAMAR_ERROR,
             payload: { msg: err.response.statusText, status: err.response.status }
         });
     }
+};
+//Add Room for the User
+//Add a post
+
+export const addImage = (res) => async dispatch => {
+        dispatch({
+            type: IMAGE_UPLOAD,
+            payload: res.data
+        });
+        dispatch({
+            type: ADD_KAMAR,
+            payload: res.data.images
+        });
+        dispatch(setAlert("Upload Success", "success"));
 };
 //Get post
 export const getRoom = id => async dispatch => {

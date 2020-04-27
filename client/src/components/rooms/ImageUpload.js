@@ -1,15 +1,22 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Dropzone from 'react-dropzone';
-import fs from 'fs-react';
-import {withRouter} from 'react-router-dom';
 import Axios from "axios";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
-import {addRoom} from "../actions/room";
+import {Redirect} from "request";
+import {addImage, getRoom} from "../../actions/room";
+import {Link} from "react-router-dom";
 
-const FileUpload = (props,{room,history})=>{
+const ImageUpload = ({props,
+    room:{room}
+    ,history
+
+})=>{
+    useEffect(()=>{
+        getRoom();
+    },[getRoom])
+
     const[Images, setImages]=useState([]);
-    const [displayImage, toggleImage] = useState(0);
     const onDrop = (files) => {
         let formData = new FormData();
         const config = {
@@ -17,15 +24,16 @@ const FileUpload = (props,{room,history})=>{
         }
         formData.append("image", files[0])
         //Save the image
-         Axios.post('/api/room/:_id', formData, config)
+        Axios.put(`/api/room/${room._id}`, formData, config)
             .then(response => {
                 if (response.data.error) {
                     alert('Failed to save the image in server')
                 } else {
-                    alert('save image in server')
-                    history.push('/dashboard');
+                    alert('Success Uploaded!');
                 }
             })
+
+
     }
     const onDelete =(image)=>{
         const currentIndex =Images.indexOf(image);
@@ -36,20 +44,6 @@ const FileUpload = (props,{room,history})=>{
     }
     return (
         <div className="col-lg-12">
-            <div style={{display:"flex", justifyContent:"space-between"}} className={'row mb-2'}>
-                <div style={{display:'flex',width:'300px',height:'260px',overflowX:'auto',overflowY:"hidden",borderRadius:'5px',background:'#FAFAFA',paddingTop:'10px'}}>
-                    {Images.map((image,index)=>(
-                        <div onClick={onDelete}>
-                            <img
-                                style={{minWidth:"300px",width:"300px",height:"240px",borderRadius:'10px'}}
-                                src={`${room && room}`}
-                                alt={`${image}`}
-                            />
-                            <h1>{image}</h1>
-                        </div>
-                    ))}
-                </div>
-            </div>
             <div className='form-row'>
                 <div className="row col-lg-6">
                     {Images.length === 0 ? (
@@ -86,10 +80,12 @@ const FileUpload = (props,{room,history})=>{
         </div>
     )
 }
-FileUpload.propTypes={
-    addRoom: PropTypes.func.isRequired
+ImageUpload.propTypes = {
+    getRoom: PropTypes.func.isRequired,
+    room: PropTypes.object.isRequired
 }
-const mapStateToProps = state=>({
-    rooms: state.room
-});
-export default connect(mapStateToProps,{addRoom})(withRouter(FileUpload));
+
+const mapStateToProps = state => ({
+    room: state.room
+})
+export default connect(mapStateToProps,{getRoom})(ImageUpload);

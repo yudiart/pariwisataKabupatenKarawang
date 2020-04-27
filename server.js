@@ -3,11 +3,17 @@ const connectDB = require("./config/db");
 const path = require("path");
 const cors = require('cors');
 const app = express();
-
+const bodyParser = require('body-parser');
+const multer = require('multer');
+const upload = multer();
 
 //Connect DB
 connectDB();
 
+
+// for parsing application/xwww-
+app.use(express.urlencoded({ extended: true }));
+//form-urlencoded
 //Initalize middleware
 app.use(express.json({ extended: false }));
 

@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import {Col, Container, Nav, Row} from "react-bootstrap";
 import Rooms from "./villa/rooms/Rooms";
+import RoomDisplay from "./villa/room/RoomDisplay";
 import {connect} from "react-redux";
 
 const DashboardVilla = () => {
@@ -60,12 +61,13 @@ const DashboardVilla = () => {
                                     <div>
                                         <i className='mdi mdi-keyboard-backspace text-danger' onClick={() => toggleSetting(0)} style={{cursor:'pointer',fontSize:'20px'}}/>Back
                                         <h1>Display Settings</h1>
+                                        <img src={'https://kamar-images.s3.ap-southeast-1.amazonaws.com/1587778003992_60041443_1566361940164944_5713733261750960128_o.jpg'} />
                                     </div>
                                 ):null}
                                 {displayRoom ?(
                                     <div>
                                         <i className='mdi mdi-keyboard-backspace text-danger' onClick={() => toggleRoom(0)} style={{cursor:'pointer',fontSize:'20px'}}/>Back
-                                        <Rooms/>
+                                        <RoomDisplay/>
                                     </div>
                                 ):null}
                                 {displaySetting === 0 && displayRoom === 0 && (
