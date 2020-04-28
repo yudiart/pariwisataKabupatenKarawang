@@ -1,17 +1,12 @@
 const aws =require('aws-sdk');
 const multer = require('multer');
 const multerS3 = require('multer-s3');
-aws.config.update({
-    secretAccessKey:process.env.AWS_ACCESS_KEY_ID,
-    accessKeyId: process.env.AWS_SECRET_ACCESS_KEY,
-    region: 'ap-southeast-1'
-});
+
 
 const s3 = new aws.S3({
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    s3BucketEndpoint: process.env.S3_BUCKET_NAME
-
+    region: 'ap-southeast-1'
 });
 const filefilter = (req,file,cb)=>{
     if(
