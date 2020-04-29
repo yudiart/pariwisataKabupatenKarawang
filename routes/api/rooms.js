@@ -16,9 +16,7 @@ router.put("/:_id", auth, (req,res)=>{
         const newImage = ([req.file.location]);
         try {
             const kamar = await Room.findById( req.params._id);
-            // const newRoom = kamar({
-            //    images : req.file.location
-            // });
+
             kamar.images.unshift(newImage);
             const room = await kamar.save();
             await res.json(room);

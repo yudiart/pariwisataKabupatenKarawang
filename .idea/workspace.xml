@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/fileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/fileUpload.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +84,8 @@
       <workItem from="1587834680564" duration="48054000" />
       <workItem from="1587982600200" duration="4493000" />
       <workItem from="1588074382655" duration="1383000" />
-      <workItem from="1588099313194" duration="1454000" />
+      <workItem from="1588099313194" duration="4076000" />
+      <workItem from="1588160530421" duration="11319000" />
     </task>
     <servers />
   </component>

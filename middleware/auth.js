@@ -1,9 +1,8 @@
 const jwt = require("jsonwebtoken");
 const config = require("config");
 
-//Function that has access to the req, res objects.
-//Call back is for the next piece of middleware.
 module.exports = function(req, res, next) {
+  
   //Pull token from header
   const token = req.header("x-auth-token");
   //Check if there isn't a token

@@ -10,7 +10,7 @@ const upload = multer();
 //Connect DB
 connectDB();
 
-
+app.use(bodyParser.json());
 // for parsing application/xwww-
 app.use(express.urlencoded({ extended: true }));
 //form-urlencoded

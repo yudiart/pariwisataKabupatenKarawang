@@ -61,7 +61,7 @@ const DashboardVilla = () => {
                                     <div>
                                         <i className='mdi mdi-keyboard-backspace text-danger' onClick={() => toggleSetting(0)} style={{cursor:'pointer',fontSize:'20px'}}/>Back
                                         <h1>Display Settings</h1>
-                                        <img src={'https://kamar-images.s3.ap-southeast-1.amazonaws.com/1587778003992_60041443_1566361940164944_5713733261750960128_o.jpg'} />
+                                        <img src={'https://kamar-images.s3-ap-southeast-1.amazonaws.com/1587984920102_ayana-resort-and-spa+(1).jpg'} />
                                     </div>
                                 ):null}
                                 {displayRoom ?(

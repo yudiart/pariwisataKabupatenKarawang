@@ -35,18 +35,11 @@ const ImageUpload = ({props,
 
 
     }
-    const onDelete =(image)=>{
-        const currentIndex =Images.indexOf(image);
-        let newImages = [...Images]
-        newImages.splice(currentIndex,1)
-        setImages(newImages)
-        props.refreshFunction(newImages)
-    }
     return (
         <div className="col-lg-12">
             <div className='form-row'>
                 <div className="row col-lg-6">
-                    {Images.length === 0 ? (
+                    {Images[0].length === 0 ? (
                         <Dropzone
                             onDrop={onDrop}
                             multiple={false}
