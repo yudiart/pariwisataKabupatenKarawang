@@ -39,7 +39,7 @@ const ImageUpload = ({props,
         <div className="col-lg-12">
             <div className='form-row'>
                 <div className="row col-lg-6">
-                    {Images[0].length === 0 ? (
+                    {Images.length === 0 ? (
                         <Dropzone
                             onDrop={onDrop}
                             multiple={false}
