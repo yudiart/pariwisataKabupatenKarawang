@@ -40,10 +40,32 @@ export const ADD_KAMAR = 'ADD_KAMAR';
 export const GET_KAMAR = 'GET_KAMAR';
 
 //UPLOAD
-
 export const IMAGE_UPLOAD = 'IMAGE_UPLOAD';
 export const ERROR_UPLOAD = 'ERROR_UPLOAD';
 
 //COVID
 export const GET_COVID = "GET_COVID";
 export const COVID_ERROR = "COVID_ERROR";
+
+
+//Admin ========================================
+export const GET_ADMIN = "GET_ADMIN";
+export const GET_ALL_USERS = "GET_ALL_USERS";
+export const GET_ALL_ROOMS = "GET_ALL_ROOMS";
+export const GET_ALL_BY_VILLAS = "GET_ALL_BY_VILLAS";
+export const GET_ALL_BY_CUSTOMERS = "GET_ALL_BY_CUSTOMERS";
+export const GET_ALL_POSTS = "GET_ALL_POSTS";
+//Error
+export const ERROR_GET_ALL_USERS = "ERROR_GET_ALL_USERS";
+export const ERROR_GET_ALL_CUSTOMERS = "ERROR_GET_ALL_CUSTOMERS";
+export const ERROR_GET_ALL_VILLAS = "ERROR_GET_ALL_VILLAS";
+export const ERROR_GET_ALL_ROOMS = "ERROR_GET_ALL_ROOMS";
+
+//Clear
+export const CLEAR_ADMIN = "CLEAR_ADMIN";
+//delete
+export const DELETE_VILLA_BY_ID = "DELETE_VILLA_BY_ID";
+export const DELETE_CUSTOMER_BY_ID = "DELETE_CUSTOMER_BY_ID";
+export const DELETE_ROOM_BY_ID = "DELETE_ROOM_BY_ID";
+export const DELETE_POST_BY_ID = "DELETE_POST_BY_ID";
+//==============================================

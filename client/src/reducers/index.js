@@ -6,6 +6,7 @@ import post from "./post";
 import covid from "./covid";
 import room from "./room";
 import villa from "./villa";
+import admin from "./admin";
 
 export default combineReducers({
     alert,
@@ -14,5 +15,6 @@ export default combineReducers({
     post,
     covid,
     villa,
-    room
+    room,
+    admin
 });

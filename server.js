@@ -29,6 +29,7 @@ app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/covid", require("./routes/api/covid"));
 app.use("/api/villa",require("./routes/api/villa"));
 app.use("/api/room",require("./routes/api/rooms"));
+app.use("/api/v1/admin",require("./routes/api/v1/admin"));
 app.use('/uploads', express.static('uploads'));
 
 //Serve static assets in production

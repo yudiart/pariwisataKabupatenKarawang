@@ -6,9 +6,8 @@ import {
     GET_KAMARS,
     UPDATE_WISHLIST,
     DELETE_KAMAR,
-    GET_KAMAR, IMAGE_UPLOAD, ERROR_UPLOAD, CLEAR_VILLA
+    GET_KAMAR, IMAGE_UPLOAD,
 } from "./types";
-import Axios from "axios";
 
 
 //Get Rooms
@@ -17,7 +16,7 @@ export const getCurrentRooms = () => async dispatch => {
         const res = await axios.get("/api/room/villa/me");
 
         dispatch({
-            type: GET_KAMARS,
+            type: GET_KAMAR,
             payload: res.data
         });
     } catch (err) {
@@ -27,6 +26,25 @@ export const getCurrentRooms = () => async dispatch => {
         });
     }
 };
+
+//Get All Room
+//No Auth
+//Public
+export const getAllRooms = ()=> async dispatch =>{
+    try{
+        const res = await axios.get("/api/room");
+
+        dispatch({
+            type: GET_KAMARS,
+            payload: res.data
+        });
+    }catch(err){
+        dispatch({
+            type: KAMAR_ERROR,
+            payload: {msg: err.response.statusText, status: err.response.status}
+        })
+    }
+}
 
 //Get Rooms
 export const getRoomByUser = (id) => async dispatch => {
@@ -132,7 +150,6 @@ export const addRoom = (formData,history) => async dispatch => {
 };
 //Add Room for the User
 //Add a post
-
 export const addImage = (res) => async dispatch => {
         dispatch({
             type: IMAGE_UPLOAD,
@@ -144,7 +161,7 @@ export const addImage = (res) => async dispatch => {
         });
         dispatch(setAlert("Upload Success", "success"));
 };
-//Get post
+//Get Room
 export const getRoom = id => async dispatch => {
     try {
         const res = await axios.get(`/api/rooms/${id}`);

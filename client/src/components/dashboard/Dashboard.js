@@ -7,6 +7,7 @@ import { getCurrentVilla } from "../../actions/villa";
 import { getCurrentRooms } from "../../actions/room";
 import DashboardVilla from "./DashboardVilla";
 import Footer from "./footer/Footer";
+import Admin from "./admin/Admin";
 
 const Dashboard = ({
     getCurrentVilla,
@@ -67,9 +68,7 @@ const Dashboard = ({
       :(
         //admin
         <Fragment>
-          <div className="jumbotron">
-            <h1>{user && user.role}</h1>
-          </div>
+          <Admin/>
         </Fragment>
       )}
     </Fragment>

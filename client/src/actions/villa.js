@@ -3,7 +3,7 @@ import { setAlert } from "./alert";
 import {
     GET_VILLA,
     VILLA_ERROR,
-    PROFILE_ERROR, CLEAR_PROFILE, GET_PROFILES
+    PROFILE_ERROR, CLEAR_PROFILE, GET_PROFILES, GET_VILLAS
 } from "./types";
 import profile from "../reducers/profile";
 
@@ -29,19 +29,17 @@ export const getCurrentVilla = () => async dispatch => {
 //Get all user's profiles
 
 export const getVillas = () => async dispatch => {
-    //Clear what ever is in the current user's profile
-    dispatch({ type: CLEAR_PROFILE });
 
     try {
         const res = await axios.get("/api/villa");
 
         dispatch({
-            type: GET_PROFILES,
+            type: GET_VILLAS,
             payload: res.data
         });
     } catch (err) {
         dispatch({
-            type: PROFILE_ERROR,
+            type: VILLA_ERROR,
             payload: { msg: err.response.statusText, status: err.response.status }
         });
     }
