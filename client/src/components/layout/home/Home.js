@@ -1,7 +1,8 @@
 import React from "react";
-import HomeItem from "./HomeItem";
+
 import Footer from "../footer/Footer";
 import {Col, Container, Row} from "react-bootstrap";
+import HomeLanding from "./HomeLanding";
 
 
 const Home = ()=>{
@@ -9,7 +10,7 @@ const Home = ()=>{
       <div>
 
           <div>
-              <HomeItem/>
+              <HomeLanding/>
               <div className="jumbotron-fluid mt-4" style={{minHeight:'300px',height:'300px',border:'1px solid black'}}>
                   <Container>
                       <div className='mt-4'>
