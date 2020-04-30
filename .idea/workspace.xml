@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/footer/FooterCenter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/footer/FooterItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/footer/FooterLeft.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/footer/FooterRight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeLanding.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/Rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/Rooms.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -38,13 +57,14 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\src\components\villa\villa-forms" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\components\villa" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\components\layout\home" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\villa\villa-forms" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -78,7 +98,8 @@
       <workItem from="1587982600200" duration="4493000" />
       <workItem from="1588074382655" duration="1383000" />
       <workItem from="1588099313194" duration="4076000" />
-      <workItem from="1588160530421" duration="11643000" />
+      <workItem from="1588160530421" duration="12828000" />
+      <workItem from="1588244278447" duration="8555000" />
     </task>
     <servers />
   </component>

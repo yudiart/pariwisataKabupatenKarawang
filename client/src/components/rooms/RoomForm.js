@@ -1,12 +1,9 @@
-import React, {Fragment, useEffect, useState} from "react";
+import React, {Fragment, useState} from "react";
 import {Link, withRouter} from "react-router-dom";
-import axios from 'axios';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { addRoom } from "../../actions/room";
 import {TextArea} from "semantic-ui-react";
-import FileUpload from "../../utils/FileUpload";
-import Axios from "axios";
 import ImageUpload from "./ImageUpload";
 
 const RoomForm = ({
@@ -42,10 +39,6 @@ const RoomForm = ({
     const onLimitChange = e =>{setLimitValue(e.target.value)}
     const onTipeKamarChange = e =>{setTipeKamarValue(e.target.value)}
 
-    const [Images, setImages] =useState('');
-    const updateImages = (newImages)=>{
-        setImages(newImages)
-    }
     const onSubmit = e => {
         e.preventDefault();
 
@@ -55,7 +48,6 @@ const RoomForm = ({
             harga: hargaValue,
             limit: limitValue,
             tipeKamar: tipeKamarValue,
-            images: Images,
         }
         addRoom(formData,history);
     };
