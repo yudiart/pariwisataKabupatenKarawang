@@ -156,7 +156,8 @@ const HomeSearch = ({
                                         search
                                         selection
                                         options={countryOptions}
-                                        placeholder='Select Kecamatan'/>
+                                        placeholder='Select Kecamatan'
+                                    />
                                 </>
                             </div>
                         ):null}
@@ -173,9 +174,8 @@ const HomeSearch = ({
                                         search
                                         selection
                                         options={countryOptions}
-                                        placeholder='Select Kecamatan'/>
-
-
+                                        placeholder='Select Kecamatan'
+                                    />
                                 </>
                             </div>
                         ):null}
