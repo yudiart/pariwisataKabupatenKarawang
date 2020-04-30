@@ -50,10 +50,10 @@ const HomeSearch = ({
         getCurrentProfile();
     }, [getCurrentProfile]);
     const [collapse, setCollapse] = useState(false);
-    const [collapse2, setCollapse2] = useState(false);
 
-    const toggle2 = () => setCollapse2(!collapse2);
-    const [status, setStatus] = useState('Closed');
+
+
+    const [setStatus] = useState('Closed');
 
     const onEntering = () => setStatus('Opening...');
 
@@ -190,8 +190,7 @@ HomeSearch.propTypes = {
     getCurrentProfile: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
     logout: PropTypes.func.isRequired,
-    profile: PropTypes.object.isRequired,
-    deleteAccount: PropTypes.func.isRequired
+    profile: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({

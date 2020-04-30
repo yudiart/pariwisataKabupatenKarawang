@@ -1,4 +1,5 @@
 import React from'react';
+import {Link} from "react-router-dom";
 
 const FooterLeft = ()=>{
     return(
@@ -9,9 +10,9 @@ const FooterLeft = ()=>{
                </div>
                <div className='footerBrand partnership'>
                    <ul>
-                       <li><a href="" className='nav-link'><i className='mdi mdi-bookmark'/> Partner 1</a></li>
-                       <li><a href="" className='nav-link'><i className='mdi mdi-bookmark'/> Partner 2</a></li>
-                       <li><a href="" className='nav-link'><i className='mdi mdi-bookmark'/> Partner 3</a></li>
+                       <li><Link to={'/'} className='nav-link'><i className='mdi mdi-bookmark'/> Partner 1</Link></li>
+                       <li><Link to={'/'} className='nav-link'><i className='mdi mdi-bookmark'/> Partner 2</Link></li>
+                       <li><Link to={'/'} className='nav-link'><i className='mdi mdi-bookmark'/> Partner 3</Link></li>
                    </ul>
                </div>
            </div>

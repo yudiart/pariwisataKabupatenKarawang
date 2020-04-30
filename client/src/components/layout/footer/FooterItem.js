@@ -1,6 +1,5 @@
 import React from'react';
 import {Col, Row} from "react-bootstrap";
-import Container from "react-bootstrap/Container";
 import FooterLeft from "./FooterLeft";
 import FooterCenter from "./FooterCenter";
 import FooterRight from "./FooterRight";
@@ -9,7 +8,6 @@ import FooterRight from "./FooterRight";
 const FooterItem = ()=>{
     return(
         <div className='footer'>
-
             <div className="container">
                 <Row>
                     <Col lg={4}>

@@ -10,16 +10,18 @@ const Home = ()=>{
 
           <div>
               <HomeItem/>
-              <div className="jumbotron mt-4">
+              <div className="jumbotron-fluid mt-4" style={{minHeight:'300px',height:'300px',border:'1px solid black'}}>
                   <Container>
-                      <Row>
+                      <div className='mt-4'>
+                        <Row>
                           <Col lg={4} style={{border:'1px solid black'}}>
                               <h1>Left</h1>
                           </Col>
                           <Col lg={8} style={{border:'1px solid black'}}>
                               <h1>Center</h1>
                           </Col>
-                      </Row>
+                        </Row>
+                      </div>
                   </Container>
               </div>
           </div>
