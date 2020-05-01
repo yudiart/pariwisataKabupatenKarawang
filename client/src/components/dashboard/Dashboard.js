@@ -9,7 +9,7 @@ import DashboardVilla from "./DashboardVilla";
 import Footer from "./footer/Footer";
 import Admin from "./admin/Admin";
 
-const Dashboard = ({
+export const Dashboard = ({
     getCurrentVilla,
    getCurrentRooms,
     isAuthenticated,
@@ -50,8 +50,6 @@ const Dashboard = ({
                 </div>
               </Fragment>
               </Fragment>
-
-
           ) : (
 
               <Fragment>
@@ -61,9 +59,6 @@ const Dashboard = ({
                 </Link>
               </Fragment>
           )}
-          <Fragment>
-
-          </Fragment>
         </>
       :(
         //admin

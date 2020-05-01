@@ -7,7 +7,6 @@ import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 import Routes from "./components/routing/Routes";
 
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/assets/icon/css/materialdesignicons.min.css';
 
@@ -16,6 +15,8 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import "./App.css";
+import Dashboard from "./components/dashboard/Dashboard";
+import PrivateRoute from "./components/routing/PrivateRoute";
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -30,7 +31,6 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
-          <Navbar className={"mb-4"}/>
           <Switch>
               <Route exact path="/" component={Home} />
               <Route component={Routes} />

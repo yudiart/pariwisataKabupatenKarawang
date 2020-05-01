@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import {Col, Container, Nav, Row} from "react-bootstrap";
-import Rooms from "./villa/rooms/Rooms";
 import RoomDisplay from "./villa/room/RoomDisplay";
 import {connect} from "react-redux";
 

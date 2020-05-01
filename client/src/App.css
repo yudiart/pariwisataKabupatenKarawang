@@ -12,11 +12,8 @@ link:hover{
   list-style: none;
 }
 
-body{
-  margin-top:70px;
-}
 .header-jumbotron{
-  margin-top:-25px;
+  margin-top:45px;
   padding-top:70px;
 }
 @font-face {

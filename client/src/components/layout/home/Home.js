@@ -8,6 +8,7 @@ import {getCurrentProfile} from "../../../actions/profile";
 import {logout} from "../../../actions/auth";
 import {getVillas} from "../../../actions/villa";
 import {getAllRooms} from "../../../actions/room";
+import Navbar from "../Navbar";
 
 
 const Home = ({
@@ -27,10 +28,10 @@ useEffect(() => {
 }, [getCurrentProfile,getVillas,getAllRooms]);
   return (
       <div>
-
+          <Navbar/>
           <div>
               <HomeLanding/>
-              <div className="jumbotron-fluid mt-4" style={{minHeight:'300px',border:'1px solid black'}}>
+              <div className="jumbotron-fluid mt-4" style={{minHeight:'900px',border:'1px solid black'}}>
                   <Container>
                       <div className='mt-4'>
                         <Row>
@@ -45,7 +46,9 @@ useEffect(() => {
                                   {villas.map(item =>(
                                       <div key={item._id}>
                                           <Card style={{ width: '18rem' }}>
-                                              <Card.Img variant="top" src="holder.js/100px180" />
+                                              <div className='card-img-top'>
+                                                  <img src={item.images[0]} alt={item.images} style={{width:'18rem'}}/>
+                                              </div>
                                               <Card.Body>
                                                   <Card.Title>{item._id}</Card.Title>
                                                   <Card.Text>

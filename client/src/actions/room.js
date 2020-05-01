@@ -16,7 +16,7 @@ export const getCurrentRooms = () => async dispatch => {
         const res = await axios.get("/api/room/villa/me");
 
         dispatch({
-            type: GET_KAMAR,
+            type: GET_KAMARS,
             payload: res.data
         });
     } catch (err) {
