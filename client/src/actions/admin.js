@@ -2,7 +2,13 @@ import axios from "axios";
 import {
     ERROR_GET_ALL_USERS,
     ERROR_GET_ALL_CUSTOMERS,
-    GET_ALL_USERS, GET_ALL_BY_CUSTOMERS, GET_ALL_BY_VILLAS, ERROR_GET_ALL_VILLAS, GET_ALL_ROOMS, ERROR_GET_ALL_ROOMS
+    GET_ALL_USERS,
+    GET_ALL_BY_CUSTOMERS,
+    GET_ALL_BY_VILLAS,
+    ERROR_GET_ALL_VILLAS,
+    GET_ALL_ROOMS,
+    ERROR_GET_ALL_ROOMS,
+    CLEAR_VILLA, CLEAR_PROFILE, LOGOUT, CLEAR_ADMIN
 } from "./types";
 
 
@@ -69,3 +75,10 @@ export const getAllRooms =()=>async dispatch=>{
         })
     }
 }
+
+//Logout user and clear the profile
+export const logout = () => dispatch => {
+    dispatch({ type: LOGOUT });
+    dispatch({ type: CLEAR_ADMIN });
+
+};

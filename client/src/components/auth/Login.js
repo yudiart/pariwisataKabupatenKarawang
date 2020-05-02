@@ -33,35 +33,34 @@ const Login = ({login, isAuthenticated,auth:{user},loading }) => {
     return <Redirect to={'/dashboard'}/>
   }
 
-
-
   return (
       <Fragment>
-        <div className="container mt-2 col-lg-6">
+        <div className="container mt-2 col-lg-4">
           <form className="mt-5" onSubmit={e => onSubmit(e)}>
             <h1 className="text-center">Login</h1>
             <div className="dropdown-divider"> </div>
             <div className="form-group">
               <label>Email</label>
-
-              <input className="form-control"
-                     type="email"
-                     placeholder="Email Address"
-                     name="email"
-                     value={email}
-                     onChange={e => onChange(e)}
-                     required
+              <input
+                className="form-control"
+                type="email"
+                placeholder="Email Address"
+                name="email"
+                value={email}
+                onChange={e => onChange(e)}
+                required
               />
             </div>
             <div className="form-group">
               <label>Password</label>
-              <input className="form-control"
-                     type="password"
-                     placeholder="Password"
-                     name="password"
-                     value={password}
-                     onChange={e => onChange(e)}
-                     minLength="6"
+              <input
+                className="form-control"
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={password}
+                onChange={e => onChange(e)}
+                minLength="6"
               />
             </div>
             <button type="submit" className="btn btn-primary" value="Login">Login</button>
@@ -69,11 +68,8 @@ const Login = ({login, isAuthenticated,auth:{user},loading }) => {
           <div>
             <p>Belum punya akun? <Link to="/register" className="text-primary">Click me</Link></p>
           </div>
-
         </div>
-
       </Fragment>
-
   );
 };
 

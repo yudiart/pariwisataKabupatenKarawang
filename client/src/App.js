@@ -6,7 +6,6 @@ import Home from "./components/layout/home/Home";
 import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 import Routes from "./components/routing/Routes";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/assets/icon/css/materialdesignicons.min.css';
 

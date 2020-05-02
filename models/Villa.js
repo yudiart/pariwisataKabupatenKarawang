@@ -6,6 +6,10 @@ const VillaSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "users"
     },
+    villaName:{
+        type: String,
+        required: true
+    },
     location: {
         kecamatan:{
             type:String,

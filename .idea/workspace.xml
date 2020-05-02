@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/DashboardAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/NavbarItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/backdrop/Backdrop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/backdrop/Backdrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/DrawerToggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/DrawerToggleButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/SideDrawer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/SideDrawer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/sidebar/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/villa/auth/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/villa/auth/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/footer/FooterRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/footer/FooterRight.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Villa.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,19 +62,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\public" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\villa" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\layout" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\public" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout\home" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\villa\villa-forms" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\template" />
+      <recent name="F:\file yudi\program\skripsi\client\public" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\villa" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -89,7 +113,9 @@
       <workItem from="1588074382655" duration="1383000" />
       <workItem from="1588099313194" duration="4076000" />
       <workItem from="1588160530421" duration="12828000" />
-      <workItem from="1588244278447" duration="26250000" />
+      <workItem from="1588244278447" duration="27246000" />
+      <workItem from="1588306894230" duration="23178000" />
+      <workItem from="1588419141954" duration="10289000" />
     </task>
     <servers />
   </component>
@@ -121,10 +147,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586971282317" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588277890879">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588344474302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588277890879" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588344474302" />
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog" timestamp="1587415293373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

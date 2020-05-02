@@ -3,11 +3,13 @@ import {Link, Redirect} from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Spinner from "../layout/Spinner";
-import { getCurrentVilla } from "../../actions/villa";
+import { getCurrentVilla, logout } from "../../actions/villa";
 import { getCurrentRooms } from "../../actions/room";
 import DashboardVilla from "./DashboardVilla";
 import Footer from "./footer/Footer";
-import Admin from "./admin/Admin";
+
+import DashboardAdmin from "./admin/Admin";
+
 
 export const Dashboard = ({
     getCurrentVilla,
@@ -15,7 +17,7 @@ export const Dashboard = ({
     isAuthenticated,
   auth: { user },
   room:{room},
-  villa: { villa, loading }
+  villa: { villa, loading },logout
 }) => {
 
   useEffect(() => {
@@ -36,6 +38,9 @@ export const Dashboard = ({
         <>
           <div className="jumbotron bg-gradient">
             <h1 className="large text-center text-white">Welcome {user && user.name}</h1>
+            <div className=''>
+              <Link onClick={logout} className='nav-link' to={'/villa/login'} style={{cursor:'pointer'}}><i className="fas fa-sign-out-alt"/>{" "}Logout</Link>
+            </div>
           </div>
           {villa !== null? (
               <Fragment>
@@ -44,11 +49,11 @@ export const Dashboard = ({
                     <DashboardVilla/>
                   </div>
                 </Fragment>
-              <Fragment>
-                <div className='mt-4'>
-                  <Footer/>
-                </div>
-              </Fragment>
+                <Fragment>
+                  <div className='mt-4'>
+                    <Footer/>
+                  </div>
+                </Fragment>
               </Fragment>
           ) : (
 
@@ -63,7 +68,7 @@ export const Dashboard = ({
       :(
         //admin
         <Fragment>
-          <Admin/>
+          <DashboardAdmin/>
         </Fragment>
       )}
     </Fragment>
@@ -76,6 +81,7 @@ Dashboard.propTypes = {
   auth: PropTypes.object.isRequired,
   rooms: PropTypes.array.isRequired,
   villa: PropTypes.object.isRequired,
+  logout: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
@@ -87,5 +93,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { getCurrentVilla,getCurrentRooms}
+  { getCurrentVilla,getCurrentRooms,logout}
 )(Dashboard);

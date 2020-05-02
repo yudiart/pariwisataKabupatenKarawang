@@ -3,10 +3,77 @@ import { setAlert } from "./alert";
 import {
     GET_VILLA,
     VILLA_ERROR,
-    PROFILE_ERROR, CLEAR_PROFILE, GET_PROFILES, GET_VILLAS
+    PROFILE_ERROR,
+    CLEAR_PROFILE,
+    GET_PROFILES,
+    GET_VILLAS,
+    CLEAR_VILLA,
+    LOGOUT,
+    CLEAR_ADMIN,
+    REGISTER_SUCCESS,
+    REGISTER_FAIL, LOGIN_SUCCESS, LOGIN_FAIL
 } from "./types";
-import profile from "../reducers/profile";
+import {loadUser} from "./auth";
 
+//Login the user
+export const login = (email, password) => async dispatch => {
+    const config = {
+        headers: {
+            "Content-Type": "application/json"
+        }
+    };
+    const body = JSON.stringify({ email, password });
+
+    try {
+        const res = await axios.post("/api/auth", body, config);
+        dispatch({
+            type: LOGIN_SUCCESS,
+            payload: res.data
+        });
+        dispatch(loadUser());
+    } catch (err) {
+        const errors = err.response.data.errors;
+
+        if (errors) {
+            errors.forEach(error =>
+                dispatch(setAlert("Incorrect Email or Password", "danger"))
+            );
+        }
+
+        dispatch({
+            type: LOGIN_FAIL
+        });
+    }
+};
+
+//Registers the user
+export const register = ({ name, email, password}) => async dispatch => {
+    const config = {
+        headers: {
+            "Content-Type": "application/json"
+        }
+    };
+    const body = JSON.stringify({ name, email, password, role:'villa'});
+
+    try {
+        const res = await axios.post("/api/users", body, config);
+        dispatch({
+            type: REGISTER_SUCCESS,
+            payload: res.data
+        });
+        dispatch(loadUser());
+    } catch (err) {
+        const errors = err.response.data.errors;
+
+        if (errors) {
+            errors.forEach(error => dispatch(setAlert(error.msg, "danger")));
+        }
+
+        dispatch({
+            type: REGISTER_FAIL
+        });
+    }
+};
 
 //Get current villa profile
 export const getCurrentVilla = () => async dispatch => {
@@ -87,7 +154,6 @@ export const createVillaProfile = (
 
 
 //Get Villa by ID
-
 export const getVillaById = villaId => async dispatch => {
     try {
         const res = await axios.get(`/api/villa/profile/${villaId}`);
@@ -102,4 +168,10 @@ export const getVillaById = villaId => async dispatch => {
             payload: { msg: err.response.statusText, status: err.response.status }
         });
     }
+};
+
+//Logout Villa and clear the Villa
+export const logout = () => dispatch => {
+    dispatch({ type: CLEAR_VILLA });
+    dispatch({ type: LOGOUT });
 };
