@@ -2,34 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/DashboardAdmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/NavbarItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/backdrop/Backdrop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/backdrop/Backdrop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/DrawerToggle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/DrawerToggleButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/SideDrawer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/SideDrawer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/villa/auth/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/villa/auth/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/admin/DisplayAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/customer/DisplayCustomer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideNav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/Sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/ToggleButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/child/navitems.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/villa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/ChartVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/ChartVilla.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/admin/Admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/footer/FooterRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/footer/FooterRight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Education.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Education.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Experience.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/Admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/DashboardAdmin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/Navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/NavbarItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/backdrop/Backdrop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/backdrop/Backdrop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/DrawerToggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/DrawerToggleButton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/SideDrawer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/SideDrawer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/sidebar/Sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Villa.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,23 +69,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/routing" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\components\routing" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\template" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
       <recent name="F:\file yudi\program\skripsi\client\src\assets" />
       <recent name="F:\file yudi\program\skripsi\client\public" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout\home" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\villa\villa-forms" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\template" />
-      <recent name="F:\file yudi\program\skripsi\client\public" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\villa" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -115,7 +122,13 @@
       <workItem from="1588160530421" duration="12828000" />
       <workItem from="1588244278447" duration="27246000" />
       <workItem from="1588306894230" duration="23178000" />
-      <workItem from="1588419141954" duration="10289000" />
+      <workItem from="1588419141954" duration="51378000" />
+      <workItem from="1588505791956" duration="563000" />
+      <workItem from="1588541616837" duration="5552000" />
+      <workItem from="1588599409442" duration="599000" />
+      <workItem from="1588606341029" duration="6902000" />
+      <workItem from="1588642505462" duration="3114000" />
+      <workItem from="1588703498016" duration="166000" />
     </task>
     <servers />
   </component>
@@ -135,10 +148,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="177" width="816" height="733" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1587327179439" />
-    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587496588884">
+    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588472058751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587496588884" />
+    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588472058751" />
     <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587230350805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -147,10 +160,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586971282317" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588344474302">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588559654569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588344474302" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588559654569" />
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog" timestamp="1587415293373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

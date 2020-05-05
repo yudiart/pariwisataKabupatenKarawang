@@ -21,16 +21,10 @@ const Login = ({login, isAuthenticated,auth:{user},loading }) => {
       login(email, password);
   };
 
+  const users = user && user.role;
   //redirect if logged in
-  if (isAuthenticated && user && user.role === 'customer'){
-    return <Redirect to={'/profile'}/>
-  }
-  //redirect if logged in
-  if (isAuthenticated && user && user.role === 'villa'){
-    return <Redirect to={'/dashboard'}/>
-  }
-  if (isAuthenticated && user && user.role === 'admin'){
-    return <Redirect to={'/dashboard'}/>
+  if (isAuthenticated && users === 'admin' || users === 'villa' || users === 'customer'){
+    return <Redirect to={'/dashboard/profile'}/>
   }
 
   return (
