@@ -2,41 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/admin/DisplayAdmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/customer/DisplayCustomer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/Sidebar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/ToggleButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/child/navitems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/ChartVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/ChartVilla.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Education.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Education.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Experience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/Admin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/DashboardAdmin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/NavbarItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/backdrop/Backdrop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/backdrop/Backdrop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/DrawerToggle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/DrawerToggleButton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/SideDrawer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/header/sideDrawer/SideDrawer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/admin/sidebar/Sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +36,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/routing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clone/vodonesia" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -128,7 +95,8 @@
       <workItem from="1588599409442" duration="599000" />
       <workItem from="1588606341029" duration="6902000" />
       <workItem from="1588642505462" duration="3114000" />
-      <workItem from="1588703498016" duration="166000" />
+      <workItem from="1588703498016" duration="7522000" />
+      <workItem from="1588723011490" duration="412000" />
     </task>
     <servers />
   </component>
@@ -160,18 +128,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586971282317" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588559654569">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588721634469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588559654569" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588721634469" />
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog" timestamp="1587415293373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587415293373" />
-    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1587773373613">
+    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1588703985719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587773373613" />
+    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588703985719" />
     <state x="1279" y="239" key="RollbackChangesDialog" timestamp="1587321089704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
