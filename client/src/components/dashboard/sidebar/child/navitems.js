@@ -8,12 +8,38 @@ const NavItems = ({auth:{user,loading},text,logout})=>{
     return (
         <div>
             {user && user.role === 'admin'?
-                <Link to={'/dashboard'} className='navitem'>
-                    <div className="navicon">
-                        <i className='mdi mdi-view-dashboard'/>
-                    </div>
-                    <div className={text}>Dashboard</div>
-                </Link>
+                <>
+                    <Link to={'/dashboard'} className='navitem'>
+                        <div className="navicon">
+                            <i className='mdi mdi-view-dashboard'/>
+                        </div>
+                        <div className={text}>Dashboard</div>
+                    </Link>
+                    <Link to={'/dashboard/pages1'} className='navitem'>
+                        <div className="navicon">
+                            <i className='mdi mdi-home'/>
+                        </div>
+                        <div className={text}>Display Room</div>
+                    </Link>
+                    <Link to={'/dashboard/pages2'} className='navitem'>
+                        <div className="navicon">
+                            <i className='mdi mdi-chart-areaspline'/>
+                        </div>
+                        <div className={text}>Statistic</div>
+                    </Link>
+                    <Link to={'/dashboard/pages3'} className='navitem'>
+                        <div className="navicon">
+                            <i className='mdi mdi-file-chart'/>
+                        </div>
+                        <div className={text}>Report</div>
+                    </Link>
+                    <Link to={'/dashboard/pages4'} className='navitem'>
+                        <div className="navicon">
+                            <i className='mdi mdi-file-chart'/>
+                        </div>
+                        <div className={text}>Report</div>
+                    </Link>
+                </>
                 :null}
             {user && user.role === 'villa'?
                 <>
@@ -29,7 +55,6 @@ const NavItems = ({auth:{user,loading},text,logout})=>{
                         </div>
                         <div className={text}>Display Room</div>
                     </Link>
-
                     <Link to={'/dashboard/statistic'} className='navitem'>
                         <div className="navicon">
                             <i className='mdi mdi-chart-areaspline'/>

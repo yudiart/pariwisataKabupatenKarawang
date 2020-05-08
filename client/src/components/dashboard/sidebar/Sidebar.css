@@ -135,31 +135,6 @@
     color:#4CC2C2;
     cursor:pointer;
 }
-.navnotify{
-    width:30%;
-    position: relative;
-}
-.navnotify ul{
-    list-style: none;
-    margin-right:20px;
-    padding:0;
-
-    text-decoration: none;
-    text-align: left;
-}
-.navnotify li{
-    display: inline-block;
-    margin-top:10px;
-}
-.navnotify .navtopicon{
-    font-size: 15px;
-    color:gray;
-    padding:10px;
-    text-align: left;
-}
-.navtopicon:hover , .navtopicon:focus, .navtopicon:active{
-    color:#4CC2C2;
-}
 @media (max-width: 768px){
     .navtext{
         display: none;

@@ -7,10 +7,8 @@ import {connect} from "react-redux";
 import PropTypes from 'prop-types';
 import Spinner from "../../layout/Spinner";
 import NavItems from "./child/navitems";
-import DisplayAdmin from "../pages/admin/DisplayAdmin";
-import {Nav, Navbar, NavDropdown} from "react-bootstrap";
-import DisplayVilla from "../pages/villa/DisplayVilla";
 import RightContent from "../content/RightContent";
+import NavDash from "../pages/navbar/navDash";
 
 const SideBar =({auth: { user ,loading ,isAuthenticated}}) => {
     const [state,setState]=useState(false);

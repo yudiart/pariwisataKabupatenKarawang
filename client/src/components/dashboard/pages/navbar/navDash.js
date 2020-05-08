@@ -3,7 +3,7 @@ import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 
-import '../../sidebar/Sidebar.css';
+import './navDash.css';
 import {Link} from "react-router-dom";
 
 const NavDash = ({auth:{user,loading}})=>{
@@ -32,15 +32,15 @@ const NavDash = ({auth:{user,loading}})=>{
     );
     return(
         <Fragment>
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">
-                    <img src={user && user.avatar} className='rounded-circle' style={{width:'20px'}}/>{' '}
-                    {user && user.name}
-                </Navbar.Brand>
-                <div className='navnotify'>
-                    {authLinks}
-                </div>
-            </Navbar>
+            <div className="nav-dash navbar">
+                    <Link className="navbar-brand nav-link" to={'/dashboard'}>
+                        <img src={user && user.avatar} className='rounded-circle' alt="" style={{width:'20px'}}/>{' '}
+                        {user && user.name}
+                    </Link>
+                    <div className='navnotify'>
+                        {authLinks}
+                    </div>
+            </div>
         </Fragment>
     )
 }

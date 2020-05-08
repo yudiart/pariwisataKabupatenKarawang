@@ -2,40 +2,51 @@ import React, {Fragment, useEffect} from 'react';
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {getCurrentRooms} from "../../../../../actions/room";
-import {Button, Card, Col, Row} from "react-bootstrap";
 
+import './DisplayRoom.css';
+import {Col, Row} from "react-bootstrap";
+import TableRoom from "./tableRoom";
 const DisplayRooms = ({
     getCurrentRooms,
     auth: { user },
     room:{room,rooms}
 })=>{
     useEffect(() => {
-
         getCurrentRooms();
     }, [getCurrentRooms]);
     return(
         <Fragment>
-            <div className='jumbotron'>
+            <div className="display-rooms">
                 <Row>
-                   <Col lg={6}>
-                       {rooms.map(item=>(
-                           <div className='horizontal' key={item._id}>
-                               <Card style={{ width: '18rem' }}>
-                                   <Card.Img variant="top" src={item.images[0]} />
-                                   <Card.Body>
-                                       <Card.Title>Card Title</Card.Title>
-                                       <Card.Text>
-                                           Some quick example text to build on the card title and make up the bulk of
-                                           the card's content.
-                                       </Card.Text>
-                                       <Button variant="primary">Go somewhere</Button>
-                                   </Card.Body>
-                               </Card>
-                           </div>
-                       ))}
-                   </Col>
+                    <Col lg={12}>
+                        <div className="jumbotron-fluid _1uz2h">
+                            <Row>
+                                <Col lg={4}>
+                                    <div className="jumbotron">
+                                        <h2>Box 2</h2>
+                                    </div>
+                                </Col>
+                                <Col lg={4}>
+                                    <div className="jumbotron ">
+                                        <h2>Box 2</h2>
+                                    </div>
+                                </Col>
+                                <Col lg={4}>
+                                    <div className="jumbotron">
+                                        <h2>Box 2</h2>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                    </Col>
                 </Row>
-
+                <Row>
+                    <Col lg={12}>
+                        <div className="jumbotron-fluid _1uz2h">
+                            <TableRoom/>
+                        </div>
+                    </Col>
+                </Row>
             </div>
         </Fragment>
     )

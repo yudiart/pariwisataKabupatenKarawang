@@ -6,6 +6,7 @@ import NavDash from "../pages/navbar/navDash";
 
 import DashboardDisplay from "../pages/dashboard/dashboardDisplay";
 import DisplayVilla from "../pages/villa/DisplayVilla";
+import DisplayAdmin from "../pages/admin/DisplayAdmin";
 
 const RightContent = ({auth:{user,loading}})=>{
     let {pages} = useParams();
@@ -14,7 +15,6 @@ const RightContent = ({auth:{user,loading}})=>{
         <section>
             <section>
                 <Switch>
-
                     <Route path="/dashboard" children={<NavDash/>}/>
                     <Route path="/dashboard/:pages" children={<NavDash/>}/>
                 </Switch>
@@ -35,9 +35,7 @@ const RightContent = ({auth:{user,loading}})=>{
                         </div>
                     :null}
                     {roles === 'admin' ?
-                        <div>
-                            <h1>Admin</h1>
-                        </div>
+                        <DisplayAdmin/>
                     :null}
                 </div>
             </Fragment>
