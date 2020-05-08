@@ -17,18 +17,19 @@ const NavItems = ({auth:{user,loading},text,logout})=>{
                 :null}
             {user && user.role === 'villa'?
                 <>
-                    <Link to={'/dashboard/home'} className='navitem'>
+                    <Link to={'/dashboard'} className='navitem'>
+                        <div className="navicon">
+                            <i className='mdi mdi-view-dashboard'/>
+                        </div>
+                        <div className={text}>Dashboard</div>
+                    </Link>
+                    <Link to={'/dashboard/room'} className='navitem'>
                         <div className="navicon">
                             <i className='mdi mdi-home'/>
                         </div>
-                        <div className={text}>Home</div>
+                        <div className={text}>Display Room</div>
                     </Link>
-                    <Link to={'/dashboard/settings'} className='navitem'>
-                        <div className="navicon">
-                            <i className='mdi mdi-settings'/>
-                        </div>
-                        <div className={text}>Settings</div>
-                    </Link>
+
                     <Link to={'/dashboard/statistic'} className='navitem'>
                         <div className="navicon">
                             <i className='mdi mdi-chart-areaspline'/>
@@ -41,11 +42,17 @@ const NavItems = ({auth:{user,loading},text,logout})=>{
                         </div>
                         <div className={text}>Report</div>
                     </Link>
+                    <Link to={'/dashboard/settings'} className='navitem'>
+                        <div className="navicon">
+                            <i className='mdi mdi-settings'/>
+                        </div>
+                        <div className={text}>Settings</div>
+                    </Link>
                 </>:null
             }
             {user && user.role === 'customer'?
                 <>
-                    <Link to={'/dashboard/home'} className='navitem'>
+                    <Link to={'/dashboard/room'} className='navitem'>
                         <div className="navicon">
                             <i className='mdi mdi-home'/>
                         </div>

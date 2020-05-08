@@ -23,8 +23,11 @@ const Login = ({login, isAuthenticated,auth:{user},loading }) => {
 
   const users = user && user.role;
   //redirect if logged in
-  if (isAuthenticated && users === 'admin' || users === 'villa' || users === 'customer'){
-    return <Redirect to={'/dashboard/profile'}/>
+  if (users === 'villa' || users === 'customer'){
+    return <Redirect to={'/dashboard/room'}/>
+  }
+  if (isAuthenticated && users === 'admin' ){
+    return <Redirect to={'/dashboard'}/>
   }
 
   return (

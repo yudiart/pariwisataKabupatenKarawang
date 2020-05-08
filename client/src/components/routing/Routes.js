@@ -31,7 +31,8 @@ export const Routes = () => {
 
         <Route exact path="/covid" component={Covid} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
-        <PrivateRoute exact path="/dashboard/:slug" component={Dashboard} />
+        <PrivateRoute exact path="/dashboard/:pages" component={Dashboard} />
+
 
         <PrivateRoute exact path="/villa-profile" component={VillaProfile} />
         <PrivateRoute exact path="/edit-villa" component={editVilla} />

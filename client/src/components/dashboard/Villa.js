@@ -1,57 +1,77 @@
-import React, { Fragment } from "react";
+import React, {Fragment, useEffect} from 'react';
+import DashboardVilla from "../../DashboardVilla";
+import Footer from "../../footer/Footer";
+import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import Moment from "react-moment";
-import { deleteEducation } from "../../actions/profile";
+import {connect} from "react-redux";
+import {getCurrentVilla} from "../../../../actions/villa";
+import {getCurrentRooms} from "../../../../actions/room";
 
-const Education = ({ education, deleteEducation }) => {
-    //For each experience, return jsx
-    const educations = education.map(edu => (
-        <tr key={edu.id}>
-            <td>{edu.school}</td>
-            <td className="hide-sm"> {edu.degree}</td>
-            <td>
-                <Moment format="YYYY/MM/DD">{edu.from}</Moment> -{" "}
-                {edu.to === null ? (
-                    " Now"
-                ) : (
-                    <Moment format="YYYY/MM/DD">{edu.to}</Moment>
-                )}
-            </td>
-            <td>
-                <button
-                    onClick={() => deleteEducation(edu._id)}
-                    className="btn btn-danger">
-                    Delete
-                </button>
-            </td>
-        </tr>
-    ));
-
-    return (
-        <Fragment>
-            <h2 className="my-2">Education Credientials</h2>
-            <div className="table">
-                <thead>
-                <tr>
-                    <th>School</th>
-                    <th className="hide-sm"> Degree</th>
-                    <th className="hide-sm"> Years</th>
-                    <th />
-                </tr>
-                </thead>
-                <tbody>{educations}</tbody>
+const Villa = ({
+                          getCurrentVilla,
+                          getCurrentRooms,
+                          isAuthenticated,
+                          auth: { user },
+                          room:{room},
+                          villa: { villa, loading }
+                      })=>{
+    useEffect(() => {
+        getCurrentVilla();
+        getCurrentRooms();
+    }, [getCurrentVilla,getCurrentRooms]);
+    return(
+        <div><>
+            <div className="jumbotron bg-gradient">
+                <h1 className="large text-center text-white">Welcome {user && user.name}</h1>
             </div>
-        </Fragment>
-    );
+            {villa !== null? (
+                <Fragment>
+                    <Fragment>
+                        <div className='mt-4'>
+                            <DashboardVilla/>
+                        </div>
+                    </Fragment>
+                    <Fragment>
+                        <div className='mt-4'>
+                            <Footer/>
+                        </div>
+                    </Fragment>
+                </Fragment>
+
+
+            ) : (
+
+                <Fragment>
+                    <p>You do not have a profile, please setup your profile </p>
+                    <Link to="/create-profile" className="btn btn-primary my-1">
+                        Create Profile
+                    </Link>
+                </Fragment>
+            )}
+            <Fragment>
+
+            </Fragment>
+        </><h1>Display Villa</h1>
+        </div>
+    )
+}
+
+Villa.propTypes = {
+    getCurrentVilla: PropTypes.func.isRequired,
+    getCurrentRooms: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+    rooms: PropTypes.array.isRequired,
+    villa: PropTypes.object.isRequired,
 };
 
-Education.propTypes = {
-    education: PropTypes.array.isRequired,
-    deleteEducation: PropTypes.func.isRequired
-};
+const mapStateToProps = state => ({
+    auth: state.auth,
+    villa: state.villa,
+    room: state.room,
+    isAuthenticated: state.auth.isAuthenticated
+});
 
 export default connect(
-    null,
-    { deleteEducation }
-)(Education);
+    mapStateToProps,
+    { getCurrentVilla,getCurrentRooms}
+)(Villa);

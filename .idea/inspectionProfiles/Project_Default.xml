@@ -30,7 +30,7 @@
       <option name="myCustomValuesEnabled" value="true" />
     </inspection_tool>
     <inspection_tool class="RequiredAttributes" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="myAdditionalRequiredHtmlAttributes" value="img" />
+      <option name="myAdditionalRequiredHtmlAttributes" value="img,admin" />
     </inspection_tool>
   </profile>
 </component>

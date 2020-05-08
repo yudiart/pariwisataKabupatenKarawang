@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/content/RightContent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/admin/AdminItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/items/VillaItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/settings/VillaSettings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/admin/DisplayAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/admin/DisplayAdmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideNav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/child/navitems.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/child/navitems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +57,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../clone/vodonesia" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -96,7 +116,12 @@
       <workItem from="1588606341029" duration="6902000" />
       <workItem from="1588642505462" duration="3114000" />
       <workItem from="1588703498016" duration="7522000" />
-      <workItem from="1588723011490" duration="412000" />
+      <workItem from="1588723011490" duration="2345000" />
+      <workItem from="1588786339342" duration="9622000" />
+      <workItem from="1588809404615" duration="6256000" />
+      <workItem from="1588840844420" duration="7995000" />
+      <workItem from="1588885957208" duration="615000" />
+      <workItem from="1588890380509" duration="5981000" />
     </task>
     <servers />
   </component>
@@ -124,14 +149,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587230350805" />
-    <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586971282317">
+    <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588890283914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586971282317" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588721634469">
+    <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588890283914" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588811205020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588721634469" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588811205020" />
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog" timestamp="1587415293373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -144,6 +169,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1279" y="239" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587321089704" />
+    <state x="461" y="151" key="SettingsEditor" timestamp="1588891766177">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588891766177" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1587479434167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -177,6 +206,11 @@
           <url>file://$PROJECT_DIR$/services/fileUpload.js</url>
           <line>17</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js</url>
+          <line>12</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

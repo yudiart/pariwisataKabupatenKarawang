@@ -1,18 +1,18 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {useParams} from "react-router";
-import VillaSettings from "./settings/VillaSettings";
-import DisplayRooms from "./room/DisplayRooms";
 
-const DisplayVilla =()=>{
+const VillaItems = ()=>{
     let {pages} = useParams();
-    return (
-        <Fragment>
-            {pages === 'room'?
-                <DisplayRooms/>
+    return(
+        <div>
+            {pages === 'home'?
+                <div className="home">
+                    <h1>home</h1>
+                </div>
                 :null}
             {pages === 'settings'?
                 <div className="home">
-                    <VillaSettings/>
+                    <h1>Settings</h1>
                 </div>
                 :null}
             {pages === 'statistic'?
@@ -25,8 +25,6 @@ const DisplayVilla =()=>{
                     <h1>Report</h1>
                 </div>
                 :null}
-        </Fragment>
+        </div>
     )
 }
-
-export default DisplayVilla;
