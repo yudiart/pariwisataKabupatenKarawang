@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/displayVilla.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRoom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/tableRoom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/tableRoom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/CheckOut.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Carts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Wisata.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/content/RightContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/content/RightContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/admin/DisplayAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/admin/DisplayAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/child/navitems.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/child/navitems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +106,9 @@
       <workItem from="1588885957208" duration="615000" />
       <workItem from="1588890380509" duration="7624000" />
       <workItem from="1588903863584" duration="5287000" />
-      <workItem from="1588912807572" duration="18850000" />
+      <workItem from="1588912807572" duration="24051000" />
+      <workItem from="1589053547945" duration="3418000" />
+      <workItem from="1589082395311" duration="3293000" />
     </task>
     <servers />
   </component>
