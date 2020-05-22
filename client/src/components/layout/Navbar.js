@@ -1,18 +1,29 @@
-import React  from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 
 import { logout } from "../../actions/auth";
+import {getCarts, getCountCarts} from "../../actions/cart";
 
-const NavBar = ({ auth: {user, isAuthenticated, loading }, logout }) => {
+const NavBar = ({
+    auth: {user, isAuthenticated, loading },
+    getCarts,
+    getCountCarts,
+    cart:{count},
+    logout
+}) => {
+    useEffect(() => {
+        getCarts();
+        getCountCarts();
+    }, [getCarts,getCountCarts]);
 
   const authLinks = (
         <Nav>
             {user && user.role === 'customer'? (
                 <>
-                    <Link to='/profiles' className='nav-link'><i className='mdi mdi-cart'/></Link>
+                    <Link to='/profiles' className='nav-link'><i className='mdi mdi-cart'/><small className='badge badge-danger'>{count}</small></Link>
                     <Link to='/posts' className='nav-link'><i className='mdi mdi-bell'/></Link>
                     <Link to='/profile' className='nav-link mr-4'><i className='fas fa-user'/></Link>
                 </>
@@ -80,11 +91,15 @@ const NavBar = ({ auth: {user, isAuthenticated, loading }, logout }) => {
 
 NavBar.propTypes = {
   logout: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired
+  auth: PropTypes.object.isRequired,
+    cart: PropTypes.object.isRequired,
+    getCountCarts: PropTypes.func.isRequired,
+    getCarts: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
-  auth: state.auth
+  auth: state.auth,
+    cart: state.cart
 });
 
-export default connect(mapStateToProps, { logout })(NavBar);
+export default connect(mapStateToProps, { logout,getCountCarts,getCarts})(NavBar);

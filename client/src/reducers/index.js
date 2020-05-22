@@ -7,6 +7,8 @@ import covid from "./covid";
 import room from "./room";
 import villa from "./villa";
 import admin from "./admin";
+import cart from './cart';
+
 
 export default combineReducers({
     alert,
@@ -14,6 +16,7 @@ export default combineReducers({
     profile,
     post,
     covid,
+    cart,
     villa,
     room,
     admin

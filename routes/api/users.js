@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 const { check, validationResult } = require("express-validator");
 const User = require("../../models/User");
+const Carts = require("../../models/Carts");
 //@route POST api/users
 //@desc This is a test route
 //@access Public
@@ -78,6 +79,8 @@ router.post(
           });
         }
       );
+      const cart = new Carts({user:user.id});
+      await cart.save();
       //Check if user exits
       //Get users gravatar
       //Encrypt password

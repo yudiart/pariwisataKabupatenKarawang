@@ -49,59 +49,6 @@ const HomeSearch = ({
     useEffect(() => {
         getCurrentProfile();
     }, [getCurrentProfile]);
-    const [collapse, setCollapse] = useState(false);
-
-
-
-    const [setStatus] = useState('Closed');
-
-    const onEntering = () => setStatus('Opening...');
-
-    const onEntered = () => setStatus('Opened');
-
-    const onExiting = () => setStatus('Closing...');
-
-    const onExited = () => setStatus('Closed');
-
-    const toggle = () => setCollapse(!collapse);
-    const authLinks = (
-        <div>
-            <a onClick={toggle} className='nav-link'><button type='button' className='btn btn-block'><i className='mdi mdi-account text-primary'/>Account</button></a>
-            <Collapse
-                isOpen={collapse}
-                onEntering={onEntering}
-                onEntered={onEntered}
-                onExiting={onExiting}
-                onExited={onExited}
-            >
-                <Card style={{border:'none',background:'transparent'}}>
-                    <CardBody>
-                        <Link to={'/dashboard'} className='nav-link'><i className='fas fa-tachometer-alt text-primary'/> Dashboard</Link>
-                        <div className='dropdown-divider' />
-                        <a id="toggler" className='nav-link mb-1'><button type='button' className='btn btn-block'><i className='mdi mdi-chevron-right'/>Pemesanan</button></a>
-                        <UncontrolledCollapse toggler="#toggler">
-                            <Card style={{border:'none',background:'transparent'}}>
-                                <CardBody>
-                                    <button type='button' className='btn btn-block' style={{fontSize:'12px'}}>Menunggu Pembayaran</button>
-                                    <button type='button' className='btn btn-block' style={{fontSize:'12px'}}>Daftar Transaksi</button>
-                                </CardBody>
-                            </Card>
-                        </UncontrolledCollapse>
-                        <div className='dropdown-divider' />
-                        <button type='button' className='btn btn-block'><i className='mdi mdi-settings text-primary'/>{' '}Setting</button>
-                        <div className='dropdown-divider mt-1' />
-                        <Link to={'/login'} onClick={logout} className='nav-link' style={{cursor:'pointer'}}><i className="fas fa-sign-out-alt text-danger"/>{' '}Logout</Link>
-                    </CardBody>
-                </Card>
-            </Collapse>
-            <div className='dropdown-divider' />
-        </div>
-    );
-
-    const guestLinks = (
-        <div/>
-    );
-
     const [displayVilla, toggleVilla] = useState(0);
     const [displayPariwisata, togglePariwisata] = useState(0);
     return(
@@ -109,9 +56,7 @@ const HomeSearch = ({
             <Row>
                 <Col lg={3}>
                     <div className="jumbotron-fluid _1uz2h">
-                        {!loading && (
-                            <div>{isAuthenticated  && user && user.role === 'customer'? authLinks : guestLinks}</div>
-                        )}
+
 
                         <button
                             type='button'

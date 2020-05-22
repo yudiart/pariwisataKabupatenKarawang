@@ -51,7 +51,7 @@ router.post(
         const errors = validationResult(req);
         //check error validasi
         if (!errors.isEmpty()) {
-            return res.status(400).json({ errors: errors.array() });
+            return res.status(400).json({ errors: errors.array() })
         }
         const {
             roomName,
@@ -61,7 +61,7 @@ router.post(
             tipeKamar
         } = req.body;
         try {
-            const user = await User.findById(req.user.id).select("-password");
+            const user = await User.findById(req.user.id).select("-password")
 
             const newRoom = new Room({
                 user: req.user.id,
@@ -76,8 +76,8 @@ router.post(
             const room = await newRoom.save();
             await res.json(room);
         } catch (err) {
-            console.error(err.message);
-            res.status(500).send("Server errror in posts.js");
+            console.error(err.message)
+            res.status(500).send("Server errror in posts.js")
         }
     }
 );
@@ -127,7 +127,6 @@ router.get('/villa/me', auth, async(req,res)=>{
         if (!room){
             return res.status(400).json({message: "No Villa Profile for this user"});
         }
-        await res.json(room);
         await res.json(room);
     }catch(err){
         console.error(err.message);

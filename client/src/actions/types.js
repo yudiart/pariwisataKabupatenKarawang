@@ -69,3 +69,11 @@ export const DELETE_CUSTOMER_BY_ID = "DELETE_CUSTOMER_BY_ID";
 export const DELETE_ROOM_BY_ID = "DELETE_ROOM_BY_ID";
 export const DELETE_POST_BY_ID = "DELETE_POST_BY_ID";
 //==============================================
+
+
+
+//Users
+export const GET_CARTS = "GET_CARTS";
+export const COUNT_CART = "COUNT_CART";
+export const CARTS_ERROR = "CARTS_ERROR";
+export const GET_CART_ITEM = "GET_CART_ITEM";

@@ -17,7 +17,7 @@ const DashboardDisplay = ({
     }, [getCurrentRooms]);
 
         const arr = rooms.filter(item=>( item._id));
-        console.log(arr.length)
+
     return(
         <Fragment>
             <div>

@@ -7,14 +7,22 @@ const CartSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "users"
     },
-    room: {
-        type: Schema.Types.ObjectId,
-        ref: "rooms"
-    },
-    name: {
-        type: String
-    },
-
+    rooms:[
+        {
+            room:{
+                    type: Schema.Types.ObjectId,
+                    ref: "rooms"
+                }
+        }
+    ],
+    travels:[
+        {
+            travel:{
+                //ini perlu di ganti kalo udah ada database nya
+                type: String
+            }
+        }
+    ],
     date: {
         type: Date,
         default: Date.now

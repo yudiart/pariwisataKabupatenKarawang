@@ -5,7 +5,6 @@ const cors = require('cors');
 const app = express();
 const bodyParser = require('body-parser');
 const multer = require('multer');
-const upload = multer();
 
 //Connect DB
 connectDB();
@@ -30,6 +29,8 @@ app.use("/api/covid", require("./routes/api/covid"));
 app.use("/api/villa",require("./routes/api/villa"));
 app.use("/api/room",require("./routes/api/rooms"));
 app.use("/api/v1/admin",require("./routes/api/v1/admin"));
+app.use("/api/v1/order/",require("./routes/api/v1/order/order"));
+app.use("/api/v1/cart/",require("./routes/api/v1/carts/cart"));
 app.use('/uploads', express.static('uploads'));
 
 //Serve static assets in production

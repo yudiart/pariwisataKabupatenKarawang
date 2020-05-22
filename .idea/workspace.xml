@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/Carts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Wisata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/actions/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/reducers/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Orders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/v1/carts/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/v1/order/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/v1/travels/travels.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Carts.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Carts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Wisata.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Travels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clone/vodonesia" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/pariwisata" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -109,6 +125,17 @@
       <workItem from="1588912807572" duration="24051000" />
       <workItem from="1589053547945" duration="3418000" />
       <workItem from="1589082395311" duration="3293000" />
+      <workItem from="1589148580382" duration="4159000" />
+      <workItem from="1589235410806" duration="26145000" />
+      <workItem from="1589381351037" duration="686000" />
+      <workItem from="1589415768288" duration="2126000" />
+      <workItem from="1589609277154" duration="2499000" />
+      <workItem from="1589718248141" duration="3526000" />
+      <workItem from="1589812684494" duration="1390000" />
+      <workItem from="1589945000825" duration="6144000" />
+      <workItem from="1590078033874" duration="12912000" />
+      <workItem from="1590133688141" duration="958000" />
+      <workItem from="1590153602548" duration="5025000" />
     </task>
     <servers />
   </component>
@@ -140,18 +167,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588890283914" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588811205020">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589239695719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588811205020" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589239695719" />
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog" timestamp="1587415293373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587415293373" />
-    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1588703985719">
+    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1589621475542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588703985719" />
+    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589621475542" />
     <state x="1279" y="239" key="RollbackChangesDialog" timestamp="1587321089704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -164,10 +191,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1587479434167" />
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587925716598">
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590084930323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587925716598" />
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590084930323" />
     <state x="667" y="255" width="585" height="530" key="find.popup" timestamp="1588287517796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
