@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import Spinner from "../layout/Spinner";
 import SideBar from "./sidebar/SideBar";
 
-const Dashboard = ({auth:{user,isAuthenticated,loading}}) => {
+const Dashboard = ({auth:{loading}}) => {
 
   return loading  ? (
     <Spinner />

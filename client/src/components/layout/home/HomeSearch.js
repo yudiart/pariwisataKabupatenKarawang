@@ -40,15 +40,7 @@ const countryOptions = [
     { key: '28', value: 'Tirtajaya', text: 'Tirtajaya' },
     { key: '29', value: 'Tirtamulya', text: 'Tirtamulya' }
 ];
-const HomeSearch = ({
-     logout,
-     getCurrentProfile,
-     auth: { isAuthenticated, user},
-     profile: { profile, loading }
-}) => {
-    useEffect(() => {
-        getCurrentProfile();
-    }, [getCurrentProfile]);
+const HomeSearch = () => {
     const [displayVilla, toggleVilla] = useState(0);
     const [displayPariwisata, togglePariwisata] = useState(0);
     return(
@@ -132,18 +124,13 @@ const HomeSearch = ({
     )
 }
 HomeSearch.propTypes = {
-    getCurrentProfile: PropTypes.func.isRequired,
-    auth: PropTypes.object.isRequired,
-    logout: PropTypes.func.isRequired,
-    profile: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
-    auth: state.auth,
-    profile: state.profile
+
 });
 
 export default connect(
     mapStateToProps,
-    { getCurrentProfile,logout }
+    {}
 )(HomeSearch);

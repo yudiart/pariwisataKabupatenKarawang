@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const auth = require("../../middleware/auth");
+const {noAuth} = require('../../middleware/noAuth');
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const { check, validationResult } = require("express-validator");
@@ -61,7 +62,8 @@ router.post(
       //Create payload
       const payload = {
         user: {
-          id: user.id
+          id: user.id,
+          role: user.role
         }
       };
       //Expiration date extreme for testing purposes

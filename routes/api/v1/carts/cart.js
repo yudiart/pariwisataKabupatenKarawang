@@ -3,16 +3,23 @@ const { check, validationResult } = require("express-validator");
 const express = require("express");
 const router = express.Router();
 const auth = require("../../../../middleware/auth");
+const {Role} = require('../../../../middleware/authRole');
 const User = require("../../../../models/User");
 const Villa = require("../../../../models/Villa");
 const Room = require("../../../../models/Room");
 const Order = require("../../../../models/Orders");
 const Carts = require("../../../../models/Carts");
+const {ROLE} = require("../data");
 
+const role ={
+    admin: 'admin',
+    villa: 'villa',
+    customer: 'customer'
+}
 //@route GET api/auth/all
 //@desc Auth user by role admin.
 //access private by role admin
-router.put("/",auth,async (req, res) => {
+router.put("/",auth,Role(role.customer),async (req, res) => {
     //destructring
     const {
         room,
@@ -56,7 +63,7 @@ router.put("/",auth,async (req, res) => {
     }
 );
 
-router.get("/",auth,async (req, res) => {
+router.get("/",auth,Role(ROLE.customer), async (req, res) => {
         try {
             const carts = await Carts.findOne({ user: req.user.id })
 
@@ -72,7 +79,7 @@ router.get("/",auth,async (req, res) => {
     }
 );
 
-router.get('/count', auth, async(req,res)=>{
+router.get('/count', auth,Role(ROLE.customer), async(req,res)=>{
     try {
         const carts = await Carts.findOne({ user: req.user.id })
         const a =carts.rooms.length;

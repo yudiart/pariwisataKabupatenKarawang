@@ -10,7 +10,7 @@ import NavItems from "./child/navitems";
 import RightContent from "../content/RightContent";
 import NavDash from "../pages/navbar/navDash";
 
-const SideBar =({auth: { user ,loading ,isAuthenticated}}) => {
+const SideBar =({auth: { loading}}) => {
     const [state,setState]=useState(false);
 
     const toggleClickHandler =()=>{

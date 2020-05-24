@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/actions/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/reducers/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Orders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api/v1/carts/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api/v1/order/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api/v1/travels/travels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/customer/customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/navbar/Customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/navbar/NavbarItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/authRole.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/noAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/v1/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/navbar/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Carts.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Carts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Wisata.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Travels.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/v1/carts/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/v1/carts/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,19 +57,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\components\layout\navbar" />
+      <recent name="F:\file yudi\program\skripsi\" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\components\routing" />
       <recent name="F:\file yudi\program\skripsi\client\src\components" />
       <recent name="F:\file yudi\program\skripsi\client\src\assets" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\template" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\public" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\layout\home" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\villa\villa-forms" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -135,7 +133,9 @@
       <workItem from="1589945000825" duration="6144000" />
       <workItem from="1590078033874" duration="12912000" />
       <workItem from="1590133688141" duration="958000" />
-      <workItem from="1590153602548" duration="5025000" />
+      <workItem from="1590153602548" duration="6088000" />
+      <workItem from="1590229232338" duration="13336000" />
+      <workItem from="1590346024075" duration="11425000" />
     </task>
     <servers />
   </component>
@@ -159,10 +159,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588472058751" />
-    <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587230350805">
+    <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590351726331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587230350805" />
+    <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590351726331" />
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588890283914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -191,10 +191,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1587479434167" />
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590084930323">
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590349818487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590084930323" />
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590349818487" />
     <state x="667" y="255" width="585" height="530" key="find.popup" timestamp="1588287517796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -203,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1096" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587304780566" />
-    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup" timestamp="1587777392671">
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup" timestamp="1590240949613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587777392671" />
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590240949613" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

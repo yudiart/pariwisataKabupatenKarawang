@@ -4,29 +4,26 @@ import {Card, Col, Container, Row} from "react-bootstrap";
 import HomeLanding from "./HomeLanding";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
-import {getCurrentProfile} from "../../../actions/profile";
 import {logout} from "../../../actions/auth";
 import {getVillas} from "../../../actions/villa";
 import {getAllRooms} from "../../../actions/room";
-import Navbar from "../Navbar";
+import Navbar from "../navbar/Navbar";
 import Spinner from "../Spinner";
 
 
 const Home = ({
-    logout,
-    getCurrentProfile,
     getVillas,
     getAllRooms,
     villa:{villas,villa, loading},
     room:{rooms},
     auth,
-    profile: { profile}
+
 })=>{
 useEffect(() => {
-    getCurrentProfile();
+
     getVillas();
     getAllRooms();
-}, [getCurrentProfile,getVillas,getAllRooms]);
+}, [getVillas,getAllRooms]);
   return (
       loading || rooms.loading === true ? <Spinner/> :
           auth && auth.loading === true ? <Spinner/> :
@@ -78,23 +75,20 @@ useEffect(() => {
   );
 };
 Home.propTypes ={
-    getCurrentProfile: PropTypes.func.isRequired,
     getVillas: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
     room: PropTypes.object.isRequired,
     villa: PropTypes.object.isRequired,
-    logout: PropTypes.func.isRequired,
-    profile: PropTypes.object.isRequired
+    logout: PropTypes.func.isRequired
 }
 
 const mapStateToProps = state => ({
     auth: state.auth,
     villa: state.villa,
-    profile: state.profile,
     room: state.room
 });
 
 export default connect(
     mapStateToProps,
-    { getCurrentProfile,getVillas,getAllRooms,logout }
+    { getVillas,getAllRooms,logout }
 )(Home);

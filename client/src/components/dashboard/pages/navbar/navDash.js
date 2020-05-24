@@ -7,24 +7,17 @@ import './navDash.css';
 import {Link} from "react-router-dom";
 import {getCarts} from "../../../../actions/cart";
 import {getCountCarts} from "../../../../actions/cart";
+import Customer from "./customer";
 
 
 const NavDash = ({
-    getCarts,
-    getCountCarts,
-    cart:{count},
     auth:{user,loading}
 })=>{
-    useEffect(() => {
-        getCarts();
-        getCountCarts();
-    }, [getCarts,getCountCarts]);
     const authLinks = (
         <Nav>
             {user && user.role === 'customer'? (
                 <ul>
-                    <li><Link to='#notify' className={'navtopicon'}><i className='mdi mdi-bell'/><span className="badge badge-danger">{count}</span></Link></li>
-                    <li><Link to='#message' className={'navtopicon'}><i className='mdi mdi-message'/></Link></li>
+                    <Customer/>
                 </ul>
             ):(<></>)}
 
@@ -61,8 +54,6 @@ const NavDash = ({
 
 
 NavDash.propTypes = {
-    getCart: PropTypes.func.isRequired,
-    getCountCarts: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
     admin: PropTypes.object.isRequired,
     cart: PropTypes.array.isRequired
@@ -70,8 +61,7 @@ NavDash.propTypes = {
 
 const mapStateToProps = state => ({
     auth: state.auth,
-    admin: state.admin,
-    cart: state.cart
+    admin: state.admin
 });
 
-export default connect(mapStateToProps, {getCarts,getCountCarts})(NavDash);
+export default connect(mapStateToProps, {})(NavDash);
