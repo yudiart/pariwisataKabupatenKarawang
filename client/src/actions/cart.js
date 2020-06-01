@@ -5,6 +5,17 @@ import {
     CARTS_ERROR, COUNT_CART
 } from "./types";
 
+export const addCarts = ()=> async dispatch => {
+    try{
+        const res = await axios.put('/api/v1/cart');
+
+        dispatch({
+
+        })
+    }catch(err){
+
+    }
+}
 
 //Get Covid
 export const getCarts = () => async dispatch => {

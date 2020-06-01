@@ -25,7 +25,6 @@ app.use("/api/users",cors(), require("./routes/api/users"));
 app.use("/api/posts", require("./routes/api/posts"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
-app.use("/api/covid", require("./routes/api/covid"));
 app.use("/api/villa",require("./routes/api/villa"));
 app.use("/api/room",require("./routes/api/rooms"));
 app.use("/api/v1/admin",require("./routes/api/v1/admin"));

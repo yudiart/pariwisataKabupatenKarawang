@@ -74,6 +74,8 @@ export const DELETE_POST_BY_ID = "DELETE_POST_BY_ID";
 
 //Users
 export const GET_CARTS = "GET_CARTS";
+export const ADD_CART = "ADD_CART";
+export const DELETE_ITEM_CART = "DELETE_ITEM_CART";
 export const COUNT_CART = "COUNT_CART";
 export const CARTS_ERROR = "CARTS_ERROR";
 export const GET_CART_ITEM = "GET_CART_ITEM";

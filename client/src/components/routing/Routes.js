@@ -14,7 +14,6 @@ import Post from "../post/Post";
 import Profiles from "../profiles/Profiles";
 import NotFound from "../layout/NotFound";
 import Profile from "../profile/Profile";
-import Covid from "../covid/Covids";
 import Rooms from "../rooms/Rooms";
 import DisplayAdmin from "../dashboard/pages/admin/DisplayAdmin";
 import SideBar from "../dashboard/sidebar/SideBar";
@@ -28,8 +27,6 @@ export const Routes = () => {
         <Route exact path="/login" component={Login} />
         <Route exact path="/profiles" component={Profiles} />
         <Route exact path="/profile" component={Profile} />
-
-        <Route exact path="/covid" component={Covid} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <PrivateRoute exact path="/dashboard/:pages" component={Dashboard} />
 

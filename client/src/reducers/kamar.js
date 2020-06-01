@@ -53,7 +53,7 @@ export default function(state = initalState, action) {
         case ADD_KAMAR:
             return {
                 ...state,
-                posts: [payload, ...state.posts],
+                kamar: [payload, ...state.kamar],
                 loading: false
             };
         default:

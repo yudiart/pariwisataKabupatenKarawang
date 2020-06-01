@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/layout/navbar/Navbar";
+
 import Home from "./components/layout/home/Home";
 
 import { loadUser } from "./actions/auth";

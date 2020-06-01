@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/customer/customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/navbar/Customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/navbar/NavbarItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/authRole.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/noAuth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api/v1/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Payment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/covid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/covid/Covids.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/covid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/kamar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/kamar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/covid.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api/v1/carts/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/v1/carts/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/v1/order/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/v1/order/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +139,13 @@
       <workItem from="1590133688141" duration="958000" />
       <workItem from="1590153602548" duration="6088000" />
       <workItem from="1590229232338" duration="13336000" />
-      <workItem from="1590346024075" duration="11425000" />
+      <workItem from="1590346024075" duration="14589000" />
+      <workItem from="1590479864184" duration="3429000" />
+      <workItem from="1590599308774" duration="593000" />
+      <workItem from="1590682974830" duration="1330000" />
+      <workItem from="1590922400854" duration="679000" />
+      <workItem from="1590943339587" duration="3949000" />
+      <workItem from="1591004977662" duration="1692000" />
     </task>
     <servers />
   </component>
@@ -167,10 +177,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588890283914" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589239695719">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590482787074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589239695719" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590482787074" />
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog" timestamp="1587415293373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -187,10 +197,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588891766177" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1587479434167">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1590482859660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1587479434167" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1590482859660" />
     <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590349818487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

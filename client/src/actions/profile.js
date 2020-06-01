@@ -27,7 +27,6 @@ export const getCurrentProfile = () => async dispatch => {
     });
   }
 };
-
 //Get all user's profiles
 
 export const getProfiles = () => async dispatch => {

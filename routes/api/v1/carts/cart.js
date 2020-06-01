@@ -66,11 +66,6 @@ router.put("/",auth,Role(role.customer),async (req, res) => {
 router.get("/",auth,Role(ROLE.customer), async (req, res) => {
         try {
             const carts = await Carts.findOne({ user: req.user.id })
-
-            const a =carts.rooms.length;
-            const b =carts.travels.length;
-            const c = a+b;
-
             await res.json(carts)
         }catch (err) {
             console.error(err.message);

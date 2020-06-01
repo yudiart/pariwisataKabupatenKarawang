@@ -1,6 +1,7 @@
 import {
     GET_CARTS,
-    GET_CART_ITEM,COUNT_CART
+    GET_CART_ITEM,COUNT_CART,
+    ADD_CART,DELETE_ITEM_CART
 } from "../actions/types";
 
 //Create initial state
@@ -15,6 +16,12 @@ export default function(state = initialState, action) {
     const { type, payload } = action;
 
     switch (type) {
+        case ADD_CART:
+            return {
+                ...state,
+                item: payload,
+                loading:false
+            }
         case GET_CARTS:
             return {
                 ...state,

@@ -7,25 +7,15 @@ const OrderSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "users"
     },
-    room:{
+    order:{
         type: Schema.Types.ObjectId,
-        ref: "rooms"
+        ref: "orders"
     },
-    travel:{
-        //ini perlu di ganti kalo udah ada database nya
-        type: String
-    },
-    qty:{
-        type:Number
-    },
-    name:{
+    code_payment:{
         type:String
     },
-    subTotal:{
-        type: Number
-    },
-    total:{
-        type: Number
+    status:{
+        type:String
     },
     date: {
         type: Date,
@@ -33,4 +23,4 @@ const OrderSchema = new Schema({
     }
 });
 
-module.exports = Order = mongoose.model("order", OrderSchema);
+module.exports = Payment = mongoose.model("payment", OrderSchema);
