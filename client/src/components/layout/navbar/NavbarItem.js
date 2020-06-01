@@ -44,7 +44,7 @@ const NavBar = ({
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" className=''>
             <div className="container">
-                <div className='navbar-brand'><Link to='/' className="nav-link" style={{color: "white"}}>Vodo<span
+                <div className='navbar-brand'><Link to='/' className="nav-link text-dark">Vodo<span
                     style={{color: 'red'}}>nesia</span></Link></div>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 {!loading ? (
