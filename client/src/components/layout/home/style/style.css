@@ -1,0 +1,110 @@
+.header-jumbotron{
+    height:300px;
+    border-radius: 0;
+    margin-top:70px;
+    padding-top:40px;
+}
+
+.bg-gradient{
+    background: rgb(33,217,235);
+    background: linear-gradient(90deg, rgba(33,217,235,1) 0%, rgba(43,194,209,1) 35%, rgba(28,214,232,1) 100%);
+}
+.form-home{
+    border-radius: 20px;
+    min-height: 500px;
+    margin-top:-100px;
+
+}
+._1uz2h{
+    background-color: #F9F9F9;
+    padding:20px;
+}
+._1uz2h button{text-align: left;font-size: 15px}
+
+
+._3kcKR{
+    margin-top:100px;
+    min-height: 900px;
+
+}
+.bg_1MlOC{
+    background: #FDB524;
+    width:100%;
+    min-height:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Margin Top*/
+.wd_LDesk{
+    height:100%;
+    padding:20px;
+}
+.ct_hm124{
+    text-align:center;
+    width:90%;
+    height:50%;
+}
+.ct_hm124 h1{
+    font-weight: bold;
+    text-align: left;
+    font-size: 30px;
+    color:white;
+}
+.ct_hm124 p{
+    margin-top:20px;
+    text-align: left;
+    font-size: 20px;
+    color:white;
+    margin-bottom: 40px;
+}
+.img_porto {
+    border:5px solid white;
+    width:25.7rem;
+    border-radius: 10px;
+}
+.img_porto img{
+    border-radius: 5px;
+    margin: 0;
+    padding:0;
+    object-fit: cover;
+    object-position: 100% 0;
+
+    width: 25rem;
+    height: 200px;
+}
+
+.wd_IRDesk{
+
+}
+
+.wd_IRDesk h1{
+    font-weight: bold;
+    font-size: 20px;
+    color:white;
+    margin-left: 5px;
+}
+.wd_IRDesk p{
+
+    font-size: 15px;
+    color:white;
+    margin-left: 5px;
+}
+
+.wd_IVDesk{
+    margin-right:20px;
+}
+
+.wd_IVDesk h1{
+    font-weight: bold;
+    font-size: 20px;
+    color:white;
+    margin-left: 5px;
+}
+.wd_IVDesk p{
+
+    font-size: 15px;
+    color:white;
+    margin-left: 5px;
+}

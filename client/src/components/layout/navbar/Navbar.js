@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
-
+import './Navbarstyle.css';
 import { logout } from "../../../actions/auth";
 import {getCarts, getCountCarts} from "../../../actions/cart";
 import NavbarItem from "./NavbarItem";
@@ -16,7 +16,7 @@ const NavBar = ({
 }) => {
 
   return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" className=''>
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" className='shadow'>
           <div className="container">
               <div className='navbar-brand'><Link to='/' className="nav-link" style={{color: "white"}}>Vodo<span
                   style={{color: 'red'}}>nesia</span></Link></div>
@@ -27,10 +27,10 @@ const NavBar = ({
                       <Nav>
                           <div>{!loading && isAuthenticated === true ?
                               <NavbarItem/> :
-                          <Nav>
-                              <Link to="/login" className='nav-link border-right'>Login</Link>
-                              <Link to="/register" className='nav-link'>Register</Link>
-                          </Nav>
+                              <Nav>
+                                  <Link to="/login" className='nav-link border-right'>Login</Link>
+                                  <Link to="/register" className='nav-link'>Register</Link>
+                              </Nav>
                           }</div>
                       </Nav>
                   </Navbar.Collapse>

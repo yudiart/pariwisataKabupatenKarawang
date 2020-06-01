@@ -44,12 +44,10 @@ const HomeSearch = () => {
     const [displayVilla, toggleVilla] = useState(0);
     const [displayPariwisata, togglePariwisata] = useState(0);
     return(
-        <div style={{minHeight:'400px', marginTop:'-50px', borderRadius:'10px'}} className='jumbotron-fluid _1uz2h bg-white shadow'>
+            <div className=' form-home _1uz2h bg-white shadow' >
             <Row>
                 <Col lg={3}>
                     <div className="jumbotron-fluid _1uz2h">
-
-
                         <button
                             type='button'
                             className='btn btn-block'

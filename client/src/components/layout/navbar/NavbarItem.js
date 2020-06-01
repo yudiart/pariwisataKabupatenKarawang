@@ -42,7 +42,7 @@ const NavBar = ({
     );
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" className=''>
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" className=''>
             <div className="container">
                 <div className='navbar-brand'><Link to='/' className="nav-link" style={{color: "white"}}>Vodo<span
                     style={{color: 'red'}}>nesia</span></Link></div>
