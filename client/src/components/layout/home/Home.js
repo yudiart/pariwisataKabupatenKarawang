@@ -32,8 +32,11 @@ useEffect(() => {
               <Navbar/>
               <div>
                   <HomeLanding/>
-                  <HomePortofolio/>
+
               </div>
+              <section>
+                  <HomePortofolio/>
+              </section>
               <section>
                   <Footer/>
               </section>

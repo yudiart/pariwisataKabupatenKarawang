@@ -45,6 +45,32 @@ useEffect(() => {
     return (
         <Fragment>
             <div className="_3kcKR">
+                <div className='ws_Kec'>
+                    <Container>
+                        <Row>
+                            <Col lg={4}>
+                                <div className="ct_WsKec">
+                                    <h1>Local Destination to Explore</h1>
+                                    <p>Enjoy a wide range of villas on Vodonesia</p>
+                                </div>
+                            </Col>
+                            <Col lg={8}>
+                                <Row>
+                                    {room.slice(0,6).map(item => (
+                                        <div className='ws_right'>
+                                            <div key={item._id} className='img_porto2 shadow'>
+                                                <div style={{backgroundImage:`url(${item.images[0]})`}} className='img'>
+                                                    <h1>Villas</h1>
+                                                    <p>+17.000 Villas Joining</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
                     <div className='bg_1MlOC'>
                         <Container>
                         <Row>
@@ -81,9 +107,7 @@ useEffect(() => {
                         </Row>
                     </Container>
                 </div>
-                <div className='text-center'>
-                    <h1>Space Developers</h1>
-                </div>
+
             </div>
         </Fragment>
     )

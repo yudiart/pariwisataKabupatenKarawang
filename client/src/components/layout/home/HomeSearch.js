@@ -47,15 +47,7 @@ const HomeSearch = () => {
             <div className=' form-home _1uz2h bg-white shadow' >
             <Row>
                 <Col lg={3}>
-                    <div className="jumbotron-fluid _1uz2h">
-                        <button
-                            type='button'
-                            className='btn btn-block'
-                            onClick={
-                                ()=>toggleVilla(1)|| togglePariwisata(0)}
-                        >
-                            <i className='mdi mdi-home-modern text-primary'/> Villa
-                        </button>
+                    <div className="bt_menu_left">
                         <button
                             type='button'
                             className='btn btn-block'
@@ -64,6 +56,15 @@ const HomeSearch = () => {
                         >
                             <i className='mdi mdi-food text-primary'/> Pariwisata
                         </button>
+                        <button
+                            type='button'
+                            className='btn btn-block'
+                            onClick={
+                                ()=>toggleVilla(1)|| togglePariwisata(0)}
+                        >
+                            <i className='mdi mdi-home-modern text-primary'/> Villa
+                        </button>
+
                         <button
                             type='button'
                             className='btn btn-block'>
@@ -95,25 +96,23 @@ const HomeSearch = () => {
                                     />
                                 </>
                             </div>
-                        ):null}
-                        {displayPariwisata === 1 ? (
-                            <div className="_1uz2h">
-                                <div className="title mt-2 mb-4">
-                                    <h2><i className='mdi mdi-magnify'/>Lokasi Pariwisata</h2>
-                                </div>
-                                <>
-                                    <Dropdown
-                                        clearable
-                                        fluid
-                                        multiple
-                                        search
-                                        selection
-                                        options={countryOptions}
-                                        placeholder='Select Kecamatan'
-                                    />
-                                </>
+                        ):<div className="_1uz2h">
+                            <div className="title mt-2 mb-4">
+                                <h2><i className='mdi mdi-magnify'/>Lokasi Pariwisata</h2>
                             </div>
-                        ):null}
+                            <>
+                                <Dropdown
+                                    clearable
+                                    fluid
+                                    multiple
+                                    search
+                                    selection
+                                    options={countryOptions}
+                                    placeholder='Select Kecamatan'
+                                />
+                            </>
+                        </div>}
+
 
                     </div>
                 </Col>

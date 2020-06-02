@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/public/uploads/1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/navbar/NavbarItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/navbar/NavbarItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/uploads/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/HomeHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/child/HomePortofolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/child/HomePortofolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +42,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="C:/xampp/htdocs/pariwisata" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/public/uploads" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\public\uploads" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\routing" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout\navbar" />
       <recent name="F:\file yudi\program\skripsi\" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
       <recent name="F:\file yudi\program\skripsi\client\src\assets" />
       <recent name="F:\file yudi\program\skripsi\client\public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\src\components\routing" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\template" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -127,7 +132,8 @@
       <workItem from="1590922400854" duration="679000" />
       <workItem from="1590943339587" duration="3949000" />
       <workItem from="1591004977662" duration="2728000" />
-      <workItem from="1591025268788" duration="13194000" />
+      <workItem from="1591025268788" duration="13235000" />
+      <workItem from="1591086026623" duration="4394000" />
     </task>
     <servers />
   </component>
