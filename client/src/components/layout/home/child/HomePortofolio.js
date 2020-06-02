@@ -59,9 +59,9 @@ useEffect(() => {
                                     {room.slice(0,6).map(item => (
                                         <div className='ws_right'>
                                             <div key={item._id} className='img_porto2 shadow'>
-                                                <div style={{backgroundImage:`url(${item.images[0]})`}} className='img'>
-                                                    <h1>Villas</h1>
-                                                    <p>+17.000 Villas Joining</p>
+                                                <div style={{backgroundImage:`url(${item.images[0]})`}} className='img'></div>
+                                                <div className='img-text'>
+                                                    <h4><b>Teluk Jambe</b></h4>
                                                 </div>
                                             </div>
                                         </div>
