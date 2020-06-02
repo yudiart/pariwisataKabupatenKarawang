@@ -28,8 +28,8 @@ const NavBar = ({
                           <div>{!loading && isAuthenticated === true ?
                               <NavbarItem/> :
                               <Nav>
-                                  <Link to="/login" className='nav-link border-right'>Login</Link>
-                                  <Link to="/register" className='nav-link'>Register</Link>
+                                  <Link to="/login" className='btn btn-light mr-1'>Login</Link>
+                                  <Link to="/register" className='btn btn-primary'>Register</Link>
                               </Nav>
                           }</div>
                       </Nav>
