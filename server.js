@@ -30,6 +30,7 @@ app.use("/api/room",require("./routes/api/rooms"));
 app.use("/api/v1/admin",require("./routes/api/v1/admin"));
 app.use("/api/v1/order/",require("./routes/api/v1/order/order"));
 app.use("/api/v1/cart/",require("./routes/api/v1/carts/cart"));
+app.use("/api/v1/pay/",require("./routes/api/v1/payment/payment"));
 app.use('/uploads', express.static('uploads'));
 
 //Serve static assets in production

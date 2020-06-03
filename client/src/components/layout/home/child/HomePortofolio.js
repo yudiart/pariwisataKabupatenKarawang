@@ -77,7 +77,7 @@ useEffect(() => {
                             <Col lg={4}>
                                 <div className='wd_LDesk'>
                                     <div className="ct_hm124">
-                                        <h1>Extra space for family and friends</h1>
+                                        <h2>Extra space for family and friends</h2>
                                         <p>Enjoy a wide range of villas on Vodonesia</p>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@ useEffect(() => {
                                                 <img src={item.images[0]} alt={item.images}/>
                                             </div>
                                         ))}
-                                        <h1>Villas</h1>
+                                        <h2>Villas</h2>
                                         <p>+17.000 Villas Joining</p>
                                     </div>
                                     <div className='wd_IRDesk'>
@@ -99,7 +99,7 @@ useEffect(() => {
                                                 <img src={item.images[0]} alt={item.images}/>
                                             </div>
                                         ))}
-                                        <h1>Rooms</h1>
+                                        <h2>Rooms</h2>
                                         <p>+17.000 Total Rooms All Villa</p>
                                     </div>
                                 </Row>
