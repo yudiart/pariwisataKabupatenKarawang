@@ -62,7 +62,8 @@ router.post(
       //Create payload
       const payload = {
         user: {
-          id: user.id
+          id: user.id,
+          role: user.role
         }
       };
       //Expiration date extreme for testing purposes
@@ -79,8 +80,10 @@ router.post(
           });
         }
       );
-      const cart = new Carts({user:user.id});
-      await cart.save();
+      if (role === 'customer'){
+        const cart = new Carts({user:user.id});
+        await cart.save();
+      }
       //Check if user exits
       //Get users gravatar
       //Encrypt password

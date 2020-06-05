@@ -7,25 +7,20 @@ const VillaSchema = new Schema({
         ref: "users"
     },
     villaName:{
-        type: String,
-        required: true
+        type: String
     },
     location: {
         kecamatan:{
-            type:String,
-            required: true
+            type:String
         },
         kelurahan:{
-            type:String,
-            required:true
+            type:String
         },
         postcode:{
-          type: Number,
-          required: true
+          type: Number
         },
         jalan:{
-            type:String,
-            required: true
+            type:String
         },
         kampung:{
             type:String
@@ -42,11 +37,9 @@ const VillaSchema = new Schema({
         no: {
             type: Number
         }
-
     },
     contact:{
-        type:Number,
-        required: true
+        type:Number
     },
     bio: {
         type: String
@@ -69,7 +62,7 @@ const VillaSchema = new Schema({
         type: Array,
         default: []
     },
-    followers: [
+    likes: [
         {
             user: {
                 type: Schema.Types.ObjectId,

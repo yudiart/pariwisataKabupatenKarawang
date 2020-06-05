@@ -1,17 +1,22 @@
 const express = require("express");
 const fs = require('fs');
 const router = express.Router();
-
 const upload = require('../../services/fileUpload').single('image');
-
 const { check, validationResult } = require("express-validator");
 const auth = require("../../middleware/auth");
+const {Role} = require('../../middleware/authRole');
+
+const role ={
+    admin: 'admin',
+    villa: 'villa',
+    customer: 'customer'
+}
 const Room = require("../../models/Room");
 const Villa = require("../../models/Villa");
 const User = require("../../models/User");
 
 // AWS S3
-router.put("/:_id", auth, (req,res)=>{
+router.put("/:_id", auth,Role(role.villa), (req,res)=>{
     upload(req,res,async (err)=>{
         const newImage = ([req.file.location]);
         try {
@@ -34,7 +39,7 @@ router.put("/:_id", auth, (req,res)=>{
 router.post(
     "/",
     [
-        auth,
+        auth,Role(role.villa),
         [
             check("roomName", "Room Name is required!")
                 .not()
@@ -58,8 +63,24 @@ router.post(
             description,
             limit,
             harga,
-            tipeKamar
+            tipeKamar,
+            ac,
+            tv,
+            bedtype,
+            wifi,
+            other
         } = req.body;
+
+        const roomFields = {};
+        roomFields.user = req.user.id;
+        //Build fasilitas
+        roomFields.fasilitas={};
+        if (ac)             roomFields.fasilitas.ac = ac;
+        if (tv)             roomFields.fasilitas.tv = tv;
+        if (bedtype)        roomFields.fasilitas.bedtype = bedtype;
+        if (wifi)           roomFields.fasilitas.wifi = wifi;
+        if (other)          roomFields.fasilitas.other = other;
+        // const user = await User.findById(req.user.id).select("-password")
         try {
             const user = await User.findById(req.user.id).select("-password")
 
@@ -70,7 +91,9 @@ router.post(
                 description:description,
                 limit:limit,
                 harga: harga,
-                tipeKamar: tipeKamar
+                tipeKamar: tipeKamar,
+                fasilitas: roomFields.fasilitas
+
             });
 
             const room = await newRoom.save();

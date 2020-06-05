@@ -7,27 +7,42 @@ const RoomSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "users"
     },
-    name: {
-        type: String
-    },
     roomName: {
         type: String
     },
     description: {
         type: String
     },
-    images:
-        {
+    images: {
         type: Array,
             default: []
-        }
-    ,
+    },
     limit: {
         type: Number,
         default: 1
     },
     harga: {
         type: Number
+    },
+    tipeKamar: {
+        type: String
+    },
+    fasilitas: {
+        ac: {
+            type: String
+        },
+        tv: {
+            type: String
+        },
+        bedtype: {
+            type: String
+        },
+        wifi: {
+            type: String
+        },
+        other:{
+            type: String
+        }
     },
     wishList: [
         {
@@ -37,9 +52,7 @@ const RoomSchema = new Schema({
             }
         }
     ],
-    tipeKamar: {
-        type: String
-    },
+
     date: {
         type: Date,
         default: Date.now

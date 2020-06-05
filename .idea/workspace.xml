@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/api/v1/payment/payment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/child/HomePortofolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/child/HomePortofolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Room.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/posts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/v1/payment/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/v1/payment/payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/villa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,6 +138,9 @@
       <workItem from="1591025268788" duration="13235000" />
       <workItem from="1591086026623" duration="7851000" />
       <workItem from="1591114886032" duration="6263000" />
+      <workItem from="1591267291321" duration="584000" />
+      <workItem from="1591364795562" duration="1518000" />
+      <workItem from="1591374751531" duration="8170000" />
     </task>
     <servers />
   </component>
@@ -165,10 +172,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588890283914" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590482787074">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591382997048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590482787074" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591382997048" />
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog" timestamp="1587415293373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -201,10 +208,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1096" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587304780566" />
-    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup" timestamp="1590240949613">
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup" timestamp="1591375849499">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590240949613" />
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591375849499" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

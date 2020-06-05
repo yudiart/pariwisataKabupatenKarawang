@@ -4,6 +4,13 @@ const config = require('config');
 const router = express.Router();
 const { check, validationResult } = require("express-validator");
 const auth = require("../../middleware/auth");
+const {Role} = require('../../middleware/authRole');
+
+const role ={
+    admin: 'admin',
+    villa: 'villa',
+    customer: 'customer'
+}
 
 
 const User = require("../../models/User");
@@ -18,7 +25,6 @@ router.get('/me', auth, async(req,res)=>{
         const villa = await Villa.findOne({user: req.user.id}).populate(
             "villa",["name"]
         );
-
 
         if (!villa){
             return res.status(400).json({message: "No Villa Profile for this user"});
@@ -37,65 +43,60 @@ router.get('/me', auth, async(req,res)=>{
 router.post(
     "/",
     [
-        auth,
+        auth,Role(role.villa),
         [
-            check("contact", "Contact is required")
+            check("villaName", "Status is required")
+                .not()
+                .isEmpty(),
+            check("kecamatan", "Status is required")
+                .not()
+                .isEmpty(),
+            check("contact", "Status is required")
                 .not()
                 .isEmpty()
         ]
     ],
     async (req, res) => {
         const errors = validationResult(req);
-
         //check for errors
         if (!errors.isEmpty()) {
             return res.status(400).json({ errors: errors.array() });
         }
-
         //Pull everything out from the body
         const {
-            kecamatan,
-            kelurahan,
-            postcode,
-            jalan,
-            kampung,
-            blok,
-            rt,
-            rw,
-            no,
-            bio,
+            villaName,
+            kecamatan, kelurahan, postcode, jalan, kampung, blok, rt, rw, no,
             contact,
-            youtube,
-            facebook,
-            twitter,
-            instagram,
+            bio,
+            youtube, facebook, twitter, instagram,
         } = req.body;
 
         //Build profile object to insert into database
         const villaFields = {};
         villaFields.user = req.user.id;
-        if (bio) villaFields.bio = bio;
-        if (contact) villaFields.contact = contact;
+        if (villaName)  villaFields.villaName = villaName;
+        if (bio)        villaFields.bio = bio;
+        if (contact)    villaFields.contact = contact;
 
-        //Build location
+        //Build address
         villaFields.location={};
-        if (kecamatan) villaFields.location.kecamatan = kecamatan;
-        if (kelurahan) villaFields.location.kelurahan = kelurahan;
-        if (postcode) villaFields.location.postcode = postcode;
-        if (jalan) villaFields.location.jalan = jalan;
-        if (kampung) villaFields.location.kampung = kampung;
-        if (blok) villaFields.location.blok = blok;
-        if (rt) villaFields.location.rt = rt;
-        if (rw) villaFields.location.rw = rw;
-        if (no) villaFields.location.no = no;
+        if (kecamatan)  villaFields.location.kecamatan = kecamatan;
+        if (kelurahan)  villaFields.location.kelurahan = kelurahan;
+        if (postcode)   villaFields.location.postcode = postcode;
+        if (jalan)      villaFields.location.jalan = jalan;
+        if (kampung)    villaFields.location.kampung = kampung;
+        if (blok)       villaFields.location.blok = blok;
+        if (rt)         villaFields.location.rt = rt;
+        if (rw)         villaFields.location.rw = rw;
+        if (no)         villaFields.location.no = no;
 
 
         //Build social object to insert into database
         villaFields.social = {};
-        if (youtube) villaFields.social.youtube = youtube;
-        if (twitter) villaFields.social.twitter = twitter;
-        if (facebook) villaFields.social.facebook = facebook;
-        if (instagram) villaFields.social.instagram = instagram;
+        if (youtube)    villaFields.social.youtube = youtube;
+        if (twitter)    villaFields.social.twitter = twitter;
+        if (facebook)   villaFields.social.facebook = facebook;
+        if (instagram)  villaFields.social.instagram = instagram;
 
         try {
             let villa = await Villa.findOne({ user: req.user.id });
@@ -107,14 +108,14 @@ router.post(
                     { $set: villaFields },
                     { new: true }
                 );
-
                 return res.json(villa);
             }
 
             //Create
             villa = new Villa(villaFields);
             await villa.save();
-            await res.json(villa);
+            res.json(villa);
+
         } catch (err) {
             console.error(err.message);
             res.status(500).send("Server Error in Profile.js");
@@ -152,7 +153,7 @@ router.get("/profile/:villa_id", async (req, res) => {
         if (err.kind === "ObjectId") {
             return res.status(400).json({ message: "Villa not found!" });
         }
-        res.status(500).send("Server error in profile.js");
+        res.status(500).send("Server error in Villa.js");
     }
 });
 

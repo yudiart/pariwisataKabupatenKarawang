@@ -22,7 +22,6 @@ app.use((req, res, next) => {
 });
 //Define routes
 app.use("/api/users",cors(), require("./routes/api/users"));
-app.use("/api/posts", require("./routes/api/posts"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/villa",require("./routes/api/villa"));
