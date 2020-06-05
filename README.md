@@ -12,8 +12,24 @@ Projek website pariwisata ini adalah tugas akhir dari perkuliahan. alhamdulilah 
 * NodeJS
 * ReactJS 
 
+### Runing Project
+**start**
+```
+npm run start
+```
+**client**
+```
+npm run client
+```
+**dev**
+```
+npm run dev
+```
+**server**
+```
+npm run server
+```
 ### PORT
-
 **Client**
 ```
 http://localhost:3000
