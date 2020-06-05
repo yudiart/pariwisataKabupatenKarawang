@@ -11,8 +11,6 @@ const role ={
     villa: 'villa',
     customer: 'customer'
 }
-
-
 const User = require("../../models/User");
 const Villa = require("../../models/Villa");
 
@@ -193,63 +191,6 @@ router.post("/uploadImage",auth,(req,res)=>{
             fileName:res.req.file.filename
         })
     });
-});
-
-//@route PUT api/Villa/Kamar
-//@desc Add Villa Kamar
-//@access Private
-router.put("/kamar", [
-    auth,
-    [
-        check("roomName", "Room Name is required")
-            .not()
-            .isEmpty(),
-        check("description", "Description is required")
-            .not()
-            .isEmpty(),
-        check("harga", "Harga is required")
-            .not()
-            .isEmpty()
-    ]
-], async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array() });
-    }
-    //destructring
-    const {
-        roomName,
-        description,
-        limit,
-        images,
-        harga,
-        tipeKamar
-    } = req.body;
-
-    const newKam = {
-        roomName,
-        description,
-        limit,
-        harga,
-        images,
-        tipeKamar
-    };
-
-    try {
-        const villa = await Villa.findOne({ user: req.user.id });
-        //Push
-        villa.kamar.unshift(newKam);
-        await villa.save((err)=>{
-            if (err) return res.status(400).json({success: false, err})
-            return res.status(200).json({success:true})
-        });
-
-        await res.json(villa);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send("Server error in profile.js");
-    }
-
 });
 
 

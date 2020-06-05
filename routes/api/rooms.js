@@ -33,8 +33,8 @@ router.put("/:_id", auth,Role(role.villa), (req,res)=>{
     })
 });
 
-//@route POST api/posts
-//@desc Create a post
+//@route POST api/Room
+//@desc Added Room
 //@access Private
 router.post(
     "/",
@@ -80,7 +80,7 @@ router.post(
         if (bedtype)        roomFields.fasilitas.bedtype = bedtype;
         if (wifi)           roomFields.fasilitas.wifi = wifi;
         if (other)          roomFields.fasilitas.other = other;
-        // const user = await User.findById(req.user.id).select("-password")
+
         try {
             const user = await User.findById(req.user.id).select("-password")
 
@@ -104,6 +104,88 @@ router.post(
         }
     }
 );
+
+
+//@route POST api/Room
+//@desc Update Room By Id
+//@access Private
+router.post(
+    "/:id_kamar",
+    [
+        auth,Role(role.villa),
+        [
+            check("roomName", "Room Name is required!")
+                .not()
+                .isEmpty(),
+            check("description", "Description is required")
+                .not()
+                .isEmpty(),
+            check("harga", "Harga is required")
+                .not()
+                .isEmpty()
+        ]
+    ],
+    async (req, res) => {
+        const errors = validationResult(req);
+        //check error validasi
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() })
+        }
+        const {
+            roomName,
+            description,
+            limit,
+            harga,
+            tipeKamar,
+            ac,
+            tv,
+            bedtype,
+            wifi,
+            other
+        } = req.body;
+
+        const roomFields = {};
+        roomFields.user = req.user.id;
+        if (roomName)       roomFields.roomName = roomName;
+        if (description)    roomFields.description = description;
+        if (limit)          roomFields.limit = limit;
+        if (harga)          roomFields.harga = harga;
+        if (tipeKamar)      roomFields.tipeKamar = tipeKamar;
+        //Build fasilitas
+        roomFields.fasilitas={};
+        if (ac)             roomFields.fasilitas.ac = ac;
+        if (tv)             roomFields.fasilitas.tv = tv;
+        if (bedtype)        roomFields.fasilitas.bedtype = bedtype;
+        if (wifi)           roomFields.fasilitas.wifi = wifi;
+        if (other)          roomFields.fasilitas.other = other;
+
+
+        try {
+            let room = await Room.findOne({ user: req.user.id });
+            //Look for profile by user
+            if (room) {
+                //update!
+                room = await Room.findOneAndUpdate(
+                    { _id: req.params.id_kamar },
+                    { $set: roomFields },
+                    { new: true }
+                );
+                return res.json(room);
+            }
+
+            //Create
+            room = new Room(roomFields);
+            await room.save();
+            res.json(room);
+
+        } catch (err) {
+            console.error(err.message);
+            res.status(500).send("Server Error in Profile.js");
+        }
+    }
+);
+
+
 //@route GET api/Rooms
 //@desc Get all Rooms
 //@access public
@@ -121,7 +203,7 @@ router.get("/",  async (req, res) => {
 //@route GET api/Room/:id
 //@desc Get a single Room
 //@access Public
-router.get("/:_id", auth, async (req, res) => {
+router.get("/:_id", async (req, res) => {
     try {
         const room = await Room.findById(req.params._id);
 
@@ -140,10 +222,10 @@ router.get("/:_id", auth, async (req, res) => {
     }
 });
 
-//@Route    GET api/Room/me
-//@desc     GET Current Room
+//@Route    GET api/Room/villa/me
+//@desc     GET All Rooms By User id
 //@access   Private
-router.get('/villa/me', auth, async(req,res)=>{
+router.get('/villa/me', auth,Role(role.villa), async(req,res)=>{
     try{
         const room = await Room.find({user: req.user.id}).populate("users",["name"]);
 
@@ -157,14 +239,15 @@ router.get('/villa/me', auth, async(req,res)=>{
     }
 });
 
-//@Route    GET api/room/me
-//@desc     GET Current Room
+
+//@Route    GET api/room/villa/id
+//@desc     GET All Room By User id
 //@access   Public
 router.get(
     '/villa/:id',
     async (req,res)=>{
         try {
-            const room = await Room.findOne({user: req.params.id}).populate("users", ["name"]);
+            const room = await Room.find({user: req.params.id}).populate("users", ["name"]);
 
             if (!room) {
                 return res.status(404).json({ msg: "Room not found" });
@@ -185,14 +268,9 @@ router.get(
 //@route DELETE api/Room/:id
 //@desc Delete a single room
 //@access Private
-router.delete("/:id", auth, async (req, res) => {
+router.delete("/:id", auth,Role(role.villa), async (req, res) => {
     try {
         const room = await Room.findById(req.params.id);
-        const array = room.images;
-        const arr = array[0].slice(8,200);
-        fs.unlinkSync(`uploads/${arr}`)
-
-
         if (!room) {
             return res.status(404).json({ msg: "Post not found" });
         }
@@ -206,11 +284,11 @@ router.delete("/:id", auth, async (req, res) => {
 
         await room.remove();
 
-        await res.json({ msg: "Post was removed" });
+        await res.json({ msg: `${room.roomName} has been deleted!` });
     } catch (err) {
         console.error(err.message);
         if (err.kind === "ObjectId") {
-            return res.status(404).json({ msg: "Post not found" });
+            return res.status(404).json({ msg: "Room not found" });
         }
         res.status(500).send("Server error Router Delete");
     }
@@ -255,7 +333,7 @@ router.put("/unwishlist/:id", auth, async (req, res) => {
             room.wishList.filter(wish => wish.user.toString() === req.user.id).length ===
             0
         ) {
-            return res.status(400).json({ msg: "Post hasn't been liked yet!" });
+            return res.status(400).json({ msg: "Room hasn't been wishlist yet!" });
         }
         //puts it on the beginning
 
@@ -271,7 +349,7 @@ router.put("/unwishlist/:id", auth, async (req, res) => {
         res.json(room.wishList);
     } catch (err) {
         console.error(err.message);
-        res.status(500).send("Server error in likes posts.js");
+        res.status(500).send("Server error in wishlist Room.js");
     }
 });
 

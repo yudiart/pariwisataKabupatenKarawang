@@ -7,7 +7,9 @@ const { check, validationResult } = require("express-validator");
 const auth = require("../../middleware/auth");
 const Profile = require("../../models/Profile");
 const User = require("../../models/User");
-const Post = require("../../models/Post");
+const Cart = require("../../models/Carts");
+const Villa = require("../../models/Villa");
+const Room = require("../../models/Room");
 //@route GET api/profile/me
 //@desc Get current user
 //@access Private
@@ -135,15 +137,21 @@ router.get("/user/:user_id", async (req, res) => {
 //@access Private
 router.delete("/", auth, async (req, res) => {
   try {
+    const user = await User.findById(req.user.id);
     //Remove user's posts
+    if (req.user.role === 'customer'){
+      await Cart.deleteMany({ user: req.user.id });
+      await Profile.findOneAndRemove({ user: req.user.id });
+      await User.findOneAndRemove({ _id: req.user.id });
+    }
 
-    await Post.deleteMany({ user: req.user.id });
-
-    //Removes the profile
-    await Profile.findOneAndRemove({ user: req.user.id });
-    //Removes user
-    await User.findOneAndRemove({ _id: req.user.id });
-    res.json({ msg: "User deleted" });
+    if (req.user.role === 'villa'){
+      await Villa.deleteMany({ user: req.user.id });
+      await Profile.findOneAndRemove({ user: req.user.id });
+      await Room.findOneAndRemove({ user: req.user.id });
+      await User.findOneAndRemove({ _id: req.user.id });
+    }
+    res.json({ msg: `User ${user.email} Has been Deleted!` });
   } catch (err) {
     console.error(err.message);
     res.status(500).send("Server error in profile.js");
