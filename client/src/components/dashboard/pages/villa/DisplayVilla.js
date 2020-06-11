@@ -4,6 +4,8 @@ import VillaSettings from "./settings/VillaSettings";
 import DisplayRooms from "./room/DisplayRooms";
 
 import './displayVilla.css';
+import ImageUpload from "../../../rooms/ImageUpload";
+import Rooms from "../../../rooms/Rooms";
 const DisplayVilla =()=>{
     let {pages,action} = useParams();
 
@@ -18,17 +20,17 @@ const DisplayVilla =()=>{
                         </div>
                              :null}
                         {pages === 'settings'?
-                            <div className="home">
+                            <div className="settings">
                                 <VillaSettings/>
                             </div>
                         :null}
                         {pages === 'statistic'?
-                            <div className="home">
+                            <div className="statistic">
                                 <h1>Statistic</h1>
                             </div>
                             :null}
                         {pages === 'report'?
-                            <div className="home">
+                            <div className="report">
                                 <h1>Report</h1>
                             </div>
                             :null}
@@ -38,7 +40,9 @@ const DisplayVilla =()=>{
                            {pages === 'room'?
                                <>
                                    {action === 'addroom'?
-                                       <h1>Addroom</h1>
+                                       <div className="addroom ml-2">
+                                           <Rooms/>
+                                       </div>
                                        :null}
                                    {action === 'edit'?
                                        <h1>Edit Room</h1>

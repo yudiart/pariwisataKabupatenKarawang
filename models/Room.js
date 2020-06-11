@@ -15,7 +15,7 @@ const RoomSchema = new Schema({
     },
     images: {
         type: Array,
-            default: []
+        default: []
     },
     limit: {
         type: Number,

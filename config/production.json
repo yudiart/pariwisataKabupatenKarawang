@@ -1,8 +1,8 @@
 {
   "mongoURI": "mongodb+srv://vodonesia:arjuna46@vodonesia-vysbe.mongodb.net/vodonesia?retryWrites=true&w=majority",
   "jwtSecret": "publicToken",
-  "AWS_SECRET_ACCESS_KEY": "AKIAJIRGSDBNA3YLZ7FA",
-  "AWS_ACCESS_KEY_ID": "7Njats0sQl0XJc59+LmfKcki0EDvytK6bj3QndJl",
+  "AWS_SECRET_ACCESS_KEY": "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",
+  "AWS_ACCESS_KEY_ID": "AKIAJ7GMJI7QJ6QD53LQ",
   "region": "ap-southeast-1",
   "githubClientId": "a4c97b360ce0a1abc3d4",
   "githubSecret": "64ef40d79645e4acae776a5f1378dd2e06baaab4"

@@ -29,7 +29,6 @@ router.put("/:_id", auth,Role(role.villa), (req,res)=>{
             console.error(err.message);
             res.status(500).send("Server errror in posts.js");
         }
-
     })
 });
 

@@ -8,6 +8,7 @@ import {connect} from "react-redux";
 import {addRoom} from "../actions/room";
 
 const FileUpload = (props,{room,history})=>{
+
     const[Images, setImages]=useState([]);
     const [displayImage, toggleImage] = useState(0);
     const onDrop = (files) => {
@@ -15,9 +16,9 @@ const FileUpload = (props,{room,history})=>{
         const config = {
             headers: {'Content-Type': 'multipart/form-data'}
         }
-        formData.append("image", files[0])
+        formData.append("images", files[0])
         //Save the image
-         Axios.post('/api/room/:_id', formData, config)
+         Axios.post(`/api/room/`, formData, config)
             .then(response => {
                 if (response.data.error) {
                     alert('Failed to save the image in server')
@@ -27,7 +28,6 @@ const FileUpload = (props,{room,history})=>{
                 }
             })
     }
-
     return (
         <div className="col-lg-12">
             <div className='form-row'>
