@@ -2,9 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DashboardDisplayVillaItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/skripsi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/skripsi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/content/RightContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/content/RightContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/customer/DisplayCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/customer/DisplayCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRoom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/tableRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/tableRoom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Villa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/villa.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,12 +154,22 @@
       <workItem from="1591114886032" duration="6263000" />
       <workItem from="1591267291321" duration="584000" />
       <workItem from="1591364795562" duration="1518000" />
-      <workItem from="1591374751531" duration="12348000" />
+      <workItem from="1591374751531" duration="14128000" />
+      <workItem from="1591466581687" duration="1183000" />
+      <workItem from="1591638818198" duration="4897000" />
+      <workItem from="1591788849840" duration="15005000" />
+      <workItem from="1591811284401" duration="16323000" />
+      <workItem from="1591880423972" duration="9327000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/vodonesia" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="1219" y="256" key="#HTTP_Proxy" timestamp="1587305169824">
@@ -181,10 +212,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1279" y="239" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587321089704" />
-    <state x="461" y="151" key="SettingsEditor" timestamp="1588891766177">
+    <state x="461" y="151" key="SettingsEditor" timestamp="1591827646107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588891766177" />
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591827646107" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1590482859660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

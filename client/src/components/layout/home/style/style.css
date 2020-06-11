@@ -23,6 +23,42 @@
     margin-top:-100px;
 
 }
+
+/*Display Room*/
+._DR01{
+    background:#F9F9F9;
+    max-height: 110px;
+    height:110px;
+    padding:10px;
+    border-radius:10px;
+}
+._DRIAll{
+
+    max-height: 90px;
+    height:90px;
+    border-radius:10px;
+}
+._DRIAll img{
+    margin-left:15%;
+    max-width:110px;
+}
+._DRTAll{
+    max-height: 90px;
+    padding:10px;
+    height:90px;
+    border-radius:10px;
+}
+
+._DRAction{
+    max-height: 90px;
+    padding:10px;
+    height:90px;
+    border-radius:10px;
+}
+/*End Display Room*/
+
+
+
 ._1uz2h{
     background-color: #F9F9F9;
     padding:20px;

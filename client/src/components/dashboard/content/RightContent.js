@@ -7,6 +7,7 @@ import NavDash from "../pages/navbar/navDash";
 import DashboardDisplay from "../pages/dashboard/dashboardDisplay";
 import DisplayVilla from "../pages/villa/DisplayVilla";
 import DisplayAdmin from "../pages/admin/DisplayAdmin";
+import DisplayCustomer from "../pages/customer/DisplayCustomer";
 
 const RightContent = ({auth:{user,loading}})=>{
     let {pages} = useParams();
@@ -31,7 +32,7 @@ const RightContent = ({auth:{user,loading}})=>{
                     }
                     {roles === 'customer' ?
                         <div>
-                            <h1>Customers</h1>
+                            <DisplayCustomer/>
                         </div>
                     :null}
                     {roles === 'admin' ?

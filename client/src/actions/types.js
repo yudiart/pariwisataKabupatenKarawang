@@ -30,6 +30,8 @@ export const UPDATE_VILLA = 'UPDATE_VILLA';
 export const CLEAR_VILLA = 'CLEAR_VILLA';
 export const GET_VILLAS = 'GET_VILLAS';
 export const GET_VILLA_KAMAR = 'GET_VILLA_KAMAR';
+export const GET_LIKES = 'GET_LIKES';
+export const GET_LIKES_ERROR = 'GET_LIKES_ERROR';
 
 //KAMAR
 export const GET_KAMARS = 'GET_KAMARS';

@@ -218,4 +218,79 @@ router.delete("/kamar/:kamar_id", auth, async (req, res) => {
     }
 });
 
+
+router.put("/likes/:id", auth, async (req, res) => {
+    try {
+        const villa = await Villa.findById(req.params.id);
+
+        //Check if post has already been liked by user
+        if (
+            villa.likes.filter(like => like.user.toString() === req.user.id).length > 0
+        ) {
+            return res.status(400).json({ msg: "Already liked by this user" });
+        }
+        //puts it on the beginning
+        const nDate = new Date().toLocaleString('in-ID', {
+            timeZone: 'Asia/Jakarta'
+        });
+        villa.likes.unshift({ user: req.user.id,date:nDate });
+        await villa.save();
+
+        res.json(villa.likes);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send("Server error in likes posts.js");
+    }
+});
+
+router.put("/unlikes/:id", auth, async (req, res) => {
+    try {
+        const villa = await Villa.findById(req.params.id);
+
+        //Check if post has already been liked by user
+        if (
+            villa.likes.filter(like => like.user.toString() === req.user.id).length ===
+            0
+        ) {
+            return res.status(400).json({ msg: "Room hasn't been wishlist yet!" });
+        }
+        //puts it on the beginning
+
+        //Get remove index
+        const removeIndex = villa.likes
+            .map(like => like.user.toString())
+            .indexOf(req.user.id);
+
+            villa.likes.splice(removeIndex, 1);
+
+        await villa.save();
+
+        res.json(villa.likes);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send("Server error in wishlist Room.js");
+    }
+});
+
+router.get('/likes',auth,Role(role.villa), async(req,res)=>{
+    try{
+        const villa = await Villa.findOne({ user: req.user.id });
+        const likees = villa.likes;
+        const c = likees.map(item => item.user);
+        const b = await User.find({_id:c}).select('_id name avatar date');
+        await res.json(b);
+    }catch(err){
+        console.error(err.message);
+        res.status(500).send("Server error in likes Villa.js | Line 243");
+    }
+})
+
+
+router.get('/time',async (req,res)=>{
+    const nDate = new Date().toLocaleString('en-US', {
+        timeZone: 'Asia/Calcutta'
+    });
+
+    console.log(nDate);
+})
 module.exports = router;

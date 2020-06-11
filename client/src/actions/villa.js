@@ -7,6 +7,8 @@ import {
     CLEAR_PROFILE,
     GET_PROFILES,
     GET_VILLAS,
+    GET_LIKES,
+    GET_LIKES_ERROR,
     CLEAR_VILLA,
     LOGOUT,
     CLEAR_ADMIN,
@@ -169,6 +171,22 @@ export const getVillaById = villaId => async dispatch => {
         });
     }
 };
+
+export const getLikes = ()=> async dispatch=>{
+    try {
+        const res = await axios.get("/api/villa/likes");
+
+        dispatch({
+            type: GET_LIKES,
+            payload: res.data
+        });
+    } catch (err) {
+        dispatch({
+            type: GET_LIKES_ERROR,
+            payload: { msg: err.response.statusText, status: err.response.status }
+        });
+    }
+}
 
 //Logout Villa and clear the Villa
 export const logout = () => dispatch => {

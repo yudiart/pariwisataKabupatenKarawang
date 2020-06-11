@@ -67,6 +67,9 @@ const VillaSchema = new Schema({
             user: {
                 type: Schema.Types.ObjectId,
                 ref: "users"
+            },
+            date:{
+                type: Date
             }
         }
     ],

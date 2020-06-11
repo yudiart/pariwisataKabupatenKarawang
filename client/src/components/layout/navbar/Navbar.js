@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {Fragment, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
@@ -16,30 +16,32 @@ const NavBar = ({
 }) => {
 
   return (
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" className='shadow'>
-          <div className="container">
-              <div className='navbar-brand'><Link to='/' className="nav-link text-dark">Vodo<span
-                  style={{color: 'red'}}>nesia</span></Link></div>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-              {!loading ? (
-                  <Navbar.Collapse id="responsive-navbar-nav">
-                      <Customers/>
-                      <Nav>
-                          <div>{!loading && isAuthenticated === true ?
-                              <NavbarItem/> :
-                              <Nav>
-                                  <Link to="/login" className='btn btn-light mr-1'>Login</Link>
-                                  <Link to="/register" className='btn btn-primary'>Register</Link>
-                              </Nav>
-                          }</div>
-                      </Nav>
-                  </Navbar.Collapse>
-              ):(
-                <></>
-              )}
+      <Fragment>
+          <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" className='shadow'>
+              <div className="container">
+                  <div className='navbar-brand'><Link to='/' className="nav-link text-dark">Vodo<span
+                      style={{color: 'red'}}>nesia</span></Link></div>
+                  <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                  {!loading ? (
+                      <Navbar.Collapse id="responsive-navbar-nav">
+                          <Customers/>
+                          <Nav>
+                              <div>{!loading && isAuthenticated === true ?
+                                  <NavbarItem/> :
+                                  <Nav>
+                                      <Link to="/login" className='btn btn-light mr-1'>Login</Link>
+                                      <Link to="/register" className='btn btn-primary'>Register</Link>
+                                  </Nav>
+                              }</div>
+                          </Nav>
+                      </Navbar.Collapse>
+                  ):(
+                      <></>
+                  )}
 
-          </div>
-      </Navbar>
+              </div>
+          </Navbar>
+      </Fragment>
   );
 };
 

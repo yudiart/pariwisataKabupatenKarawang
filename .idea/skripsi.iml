@@ -9,5 +9,6 @@
     <orderEntry type="library" name="filepond-plugin-file-encode" level="application" />
     <orderEntry type="library" name="filepond" level="application" />
     <orderEntry type="library" name="filepond-plugin-image-preview" level="application" />
+    <orderEntry type="library" name="materialize" level="application" />
   </component>
 </module>

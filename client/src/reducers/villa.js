@@ -4,12 +4,15 @@ import {
     CLEAR_VILLA,
     UPDATE_VILLA,
     GET_VILLAS,
+    GET_LIKES,
+    GET_LIKES_ERROR,
     GET_VILLA_KAMAR
 } from "../actions/types";
 
 //Create initial state
 const initialState = {
     villa: null,
+    likes: null,
     villas: [],
     loading: true,
     error: {}
@@ -26,6 +29,12 @@ export default function(state = initialState, action) {
                 villa: payload,
                 loading: false
             };
+        case GET_LIKES:
+            return{
+                ...state,
+                likes:payload,
+                loading:false
+            }
         case GET_VILLAS:
             return {
                 ...state,
@@ -52,7 +61,6 @@ export default function(state = initialState, action) {
                 kamar: payload,
                 loading: false
             };
-
         default:
             return state;
     }

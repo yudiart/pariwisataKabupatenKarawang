@@ -28,8 +28,10 @@ export const Routes = () => {
         <Route exact path="/profiles" component={Profiles} />
         <Route exact path="/profile" component={Profile} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
-        <PrivateRoute exact path="/dashboard/:pages" component={Dashboard} />
+        <PrivateRoute exact path="/dashboard/:pages" component={Dashboard}/>
 
+        {/*Villa*/}
+        <PrivateRoute exact path="/dashboard/:pages/:action" component={Dashboard}/>
 
         <PrivateRoute exact path="/villa-profile" component={VillaProfile} />
         <PrivateRoute exact path="/edit-villa" component={editVilla} />

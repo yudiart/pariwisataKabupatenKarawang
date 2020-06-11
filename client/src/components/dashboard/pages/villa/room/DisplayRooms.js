@@ -4,50 +4,60 @@ import {connect} from "react-redux";
 import {getCurrentRooms} from "../../../../../actions/room";
 
 import './DisplayRoom.css';
-import {Col, Row} from "react-bootstrap";
-import TableRoom from "./tableRoom";
+import {Card, Col, Row} from "react-bootstrap";
+
+import {Link} from "react-router-dom";
+
 const DisplayRooms = ({
     getCurrentRooms,
-    auth: { user },
+    auth: { user:{avatar} },
     room:{room,rooms}
 })=>{
     useEffect(() => {
         getCurrentRooms();
     }, [getCurrentRooms]);
+    let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac diam non ex accumsan consectetur Integer euismod eu libero bibendum tincidunt. Quisque accumsan quam dolor, at laoreet lorem semper eu.Praesent mattis pharetra placerat. Maecenas ultrices tellus et mi vehicula viverra sit amet sed nibh.Morbi dignissim erat vel lectus posuere, ac consectetur sapien aliquam.Morbi commodo fermentum enim facilisis tempor. Pellentesque faucibus dignissim convallis."
+
+
     return(
         <Fragment>
-            <div className="display-rooms">
-                <Row>
-                    <Col lg={12}>
-                        <div className="jumbotron-fluid _1uz2h">
+            <section>
+                <div className="display-rooms">
+                    <Link className="navbar-brand nav-link" to={'/dashboard/room/addroom'}>Tambah Kamar</Link>
+                    <div className="dropdown-divider"/>
+                    <Row className="mt-3">
+                        <Col sm={9}>
                             <Row>
-                                <Col lg={4}>
-                                    <div className="jumbotron">
-                                        <h2>Box 2</h2>
-                                    </div>
-                                </Col>
-                                <Col lg={4}>
-                                    <div className="jumbotron ">
-                                        <h2>Box 2</h2>
-                                    </div>
-                                </Col>
-                                <Col lg={4}>
-                                    <div className="jumbotron">
-                                        <h2>Box 2</h2>
-                                    </div>
-                                </Col>
+                                <div className="jumbotron-fluid" style={{borderRadius:'10px',height:'400px',maxHeight:'1000px;'}}>
+                                    <Col sm={12}>
+                                        <div className="_DR01 mb-2">
+                                            <Row>
+                                                <Col sm={2}>
+                                                    <div className="_DRIAll">
+                                                        <img src={process.env.PUBLIC_URL + '/uploads/1.png'} alt=""/>
+                                                    </div>
+                                                </Col>
+                                                <Col sm={8}>
+                                                    <div className="_DRTAll">
+                                                        <h4>Title</h4>
+                                                        <p>{text.slice(0,200)}...</p>
+                                                    </div>
+                                                </Col>
+                                                <Col sm={2}>
+                                                    <div className="_DRAction">
+                                                        <a href='#' className="col-sm-12 btn btn-warning mb-1">Edit</a>
+                                                        <a href='#' className="col-sm-12 btn btn-danger">Delete</a>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Col>
+                                </div>
                             </Row>
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col lg={12}>
-                        <div className="jumbotron-fluid _1uz2h">
-                            <TableRoom/>
-                        </div>
-                    </Col>
-                </Row>
-            </div>
+                        </Col>
+                    </Row>
+                </div>
+            </section>
         </Fragment>
     )
 }
