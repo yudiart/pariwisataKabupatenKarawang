@@ -4,14 +4,12 @@ import Axios from "axios";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {Redirect} from "request";
-import {addImage, getRoom} from "../../actions/room";
+import {addImage, clearRoom, getRoom} from "../../actions/room";
 import {Link} from "react-router-dom";
+import {setAlert} from "../../actions/alert";
+import Alert from "../layout/Alert";
 
-const ImageUpload = ({props,
-    room:{room}
-    ,history
-
-})=>{
+const ImageUpload = ()=>{
     useEffect(()=>{
         getRoom();
     },[getRoom])
@@ -22,14 +20,15 @@ const ImageUpload = ({props,
         const config = {
             headers: {'Content-Type': 'multipart/form-data'}
         }
+        setAlert("Upload Success", "success")
         formData.append("image", files[0])
         //Save the image
-        Axios.put(`/api/room/${room._id}`, formData, config)
+        Axios.post(`/api/room/`, formData, config)
             .then(response => {
                 if (response.data.error) {
                     alert('Failed to save the image in server')
                 } else {
-                    alert('Success Uploaded!');
+
                 }
             })
 

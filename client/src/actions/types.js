@@ -54,6 +54,7 @@ export const COVID_ERROR = "COVID_ERROR";
 export const GET_ADMIN = "GET_ADMIN";
 export const GET_ALL_USERS = "GET_ALL_USERS";
 export const GET_ALL_ROOMS = "GET_ALL_ROOMS";
+export const CLEAR_ROOM = "CLEAR_ROOM";
 export const GET_ALL_BY_VILLAS = "GET_ALL_BY_VILLAS";
 export const GET_ALL_BY_CUSTOMERS = "GET_ALL_BY_CUSTOMERS";
 export const GET_ALL_POSTS = "GET_ALL_POSTS";

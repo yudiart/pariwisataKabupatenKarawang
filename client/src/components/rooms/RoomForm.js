@@ -5,10 +5,12 @@ import { connect } from "react-redux";
 import { addRoom } from "../../actions/room";
 import {TextArea} from "semantic-ui-react";
 import ImageUpload from "./ImageUpload";
+import Alert from "../layout/Alert";
 
 const RoomForm = ({
     addRoom,history,
-    room:{room}
+    room:{room},
+    alert
 }) => {
 
     const limitRoom =[
@@ -60,65 +62,67 @@ const RoomForm = ({
                 {room && room.images.length === 0 ?
                     <ImageUpload/>
                 :null}
+                <Alert />
+                {room === null?
+                    <div className="col-lg-12">
+                        <div className="form-row">
+                            <div className="col-lg-6">
+                                <div className="form-group row col-lg-12">
+                                    <small className="form-text">Room Name<span style={{color:'red'}}>*</span></small>
+                                    <input
+                                        type="text"
+                                        className='form-control'
+                                        name='roomName'
+                                        value={roomNameValue}
+                                        onChange={onRoomNameChange}
+                                    />
+                                </div>
 
-                {/*DropZone*/}
-                <div className="col-lg-12">
-                    <div className="form-row">
-                        <div className="col-lg-6">
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Room Name<span style={{color:'red'}}>*</span></small>
-                                <input
-                                    type="text"
-                                    className='form-control'
-                                    name='roomName'
-                                    value={roomNameValue}
-                                    onChange={onRoomNameChange}
-                                />
-                            </div>
-
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Description<span style={{color:'red'}}>*</span></small>
-                                <TextArea
-                                    name="description"
-                                    style={{borderRadius:'10px'}}
-                                    className='form-control'
-                                    value={descriptionValue}
-                                    onChange={onDescriptionChange}/>
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Limit Room<span style={{color:'red'}}>*</span></small>
-                                <select onChange={onLimitChange} name='limit' className='form-control' value={limitValue}>
-                                    {limitRoom.map(item=>(
-                                        <option key={item.key} value={item.key}>{item.value}</option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Room Type<span style={{color:'red'}}>*</span></small>
-                                <select className='form-control' name='tipeKamar' onChange={onTipeKamarChange} value={tipeKamarValue}>
-                                    {RoomType.map(item=>(
-                                        <option key={item.key} value={item.key}>{item.value}</option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Harga<span style={{color:'red'}}>*</span></small>
-                                <input
-                                    type="number"
-                                    className='form-control'
-                                    name='harga'
-                                    value={hargaValue}
-                                    onChange={onHargaChange}
-                                />
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <input type="submit" className='btn btn-primary'/>
-                                <Link to={'/dashboard'} className='btn btn-light ml-4'>Go Back</Link>
+                                <div className="form-group row col-lg-12">
+                                    <small className="form-text">Description<span style={{color:'red'}}>*</span></small>
+                                    <TextArea
+                                        name="description"
+                                        style={{borderRadius:'10px'}}
+                                        className='form-control'
+                                        value={descriptionValue}
+                                        onChange={onDescriptionChange}/>
+                                </div>
+                                <div className="form-group row col-lg-12">
+                                    <small className="form-text">Limit Room<span style={{color:'red'}}>*</span></small>
+                                    <select onChange={onLimitChange} name='limit' className='form-control' value={limitValue}>
+                                        {limitRoom.map(item=>(
+                                            <option key={item.key} value={item.key}>{item.value}</option>
+                                        ))}
+                                    </select>
+                                </div>
+                                <div className="form-group row col-lg-12">
+                                    <small className="form-text">Room Type<span style={{color:'red'}}>*</span></small>
+                                    <select className='form-control' name='tipeKamar' onChange={onTipeKamarChange} value={tipeKamarValue}>
+                                        {RoomType.map(item=>(
+                                            <option key={item.key} value={item.key}>{item.value}</option>
+                                        ))}
+                                    </select>
+                                </div>
+                                <div className="form-group row col-lg-12">
+                                    <small className="form-text">Harga<span style={{color:'red'}}>*</span></small>
+                                    <input
+                                        type="number"
+                                        className='form-control'
+                                        name='harga'
+                                        value={hargaValue}
+                                        onChange={onHargaChange}
+                                    />
+                                </div>
+                                <div className="form-group row col-lg-12">
+                                    <input type="submit" className='btn btn-primary'/>
+                                    <Link to={'/dashboard'} className='btn btn-light ml-4'>Go Back</Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                    :null}
+
             </form>
         </Fragment>
     );

@@ -21,7 +21,6 @@ import SideBar from "../dashboard/sidebar/SideBar";
 export const Routes = () => {
   return (
     <section>
-      <Alert />
       <Switch>
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />

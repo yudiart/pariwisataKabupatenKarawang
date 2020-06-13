@@ -35,7 +35,6 @@ const HomePortofolio = ({
     auth,
 })=>{
 useEffect(() => {
-
     getVillas();
     getAllRooms();
 }, [getVillas,getAllRooms]);
@@ -58,8 +57,8 @@ useEffect(() => {
                                 <Row>
                                     {room.slice(0,6).map(item => (
                                         <div className='ws_right'>
-                                            <div key={item._id} className='img_porto2 shadow'>
-                                                <div style={{backgroundImage:`url(${item.images[0]})`}} className='img'></div>
+                                            <div id={item._id} className='img_porto2 shadow'>
+                                                <div style={{backgroundImage:`url(${item.images[0]})`}} className='img'/>
                                                 <div className='img-text'>
                                                     <h4><b>Teluk Jambe</b></h4>
                                                 </div>
@@ -86,7 +85,7 @@ useEffect(() => {
                                 <Row>
                                     <div className='wd_IVDesk'>
                                         {Allvilla.slice(0,1).map(item => (
-                                            <div key={item._id} className='img_porto shadow'>
+                                            <div id={item._id} className='img_porto shadow'>
                                                 <img src={item.images[0]} alt={item.images}/>
                                             </div>
                                         ))}
@@ -95,7 +94,7 @@ useEffect(() => {
                                     </div>
                                     <div className='wd_IRDesk'>
                                         {room.slice(0,1).map(item => (
-                                            <div key={item._id} className='img_porto shadow'>
+                                            <div id={item._id} className='img_porto shadow'>
                                                 <img src={item.images[0]} alt={item.images}/>
                                             </div>
                                         ))}

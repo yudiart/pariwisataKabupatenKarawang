@@ -4,8 +4,8 @@ import {
     UPDATE_WISHLIST,
     DELETE_KAMAR,
     ADD_KAMAR,
-    ERROR_UPLOAD,IMAGE_UPLOAD,
-    GET_KAMARS
+    ERROR_UPLOAD, IMAGE_UPLOAD,
+    GET_KAMARS, CLEAR_ROOM
 } from "../actions/types";
 
 const initalState = {
@@ -19,7 +19,6 @@ const initalState = {
 
 export default function(state = initalState, action) {
     const { type, payload } = action;
-
     switch (type) {
         case GET_KAMARS:
             return {
@@ -61,7 +60,12 @@ export default function(state = initalState, action) {
                 room: payload,
                 loading: false
             };
-
+        case CLEAR_ROOM:
+            return {
+                ...state,
+                room: null,
+                loading: false
+            }
         default:
             return state;
     }

@@ -6,6 +6,7 @@ import { addRoom } from "../../../actions/room";
 import {Form} from "react-bootstrap";
 import {TextArea} from "semantic-ui-react";
 import FileUpload from "../../../utils/FileUpload";
+import Alert from "../../layout/Alert";
 
 
 const AddRoom = ({
@@ -69,65 +70,62 @@ const AddRoom = ({
                 {/*DropZone*/}
                 {room === null?
                     <FileUpload refreshFunction={updateImages}/>
-                :
-                    <div className="col-lg-12">
-                        <div className="form-row">
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Room Name<span style={{color:'red'}}>*</span></small>
-                                <input
-                                    type="text"
-                                    className='form-control'
-                                    name="roomName"
-                                    value={roomNameValue}
-                                    onChange={onRoomNameSelectChange}
-                                    required
-                                />
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Description<span style={{color:'red'}}>*</span></small>
-                                <TextArea
-                                    name="description"
-                                    style={{borderRadius:'10px'}}
-                                    className='form-control'
-                                    value={descriptionValue}
-                                    onChange={onDescriptionSelectChange}/>
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Limit Room<span style={{color:'red'}}>*</span></small>
-                                <select onChange={onLimitRoomSelectChange} className='form-control'>
-                                    {LimitRoom.map(item => (
-                                        <option key={item.key} value={item.key}>{item.value}</option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Room Type<span style={{color:'red'}}>*</span></small>
-                                <select className='form-control' name='tipeKamar' onChange={onRoomTypeSelectChange}>
-                                    {RoomsTypes.map(item =>(
-                                        <option key={item.key} value={item.key}>{item.value}</option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div className="form-group row col-lg-12">
-                                <small className="form-text">Harga<span style={{color:'red'}}>*</span></small>
-                                <input
-                                    type="number"
-                                    className='form-control'
-                                    name="harga"
-                                    value={hargaValue}
-                                    onChange={onHargaSelectChange}
-                                    required
-                                />
-                            </div>
-                            <div className='form-group'>
-                                <input type='submit' className='btn btn-primary' onSubmit={onSubmit}/>
-                            </div>
+                :null}
+                <Alert />
+                <div className="col-lg-12">
+                    <div className="form-row">
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Room Name<span style={{color:'red'}}>*</span></small>
+                            <input
+                                type="text"
+                                className='form-control'
+                                name="roomName"
+                                value={roomNameValue}
+                                onChange={onRoomNameSelectChange}
+                                required
+                            />
                         </div>
-
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Description<span style={{color:'red'}}>*</span></small>
+                            <TextArea
+                                name="description"
+                                style={{borderRadius:'10px'}}
+                                className='form-control'
+                                value={descriptionValue}
+                                onChange={onDescriptionSelectChange}/>
+                        </div>
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Limit Room<span style={{color:'red'}}>*</span></small>
+                            <select onChange={onLimitRoomSelectChange} className='form-control'>
+                                {LimitRoom.map(item => (
+                                    <option key={item.key} value={item.key}>{item.value}</option>
+                                ))}
+                            </select>
+                        </div>
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Room Type<span style={{color:'red'}}>*</span></small>
+                            <select className='form-control' name='tipeKamar' onChange={onRoomTypeSelectChange}>
+                                {RoomsTypes.map(item =>(
+                                    <option key={item.key} value={item.key}>{item.value}</option>
+                                ))}
+                            </select>
+                        </div>
+                        <div className="form-group row col-lg-12">
+                            <small className="form-text">Harga<span style={{color:'red'}}>*</span></small>
+                            <input
+                                type="number"
+                                className='form-control'
+                                name="harga"
+                                value={hargaValue}
+                                onChange={onHargaSelectChange}
+                                required
+                            />
+                        </div>
+                        <div className='form-group'>
+                            <input type='submit' className='btn btn-primary' onSubmit={onSubmit}/>
+                        </div>
                     </div>
-                }
-
-
+                </div>
             </Form>
         </Fragment>
     );

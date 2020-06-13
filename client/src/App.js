@@ -19,10 +19,13 @@ import { useRouteMatch } from "react-router-dom";
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
+}else{
+    localStorage.setItem('token',null);
 }
 
 const App = () => {
   useEffect(() => {
+
     store.dispatch(loadUser());
   }, []);
   return (

@@ -6,7 +6,7 @@ import {
     GET_KAMARS,
     UPDATE_WISHLIST,
     DELETE_KAMAR,
-    GET_KAMAR, IMAGE_UPLOAD,
+    GET_KAMAR, IMAGE_UPLOAD, CLEAR_ROOM,
 } from "./types";
 
 
@@ -131,14 +131,15 @@ export const addRoom = (formData,history) => async dispatch => {
     };
     try {
         const res = await axios.post("/api/room/", formData, config)
-        console.log(res);
+
         dispatch({
             type: ADD_KAMAR,
             payload: res.data
         });
         dispatch({
             type: GET_KAMAR,
-            payload: res.data
+            payload: res.data,
+
         });
         dispatch(setAlert("Room Added", "success"));
     } catch (err) {
@@ -177,3 +178,15 @@ export const getRoom = id => async dispatch => {
         });
     }
 };
+
+
+export const clearRoom = (res)=> async dispatch =>{
+    try{
+
+    }catch (e) {
+        dispatch({
+            type: CLEAR_ROOM,
+            payload: res.data
+        });
+    }
+}
