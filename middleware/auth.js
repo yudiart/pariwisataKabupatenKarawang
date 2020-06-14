@@ -5,10 +5,10 @@ module.exports = function(req, res, next) {
   
   //Pull token from header
   const token = req.header("x-auth-token");
-  // //Check if there isn't a token
-  // if (!token) {
-  //   return res.status(401).json({ message: "No Token" });
-  // }
+  //Check if there isn't a token
+  if (!token) {
+    return res.status(401).json({ message: "No Token" });
+  }
 
   //Verify if there is a token
   try {
@@ -16,6 +16,6 @@ module.exports = function(req, res, next) {
     req.user = decoded.user;
     next();
   } catch (err) {
-    // res.status(401).json({ message: "Token isnt valid!" });
+    res.status(401).json({ message: "Token isnt valid!" });
   }
 };

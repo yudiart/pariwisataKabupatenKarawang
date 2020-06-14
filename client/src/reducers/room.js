@@ -54,12 +54,19 @@ export default function(state = initalState, action) {
                 loading: false
             };
         case ADD_KAMAR:
-        case IMAGE_UPLOAD:
             return {
                 ...state,
                 room: payload,
                 loading: false
             };
+        case IMAGE_UPLOAD:
+            return{
+                ...state,
+                room: state.room.map(img=>
+                    img[0]
+                ),
+                loading: false
+            }
         case CLEAR_ROOM:
             return {
                 ...state,

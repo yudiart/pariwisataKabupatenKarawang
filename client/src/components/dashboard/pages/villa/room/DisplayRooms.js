@@ -1,7 +1,7 @@
 import React, {Fragment, useEffect} from 'react';
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
-import {getCurrentRooms} from "../../../../../actions/room";
+import {clearRoom, getCurrentRooms} from "../../../../../actions/room";
 
 import './DisplayRoom.css';
 import {Card, Col, Row} from "react-bootstrap";
@@ -10,12 +10,14 @@ import {Link} from "react-router-dom";
 
 const DisplayRooms = ({
     getCurrentRooms,
+    clearRoom,
     auth: { user:{avatar} },
     room:{room,rooms}
 })=>{
     useEffect(() => {
         getCurrentRooms();
-    }, [getCurrentRooms]);
+        clearRoom();
+    }, [getCurrentRooms,clearRoom]);
     let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac diam non ex accumsan consectetur Integer euismod eu libero bibendum tincidunt. Quisque accumsan quam dolor, at laoreet lorem semper eu.Praesent mattis pharetra placerat. Maecenas ultrices tellus et mi vehicula viverra sit amet sed nibh.Morbi dignissim erat vel lectus posuere, ac consectetur sapien aliquam.Morbi commodo fermentum enim facilisis tempor. Pellentesque faucibus dignissim convallis."
 
 
@@ -63,6 +65,7 @@ const DisplayRooms = ({
 }
 DisplayRooms.propTypes = {
     getCurrentRooms: PropTypes.func.isRequired,
+    clearRoom: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
     rooms: PropTypes.array.isRequired,
     villa: PropTypes.object.isRequired,
@@ -76,5 +79,5 @@ const mapStateToProps = state => ({
 
 export default connect(
     mapStateToProps,
-    {getCurrentRooms}
+    {getCurrentRooms,clearRoom}
 )(DisplayRooms);

@@ -11,6 +11,7 @@ import Alert from "../../layout/Alert";
 
 const AddRoom = ({
     addRoom,
+    clearRoom,
     history,
     room:{room}
 }) => {
@@ -131,7 +132,7 @@ const AddRoom = ({
     );
 };
 AddRoom.propTypes = {
-    addRoom: PropTypes.func.isRequired
+    addRoom: PropTypes.func.isRequired,
 };
 const mapStateToProps = state => ({
 

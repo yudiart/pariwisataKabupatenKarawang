@@ -63,4 +63,6 @@ const DisplayVilla =()=>{
     )
 }
 
+
+
 export default DisplayVilla;

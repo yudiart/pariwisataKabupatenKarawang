@@ -151,16 +151,8 @@ export const addRoom = (formData,history) => async dispatch => {
 };
 //Add Room for the User
 //Add a post
-export const addImage = (res) => async dispatch => {
-        dispatch({
-            type: IMAGE_UPLOAD,
-            payload: res.data
-        });
-        dispatch({
-            type: ADD_KAMAR,
-            payload: res.data.images
-        });
-        dispatch(setAlert("Upload Success", "success"));
+export const addImage = (formData) => async dispatch => {
+
 };
 //Get Room
 export const getRoom = id => async dispatch => {
@@ -180,13 +172,10 @@ export const getRoom = id => async dispatch => {
 };
 
 
-export const clearRoom = (res)=> async dispatch =>{
+export const clearRoom = ()=> async dispatch =>{
     try{
-
+        dispatch({type: CLEAR_ROOM});
     }catch (e) {
-        dispatch({
-            type: CLEAR_ROOM,
-            payload: res.data
-        });
+        dispatch({type: CLEAR_ROOM});
     }
 }

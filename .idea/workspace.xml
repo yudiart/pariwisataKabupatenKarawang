@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/rooms/Progress.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/actions/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/child/HomePortofolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/child/HomePortofolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/Rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/Rooms.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/villa/villa-forms/AddRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/villa/villa-forms/AddRoom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/reducers/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/FileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/FileUpload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
@@ -54,19 +55,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\public\uploads" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\routing" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout\navbar" />
       <recent name="F:\file yudi\program\skripsi\" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
       <recent name="F:\file yudi\program\skripsi\client\src\assets" />
       <recent name="F:\file yudi\program\skripsi\client\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\public\uploads" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\routing" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -154,7 +155,9 @@
       <workItem from="1591979788353" duration="956000" />
       <workItem from="1591982266849" duration="2661000" />
       <workItem from="1592049356253" duration="596000" />
-      <workItem from="1592052286740" duration="5222000" />
+      <workItem from="1592052286740" duration="6145000" />
+      <workItem from="1592137363047" duration="1012000" />
+      <workItem from="1592153847759" duration="21740000" />
     </task>
     <servers />
   </component>

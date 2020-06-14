@@ -1,7 +1,8 @@
-import React  from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
-import { getCurrentRooms } from "../../actions/room";
+import {clearRoom, getCurrentRooms} from "../../actions/room";
 import RoomForm from "./RoomForm";
+import PropTypes from "prop-types";
 
 const Rooms = () => {
 
@@ -9,11 +10,16 @@ const Rooms = () => {
         <RoomForm/>
     </div>
 };
+
+Rooms.propTypes = {
+    clearRoom: PropTypes.func.isRequired
+};
+
 const mapStateToProps = state => ({
     room: state.room
 });
 
 export default connect(
     mapStateToProps,
-    { getCurrentRooms }
+    { getCurrentRooms ,clearRoom}
 )(Rooms);

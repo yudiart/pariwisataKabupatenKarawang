@@ -192,7 +192,6 @@ router.get("/",  async (req, res) => {
     try {
         const room = await Room.find().sort({ date: -1 });
         await res.json(room);
-        console.log(room);
     } catch (err) {
         console.error(err.message);
         res.status(500).send("Server errror in posts.js");

@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {addRoom} from "../actions/room";
 
-const FileUpload = (props,{room,history})=>{
+const FileUpload = ({room,history})=>{
 
     const[Images, setImages]=useState([]);
     const [displayImage, toggleImage] = useState(0);
@@ -18,7 +18,7 @@ const FileUpload = (props,{room,history})=>{
         }
         formData.append("images", files[0])
         //Save the image
-         Axios.post(`/api/room/`, formData, config)
+         Axios.put(`/api/room/${room._id}`, formData, config)
             .then(response => {
                 if (response.data.error) {
                     alert('Failed to save the image in server')
