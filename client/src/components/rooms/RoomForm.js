@@ -89,11 +89,12 @@ const RoomForm = ({
                 </div>
                 :null}
 
-                <Alert />
+
                 {room === null?
                     <div className="col-lg-12">
                         <div className="form-row">
                             <div className="col-lg-6">
+                                <Alert />
                                 <div className="form-group row col-lg-12">
                                     <small className="form-text">Room Name<span style={{color:'red'}}>*</span></small>
                                     <input

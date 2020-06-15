@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/home/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/Rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/rooms/Rooms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/villa/villa-forms/AddRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/villa/villa-forms/AddRoom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +145,7 @@
       <workItem from="1592049356253" duration="596000" />
       <workItem from="1592052286740" duration="6145000" />
       <workItem from="1592137363047" duration="1012000" />
-      <workItem from="1592153847759" duration="27575000" />
+      <workItem from="1592153847759" duration="28344000" />
     </task>
     <servers />
   </component>
