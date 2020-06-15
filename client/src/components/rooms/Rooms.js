@@ -11,9 +11,7 @@ const Rooms = () => {
     </div>
 };
 
-Rooms.propTypes = {
-    clearRoom: PropTypes.func.isRequired
-};
+
 
 const mapStateToProps = state => ({
     room: state.room
@@ -21,5 +19,5 @@ const mapStateToProps = state => ({
 
 export default connect(
     mapStateToProps,
-    { getCurrentRooms ,clearRoom}
+    { getCurrentRooms}
 )(Rooms);

@@ -83,10 +83,11 @@ const RoomForm = ({
     return (
         <Fragment>
             <form className="form" onSubmit={onSubmit}>
-                {/*{room && room.images.length === 0 ?*/}
+                {room && room.images.length === 0 ?
                 <div>
                     <ImageUpload/>
                 </div>
+                :null}
 
                 <Alert />
                 {room === null?
@@ -183,7 +184,7 @@ const RoomForm = ({
                                             </Col>
                                         </Row>
                                         <div className="form-group row col-lg-12">
-                                            <small className="form-text">Wifi<span style={{color:'red'}}>*</span></small>
+                                            <small className="form-text">Other<span style={{color:'red'}}>*</span></small>
                                             <textarea name="other" onChange={onOtherChange} value={otherValue} className="col-lg-12"/>
                                         </div>
                                     </Col>

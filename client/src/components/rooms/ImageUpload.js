@@ -9,11 +9,10 @@ import Progress from "./Progress";
 import {Col} from "react-bootstrap";
 import {Row} from "reactstrap";
 
-const ImageUpload = ({room:{room},history,clearRoom})=>{
+const ImageUpload = ({room:{room},history})=>{
     useEffect(()=>{
         getRoom();
-        clearRoom();
-    },[getRoom])
+    },[getRoom,clearRoom])
 
     const[Images, setImages]=useState([]);
     const [uploadPercentage, setUploadPercentage] =useState(0);
@@ -90,7 +89,6 @@ const ImageUpload = ({room:{room},history,clearRoom})=>{
 }
 ImageUpload.propTypes = {
     getRoom: PropTypes.func.isRequired,
-    clearRoom: PropTypes.func.isRequired,
     room: PropTypes.object.isRequired
 }
 
@@ -98,4 +96,4 @@ const mapStateToProps = state => ({
     room: state.room
 })
 
-export default withRouter(connect(mapStateToProps,{getRoom,clearRoom})(ImageUpload));
+export default withRouter(connect(mapStateToProps,{getRoom})(ImageUpload));

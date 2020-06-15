@@ -11,7 +11,6 @@ import Alert from "../../layout/Alert";
 
 const AddRoom = ({
     addRoom,
-    clearRoom,
     history,
     room:{room}
 }) => {

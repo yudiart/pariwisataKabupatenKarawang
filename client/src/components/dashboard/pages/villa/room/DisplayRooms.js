@@ -18,8 +18,6 @@ const DisplayRooms = ({
         getCurrentRooms();
         clearRoom();
     }, [getCurrentRooms,clearRoom]);
-    let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac diam non ex accumsan consectetur Integer euismod eu libero bibendum tincidunt. Quisque accumsan quam dolor, at laoreet lorem semper eu.Praesent mattis pharetra placerat. Maecenas ultrices tellus et mi vehicula viverra sit amet sed nibh.Morbi dignissim erat vel lectus posuere, ac consectetur sapien aliquam.Morbi commodo fermentum enim facilisis tempor. Pellentesque faucibus dignissim convallis."
-
 
     return(
         <Fragment>
@@ -30,31 +28,40 @@ const DisplayRooms = ({
                     <Row className="mt-3">
                         <Col sm={9}>
                             <Row>
-                                <div className="jumbotron-fluid" style={{borderRadius:'10px',height:'400px',maxHeight:'1000px;'}}>
-                                    <Col sm={12}>
-                                        <div className="_DR01 mb-2">
-                                            <Row>
-                                                <Col sm={2}>
-                                                    <div className="_DRIAll">
-                                                        <img src={process.env.PUBLIC_URL + '/uploads/1.png'} alt=""/>
-                                                    </div>
-                                                </Col>
-                                                <Col sm={8}>
-                                                    <div className="_DRTAll">
-                                                        <h4>Title</h4>
-                                                        <p>{text.slice(0,200)}...</p>
-                                                    </div>
-                                                </Col>
-                                                <Col sm={2}>
-                                                    <div className="_DRAction">
-                                                        <a href='#' className="col-sm-12 btn btn-warning mb-1">Edit</a>
-                                                        <a href='#' className="col-sm-12 btn btn-danger">Delete</a>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </Col>
-                                </div>
+
+                                    <div className="jumbotron-fluid" style={{borderRadius:'10px',height:'400px',maxHeight:'1000px'}} >
+                                        <Col sm={12}>
+                                            {rooms.map(item=>
+                                                <div className="_DR01 mb-2" key={item._id}>
+                                                    <Link to={`room/${item._id}`} className="text-dark nav-link">
+                                                        <Row>
+                                                            <Col sm={2}>
+                                                                <div className="_DRIAll">
+                                                                    <img src={item.images[0]} alt="room-images" />
+                                                                </div>
+                                                            </Col>
+                                                            <Col sm={8}>
+                                                                <div className="_DRTAll">
+                                                                    <h4>{item.roomName}</h4>
+                                                                    <span>Tipe Kamar : {item.tipeKamar} <i className="mdi mdi-star"></i></span>
+                                                                    <p>{item.description.slice(0,150)}...</p>
+                                                                </div>
+                                                            </Col>
+                                                            <Col sm={2}>
+                                                                <div className="_DRAction">
+                                                                    <Link to={`room/edit/${item._id}`} className="col-sm-12 btn btn-warning mb-1">Edit</Link>
+                                                                    <Link to={`room/delete/${item._id}`} className="col-sm-12 btn btn-danger">Delete</Link>
+                                                                </div>
+                                                            </Col>
+                                                        </Row>
+                                                    </Link>
+                                                    <div className="dropdown-divider"/>
+                                                </div>
+
+                                            )}
+                                        </Col>
+                                    </div>
+
                             </Row>
                         </Col>
                     </Row>
