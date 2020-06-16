@@ -31,6 +31,7 @@ export const Routes = () => {
 
         {/*Villa*/}
         <PrivateRoute exact path="/dashboard/:pages/:action" component={Dashboard}/>
+        <PrivateRoute exact path="/dashboard/:pages/:action/:id" component={Dashboard}/>
 
         <PrivateRoute exact path="/villa-profile" component={VillaProfile} />
         <PrivateRoute exact path="/edit-villa" component={editVilla} />

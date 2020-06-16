@@ -17,7 +17,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: false }));
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", process.env.ORIGIN || "*");
+  const allowedOrigin = [
+      'http://localhost:3000',
+      'http://vodonesia.herokuapp.com',
+      'http://vodonesia.id'
+  ];
+  res.header("Access-Control-Allow-Origin", process.env.ORIGIN || allowedOrigin);
+  res.header("Access-Control-Allow-Methods", 'GET, POST, PUT, DELETE');
+  res.header("Access-Control-Allow-Credentials", 'true');
   next();
 });
 //Define routes

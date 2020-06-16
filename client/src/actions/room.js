@@ -99,15 +99,14 @@ export const removeWishlist = id => async dispatch => {
 
 //Delete a post
 
-export const deleteRoom = id => async dispatch => {
+export const deleteRoom = (id) => async dispatch => {
     try {
-        await axios.delete(`/api/rooms/${id}`);
+        await axios.delete(`/api/room/${id}`);
 
         dispatch({
             type: DELETE_KAMAR,
             payload: id
         });
-
         dispatch(setAlert("Post has been deleted.", "success"));
     } catch (err) {
         dispatch({

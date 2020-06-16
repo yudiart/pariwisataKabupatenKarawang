@@ -50,7 +50,7 @@ export default function(state = initalState, action) {
         case DELETE_KAMAR:
             return {
                 ...state,
-                posts: state.posts.filter(post => post._id !== payload),
+                rooms: state.rooms.filter(room => room._id !== payload),
                 loading: false
             };
         case ADD_KAMAR:
