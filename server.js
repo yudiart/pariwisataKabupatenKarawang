@@ -18,7 +18,7 @@ app.use(express.json({ extended: false }));
 
 app.use((req, res, next) => {
   const allowedOrigin = [
-      // 'http://localhost:3000',
+      'http://localhost:3000',
       '*'
       // 'http://vodonesia.herokuapp.com',
       // 'vodonesia.id'
