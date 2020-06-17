@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/villa/villaProfile/formVilla.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DashboardDisplayVillaItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DashboardDisplayVillaItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/room.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +36,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vodonesia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -154,7 +147,8 @@
       <workItem from="1592153847759" duration="29644000" />
       <workItem from="1592238100250" duration="2367000" />
       <workItem from="1592259518136" duration="5534000" />
-      <workItem from="1592301604542" duration="1874000" />
+      <workItem from="1592301604542" duration="5858000" />
+      <workItem from="1592399727531" duration="8918000" />
     </task>
     <servers />
   </component>
@@ -199,10 +193,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587415293373" />
-    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1592259547491">
+    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1592316337026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592259547491" />
+    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592316337026" />
     <state x="1279" y="239" key="RollbackChangesDialog" timestamp="1587321089704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
