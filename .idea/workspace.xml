@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DashboardDisplayVillaItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DashboardDisplayVillaItem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +148,7 @@
       <workItem from="1592238100250" duration="2367000" />
       <workItem from="1592259518136" duration="5534000" />
       <workItem from="1592301604542" duration="5858000" />
-      <workItem from="1592399727531" duration="10572000" />
+      <workItem from="1592399727531" duration="18023000" />
     </task>
     <servers />
   </component>

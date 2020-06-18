@@ -17,11 +17,11 @@ const DashboardDisplayVillaItem = ({
     villa:{villa,likes,loading},
     room:{rooms}
 })=>{
-    useEffect(() => {
-        getCurrentVilla();
-        getCurrentRooms();
-        getLikes();
-    }, [getCurrentRooms,getCurrentVilla,getLikes]);
+useEffect(() => {
+    getCurrentVilla();
+    getCurrentRooms();
+    getLikes();
+}, [getCurrentRooms,getCurrentVilla,getLikes]);
 
     let i =1 ;
     const arr = rooms.filter(item=>( item._id));
