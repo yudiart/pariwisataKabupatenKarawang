@@ -5,7 +5,6 @@ import {
     UPDATE_VILLA,
     GET_VILLAS,
     GET_LIKES,
-    GET_LIKES_ERROR,
     GET_VILLA_KAMAR
 } from "../actions/types";
 

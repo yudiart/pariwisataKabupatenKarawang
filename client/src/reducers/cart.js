@@ -1,7 +1,7 @@
 import {
     GET_CARTS,
     GET_CART_ITEM,COUNT_CART,
-    ADD_CART,DELETE_ITEM_CART
+    ADD_CART
 } from "../actions/types";
 
 //Create initial state

@@ -3,11 +3,7 @@ import {
     GET_ALL_ROOMS,
     GET_ALL_BY_VILLAS,
     GET_ALL_BY_CUSTOMERS,
-    GET_ALL_POSTS,
-    DELETE_VILLA_BY_ID,
-    DELETE_CUSTOMER_BY_ID,
-    DELETE_ROOM_BY_ID,
-    DELETE_POST_BY_ID, CLEAR_ADMIN
+    CLEAR_ADMIN
 } from "../actions/types";
 
 //Create initial state
