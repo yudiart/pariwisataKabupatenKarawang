@@ -2,123 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/style/dashStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/style/useStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/dashboard/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/routing/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/routing/Routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Alert/Alerts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Header/nav/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/main/HomeDisplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Dashboard/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Home/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Home/Login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Home/Register/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/landingPage/LandingPages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icon/css/materialdesignicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icon/css/materialdesignicons.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icon/fonts/materialdesignicons-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icon/fonts/materialdesignicons-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icon/fonts/materialdesignicons-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icon/fonts/materialdesignicons-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/about/About.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/ChartVilla.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardVilla.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Education.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Experience.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Rooms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Villa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/content/RightContent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/footer/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/admin/AdminItems.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/admin/DisplayAdmin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/customer/DisplayCustomer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/dashboard/dashboardDisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/customer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/navbar/navDash.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DashboardDisplayVillaItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/DisplayVilla.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/displayVilla.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/items/VillaItems.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/AddRoom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRoom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/DisplayRooms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/tableRoom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/room/tableRoom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/pages/villa/settings/VillaSettings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/SideBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/Sidebar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/ToggleButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/sidebar/child/navitems.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/villa/room/RoomDisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/villa/rooms/Rooms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/villa/villaProfile/formVilla.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/DuaBall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/NotFound.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Spinner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Spinner2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/SpinnerBall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/SpinnerDuaBall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/SpinnerInterwind.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/customer/customer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/footer/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/footer/FooterCenter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/footer/FooterItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/footer/FooterLeft.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/footer/FooterRight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/HomeHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/HomeLanding.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/HomeSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/child/HomePortofolio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/home/style/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/navbar/Customer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/navbar/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/navbar/NavbarItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/navbar/Navbarstyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/villa/auth/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/villa/auth/Register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/post/CommentForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/post/CommentItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/post/Post.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/posts/PostForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/posts/Posts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-forms/AddEducation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-forms/AddExperience.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-forms/CreateProfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-forms/EditProfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileAbout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileEducation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileExperience.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileGithub.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileTop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profiles/ProfileItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/ImageUpload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/Progress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/RoomForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/RoomItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/rooms/Rooms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routing/Routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/villa/VillaProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/templates/navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/villa/villa-forms/AddRoom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/villa/villa-forms/CreateVillaProfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/villa/villa-forms/EditVilla.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/img/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/img/showcase.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/style/dashStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/dashStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/style/useStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/useStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/templates/navbar/Navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/production.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/production.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/users.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,25 +64,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\public\uploads" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\routing" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout\navbar" />
       <recent name="F:\file yudi\program\skripsi\" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
       <recent name="F:\file yudi\program\skripsi\client\src\assets" />
       <recent name="F:\file yudi\program\skripsi\client\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\components" />
+      <recent name="F:\file yudi\program\skripsi\client\public\uploads" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\routing" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\assets" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -266,8 +178,26 @@
       <workItem from="1592301604542" duration="5858000" />
       <workItem from="1592399727531" duration="18023000" />
       <workItem from="1592593722284" duration="6384000" />
-      <workItem from="1592603216710" duration="7266000" />
+      <workItem from="1592603216710" duration="14046000" />
+      <workItem from="1592697072838" duration="2650000" />
+      <workItem from="1592772386566" duration="3038000" />
+      <workItem from="1592832321649" duration="3789000" />
+      <workItem from="1592895727386" duration="514000" />
+      <workItem from="1592910873231" duration="864000" />
+      <workItem from="1592970888619" duration="3397000" />
+      <workItem from="1593011056561" duration="2062000" />
+      <workItem from="1593032938644" duration="8464000" />
+      <workItem from="1593055247808" duration="10520000" />
+      <workItem from="1593108276394" duration="13992000" />
     </task>
+    <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
+      <created>1592610558891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592610558891</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +207,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/vodonesia" />
     </ignored-roots>
+    <MESSAGE value="[REMAKE]LAYOUT" />
+    <option name="LAST_COMMIT_MESSAGE" value="[REMAKE]LAYOUT" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1219" y="256" key="#HTTP_Proxy" timestamp="1587305169824">
@@ -291,10 +223,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="177" width="816" height="733" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1587327179439" />
-    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588472058751">
+    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593057490359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588472058751" />
+    <state x="828" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593057490359" />
     <state x="1209" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590351726331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -303,10 +235,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588890283914" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592604908347">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593119281794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592604908347" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593119281794" />
+    <state x="451" y="87" key="CommitChangelistDialog2" timestamp="1592610553308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="451" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592610553308" />
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog" timestamp="1587415293373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -315,22 +251,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592316337026" />
-    <state width="900" height="270" key="GridCell.Tab.0.bottom" timestamp="1592603863473">
+    <state width="900" height="270" key="GridCell.Tab.0.bottom" timestamp="1593057898433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592603863473" />
-    <state width="900" height="270" key="GridCell.Tab.0.center" timestamp="1592603863473">
+    <state width="900" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593057898433" />
+    <state width="900" height="270" key="GridCell.Tab.0.center" timestamp="1593057898433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592603863473" />
-    <state width="900" height="270" key="GridCell.Tab.0.left" timestamp="1592603863473">
+    <state width="900" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593057898433" />
+    <state width="900" height="270" key="GridCell.Tab.0.left" timestamp="1593057898432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592603863473" />
-    <state width="900" height="270" key="GridCell.Tab.0.right" timestamp="1592603863473">
+    <state width="900" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593057898432" />
+    <state width="900" height="270" key="GridCell.Tab.0.right" timestamp="1593057898433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592603863473" />
+    <state width="900" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593057898433" />
     <state x="1279" y="239" key="RollbackChangesDialog" timestamp="1587321089704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -343,10 +279,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1590482859660" />
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590349818487">
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592610563235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590349818487" />
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592610563235" />
     <state x="667" y="255" width="585" height="530" key="find.popup" timestamp="1588287517796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -355,10 +291,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1096" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587304780566" />
-    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup" timestamp="1591375849499">
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup" timestamp="1592775825879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591375849499" />
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592775825879" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

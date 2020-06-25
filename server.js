@@ -4,9 +4,9 @@ const path = require("path");
 const cors = require('cors');
 const app = express();
 const bodyParser = require('body-parser');
-const multer = require('multer');
+// const multer = require('multer');
 
-//Connect DB
+//C onnect DB
 connectDB();
 
 app.use(bodyParser.json());
@@ -19,6 +19,7 @@ app.use(express.json({ extended: false }));
 app.use((req, res, next) => {
   const allowedOrigin = [
       'http://localhost:3000',
+      'http://localhost:3001',
       'http://vodonesia.herokuapp.com',
       'vodonesia.id'
   ];
@@ -28,8 +29,7 @@ app.use((req, res, next) => {
   next();
 });
 //Define routes
-app.use("/api/users",cors(), require("./routes/api/users"));
-app.use("/api/auth", require("./routes/api/auth"));
+app.use("/api/auth", cors(),require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/villa",require("./routes/api/villa"));
 app.use("/api/room",require("./routes/api/rooms"));

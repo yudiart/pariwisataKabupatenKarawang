@@ -1,8 +1,20 @@
 import {makeStyles} from "@material-ui/core/styles";
+import {fade} from "@material-ui/core";
 
 const drawerWidth = 240;
 
 const dashStyles = makeStyles((theme) => ({
+    navlink:{
+        color:'white',
+        textDecoration:'none',
+        listStyle:'none',
+        '&:hover': {
+            backgroundColor: fade(theme.palette.common.white, 0.50),
+            color:'white',
+            textDecoration:'none',
+            listStyle:'none'
+        },
+    },
     root: {
         display: 'flex',
     },
@@ -54,13 +66,14 @@ const dashStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'flex-end',
-        padding: theme.spacing(0, 1),
+        padding: theme.spacing(0.2),
         // necessary for content to be below app bar
         ...theme.mixins.toolbar,
     },
     content: {
         flexGrow: 1,
-        padding: theme.spacing(3),
+        paddingTop: theme.spacing(6),
+        paddingBottom: theme.spacing(2),
     },
 }));
 

@@ -4,6 +4,9 @@
   "AWS_SECRET_ACCESS_KEY": "7Zv/heqqnLCi9CFhtvsLgR8asfa/7FINx7B6xc07",
   "AWS_ACCESS_KEY_ID": "AKIAJ7GMJI7QJ6QD53LQ",
   "region": "ap-southeast-1",
+  "CLIENT_URL": "http://localhost:3000",
+  "MAILGUN_APIKEY": "8a6aa7628a05633ede4956ccfe792212-468bde97-870fcb56",
+  "DOMAIN": "https://api.mailgun.net/v3/sandboxfe67f78c43e34c17b7b46e20ddfa0038.mailgun.org",
   "githubClientId": "a4c97b360ce0a1abc3d4",
   "githubSecret": "64ef40d79645e4acae776a5f1378dd2e06baaab4"
 }

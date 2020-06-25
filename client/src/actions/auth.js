@@ -11,6 +11,8 @@ import {
   CLEAR_VILLA, CLEAR_ADMIN, CLEAR_PROFILE
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
+import {Redirect} from "react-router";
+import React from "react";
 
 //Load User
 export const loadUser = () => async dispatch => {
@@ -33,16 +35,16 @@ export const loadUser = () => async dispatch => {
 };
 
 //Registers the user
-export const register = ({ name, email, password}) => async dispatch => {
+export const register = ({ fullname, email, password}) => async dispatch => {
   const config = {
     headers: {
       "Content-Type": "application/json"
     }
   };
-  const body = JSON.stringify({ name, email, password, role:'villa'});
+  const body = JSON.stringify({ fullname, email, password, role:'customer'});
 
   try {
-    const res = await axios.post("/api/users", body, config);
+    const res = await axios.post("/api/auth/register", body, config);
     dispatch({
       type: REGISTER_SUCCESS,
       payload: res.data
@@ -52,7 +54,7 @@ export const register = ({ name, email, password}) => async dispatch => {
     const errors = err.response.data.errors;
 
     if (errors) {
-      errors.forEach(error => dispatch(setAlert(error.msg, "danger")));
+      errors.forEach(error => dispatch(setAlert(error.msg, "error")));
     }
 
     dispatch({
@@ -62,16 +64,18 @@ export const register = ({ name, email, password}) => async dispatch => {
 };
 
 //Login the user
-export const login = (email, password) => async dispatch => {
+export const login = ({email, password,isChecked}) => async dispatch => {
   const config = {
     headers: {
       "Content-Type": "application/json"
     }
   };
   const body = JSON.stringify({ email, password });
-
   try {
-    const res = await axios.post("/api/auth", body, config);
+    const res = await axios.post("/api/auth/login", body, config);
+    if(isChecked){
+      localStorage.setItem('RememberMe', JSON.stringify({email,password,isChecked}))
+    }
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data
@@ -79,10 +83,9 @@ export const login = (email, password) => async dispatch => {
     dispatch(loadUser());
   } catch (err) {
     const errors = err.response.data.errors;
-
     if (errors) {
       errors.forEach(error =>
-        dispatch(setAlert("Incorrect Email or Password", "danger"))
+        dispatch(setAlert(error.msg , "error"))
       );
     }
 
@@ -93,10 +96,10 @@ export const login = (email, password) => async dispatch => {
 };
 
 //Logout user and clear the profile
-export const logout = () => dispatch => {
+export const logout = ({history}) => dispatch => {
   dispatch({ type: CLEAR_VILLA });
   dispatch({ type: CLEAR_PROFILE });
   dispatch({ type: LOGOUT });
   dispatch({ type: CLEAR_ADMIN });
-
+  return <Redirect to={'/login'}/>
 };

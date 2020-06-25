@@ -1,8 +1,16 @@
 
 import {makeStyles} from "@material-ui/core/styles";
 import {fade} from "@material-ui/core";
+import red from "@material-ui/core/colors/red";
+import deepOrange from "@material-ui/core/colors/deepOrange";
+import deepPurple from "@material-ui/core/colors/deepPurple";
+import grey from "@material-ui/core/colors/grey";
 
 const useStyle = makeStyles((theme) => ({
+    backdrop: {
+        zIndex: theme.zIndex.drawer + 1,
+        color: '#fff',
+    },
     grow: {
         flexGrow: 1,
     },
@@ -14,6 +22,13 @@ const useStyle = makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
             display: 'block',
         },
+    },
+    paper: {
+        background:"transparent",
+        padding:"10px",
+        marginTop: theme.spacing(2),
+        display: 'flex',
+        flexDirection: 'column',
     },
     search: {
         position: 'relative',
@@ -70,6 +85,66 @@ const useStyle = makeStyles((theme) => ({
         [theme.breakpoints.up('md')]: {
             display: 'none',
         },
+    },
+    //Card Style
+    root: {
+        maxWidth: 345,
+    },
+    'direction-xs-row-reverse': {
+        flexDirection: 'row-reverse',
+    },
+    media: {
+        height: 0,
+        paddingTop: '56.25%', // 16:9
+    },
+    expand: {
+        transform: 'rotate(0deg)',
+        marginLeft: 'auto',
+        transition: theme.transitions.create('transform', {
+            duration: theme.transitions.duration.shortest,
+        }),
+    },
+    expandOpen: {
+        transform: 'rotate(180deg)',
+    },
+    avatar: {
+        backgroundColor: red[500],
+    },
+    orange: {
+        color: theme.palette.getContrastText(deepOrange[500]),
+        backgroundColor: deepOrange[500],
+    },
+    purple: {
+        color: theme.palette.getContrastText(deepPurple[500]),
+        backgroundColor: deepPurple[500],
+    },
+    form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing(1),
+    },
+    submit: {
+        margin: theme.spacing(3, 0, 2),
+    },
+    backgroundHeader:{
+        background: theme.palette.secondary.light,
+        marginTop: theme.spacing(0),
+        borderRadius:'none',
+        minHeight:'200px'
+    },
+    headerImage:{
+        background:theme.palette.secondary.contrastText,
+        padding:"10px",
+        margin:'5px',
+        height:"120px",
+        width:'95%',
+        marginTop: theme.spacing(2),
+        display: 'flex',
+        flexDirection: 'column',
+    },
+
+    footer: {
+        backgroundColor: grey[900],
+        padding: theme.spacing(2),
     },
 }));
 

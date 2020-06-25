@@ -1,14 +1,20 @@
 import React from 'react';
-import { Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import PrivateRoute from "./PrivateRoute";
-import Dashboard from "../components/layout/dashboard/Dashboard";
+import Dashboard from "../views/Dashboard/Dashboard";
+import Login from "../views/Home/Login/Login";
+import Register from "../views/Home/Register/Register";
 
-export const Routes = ()=>{
+const Routes = ()=>{
     return(
         <section>
             <Switch>
                 <PrivateRoute exact path="/dashboard" component={Dashboard}/>
+                <PrivateRoute exact path="/dashboard/:url" component={Dashboard}/>
+                <Route exact path="/login" component={Login}/>
+                <Route exact path="/register" component={Register}/>
             </Switch>
         </section>
     )
 }
+export default Routes;
