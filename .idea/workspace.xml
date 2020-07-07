@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +162,7 @@
       <workItem from="1593657031110" duration="2702000" />
       <workItem from="1593966215938" duration="19949000" />
       <workItem from="1594003734210" duration="20507000" />
-      <workItem from="1594066088422" duration="26488000" />
+      <workItem from="1594066088422" duration="26804000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
