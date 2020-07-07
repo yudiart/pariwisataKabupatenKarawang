@@ -57,7 +57,7 @@ exports.createProfile = async (req, res) => {
         //Create
         profile = new Profile(profileFields);
         await profile.save();
-        res.json(profile);
+        await res.json(profile);
     } catch (err) {
         console.error(err.message);
         res.status(500).send("Server Error in Profile.js");

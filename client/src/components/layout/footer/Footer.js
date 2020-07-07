@@ -1,14 +1,10 @@
 import React, {Fragment} from 'react';
 import Typography from "@material-ui/core/Typography";
-import {Copyright} from "@material-ui/icons";
 import useStyle from "../../../assets/style/useStyle";
-import dashStyles from "../../../assets/style/dashStyles";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
 import Container from "@material-ui/core/Container";
 const Footer =()=>{
     const classes = useStyle();
-    const classess = dashStyles();
     const datatext = "Lorem Ipsum hanyalah teks tiruan dari industri percetakan dan penyusunan huruf. Lorem Ipsum telah menjadi teks boneka standar industri sejak tahun 1500-an, ketika sebuah printer yang tidak dikenal mengambil jenis galley";
     return (
         <Fragment>

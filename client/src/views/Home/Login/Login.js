@@ -7,8 +7,6 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 
-import LockIcon from '@material-ui/icons/Lock';
-import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Typography from '@material-ui/core/Typography';
 import useStyles from '../../../assets/style/useStyle';
 import {login} from '../../../actions/auth';
@@ -17,7 +15,6 @@ import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 
 import {setAlert} from "../../../actions/alert";
-import spinner from "../../../assets/Spinner.gif";
 import Alerts from "../../../components/Alert/Alerts";
 import Backdrop from "@material-ui/core/Backdrop";
 import CircularProgress from "@material-ui/core/CircularProgress";

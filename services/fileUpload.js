@@ -2,9 +2,8 @@ const aws =require('aws-sdk');
 const multer = require('multer');
 const multerS3 = require('multer-s3');
 aws.config.update({
-    secretAccessKey: '7Zv/heqqnLCi9CFhtvsLgR8asfa/7FINx7B6xc07',
-    accessKeyId:'AKIAJ7GMJI7QJ6QD53LQ',
-    region: 'eu-west-3'
+    secretAccessKey: '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',
+    accessKeyId:'AKIATMYC6J76BIC6EOJF',
 });
 
 const s3 = new aws.S3();
@@ -24,7 +23,7 @@ const upload = multer({
     fileFilter,
     storage: multerS3({
         s3:s3,
-        bucket: 'room-image',
+        bucket: 'vodonesia.id/Room',
         acl: 'public-read',
         key: (req,file,cb)=>{
             cb(null, `${Date.now()}_${file.originalname}`)

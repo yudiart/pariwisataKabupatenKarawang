@@ -128,7 +128,7 @@ const useStyle = makeStyles((theme) => ({
     backgroundHeader:{
         background: theme.palette.secondary.light,
         marginTop: theme.spacing(0),
-        borderRadius:'none',
+        borderRadius:'0',
         minHeight:'200px'
     },
     headerImage:{

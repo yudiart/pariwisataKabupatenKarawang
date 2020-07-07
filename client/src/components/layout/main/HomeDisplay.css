@@ -1,0 +1,10 @@
+.boxLeft{
+    min-height: 400px;
+    padding:10px;
+    text-align: justify;
+}
+.boxRight{
+    min-height: 400px;
+    padding:10px;
+    text-align: justify;
+}

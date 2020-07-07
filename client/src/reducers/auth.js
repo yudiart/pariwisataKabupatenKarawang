@@ -1,6 +1,7 @@
 import {
   REGISTER_SUCCESS,
   REGISTER_FAIL,
+    LOCATION,
   USER_LOADED,
   AUTH_ERROR,
   LOGIN_SUCCESS,
@@ -12,8 +13,8 @@ import {
 const initialState = {
   token: localStorage.getItem("token"),
   isAuthenticated: null,
-  isOnline: false,
   loading: true,
+  location:null,
   user: null
 };
 
@@ -26,7 +27,7 @@ export default function(state = initialState, action) {
         ...state,
         isAuthenticated: true,
         loading: false,
-        isOnline: true,
+        location:payload,
         user: payload
       };
     case REGISTER_FAIL:
@@ -38,20 +39,20 @@ export default function(state = initialState, action) {
       return {
         ...state,
         token: null,
-        isOnline: false,
         isAuthenticated: false,
         loading: false,
+        location:null,
         user:null
       };
     case LOGIN_SUCCESS:
+    case LOCATION:
     case REGISTER_SUCCESS:
       localStorage.setItem("token", payload.token);
       return {
         ...state,
         ...payload,
         isAuthenticated: true,
-        isOnline: true,
-        loading: false
+        loading: false,
       };
 
     default:

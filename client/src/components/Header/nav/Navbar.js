@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 import Toolbar from "@material-ui/core/Toolbar";
-import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import SearchIcon from "@material-ui/icons/Search";
@@ -22,19 +21,19 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import PersonIcon from '@material-ui/icons/Person';
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
-import dashStyles from "../../../assets/style/dashStyles";
 import {useHistory} from "react-router";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import Divider from "@material-ui/core/Divider";
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import SettingsIcon from '@material-ui/icons/Settings';
+import Login from "./dialog/Login";
+
 
 
 
 const Navbar =({auth,isAuthenticated,logout})=>{
     const history = useHistory()
     const classes = useStyle()
-    const classeses = dashStyles()
     const [anchorEl, setAnchorEl] = React.useState(null)
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -57,7 +56,6 @@ const Navbar =({auth,isAuthenticated,logout})=>{
     const handleMobileMenuOpen = (event) => {
         setMobileMoreAnchorEl(event.currentTarget);
     };
-
 
     const menuId = 'primary-search-account-menu';
     const renderMenu = (
@@ -159,7 +157,7 @@ const Navbar =({auth,isAuthenticated,logout})=>{
             >
                 <MenuItem>
                     <ButtonGroup variant="text" color="inherit" aria-label="text primary button group">
-                        <Button onClick={()=>{history.push('/login')}}>Login</Button>
+                        <Button variant="text" color="inherit" onClick={()=>{history.push('/login')}}>Login</Button>
                     </ButtonGroup>
                 </MenuItem>
                 <MenuItem>

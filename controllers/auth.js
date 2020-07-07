@@ -13,7 +13,7 @@ exports.signup = async (req,res)=>{
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
     }
-    const {fullname,email,password,role,isAdmin} =req.body;
+    const {email,password,role,isAdmin} =req.body;
     try{
         let user = await User.findOne({ email })
         if (user) {
@@ -30,7 +30,6 @@ exports.signup = async (req,res)=>{
         });
         //Deklrasi user baru
         user = new User({
-            fullname,
             email,
             role,
             isAdmin,

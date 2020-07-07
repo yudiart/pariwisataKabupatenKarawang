@@ -32,6 +32,21 @@ router.put("/:_id", auth,Role(role.villa), (req,res)=>{
     })
 });
 
+router.post('/uploadImage',async (req,res)=>{
+    if (req.files === null){
+        return res.status(500).json({msg: 'No file uploaded'})
+    }
+    const file = req.files.file
+    file.mv(`${__dirname}/client/public/uploads/${file.name}`,
+        err =>{
+            if (err){
+                console.error(err)
+                return res.status(500).send(err)
+            }
+        })
+    res.json({fileName: file.name, filePath: `/uploads/${file.name}`})
+})
+
 //@route POST api/Room
 //@desc Added Room
 //@access Private
@@ -197,7 +212,6 @@ router.get("/",  async (req, res) => {
         res.status(500).send("Server errror in posts.js");
     }
 });
-
 
 //@route GET api/Room/:id
 //@desc Get a single Room

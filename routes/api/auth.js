@@ -24,9 +24,6 @@ router.post(
 
 router.post("/register",
     [
-      check("fullname", "Name is required")
-          .not()
-          .isEmpty(),
       check("email", "Please enter a valid email").isEmail(),
       check(
           "password",

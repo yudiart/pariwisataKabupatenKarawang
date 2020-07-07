@@ -21,7 +21,13 @@ router.get("/me", auth, ProfileMe);
 //@access Private
 router.post("/",
     [auth,
-      [check("status", "Status is required").not().isEmpty()]
+      [
+          check("fullname", "Name is required").not().isEmpty(),
+          check("contact", "contact is required").not().isEmpty(),
+          check("location", "location is required").not().isEmpty(),
+          check("bio", "Bio is required").not().isEmpty()
+
+      ]
     ], createProfile);
 
 //@route Get api/profile

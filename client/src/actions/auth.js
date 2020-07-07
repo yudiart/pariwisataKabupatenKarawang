@@ -8,11 +8,14 @@ import {
   LOGIN_FAIL,
   LOGIN_SUCCESS,
   LOGOUT,
+  LOCATION,
   CLEAR_VILLA, CLEAR_ADMIN, CLEAR_PROFILE
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
 import {Redirect} from "react-router";
 import React from "react";
+import { push } from 'react-router-redux';
+import auth from "../reducers/auth";
 
 //Load User
 export const loadUser = () => async dispatch => {
@@ -22,11 +25,11 @@ export const loadUser = () => async dispatch => {
 
   try {
     const res = await axios.get("/api/auth");
-
     dispatch({
       type: USER_LOADED,
       payload: res.data
     });
+
   } catch (err) {
     dispatch({
       type: AUTH_ERROR
@@ -50,6 +53,7 @@ export const register = ({ fullname, email, password}) => async dispatch => {
       payload: res.data
     });
     dispatch(loadUser());
+
   } catch (err) {
     const errors = err.response.data.errors;
 
@@ -64,22 +68,30 @@ export const register = ({ fullname, email, password}) => async dispatch => {
 };
 
 //Login the user
-export const login = ({email, password,isChecked}) => async dispatch => {
+export const login = ({email, password,isChecked,dashboard}) => async dispatch => {
   const config = {
     headers: {
       "Content-Type": "application/json"
     }
+
   };
   const body = JSON.stringify({ email, password });
   try {
     const res = await axios.post("/api/auth/login", body, config);
+    let stat = await axios.post("/api/v1/statistic");
     if(isChecked){
       localStorage.setItem('RememberMe', JSON.stringify({email,password,isChecked}))
     }
-    dispatch({
-      type: LOGIN_SUCCESS,
-      payload: res.data
-    });
+    dispatch(
+        {
+          type: LOGIN_SUCCESS,
+          payload: res.data,
+        },
+        {
+          type:LOCATION,
+          payload: stat.data
+        }
+    );
     dispatch(loadUser());
   } catch (err) {
     const errors = err.response.data.errors;

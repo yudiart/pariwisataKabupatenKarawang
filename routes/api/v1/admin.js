@@ -3,7 +3,6 @@ const router = express.Router();
 const auth = require("../../../middleware/auth");
 const User = require("../../../models/User");
 const Room = require("../../../models/Room");
-
 //@route GET api/auth/all
 //@desc Auth user by role admin.
 //access private by role admin

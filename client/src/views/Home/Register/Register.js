@@ -16,14 +16,12 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
 import Alerts from "../../../components/Alert/Alerts";
-import spinner from "../../../assets/Spinner.gif";
 import Backdrop from "@material-ui/core/Backdrop";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 const Register = ({ setAlert, register,isAuthenticated,history})=>{
     const classes = useStyles();
     const [formData, setFormData] = useState({
-        fullname:'',
         email: "",
         password: "",
         password2: ""
@@ -32,7 +30,7 @@ const Register = ({ setAlert, register,isAuthenticated,history})=>{
     const onChange = e =>
         setFormData({ ...formData, [e.target.name]: e.target.value });
 
-    const { fullname, email, password,password2 } = formData;
+    const {email, password,password2 } = formData;
 
     const onSubmit = async e => {
         e.preventDefault();
@@ -41,7 +39,7 @@ const Register = ({ setAlert, register,isAuthenticated,history})=>{
                 setAlert("Passwords do not match", "error");
             }else{
                 setOpen(!open);
-                register({ fullname, email, password });
+                register({email, password });
             }
         }else{
             setAlert("The password must be filled in","error")
@@ -49,7 +47,7 @@ const Register = ({ setAlert, register,isAuthenticated,history})=>{
     };
     const setTime =(
         setTimeout((e) => (
-            history.push(`/`)
+            history.push(`/CreateProfile`)
         ), 3000)
     )
     const registerIn  = (
@@ -78,19 +76,6 @@ const Register = ({ setAlert, register,isAuthenticated,history})=>{
                         </Typography>
                         <Alerts/>
                         <form className={classes.form} noValidate onSubmit={e=> onSubmit(e)}>
-                            <TextField
-                                variant="outlined"
-                                margin="normal"
-                                required
-                                fullWidth
-                                id="fullname"
-                                value={fullname}
-                                onChange={(e)=>onChange(e)}
-                                label="Full Name"
-                                name="fullname"
-                                autoComplete="fullname"
-                                autoFocus
-                            />
                             <TextField
                                 variant="outlined"
                                 margin="normal"

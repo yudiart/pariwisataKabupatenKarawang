@@ -96,7 +96,6 @@ export const getCurrentVilla = () => async dispatch => {
 
 
 //Get all user's profiles
-
 export const getVillas = () => async dispatch => {
 
     try {

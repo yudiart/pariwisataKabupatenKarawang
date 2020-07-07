@@ -4,9 +4,10 @@ const path = require("path");
 const cors = require('cors');
 const app = express();
 const bodyParser = require('body-parser');
+const fileUpload =require('express-fileupload')
 // const multer = require('multer');
 
-//C onnect DB
+//Connect DB
 connectDB();
 
 app.use(bodyParser.json());
@@ -23,21 +24,25 @@ app.use((req, res, next) => {
       'http://vodonesia.herokuapp.com',
       'vodonesia.id'
   ];
-  res.header("Access-Control-Allow-Origin", process.env.ORIGIN || allowedOrigin);
+  res.header("Access-Control-Allow-Origin", process.env.ORIGIN && '*');
   res.header("Access-Control-Allow-Methods", 'GET, POST, PUT, DELETE');
   res.header("Access-Control-Allow-Credentials", 'true');
   next();
 });
+
 //Define routes
 app.use("/api/auth", cors(),require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/villa",require("./routes/api/villa"));
-app.use("/api/room",require("./routes/api/rooms"));
 app.use("/api/v1/admin",require("./routes/api/v1/admin"));
 app.use("/api/v1/order/",require("./routes/api/v1/order/order"));
 app.use("/api/v1/cart/",require("./routes/api/v1/carts/cart"));
 app.use("/api/v1/pay/",require("./routes/api/v1/payment/payment"));
-app.use('/uploads', express.static('uploads'));
+app.use("/api/v1/statistic",require("./routes/api/v1/statistic"));
+// app.use('/uploads', express.static('uploads'));
+
+app.use(fileUpload())
+app.use('/api/v1/rooms', require('./routes/api/rooms'))
 
 //Serve static assets in production
 if (process.env.NODE_ENV === "production") {
