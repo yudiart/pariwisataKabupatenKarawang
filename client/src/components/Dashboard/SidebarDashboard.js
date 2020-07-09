@@ -20,6 +20,7 @@ import dashStyles from "../../assets/style/dashStyles";
 import {useParams} from "react-router";
 
 const SidebarDashboard = ({auth:{user},logout})=>{
+
     const classes = dashStyles();
     let {url} = useParams();
     let pathUrlUser = ['Profile','test','Settings','editProfile'];
@@ -28,7 +29,7 @@ const SidebarDashboard = ({auth:{user},logout})=>{
     const activeColor = (
         window.location.pathname === '/dashboard' ? 'secondary':'inherit'
     )
-    const users =(
+    const customer =(
         <section>
             <List>
                 <Link to={'/dashboard'}  className={classes.navlink}>
@@ -47,7 +48,7 @@ const SidebarDashboard = ({auth:{user},logout})=>{
                 <Link to={'/dashboard/test'} className={classes.navlink}>
                     <ListItem button>
                         <ListItemIcon ><TimelineIcon color={url === pathUrlUser[1] ? 'secondary':'inherit'}/></ListItemIcon>
-                        <ListItemText primary='Hasil' />
+                        <ListItemText primary='Hasil' color={url === pathUrlUser[1] ? 'secondary':'inherit'}/>
                     </ListItem>
                 </Link>
 
@@ -74,20 +75,20 @@ const SidebarDashboard = ({auth:{user},logout})=>{
                 <Link to={`/dashboard/TambahRoom`} className={classes.navlink}>
                     <ListItem button>
                         <ListItemIcon ><CreateIcon color={url === pathUrlVilla[0] ? 'secondary':'inherit'}/></ListItemIcon>
-                        <ListItemText primary='TambahRoom' />
+                        <ListItemText primary='TambahRoom' color={url === pathUrlVilla[0] ? 'secondary':'inherit'}/>
                     </ListItem>
                 </Link>
                 <Link to={'/dashboard/VillaProfile'} className={classes.navlink}>
                     <ListItem button>
                         <ListItemIcon ><TimelineIcon color={url === pathUrlVilla[1] ? 'secondary':'inherit'}/></ListItemIcon>
-                        <ListItemText primary='VillaProfile' />
+                        <ListItemText primary='VillaProfile'color={url === pathUrlVilla[1] ? 'secondary':'inherit'} />
                     </ListItem>
                 </Link>
 
                 <Link to={'/dashboard/editProfile'} className={classes.navlink}>
                     <ListItem button>
                         <ListItemIcon ><TimelineIcon color={url === pathUrlVilla[3] ? 'secondary':'inherit'}/></ListItemIcon>
-                        <ListItemText primary='editProfile' />
+                        <ListItemText primary='edit Profile'/>
                     </ListItem>
                 </Link>
 
@@ -170,10 +171,10 @@ const SidebarDashboard = ({auth:{user},logout})=>{
             </List>
         </section>
     )
+
     return (
-        user.role === 'admin'? admin:null,
-        user.role === 'customer'? users:null,
-        user.role === 'villa'? villa:null
+        user.role === 'admin' ? admin : null,
+        user.role === 'customer'? customer:villa
     )
 }
 SidebarDashboard.propTypes ={

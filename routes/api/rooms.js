@@ -5,7 +5,7 @@ const upload = require('../../services/fileUpload').single('image');
 const { check, validationResult } = require("express-validator");
 const auth = require("../../middleware/auth");
 const {Role} = require('../../middleware/authRole');
-
+const fileUpload =require('express-fileupload')
 const role ={
     admin: 'admin',
     villa: 'villa',
@@ -16,108 +16,110 @@ const Villa = require("../../models/Villa");
 const User = require("../../models/User");
 
 // AWS S3
-router.put("/:_id", auth,Role(role.villa), (req,res)=>{
+router.post("/upload", auth,Role(role.villa), (req,res)=>{
+    const errors = validationResult(req);
+    //check error va.lidasi
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() })
+    }
     upload(req,res,async (err)=>{
-        const newImage = ([req.file.location]);
-        try {
-            const kamar = await Room.findById( req.params._id);
-
-            kamar.images.unshift(newImage);
-            const room = await kamar.save();
-            await res.json(room);
-        } catch (err) {
-            console.error(err.message);
-            res.status(500).send("Server errror in posts.js");
-        }
+        const newImage = ({
+            url:req.file.location,
+            name:req.file.key
+        });
+        const newRoom = new Room({
+            user: req.user.id,
+            images: newImage
+        });
+        const room = await newRoom.save();
+        await res.json(room);
+            console.log(newImage)
     })
 });
+//Upload File in local Storage
+// router.post('/uploadImage',auth,async (req,res)=>{
+//     if (req.files < 0){
+//         return res.status(500).json({msg: 'No file uploaded'})
+//     }
+//     try {
+//         console.log(req.files[0])
+//         // console.log(req.files.images)
+//         const file = req.files.images
+//         const name = file.name
+//         console.log(__dirname)
+//         await req.files.images.mv(`${__dirname}/../../client/public/uploads/${Date.now()}_${file.name}`,
+//             err =>{
+//                 if (err){
+//                     console.error(err)
+//                     return res.status(500).send(err)
+//                 }
+//             })
+//         res.json({fileName: `${Date.now()}_${file.name}`, filePath: `/uploads/${Date.now()}_${file.name}`})
+//     } catch (err) {
+//         console.error(err.message)
+//         res.status(500).send("Server errror in posts.js")
+//     }
+// })
 
-router.post('/uploadImage',async (req,res)=>{
-    if (req.files === null){
-        return res.status(500).json({msg: 'No file uploaded'})
-    }
-    const file = req.files.file
-    file.mv(`${__dirname}/client/public/uploads/${file.name}`,
-        err =>{
-            if (err){
-                console.error(err)
-                return res.status(500).send(err)
-            }
-        })
-    res.json({fileName: file.name, filePath: `/uploads/${file.name}`})
-})
 
 //@route POST api/Room
 //@desc Added Room
 //@access Private
-router.post(
-    "/",
-    [
-        auth,Role(role.villa),
-        [
-            check("roomName", "Room Name is required!")
-                .not()
-                .isEmpty(),
-            check("description", "Description is required")
-                .not()
-                .isEmpty(),
-            check("harga", "Harga is required")
-                .not()
-                .isEmpty()
-        ]
-    ],
-    async (req, res) => {
-        const errors = validationResult(req);
-        //check error validasi
-        if (!errors.isEmpty()) {
-            return res.status(400).json({ errors: errors.array() })
+router.put("/:_id", auth,Role(role.villa), async (req, res) => {
+    const {
+        roomName,
+        description,
+        limit,
+        harga,
+        tipeKamar,
+        ac,
+        tv,
+        bedtype,
+        wifi,
+        other
+    } = req.body;
+    const roomFields = {};
+    roomFields.user = req.user.id;
+    //Build fasilitas
+    roomFields.fasilitas={};
+    if (ac)             roomFields.fasilitas.ac = ac;
+    if (tv)             roomFields.fasilitas.tv = tv;
+    if (bedtype)        roomFields.fasilitas.bedtype = bedtype;
+    if (wifi)           roomFields.fasilitas.wifi = wifi;
+    if (other)          roomFields.fasilitas.other = other;
+    console.log(roomName)
+    console.log(description)
+    console.log(limit)
+    console.log(harga)
+    console.log(tipeKamar)
+    console.log(roomFields.fasilitas)
+    try {
+        let kamar = await Room.findById( req.params._id);
+        const dataUpdate =({
+            roomName: roomName,
+            description:description,
+            limit:limit,
+            harga:harga,
+            tipeKamar:tipeKamar,
+            fasilitas:roomFields.fasilitas
+        })
+        if(kamar){
+            kamar = await Room.findOneAndUpdate(
+                {_id: req.params._id},
+                {$set: dataUpdate},
+                {new: true}
+            );
+            return res.json(kamar);
         }
-        const {
-            roomName,
-            description,
-            limit,
-            harga,
-            tipeKamar,
-            ac,
-            tv,
-            bedtype,
-            wifi,
-            other
-        } = req.body;
+        kamar = new Room(dataUpdate);
+        await kamar.save();
+        await res.json(kamar);
 
-        const roomFields = {};
-        roomFields.user = req.user.id;
-        //Build fasilitas
-        roomFields.fasilitas={};
-        if (ac)             roomFields.fasilitas.ac = ac;
-        if (tv)             roomFields.fasilitas.tv = tv;
-        if (bedtype)        roomFields.fasilitas.bedtype = bedtype;
-        if (wifi)           roomFields.fasilitas.wifi = wifi;
-        if (other)          roomFields.fasilitas.other = other;
-
-        try {
-            const user = await User.findById(req.user.id).select("-password")
-
-            const newRoom = new Room({
-                user: req.user.id,
-                name: user.name,
-                roomName: roomName,
-                description:description,
-                limit:limit,
-                harga: harga,
-                tipeKamar: tipeKamar,
-                fasilitas: roomFields.fasilitas
-
-            });
-
-            const room = await newRoom.save();
-            await res.json(room);
-        } catch (err) {
-            console.error(err.message)
-            res.status(500).send("Server errror in posts.js")
-        }
+    } catch (err) {
+        console.error(err.message)
+        res.status(500).send("Server errror in posts.js")
     }
-);
+});
 
 
 //@route POST api/Room

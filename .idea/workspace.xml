@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT" />
+    <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT">
+      <change afterPath="$PROJECT_DIR$/client/src/assets/style/fileUpload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/Rooms/RoomForms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/Rooms/percentage/Progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/style/dashStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/dashStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/style/useStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/useStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/SidebarDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/SidebarDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/DashboardMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/DashboardMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/admin/MainAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/admin/MainAdmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/upload/FileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/upload/FileUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Home/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home/Register/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/fileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/fileUpload.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +181,10 @@
       <workItem from="1593657031110" duration="2702000" />
       <workItem from="1593966215938" duration="19949000" />
       <workItem from="1594003734210" duration="20507000" />
-      <workItem from="1594066088422" duration="26804000" />
+      <workItem from="1594066088422" duration="29541000" />
+      <workItem from="1594143307517" duration="237000" />
+      <workItem from="1594145449459" duration="2803000" />
+      <workItem from="1594196512229" duration="67965000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
@@ -249,14 +271,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591827646107" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1590482859660">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1594232804150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1590482859660" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1594232804150" />
     <state x="861" y="231" key="VCS.ChangeListViewerDialog" timestamp="1594129876674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="861" y="231" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594129876674" />
+    <state x="565" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594206800282">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594206800282" />
     <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592610563235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -279,12 +305,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/services/fileUpload.js</url>
-          <line>10</line>
+          <line>11</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/services/fileUpload.js</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -300,13 +326,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
           <line>19</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/actions/profile.js</url>
           <line>9</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

@@ -5,12 +5,12 @@ const drawerWidth = 240;
 
 const dashStyles = makeStyles((theme) => ({
     navlink:{
-        color:'white',
+        color:'inherit',
         textDecoration:'none',
         listStyle:'none',
         '&:hover': {
-            backgroundColor: fade(theme.palette.common.white, 0.50),
-            color:'white',
+            // backgroundColor: fade(theme.palette.common.white, 0.50),
+            color:'secondary',
             textDecoration:'none',
             listStyle:'none'
         },

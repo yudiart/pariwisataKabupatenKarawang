@@ -41,8 +41,22 @@ app.use("/api/v1/pay/",require("./routes/api/v1/payment/payment"));
 app.use("/api/v1/statistic",require("./routes/api/v1/statistic"));
 // app.use('/uploads', express.static('uploads'));
 
-app.use(fileUpload())
 app.use('/api/v1/rooms', require('./routes/api/rooms'))
+
+app.use('/api/v1/uploadImage',async (req,res)=>{
+    if (req.files === null){
+        return res.status(500).json({msg: 'No file uploaded'})
+    }
+    const file = req.files.file
+    await file.mv(`${__dirname}/client/public/uploads/${file.name}`,
+        err =>{
+            if (err){
+                console.error(err)
+                return res.status(500).send(err)
+            }
+        })
+    res.json({fileName: file.name, filePath: `/uploads/${file.name}`})
+})
 
 //Serve static assets in production
 if (process.env.NODE_ENV === "production") {

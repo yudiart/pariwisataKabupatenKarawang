@@ -19,7 +19,7 @@ import Alerts from "../../../components/Alert/Alerts";
 import Backdrop from "@material-ui/core/Backdrop";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-const Register = ({ setAlert, register,isAuthenticated,history})=>{
+const Register = ({ setAlert, register,isAuthenticated,profile:{profile},history})=>{
     const classes = useStyles();
     const [formData, setFormData] = useState({
         email: "",
@@ -47,7 +47,7 @@ const Register = ({ setAlert, register,isAuthenticated,history})=>{
     };
     const setTime =(
         setTimeout((e) => (
-            history.push(`/CreateProfile`)
+            history.push(`/dashboard`)
         ), 3000)
     )
     const registerIn  = (
@@ -61,6 +61,9 @@ const Register = ({ setAlert, register,isAuthenticated,history})=>{
             :clearTimeout(setTime)
     )
     if (isAuthenticated){
+        if (profile === null) {
+            history.push('/CreateProfile')
+        }
         history.push('/dashboard')
     }
     return (
@@ -156,7 +159,9 @@ Register.propTypes = {
 
 const mapStateToProps = state => ({
     isAuthenticated: state.auth.isAuthenticated,
-    alert:state.alert
+    alert:state.alert,
+    profile: state.profile,
+    auth: state.auth
 });
 export default connect(
     mapStateToProps,

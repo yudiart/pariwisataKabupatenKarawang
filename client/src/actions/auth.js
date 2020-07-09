@@ -8,7 +8,6 @@ import {
   LOGIN_FAIL,
   LOGIN_SUCCESS,
   LOGOUT,
-  LOCATION,
   CLEAR_VILLA, CLEAR_ADMIN, CLEAR_PROFILE
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
@@ -78,7 +77,6 @@ export const login = ({email, password,isChecked,dashboard}) => async dispatch =
   const body = JSON.stringify({ email, password });
   try {
     const res = await axios.post("/api/auth/login", body, config);
-    let stat = await axios.post("/api/v1/statistic");
     if(isChecked){
       localStorage.setItem('RememberMe', JSON.stringify({email,password,isChecked}))
     }
@@ -86,10 +84,6 @@ export const login = ({email, password,isChecked,dashboard}) => async dispatch =
         {
           type: LOGIN_SUCCESS,
           payload: res.data,
-        },
-        {
-          type:LOCATION,
-          payload: stat.data
         }
     );
     dispatch(loadUser());

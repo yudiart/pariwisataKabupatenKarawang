@@ -121,26 +121,24 @@ export const deleteRoom = (id) => async dispatch => {
 //Add Room for the User
 //Add a post
 //DONE
-export const addRoom = (formData) => async dispatch => {
+export const addRoom = ({formData, idR}) => async dispatch => {
     try {
-        const res = await axios.post("/api/v1/uploads", formData, {
+        const res = await axios.put(`/api/v1/rooms/${idR}`, formData, {
             headers:{
-                "Content-Type": "multipart/form-data",
+                "Content-Type": "application/json",
             }
         });
-        const {fileName,filePath} =res.data
-        console.log(res.data)
-        console.log(fileName)
-        // dispatch({
-        //     type: ADD_KAMAR,
-        //     payload: res.data
-        // });
+
+        dispatch({
+            type: ADD_KAMAR,
+            payload: res.data
+        });
         // dispatch({
         //     type: GET_KAMAR,
         //     payload: res.data,
         //
         // });
-        // dispatch(setAlert("Room Added", "success"));
+        dispatch(setAlert("Room Added", "success"));
     } catch (err) {
         dispatch({
             type: KAMAR_ERROR,

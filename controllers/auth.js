@@ -49,7 +49,7 @@ exports.signup = async (req,res)=>{
                 isAdmin: user.isAdmin
             }
         };
-        let emailToken = jwt.sign(
+        jwt.sign(
             payload,
             config.get('jwtSecret'),
             {expiresIn:'20m'},
@@ -60,6 +60,11 @@ exports.signup = async (req,res)=>{
                     })
             }
         )
+
+        if (role === 'customer'){
+            const cart = new Carts({user:user.id});
+            await cart.save();
+        }
 
     }catch(err) {
         console.error(err.message);

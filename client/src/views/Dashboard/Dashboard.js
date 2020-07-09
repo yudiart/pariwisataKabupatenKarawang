@@ -18,8 +18,10 @@ import PropTypes from 'prop-types';
 import SidebarDashboard from "../../components/Dashboard/SidebarDashboard";
 
 const  Dashboard = ({
-                        auth:{user}
-                    })=> {
+    auth:{user,isAuthenticated,loading},
+    profile:{profile},
+    history
+})=> {
     const classes = dashStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
@@ -31,6 +33,10 @@ const  Dashboard = ({
     const handleDrawerClose = () => {
         setOpen(false);
     };
+    if (!isAuthenticated){
+        history.push('/')
+    }
+
     return (
         <div className={classes.root}>
             <CssBaseline />
@@ -84,11 +90,12 @@ const  Dashboard = ({
     );
 }
 Dashboard.propTypes = {
-    auth: PropTypes.object.isRequired
+    auth: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = state => ({
-    auth: state.auth
+    auth: state.auth,
+    profile: state.profile
 });
 
 export default connect(mapStateToProps, {})(Dashboard);
