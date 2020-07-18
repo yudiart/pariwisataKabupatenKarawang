@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/style/fileUpload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/Rooms/RoomForms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/Rooms/percentage/Progress.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/style/dashStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/dashStyles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/style/useStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/useStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/SidebarDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/SidebarDashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/DashboardMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/DashboardMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/admin/MainAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/admin/MainAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/upload/FileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/upload/FileUpload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Home/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home/Register/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/fileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/fileUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/Rooms/RoomForms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/Rooms/RoomForms.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +168,14 @@
       <workItem from="1594066088422" duration="29541000" />
       <workItem from="1594143307517" duration="237000" />
       <workItem from="1594145449459" duration="2803000" />
-      <workItem from="1594196512229" duration="67965000" />
+      <workItem from="1594196512229" duration="68518000" />
+      <workItem from="1594360893908" duration="4821000" />
+      <workItem from="1594389293626" duration="2561000" />
+      <workItem from="1594437028302" duration="1599000" />
+      <workItem from="1594469015278" duration="846000" />
+      <workItem from="1594532273415" duration="4048000" />
+      <workItem from="1594740695993" duration="1814000" />
+      <workItem from="1594794623340" duration="812000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>

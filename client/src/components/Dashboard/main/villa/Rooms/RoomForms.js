@@ -120,21 +120,14 @@ const RoomForms = ({setAlert,addRoom,history,profile:{profile}})=>{
                             console.log(err.response.data.msg)
                         }
                     }
-
                 }
                 reader.readAsArrayBuffer(file)
-
-
-
             })
-
-            // setUploadFile({fileName,filePath})
             setFiles(acceptedFiles.map(file => Object.assign(file, {
                 preview: URL.createObjectURL(file)
             })));
         }
     });
-
     const [roomNameValue, setRoomNameValue] =useState('');
     const [descriptionValue, setDescriptionValue] =useState('');
     const [acValue, setAcValue] =useState('');
@@ -190,15 +183,15 @@ const RoomForms = ({setAlert,addRoom,history,profile:{profile}})=>{
             }
         }
     }
-    if (profile !== null){
-        if (uploadFile.images.length > 0){
-            if (window.performance){
-                if (profile.roomName === 'null' && performance.navigation.type === 1){
-                    alert('diisi sampai tuntas bos')
-                }
-            }
-        }
-    }
+    // if (profile !== null){
+    //     if (uploadFile.images.length > 0){
+    //         if (window.performance){
+    //             if (profile.roomName === 'null' && performance.navigation.type === 1){
+    //                 alert('diisi sampai tuntas bos')
+    //             }
+    //         }
+    //     }
+    // }
     const classes = useStyle()
     return(
         <section>
@@ -220,7 +213,6 @@ const RoomForms = ({setAlert,addRoom,history,profile:{profile}})=>{
                         size={40}
                         thickness={4}
                     />
-
                 {files.length === 0 ?null:
                 <Grid item xs={12} md={12} lg={12}>
                     <TextField
