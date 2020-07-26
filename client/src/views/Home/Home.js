@@ -6,24 +6,29 @@ import Footer from "../../components/layout/footer/Footer";
 import dashStyles from "../../assets/style/dashStyles";
 import Container from "@material-ui/core/Container";
 import HomeDisplay from "../../components/layout/main/HomeDisplay";
-import Grid from "@material-ui/core/Grid";
 import useStyle from "../../assets/style/useStyle";
-import Paper from "@material-ui/core/Paper";
+import {getAllRooms} from '../../actions/room'
+
 import {getCurrentProfile} from "../../actions/profile";
-import {Redirect} from "react-router";
-import Backdrop from "@material-ui/core/Backdrop";
-import CircularProgress from "@material-ui/core/CircularProgress";
 import Spinner from "../../assets/Spinner";
+import Header from "../../components/Header/Header";
+import {getVillas} from "../../actions/villa";
 
 const Home = ({
     auth,
-    isAuthenticated,
+    getVillas,
+    getAllRooms,
     getCurrentProfile,
-    profile:{profile,loading}}
-    )=>{
+    room: {rooms},
+    profile,
+    villa,
+    loading
+})=>{
 useEffect(()=>{
+    getVillas()
+    getAllRooms()
     getCurrentProfile()
-},[getCurrentProfile])
+},[getCurrentProfile,getAllRooms,getVillas])
 
     const classess = dashStyles();
     const classes = useStyle();
@@ -32,38 +37,9 @@ useEffect(()=>{
         <Fragment>
             <Navbar/>
             <main className={classess.content}>
-                <Paper className={classes.backgroundHeader} elevation={0}>
-                    <Container>
-                        <Grid item xs={12} lg={12} md={12}>
-                            <Grid container>
-                                <Grid item xs={12} lg={3} md={3} style={{padding:'10px'}}>
-                                    <Paper className={classes.headerImage}>
-                                        <h1>Villa's</h1>
-                                    </Paper>
-                                </Grid>
-                                <Grid item xs={12} lg={3} md={3} style={{padding:'10px'}}>
-                                    <Paper className={classes.headerImage}>
-                                        <h1>Karawang Travel</h1>
-                                    </Paper>
-                                </Grid>
-                                <Grid item xs={12} lg={3} md={3} style={{padding:'10px'}}>
-                                    <Paper className={classes.headerImage}>
-                                        <h1>Culture</h1>
-                                    </Paper>
-                                </Grid>
-                                <Grid item xs={12} lg={3} md={3} style={{padding:'10px'}}>
-                                    <Paper className={classes.headerImage}>
-                                        <h1>Food & Drinks</h1>
-                                    </Paper>
-                                </Grid>
-                            </Grid>
-                        </Grid>
-                    </Container>
-                </Paper>
-
+                <Header classes={classes}/>
                 <Container>
-                    <HomeDisplay/>
-
+                    <HomeDisplay room={rooms} profile={profile} villa={villa}/>
                 </Container>
 
             </main>
@@ -72,20 +48,26 @@ useEffect(()=>{
     )
 }
 Home.propTypes = {
-    setAlert: PropTypes.func.isRequired,
     isAuthenticated: PropTypes.bool,
-    getCurrentProfile: PropTypes.func.isRequired
+    getVillas: PropTypes.func.isRequired,
+    getCurrentProfile: PropTypes.func.isRequired,
+    getAllRooms: PropTypes.func.isRequired
 
 };
 
 const mapStateToProps = state => ({
     isAuthenticated: state.auth.isAuthenticated,
     auth: state.auth,
+    room:state.room,
     profile: state.profile,
-    alerts:state.alert
+    loading: state.profile.loading
 });
 
 export default connect(
     mapStateToProps,
-    {getCurrentProfile}
+    {
+        getCurrentProfile,
+        getAllRooms,
+        getVillas
+    }
 )(Home);

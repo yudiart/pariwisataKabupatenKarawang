@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 //Define routes
 app.use("/api/auth", cors(),require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
-app.use("/api/villa",require("./routes/api/villa"));
+app.use("/api/v1/villa",require("./routes/api/villa"));
 app.use("/api/v1/admin",require("./routes/api/v1/admin"));
 app.use("/api/v1/order/",require("./routes/api/v1/order/order"));
 app.use("/api/v1/cart/",require("./routes/api/v1/carts/cart"));
@@ -41,7 +41,7 @@ app.use("/api/v1/pay/",require("./routes/api/v1/payment/payment"));
 app.use("/api/v1/statistic",require("./routes/api/v1/statistic"));
 // app.use('/uploads', express.static('uploads'));
 
-app.use('/api/v1/rooms', require('./routes/api/rooms'))
+app.use('/api/v1/room', require('./routes/api/rooms'))
 
 app.use('/api/v1/uploadImage',async (req,res)=>{
     if (req.files === null){

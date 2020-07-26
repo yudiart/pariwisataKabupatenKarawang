@@ -2,28 +2,20 @@ import React, {Fragment, useEffect, useState} from 'react';
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
 import FileUpload from "../../upload/FileUpload";
 import TextField from "@material-ui/core/TextField";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
-import Input from "@material-ui/core/Input";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
 import Button from "@material-ui/core/Button";
 import SaveIcon from "@material-ui/icons/Save";
 import {makeStyles} from "@material-ui/core/styles";
 import {setAlert} from "../../../../../actions/alert";
 import axios from 'axios'
 import {useDropzone} from "react-dropzone";
-import Progress from "./percentage/Progress";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import {addRoom} from "../../../../../actions/room";
 import Alerts from "../../../../Alert/Alerts";
 import Select from "@material-ui/core/Select";
-import {useParams} from "react-router";
 
 const useStyle = makeStyles((theme) => ({
     content: {
@@ -183,18 +175,9 @@ const RoomForms = ({setAlert,addRoom,history,profile:{profile}})=>{
             }
         }
     }
-    // if (profile !== null){
-    //     if (uploadFile.images.length > 0){
-    //         if (window.performance){
-    //             if (profile.roomName === 'null' && performance.navigation.type === 1){
-    //                 alert('diisi sampai tuntas bos')
-    //             }
-    //         }
-    //     }
-    // }
     const classes = useStyle()
     return(
-        <section>
+        <Grid item xs={12} lg={6} md={6}>
             <Alerts/>
             <form className={classes.root} noValidate autoComplete="off" onSubmit={(e)=>onSubmit(e)} onChange={handleUnClick}>
                 <FileUpload
@@ -328,7 +311,7 @@ const RoomForms = ({setAlert,addRoom,history,profile:{profile}})=>{
                 </Grid>
                 }
             </form>
-        </section>
+        </Grid>
     )
 }
 

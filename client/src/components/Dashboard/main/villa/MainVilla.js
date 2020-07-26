@@ -3,46 +3,39 @@ import Grid from "@material-ui/core/Grid"
 import useStyle from "../../../../assets/style/useStyle"
 import {useParams} from "react-router"
 import {connect} from 'react-redux'
-import DashboardDisplayAdmin from "./pages/DashboardDisplayAdmin"
 import PropTypes from "prop-types"
-import {getQuiz} from "../../../../actions/question"
 import {setAlert} from "../../../../actions/alert"
 import RoomForms from "../villa/Rooms/RoomForms";
+import DashboardDisplayVilla from "./pages/DashboardDisplayVilla";
+import Settings from "./settings/Settings";
 
-const MainAdmin = ({getQuiz,setAlert})=>{
+const MainVilla = ({setAlert})=>{
     const classes = useStyle();
 
     let {url} = useParams();
     const dashboardUrl =(
         window.location.pathname === '/dashboard'?
-            <DashboardDisplayAdmin/>
+            <DashboardDisplayVilla/>
             :null
     )
 
     const urls = (
         <div>
-            <Grid container className={classes.root} spacing={2}>
-
-                {/*{url === 'createSoal'? <CreateSoal/>:null}*/}
-                {/*{url === 'nilaiUser'? <NilaiUser/>:null}*/}
-                {/*{url === 'materi'? <Materi/>:null}*/}
-            </Grid>
+            {url === 'Settings'? <Settings/>:null}
+            {/*{url === 'nilaiUser'? <NilaiUser/>:null}*/}
+            {/*{url === 'materi'? <Materi/>:null}*/}
+            {url === 'TambahRoom'?<RoomForms/>:null}
         </div>
     )
     return (
         <Fragment>
             {dashboardUrl}
-            {url === 'TambahRoom'?
-                <Grid item xs={12} md={6} lg={6}>
-                    <RoomForms/>
-                </Grid>
-                :null}
+            {urls}
         </Fragment>
     )
 }
-MainAdmin.propTypes = {
+MainVilla.propTypes = {
     auth: PropTypes.object.isRequired,
-    getQuiz: PropTypes.func.isRequired,
     setAlert: PropTypes.func.isRequired
 };
 
@@ -51,4 +44,4 @@ const mapStateToProps = state => ({
     alerts:state.alert
 });
 
-export default connect(mapStateToProps,{getQuiz,setAlert})(MainAdmin);
+export default connect(mapStateToProps,{setAlert})(MainVilla);

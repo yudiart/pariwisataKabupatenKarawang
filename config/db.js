@@ -8,7 +8,6 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
-      //Had to be added for profile.js in routes/api/ to remove deprecation warning
       useFindAndModify: false
     });
 

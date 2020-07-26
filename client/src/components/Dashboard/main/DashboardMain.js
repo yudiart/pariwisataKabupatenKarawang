@@ -5,6 +5,7 @@ import {connect} from "react-redux";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import MainAdmin from "./admin/MainAdmin";
 import {Link} from "react-router-dom";
+import MainVilla from "./villa/MainVilla";
 
 const DashboardMain = ({auth:{user}})=>{
 
@@ -27,7 +28,7 @@ const DashboardMain = ({auth:{user}})=>{
         <main className={classes.content}>
             <div className={classes.toolbar}/>
             {user && user.role === 'admin'? <MainAdmin/>:null}
-            {user && user.role === 'villa'? <MainAdmin/>:null}
+            {user && user.role === 'villa'? <MainVilla/>:null}
             {user && user.role === 'customer'? <Link to={'/register'}>Register</Link>:null}
         </main>
     )

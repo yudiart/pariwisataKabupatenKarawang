@@ -1,14 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Grid from "@material-ui/core/Grid";
 import AddIcon from "@material-ui/icons/Add";
 import Alerts from "../../../Alert/Alerts";
-import Dropzone, {useDropzone} from "react-dropzone";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {addRoom} from "../../../../actions/room";
 import {setAlert} from "../../../../actions/alert";
 import fileUpload from "../../../../assets/style/fileUpload";
-import {AxiosInstance as axios} from "axios";
 const FileUpload =(props)=>{
     const classes = fileUpload();
 

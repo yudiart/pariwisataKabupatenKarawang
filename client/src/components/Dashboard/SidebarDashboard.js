@@ -13,6 +13,7 @@ import Divider from "@material-ui/core/Divider";
 import SettingsIcon from '@material-ui/icons/Settings';
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import CreateIcon from '@material-ui/icons/Create';
+import PersonIcon from '@material-ui/icons/Person';
 import {connect} from "react-redux";
 import PropTypes from 'prop-types';
 import {logout} from "../../actions/auth";
@@ -24,7 +25,7 @@ const SidebarDashboard = ({auth:{user},logout})=>{
     const classes = dashStyles();
     let {url} = useParams();
     let pathUrlUser = ['Profile','test','Settings','editProfile'];
-    let pathUrlVilla = ['TambahRoom','VillaProfile','Settings','editProfile'];
+    let pathUrlVilla = ['TambahRoom','profile','Settings','editProfile'];
     let pathUrlAdmin = ['TambahRoom','materi','nilaiUser'];
     const activeColor = (
         window.location.pathname === '/dashboard' ? 'secondary':'inherit'
@@ -71,17 +72,17 @@ const SidebarDashboard = ({auth:{user},logout})=>{
                         <ListItemText primary='Dashboard' />
                     </ListItem>
                 </Link>
-
+                <Link to={'/dashboard/profile'} className={classes.navlink}>
+                    <ListItem button>
+                        <ListItemIcon ><PersonIcon color={url === pathUrlVilla[1] ? 'secondary':'inherit'}/></ListItemIcon>
+                        <ListItemText primary='VillaProfile' color={url === pathUrlVilla[1] ? 'secondary':'inherit'} />
+                    </ListItem>
+                </Link>
+                <Divider />
                 <Link to={`/dashboard/TambahRoom`} className={classes.navlink}>
                     <ListItem button>
                         <ListItemIcon ><CreateIcon color={url === pathUrlVilla[0] ? 'secondary':'inherit'}/></ListItemIcon>
                         <ListItemText primary='TambahRoom' color={url === pathUrlVilla[0] ? 'secondary':'inherit'}/>
-                    </ListItem>
-                </Link>
-                <Link to={'/dashboard/VillaProfile'} className={classes.navlink}>
-                    <ListItem button>
-                        <ListItemIcon ><TimelineIcon color={url === pathUrlVilla[1] ? 'secondary':'inherit'}/></ListItemIcon>
-                        <ListItemText primary='VillaProfile'color={url === pathUrlVilla[1] ? 'secondary':'inherit'} />
                     </ListItem>
                 </Link>
 

@@ -6,6 +6,9 @@ import deepPurple from "@material-ui/core/colors/deepPurple";
 import grey from "@material-ui/core/colors/grey";
 
 const useStyle = makeStyles((theme) => ({
+    textColor:{
+        color:`#fff`
+    },
     backdrop: {
         zIndex: theme.zIndex.drawer + 1,
         color: '#fff',

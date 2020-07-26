@@ -16,12 +16,9 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
 import Input from "@material-ui/core/Input";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import TextareaAutosize from "@material-ui/core/TextareaAutosize";
 import {createProfile, getCurrentProfile} from "../../actions/profile";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
-import dashStyles from "../../assets/style/dashStyles";
-import useStyle from "../../assets/style/useStyle";
 import {Redirect} from "react-router";
 import Spinner from "../../assets/Spinner";
 import Alerts from "../../components/Alert/Alerts";
@@ -104,7 +101,7 @@ const CreateProfile = ({
         getCurrentProfile()
     },[getCurrentProfile])
 
-    if (isAuthenticated === false|| profile && profile.profile !== null){
+    if (isAuthenticated === false &&  profile && profile.profile !== null){
         return <Redirect to={'/'}/>
     }
     const role =(
@@ -136,7 +133,7 @@ const CreateProfile = ({
     return(
         <Fragment>
 
-            {setTime ? loading || profile && profile.loading === true? <Spinner/>:
+            {setTime ? loading && profile && profile.loading === true? <Spinner/>:
             <main>
                 <Paper elevation={0} className={classes.background}>
                     <Container>

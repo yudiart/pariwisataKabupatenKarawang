@@ -10,16 +10,12 @@ import DialogActions from "@material-ui/core/DialogActions";
 import Dialog from "@material-ui/core/Dialog";
 import useStyles from "../../../../assets/style/useStyle";
 import dashStyles from "../../../../assets/style/dashStyles";
-import Backdrop from "@material-ui/core/Backdrop";
-import CircularProgress from "@material-ui/core/CircularProgress";
 import {login} from "../../../../actions/auth";
 import {useMediaQuery, useTheme} from "@material-ui/core";
 import Slide from "@material-ui/core/Slide";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
-import {setAlert} from "../../../../actions/alert";
 import Alerts from "../../../Alert/Alerts";
-import Spinner from "../../../../assets/Spinner";
 import {Redirect} from "react-router";
 
 
@@ -28,7 +24,7 @@ import {Redirect} from "react-router";
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
-const Login = ({login,isAuthenticated,profile})=>{
+const Login = ({login,isAuthenticated})=>{
     const classes = useStyles();
     const classess = dashStyles();
     const theme = useTheme();
@@ -47,7 +43,7 @@ const Login = ({login,isAuthenticated,profile})=>{
     const onSubmit = async e => {
         e.preventDefault();
         return <Redirect to={'/dashboard'}/>
-        setTimeout((e) => (
+        setTimeout(() => (
             setOpen(open),
             login({email,password,isChecked})
         ), 3000)
@@ -135,7 +131,6 @@ const Login = ({login,isAuthenticated,profile})=>{
 }
 Login.propTypes = {
     login: PropTypes.func.isRequired,
-    setAlert: PropTypes.func.isRequired,
     isAuthenticated: PropTypes.bool,
 };
 
@@ -143,10 +138,9 @@ const mapStateToProps = state => ({
     isAuthenticated: state.auth.isAuthenticated,
     auth: state.auth,
     profile:state.profile,
-    alerts:state.alert
 });
 
 export default connect(
     mapStateToProps,
-    {setAlert, login }
+    {login }
 )(Login);

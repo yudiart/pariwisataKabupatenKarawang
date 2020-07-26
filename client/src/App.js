@@ -1,17 +1,13 @@
-import React, {Fragment, useEffect, useState} from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-
-import { loadUser } from "./actions/auth";
-import setAuthToken from "./utils/setAuthToken";
-
-//Redux related imports, connects to react
-import { Provider } from "react-redux";
-import store from "./store";
-import axios from 'axios';
-import "./App.css";
-import Routes from "./routing/Routes";
-import Home from "./views/Home/Home";
+import React, {Fragment, useEffect} from "react"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { loadUser } from "./actions/auth"
+import setAuthToken from "./utils/setAuthToken"
+import { Provider } from "react-redux"
+import store from "./store"
+import './assets/sass/_main.sass'
+import "./App.css"
+import Routes from "./routing/Routes"
+import Home from "./views/Home/Home"
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);

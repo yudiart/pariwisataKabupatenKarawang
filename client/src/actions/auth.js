@@ -13,8 +13,6 @@ import {
 import setAuthToken from "../utils/setAuthToken";
 import {Redirect} from "react-router";
 import React from "react";
-import { push } from 'react-router-redux';
-import auth from "../reducers/auth";
 
 //Load User
 export const loadUser = () => async dispatch => {

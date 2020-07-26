@@ -32,7 +32,7 @@ export const getCurrentRooms = () => async dispatch => {
 //Public
 export const getAllRooms = ()=> async dispatch =>{
     try{
-        const res = await axios.get("/api/room");
+        const res = await axios.get("/api/v1/room");
 
         dispatch({
             type: GET_KAMARS,

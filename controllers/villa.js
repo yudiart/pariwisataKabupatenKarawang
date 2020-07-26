@@ -106,7 +106,7 @@ exports.CreateProfile = async (req, res) => {
 
 exports.PublicMe =  async (req, res) => {
     try {
-        const villa = await Villa.find().populate("villa", ["name", "avatar"]);
+        const villa = await Villa.find().populate("villa");
         await res.json(villa);
     } catch (err) {
         console.error(err.message);

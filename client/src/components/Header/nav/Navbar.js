@@ -26,10 +26,6 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import Divider from "@material-ui/core/Divider";
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import SettingsIcon from '@material-ui/icons/Settings';
-import Login from "./dialog/Login";
-
-
-
 
 const Navbar =({auth,isAuthenticated,logout})=>{
     const history = useHistory()

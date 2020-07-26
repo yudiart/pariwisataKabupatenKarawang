@@ -157,14 +157,21 @@ button:hover{
   .toolbar-navigation-items{
     display: none;
   }
+  .box-left{
+    display:none;
+  }
 
 }
 
+@media screen and (max-width: 900px){
+  .box-left{
+    display:none;
+  }
+}
 @media (min-width: 768px){
   .toolbar-toggle-button{
     display: none;
   }
-
   .toolbar-logo{
     margin-left: 0;
   }

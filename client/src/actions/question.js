@@ -1,6 +1,3 @@
-import axios from "axios";
-import {setAlert} from './alert';
-import setAuthToken from "../utils/setAuthToken";
 import {ERROR_GET_QUESTION, GET_ALL_QUESTION, SUCCESS_CREATE_QUESTION} from "./types";
 
 export const getQuiz = () => async dispatch =>{

@@ -2,8 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/_main.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/MainVilla.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/pages/DashboardDisplayVilla.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/settings/Settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/main/card/Card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/question.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/question.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/style/useStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/useStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/SidebarDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/SidebarDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/DashboardMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/DashboardMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/admin/MainAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/admin/MainAdmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/upload/FileUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/upload/FileUpload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/Rooms/RoomForms.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Dashboard/main/villa/Rooms/RoomForms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header/nav/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/nav/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header/nav/dialog/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/nav/dialog/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/main/HomeDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/main/HomeDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/loading/LoadingBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/loading/LoadingBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/profile/CreateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/profile/CreateProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/villa.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/villa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +208,15 @@
       <workItem from="1594532273415" duration="4048000" />
       <workItem from="1594740695993" duration="1814000" />
       <workItem from="1594794623340" duration="812000" />
+      <workItem from="1595032477705" duration="1118000" />
+      <workItem from="1595176895045" duration="2750000" />
+      <workItem from="1595268492358" duration="11835000" />
+      <workItem from="1595516487765" duration="506000" />
+      <workItem from="1595520048424" duration="6413000" />
+      <workItem from="1595621064458" duration="875000" />
+      <workItem from="1595661776585" duration="3080000" />
+      <workItem from="1595702541376" duration="3268000" />
+      <workItem from="1595748495187" duration="690000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
@@ -222,6 +263,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588890283914" />
+    <state x="780" y="326" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595281459362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="780" y="326" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595281459362" />
     <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593119281794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,26 +279,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1060" y="100" width="760" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587415293373" />
+    <state x="628" y="297" key="EditFileWatcherDialog" timestamp="1595270012241">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="297" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595270012241" />
     <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1592316337026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592316337026" />
-    <state width="900" height="270" key="GridCell.Tab.0.bottom" timestamp="1593057898433">
+    <state width="1876" height="275" key="GridCell.Tab.0.bottom" timestamp="1595270475845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593057898433" />
-    <state width="900" height="270" key="GridCell.Tab.0.center" timestamp="1593057898433">
+    <state width="1876" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595270475845" />
+    <state width="1876" height="275" key="GridCell.Tab.0.center" timestamp="1595270475845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593057898433" />
-    <state width="900" height="270" key="GridCell.Tab.0.left" timestamp="1593057898432">
+    <state width="1876" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595270475845" />
+    <state width="1876" height="275" key="GridCell.Tab.0.left" timestamp="1595270475845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593057898432" />
-    <state width="900" height="270" key="GridCell.Tab.0.right" timestamp="1593057898433">
+    <state width="1876" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595270475845" />
+    <state width="1876" height="275" key="GridCell.Tab.0.right" timestamp="1595270475845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593057898433" />
+    <state width="1876" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595270475845" />
     <state x="1279" y="239" key="RollbackChangesDialog" timestamp="1587321089704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -278,6 +327,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592610563235" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1595281549926">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1595281549926" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1595281549926">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1595281549926" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-3" timestamp="1595281549926">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-3/0.0.1920.1040@0.0.1920.1040" timestamp="1595281549926" />
     <state x="667" y="255" width="585" height="530" key="find.popup" timestamp="1588287517796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -3,15 +3,11 @@ import { setAlert } from "./alert";
 import {
     GET_VILLA,
     VILLA_ERROR,
-    PROFILE_ERROR,
-    CLEAR_PROFILE,
-    GET_PROFILES,
     GET_VILLAS,
     GET_LIKES,
     GET_LIKES_ERROR,
     CLEAR_VILLA,
     LOGOUT,
-    CLEAR_ADMIN,
     REGISTER_SUCCESS,
     REGISTER_FAIL, LOGIN_SUCCESS, LOGIN_FAIL
 } from "./types";
@@ -99,7 +95,7 @@ export const getCurrentVilla = () => async dispatch => {
 export const getVillas = () => async dispatch => {
 
     try {
-        const res = await axios.get("/api/villa");
+        const res = await axios.get("/api/v1/villa");
 
         dispatch({
             type: GET_VILLAS,
