@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/Data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/_config.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/bootstrap/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/bootstrap/_input.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/bootstrap/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_container.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_drawer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_mainProducts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_slider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_snackbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/carts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/product.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/slick/Slick.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/slick/SlickTheme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Kategori/KategoriPilihan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/banner/BannerPromotion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/cart/Cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/slider/SliderPromo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/carts/Carts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/products/ProductResult.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/products/ProductSingle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vodonesia.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/_main.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routing/Routes.js" afterDir="false" />
-    </list>
+    <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +53,16 @@
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
       <recent name="F:\file yudi\program\skripsi\client\src\assets" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/skripsi/client/build/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -231,7 +196,7 @@
       <workItem from="1596029296748" duration="529000" />
       <workItem from="1596031926942" duration="3638000" />
       <workItem from="1596405781311" duration="669000" />
-      <workItem from="1596446895180" duration="1819000" />
+      <workItem from="1596446895180" duration="2179000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
