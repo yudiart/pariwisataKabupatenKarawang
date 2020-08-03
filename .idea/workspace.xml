@@ -3,8 +3,48 @@
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/Data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/_config.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/bootstrap/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/bootstrap/_input.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/bootstrap/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_container.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_drawer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_mainProducts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_snackbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/carts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/product.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/slick/Slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/slick/Slick.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/slick/Slick.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/slick/SlickTheme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Kategori/KategoriPilihan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/banner/BannerPromotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/Cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/slider/SliderPromo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/carts/Carts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/products/ProductResult.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/products/ProductSingle.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +240,7 @@
       <workItem from="1596029296748" duration="529000" />
       <workItem from="1596031926942" duration="3638000" />
       <workItem from="1596405781311" duration="669000" />
-      <workItem from="1596446895180" duration="8336000" />
+      <workItem from="1596446895180" duration="9118000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
@@ -247,10 +287,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="780" y="326" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595281459362" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593119281794">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596495985088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593119281794" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596495985088" />
     <state x="451" y="87" key="CommitChangelistDialog2" timestamp="1594135521246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
