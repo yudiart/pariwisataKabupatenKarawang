@@ -4,10 +4,10 @@ import { loadUser } from "./actions/auth"
 import setAuthToken from "./utils/setAuthToken"
 import { Provider } from "react-redux"
 import store from "./store"
-import './assets/sass/_main.sass'
+import './assets/sass/main.scss'
 import "./App.css"
 import Routes from "./routing/Routes"
-import Home from "./views/Home/Home"
+import Home from "./views/Home"
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -17,7 +17,6 @@ const App = () => {
     store.dispatch(loadUser());
   }, []);
   return (
-
     <Provider store={store}>
       <Router>
         <Fragment>

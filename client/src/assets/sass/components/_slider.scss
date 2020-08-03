@@ -1,0 +1,115 @@
+@import 'card';
+@mixin display-none-500{
+  @media screen and (max-width:500px){
+    display: none;
+  }
+}
+@mixin slider{
+  //width:100%;
+  border-radius:20px;
+  height:250px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  @media screen and (max-width: 500px){
+    height:180px;
+  }
+}
+@mixin slider__promo {
+  max-width: 1410px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin product-item{
+  //@include course;
+  border-radius:10px;
+  display: grid;
+  grid-template-areas: 'h6 h2';
+  transform: scale(0.990);
+  @media screen and (max-width:500px){
+    height:140px;
+    width:200px;
+  }
+  h6{
+    grid-area: h6;
+    opacity: .6;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  h2{
+    grid-area: h2;
+    letter-spacing: -1px;
+    margin:5px auto;
+  }
+}
+
+@mixin preview{
+  color:white;
+}
+
+@mixin info{
+  position:relative;
+  width:100%;
+}
+
+@mixin progress-wrapper{
+  position:absolute;
+  bottom:0;
+  background: lighten($color-dark,70%);
+  border-radius:5px;
+  z-index: 1;
+  right:30px;
+  text-align: right;
+  width:150px;
+  @include display-none-500;
+
+  span{
+    color:$color-gray;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    font-size: 14px;
+  }
+}
+
+@mixin progress-preview{
+  border-radius:3px;
+  height:5px;
+  @include display-none-500;
+}
+
+@mixin image-preview{
+  //overflow: hidden;
+  //@include display-none-500;
+  img{
+    width: 500px;
+    height:200px;
+    object-fit: cover;
+    &:hover{
+      transition: 0.2s;
+      transform: scale(1.1);
+      z-index: 0;
+    }
+  }
+}
+
+
+
+//Animation Slider Home
+// keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
