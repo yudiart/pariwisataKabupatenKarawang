@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pariwisataKabupatenKarawang/static/css/main.9ce09bc1.chunk.css",
+    "main.js": "/pariwisataKabupatenKarawang/static/js/main.9b9a1737.chunk.js",
+    "main.js.map": "/pariwisataKabupatenKarawang/static/js/main.9b9a1737.chunk.js.map",
+    "runtime-main.js": "/pariwisataKabupatenKarawang/static/js/runtime-main.b1b50f37.js",
+    "runtime-main.js.map": "/pariwisataKabupatenKarawang/static/js/runtime-main.b1b50f37.js.map",
+    "static/js/2.7eecc7f4.chunk.js": "/pariwisataKabupatenKarawang/static/js/2.7eecc7f4.chunk.js",
+    "static/js/2.7eecc7f4.chunk.js.map": "/pariwisataKabupatenKarawang/static/js/2.7eecc7f4.chunk.js.map",
+    "index.html": "/pariwisataKabupatenKarawang/index.html",
+    "precache-manifest.bf992a37baf1c17c8488bc4d75fe90e7.js": "/pariwisataKabupatenKarawang/precache-manifest.bf992a37baf1c17c8488bc4d75fe90e7.js",
+    "service-worker.js": "/pariwisataKabupatenKarawang/service-worker.js",
+    "static/css/main.9ce09bc1.chunk.css.map": "/pariwisataKabupatenKarawang/static/css/main.9ce09bc1.chunk.css.map",
+    "static/media/SpinnerInterwind.gif": "/pariwisataKabupatenKarawang/static/media/SpinnerInterwind.f5e47c09.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1b50f37.js",
+    "static/js/2.7eecc7f4.chunk.js",
+    "static/css/main.9ce09bc1.chunk.css",
+    "static/js/main.9b9a1737.chunk.js"
+  ]
+}
