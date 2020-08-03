@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="[REMAKE]LAYOUT">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Kategori/KategoriPilihan.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Kategori/KategoriPilihan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/banner/BannerPromotion.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/banner/BannerPromotion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/products/ProductResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/products/ProductResult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/rooms.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +200,7 @@
       <workItem from="1596029296748" duration="529000" />
       <workItem from="1596031926942" duration="3638000" />
       <workItem from="1596405781311" duration="669000" />
-      <workItem from="1596446895180" duration="7930000" />
+      <workItem from="1596446895180" duration="8336000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>

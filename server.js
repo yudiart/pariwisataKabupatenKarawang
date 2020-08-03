@@ -22,8 +22,7 @@ app.use((req, res, next) => {
       'http://localhost:3000',
       'http://localhost:3001',
       'http://vodonesia.herokuapp.com',
-      'vodonesia.id',
-      '*'
+      'vodonesia.id'
   ];
   res.header("Access-Control-Allow-Origin", process.env.ORIGIN || allowedOrigin);
   res.header("Access-Control-Allow-Methods", 'GET, POST, PUT, DELETE');
@@ -42,7 +41,7 @@ app.use("/api/v1/pay/",require("./routes/api/v1/payment/payment"));
 app.use("/api/v1/statistic",require("./routes/api/v1/statistic"));
 // app.use('/uploads', express.static('uploads'));
 
-app.use('/api/v1/room', require('./routes/api/rooms'))
+app.use('/api/v1/rooms', require('./routes/api/rooms'))
 
 app.use('/api/v1/uploadImage',async (req,res)=>{
     if (req.files === null){

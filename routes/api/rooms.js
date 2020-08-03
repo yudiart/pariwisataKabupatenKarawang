@@ -65,7 +65,7 @@ router.post("/upload", auth,Role(role.villa), (req,res)=>{
 //@route POST api/Room
 //@desc Added Room
 //@access Private
-router.put("/:_id", auth,Role(role.villa), async (req, res) => {
+router.put("/:id", auth,Role(role.villa), async (req, res) => {
     const {
         roomName,
         description,
@@ -87,12 +87,6 @@ router.put("/:_id", auth,Role(role.villa), async (req, res) => {
     if (bedtype)        roomFields.fasilitas.bedtype = bedtype;
     if (wifi)           roomFields.fasilitas.wifi = wifi;
     if (other)          roomFields.fasilitas.other = other;
-    console.log(roomName)
-    console.log(description)
-    console.log(limit)
-    console.log(harga)
-    console.log(tipeKamar)
-    console.log(roomFields.fasilitas)
     try {
         let kamar = await Room.findById( req.params._id);
         const dataUpdate =({
@@ -105,7 +99,7 @@ router.put("/:_id", auth,Role(role.villa), async (req, res) => {
         })
         if(kamar){
             kamar = await Room.findOneAndUpdate(
-                {_id: req.params._id},
+                {id: req.params.id},
                 {$set: dataUpdate},
                 {new: true}
             );
