@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
-
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 const BannerPromotion = (props)=>{
 
 
@@ -8,7 +9,7 @@ const BannerPromotion = (props)=>{
         const {currentSlide, slideCount, ...arrowProps} = props
         return(
             <div {...arrowProps} className="banner__next-arrow">
-                <i className="material-icons mdc-icon-button__icon">keyboard_arrow_right</i>
+                <ChevronRightIcon/>
             </div>
         )
     }
@@ -16,7 +17,7 @@ const BannerPromotion = (props)=>{
         const {currentSlide, slideCount, ...arrowProps} = props
         return(
             <div {...arrowProps} className="banner__prev-arrow">
-                <i className="material-icons mdc-icon-button__icon">keyboard_arrow_left</i>
+                <ChevronLeftIcon/>
             </div>
     )}
 

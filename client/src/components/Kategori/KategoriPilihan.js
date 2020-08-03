@@ -1,11 +1,18 @@
 import React from 'react'
 import Slider from 'react-slick';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import FastfoodIcon from '@material-ui/icons/Fastfood';
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import BubbleChartIcon from '@material-ui/icons/BubbleChart';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import SchoolIcon from '@material-ui/icons/School';
 const KategoriPilihan = ()=>{
     const NextArrow = (props)=>{
         const {currentSlide, slideCount, ...arrowProps} = props
         return(
             <div {...arrowProps} className={` kategoriPilihan__next-arrow`}>
-                <i className="material-icons mdc-icon-button__icon">keyboard_arrow_right</i>
+                <ChevronRightIcon/>
             </div>
         )
     }
@@ -13,7 +20,7 @@ const KategoriPilihan = ()=>{
         const {currentSlide, slideCount, ...arrowProps} = props
         return(
             <div {...arrowProps} className="kategoriPilihan__prev-arrow">
-                <i className="material-icons mdc-icon-button__icon">keyboard_arrow_left</i>
+                <ChevronLeftIcon/>
             </div>
         )}
     const settings = {
@@ -64,11 +71,11 @@ const KategoriPilihan = ()=>{
     };
 
     const kategoriList = [
-        {kategori:"Kesehatan", icon:"favorite"},
-        {kategori:"Pendidikan", icon:"school"},
-        {kategori:"Makanan", icon:"fastfood"},
-        {kategori:"Kecantikan", icon:"opacity"},
-        {kategori:"Fashion", icon:"insights"}
+        {kategori:"Kesehatan", icon:<FavoriteIcon/>},
+        {kategori:"Pendidikan", icon:<SchoolIcon/>},
+        {kategori:"Makanan", icon:<FastfoodIcon/>},
+        {kategori:"Kecantikan", icon:<LocalHospitalIcon/>},
+        {kategori:"Fashion", icon:<BubbleChartIcon/>}
     ]
     return(
         <div className="product-kategori">

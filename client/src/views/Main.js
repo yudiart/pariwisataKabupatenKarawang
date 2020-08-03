@@ -4,6 +4,16 @@ import SliderPromo from "../components/slider/SliderPromo";
 import KategoriPilihan from "../components/Kategori/KategoriPilihan";
 import BannerPromotion from "../components/banner/BannerPromotion";
 
+
+import StorefrontIcon from '@material-ui/icons/Storefront';
+import ClearAllIcon from '@material-ui/icons/ClearAll';
+import ConfirmationNumberIcon from '@material-ui/icons/ConfirmationNumber';
+import FastfoodIcon from '@material-ui/icons/Fastfood';
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import BubbleChartIcon from '@material-ui/icons/BubbleChart';
+
+
+
 const Main = (props)=>{
     let history = useHistory()
     let {products,promo} = props
@@ -35,7 +45,8 @@ const Main = (props)=>{
                         <div className="toko">
                             <div className="toko__name" onClick={(e)=>{
                                 console.log('clicked')}}>
-                                <i className="material-icons mdc-icon-button__icon cart-header">store</i>
+
+                                <StorefrontIcon className='cart-header'/>
                                 <span>{items.toko.toko_name}</span>
                             </div>
                         </div>
@@ -46,12 +57,13 @@ const Main = (props)=>{
             )
         })
     )
+
     const kategoriList = [
-        {kategori:"All Categori", icon:"clear_all"},
-        {kategori:"Special Discount", icon:"confirmation_number"},
-        {kategori:"Makanan", icon:"fastfood"},
-        {kategori:"Kecantikan", icon:"opacity"},
-        {kategori:"Fashion", icon:"insights"}
+        {kategori:"All Categori", icon:<ClearAllIcon/>},
+        {kategori:"Special Discount", icon:<ConfirmationNumberIcon/>},
+        {kategori:"Makanan", icon:<FastfoodIcon/>},
+        {kategori:"Kecantikan", icon:<LocalHospitalIcon/>},
+        {kategori:"Fashion", icon:<BubbleChartIcon/>}
     ]
     return(
         <main>
@@ -78,12 +90,14 @@ const Main = (props)=>{
                                 <BannerPromotion promo={promo}/>
                             </div>
                             <div className="products-recomended">
-                                {kategoriList.map((item,index)=>(
+                                {kategoriList.map((item,index)=>
+                                {
+                                return(
                                     <div className={`product-card-${index + 1}`} key={index}>
-                                        <i className="material-icons mdc-icon-button__icon cart-header">{item.icon}</i>
+                                        {item.icon}
                                         <h4>{item.kategori}</h4>
                                     </div>
-                                ))}
+                                )})}
                             </div>
                             <div className="products-result">
                                 <ul className="cards">

@@ -22,7 +22,8 @@ app.use((req, res, next) => {
       'http://localhost:3000',
       'http://localhost:3001',
       'http://vodonesia.herokuapp.com',
-      'vodonesia.id'
+      'vodonesia.id',
+      '*'
   ];
   res.header("Access-Control-Allow-Origin", process.env.ORIGIN || allowedOrigin);
   res.header("Access-Control-Allow-Methods", 'GET, POST, PUT, DELETE');

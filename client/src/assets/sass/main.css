@@ -2,7 +2,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 button:focus, button:active {
@@ -13,7 +12,6 @@ main {
   padding: 0 18%;
   min-height: 50vh;
   margin: 90px auto;
-  font-family: Arial, sans-serif;
 }
 @media screen and (min-width: 400px) and (max-width: 899px) {
   main {
@@ -2872,31 +2870,13 @@ header .navbar .main-header .header-icons {
   text-align: right;
   font-size: 12px;
 }
-header .navbar .main-header .header-icons i {
+header .navbar .main-header .header-icons .badge-icons {
+  display: inline-block;
   font-size: 20px;
-  padding: 0.5rem 1rem 0 1rem;
+  padding: 0 0 0 1rem;
+  margin-right: 10px;
 }
-header .navbar .main-header .header-icons i[data-badge] {
-  position: relative;
-}
-header .navbar .main-header .header-icons i[data-badge]:after {
-  font-family: Arial, sans-serif;
-  content: attr(data-badge);
-  position: absolute;
-  background: #e83e8c;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  padding: 0.3em;
-  color: #fff;
-  font-size: 12px;
-  max-height: 20px;
-  right: 5px;
-  top: 0;
-}
-header .navbar .main-header .header-icons i:hover {
+header .navbar .main-header .header-icons .badge-icons:hover {
   color: #007bff;
   transition: 0.1s;
 }

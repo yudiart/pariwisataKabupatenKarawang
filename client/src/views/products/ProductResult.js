@@ -2,6 +2,10 @@ import React, {Fragment, useEffect, useState} from 'react'
 import NavigasiBar from "../header/NavigasiBar";
 import Data from "../../assets/Data.json";
 import {useHistory} from "react-router-dom";
+import StorefrontIcon from '@material-ui/icons/Storefront';
+
+
+
 let {product:{products}} = Data
 const ProductResult = ({match})=>{
     useEffect(() => {
@@ -44,7 +48,7 @@ const ProductResult = ({match})=>{
                             <div className="toko">
                                 <div className="toko__name" onClick={(e)=>{
                                     console.log('clicked')}}>
-                                    <i className="material-icons mdc-icon-button__icon cart-header">store</i>
+                                    <StorefrontIcon className="cart-header"/>
                                     <span>{items.toko.toko_name}</span>
                                 </div>
                             </div>

@@ -1,5 +1,14 @@
 import React, {useState} from 'react'
 import {Link, useHistory} from "react-router-dom";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import SmsIcon from '@material-ui/icons/Sms';
+import ReorderIcon from '@material-ui/icons/Reorder';
+import Badge from "@material-ui/core/Badge";
+import SearchIcon from '@material-ui/icons/Search';
+
+
+
 
 const NavigasiBar = (props)=>{
     let history = useHistory()
@@ -108,24 +117,30 @@ const NavigasiBar = (props)=>{
                                         className="mdc-icon-button"
                                         aria-label="Add to favorites"
                                         aria-pressed="false">
-                                    <i className="material-icons mdc-icon-button__icon">search</i>
+                                    <SearchIcon/>
                                 </button>
                             </form>
                         </div>
                     </div>
                     {/*Kondisi belum login menampilkan Button Login*/}
                     <div className="header-icons">
-                        <i className="material-icons mdc-icon-button__icon cart-header" onClick={()=>{history.push('/carts/')}} data-badge={6}>shopping_cart</i>
-                        <i className="material-icons mdc-icon-button__icon" data-badge={10}>notifications</i>
-                        <i className="material-icons mdc-icon-button__icon" data-badge={0?0:null}
-                        >chat_bubble</i>
+                        <Badge badgeContent={2} color="secondary" className='badge-icons' onClick={()=>{history.push('/carts/')}}>
+                            <ShoppingCartIcon/>
+                        </Badge>
+                        <Badge badgeContent={2} color="secondary" className='badge-icons' onClick={()=>{history.push('/carts/')}}>
+                            <NotificationsIcon/>
+                        </Badge>
+                        <Badge badgeContent={2} color="secondary" className='badge-icons' onClick={()=>{history.push('/carts/')}}>
+                            <SmsIcon/>
+                        </Badge>
                     </div>
                     <div className="header-btn">
                         <Link className='button-primary' to={'/login'}>Login</Link>
                         <Link className='button-outline-primary' to={'/register'}>Mochamad Yudi Sobari</Link>
                     </div>
                     <div className="mobile-menu" onClick={()=>setDrawer(!drawer)}>
-                        <i className="material-icons mdc-icon-button__icon" data-badge={10}>reorder</i>
+                            <ReorderIcon/>
+
                     </div>
                 </div>
             </div>
@@ -148,7 +163,7 @@ const NavigasiBar = (props)=>{
                 </div>
                 <div className="search__close" onClick={()=>{setOpen(0)}}/>
             </div>
-            <div className={`snackbar ${snackbar?`show`:null}`}><i className="material-icons mdc-icon-button__icon">notification_important</i>Tidak boleh kosong</div>
+            <div className={`snackbar ${snackbar?`show`:null}`}><NotificationsIcon/>Tidak boleh kosong</div>
         </header>
     )
 }

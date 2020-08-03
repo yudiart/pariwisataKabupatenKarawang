@@ -1,5 +1,5 @@
 import React from 'react'
-
+import NotificationsIcon from '@material-ui/icons/Notifications';
 const Cart = (props)=>{
     let {carts} = props
     //filter cart menyesuaikan id user
@@ -51,7 +51,7 @@ const Cart = (props)=>{
                         </div>
                         <div className="item-process">
                                 <div className="product-jumlah-input">
-                                    <i className="material-icons mdc-icon-button__icon" data-badge={10}>notifications</i>
+                                    <NotificationsIcon/>
                                     <button
                                         // onClick={onMinJumlah}
                                     >-</button>
