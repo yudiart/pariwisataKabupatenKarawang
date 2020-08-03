@@ -66,11 +66,6 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
-const bundles = getBundles(stats, modules);
-${bundles.map(bundle => { return `<script src={`${bundle.file}`></script>`; }).join("\n")}
-<script>window.main();</script>
-const chunks = bundles.filter(bundle => bundle.file.endsWith('.js'));
-
 
 const PORT = process.env.PORT || 5005;
 app.listen(PORT,()=>{
