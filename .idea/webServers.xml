@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bf4f0c41-63d2-4d63-b6b5-18e2d5343ac0" name="35.187.255.205" url="http://35.187.255.205">
+        <fileTransfer rootFolder="/home/vodones.id" accessType="SFTP" host="35.187.255.205" port="22" sshConfigId="d3f78848-fbdb-4eca-abe0-481e216dbe1e" sshConfig="root@35.187.255.205:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
