@@ -1,0 +1,49 @@
+*{
+  padding:0;
+  margin:0;
+  font-family: Arial, sans-serif;
+}
+
+button{
+  &:focus,
+  &:active{
+    outline:none
+  }
+}
+
+
+main{
+  padding: 0 18%;
+  min-height: 50vh;
+  margin: 90px auto;
+  font-family: Arial, sans-serif;
+  @media screen and (min-width:400px)and(max-width: 899px){
+    overflow: hidden;
+    margin: 20px 0;
+    width: 100%;
+    padding: 0;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1199px){
+    padding:0 7.5%;
+  }
+
+  @media screen and (min-width: 250px) and (max-width: 399px){
+    overflow: hidden;
+    margin:0;
+    padding:0;
+  }
+}
+
+
+footer{
+  background: darken($color-gray, 30%);
+}
+
+
+a,Link{
+  text-decoration: none;
+  color: gray;
+  &:hover{
+    text-decoration: none;
+  }
+}

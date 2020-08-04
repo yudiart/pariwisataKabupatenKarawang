@@ -6,7 +6,7 @@ import { Provider } from "react-redux"
 import store from "./store"
 import "./App.css"
 import Routes from "./routing/Routes"
-import Home from "./views/Home/Home"
+import Home from "./views/Home"
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
