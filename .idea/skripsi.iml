@@ -11,5 +11,6 @@
     <orderEntry type="library" name="filepond-plugin-image-preview" level="application" />
     <orderEntry type="library" name="materialize" level="application" />
     <orderEntry type="library" name="react-with-addons-0.9.0" level="application" />
+    <orderEntry type="library" name="react-0.12.2" level="application" />
   </component>
 </module>
