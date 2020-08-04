@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{all, filepond, filepond-plugin-file-encode, filepond-plugin-image-preview, materialize, react-0.12.2, react-with-addons-0.9.0, semantic}" />
+    <file url="PROJECT" libraries="{JSXTransformer-0.12.2, all, filepond, filepond-plugin-file-encode, filepond-plugin-image-preview, materialize, react-0.12.2, react-with-addons-0.9.0, semantic}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>
