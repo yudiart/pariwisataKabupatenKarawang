@@ -24,11 +24,6 @@ const Home =()=>{
             <IOSView>
                 <h2>IOS Bro</h2>
             </IOSView>
-            <AndroidView>
-                <NavigasiBar setSearch={setSearch} search={search} products={products}/>
-                <Main products={products} promo={promo}/>
-                <Footer/>
-            </AndroidView>
         </Fragment>
     )
 }
