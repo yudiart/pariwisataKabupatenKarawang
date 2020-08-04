@@ -16,7 +16,6 @@ import dashStyles from "../../assets/style/dashStyles";
 import {connect} from "react-redux";
 import PropTypes from 'prop-types';
 import SidebarDashboard from "../../components/Dashboard/SidebarDashboard";
-
 const  Dashboard = ({
     auth:{user,isAuthenticated,loading},
     profile:{profile},
