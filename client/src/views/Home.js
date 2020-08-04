@@ -1,5 +1,5 @@
 import React, {Fragment, useEffect, useState} from 'react'
-import NavigasiBar from "../components/header/NavigasiBar";
+import NavigasiBar from "../views/header/NavigasiBar";
 import Footer from "../components/footer/Footer";
 import Data from '../assets/Data.json'
 import Main from "./Main";

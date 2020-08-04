@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {useParams} from "react-router-dom";
 import Data from "../../assets/Data.json";
-import NavigasiBar from "../../components/header/NavigasiBar";
+import NavigasiBar from "../../views/header/NavigasiBar";
 let {product:{products}} = Data
 
 const ProductSingle = ()=>{
