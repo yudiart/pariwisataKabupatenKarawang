@@ -110,7 +110,7 @@
           max-height:200px;
           border-radius:0 10px 10px 0;
           //object-position: 50% 50%;
-          @include info
+          @include info;
           .image-preview{
             min-width:200px;
             height: 200px;
