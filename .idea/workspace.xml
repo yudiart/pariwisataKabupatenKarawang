@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/public/logokrw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/productResult/MainProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/productsingle/ProductDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/productsingle/ProductDisplayImage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/productsingle/ProductFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/Data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/product.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/slick/Slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/slick/Slick.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/slick/SlickTheme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/slick/SlickTheme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/products/ProductResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/products/ProductResult.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/products/ProductSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/products/ProductSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +221,7 @@
       <workItem from="1596560777106" duration="1396000" />
       <workItem from="1596562204992" duration="17196000" />
       <workItem from="1596632260086" duration="7523000" />
-      <workItem from="1596707330415" duration="4835000" />
+      <workItem from="1596707330415" duration="5667000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
