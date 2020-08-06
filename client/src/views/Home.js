@@ -21,6 +21,21 @@ const Home =()=>{
                 <Main products={products} promo={promo}/>
                 <Footer/>
             </BrowserView>
+            <isMobile>
+                <NavigasiBar setSearch={setSearch} search={search} products={products}/>
+                <Main products={products} promo={promo}/>
+                <Footer/>
+            </isMobile>
+            <isChrome>
+                <NavigasiBar setSearch={setSearch} search={search} products={products}/>
+                <Main products={products} promo={promo}/>
+                <Footer/>
+            </isChrome>
+            <isIOS>
+                <NavigasiBar setSearch={setSearch} search={search} products={products}/>
+                <Main products={products} promo={promo}/>
+                <Footer/>
+            </isIOS>
             <IOSView>
                 <NavigasiBar setSearch={setSearch} search={search} products={products}/>
                 <Main products={products} promo={promo}/>
