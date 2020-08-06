@@ -3,6 +3,7 @@ import {Link, useHistory} from "react-router-dom";
 
 const NavigasiBar = (props)=>{
     let history = useHistory()
+    let {pathname} =  history.location
     let {products} = props
     const {search, setSearch} = props
     const [snackbar,setSnackbar] = useState(0)
@@ -15,14 +16,14 @@ const NavigasiBar = (props)=>{
         product.category.toLowerCase().indexOf(search.search.toLowerCase())!== -1 ||
         product.toko.toko_name.toLowerCase().indexOf(search.search.toLowerCase())!== -1)
     let pName = filterSearch.map((product) => {
-            return {
-                count: 2,
-                product: product.product_name,
-            }
-        }).reduce((a, b) => {
-            a[b.product] = (a[b.product] || 0) + b.count
-            return a
-        }, {})
+        return {
+            count: 2,
+            product: product.product_name,
+        }
+    }).reduce((a, b) => {
+        a[b.product] = (a[b.product] || 0) + b.count
+        return a
+    }, {})
     let duplicates = Object.keys(pName).filter((a) => pName[a] > 1 )
     const resultRandom =(array)=>{
         let i = array.length - 1;
@@ -73,11 +74,11 @@ const NavigasiBar = (props)=>{
                         }}
                         className="product-list"
                     >{product}</p>
-            ))}
+                ))}
             </div>
-        :<div className="queri-list">
-            <p className="product-list">Tidak di temukan</p>
-        </div>
+            :<div className="queri-list">
+                <p className="product-list">Tidak di temukan</p>
+            </div>
     )
     return(
         <header>
@@ -86,14 +87,13 @@ const NavigasiBar = (props)=>{
                     <div className="logo-brand">
                         <Link to='/' className='logo-link'>mulai jualan</Link>
                     </div>
+                    <div className={`btn-back btn-back-${pathname !== '/' ? 'active':''}`} onClick={()=>history.goBack()}>
+                        <i className="material-icons mdc-icon-button__icon" >keyboard_backspace</i>
+                    </div>
                     <div className="header-menu">
-                        <div className="category-items">
-                            <span>Category</span>
-                        </div>
                         <div className="header-search">
                             <form className="input-group" onSubmit={onSubmit} >
                                 <input
-                                    // required
                                     type="text"
                                     name='search'
                                     autoComplete="off"
@@ -115,14 +115,14 @@ const NavigasiBar = (props)=>{
                     </div>
                     {/*Kondisi belum login menampilkan Button Login*/}
                     <div className="header-icons">
-                        <i className="material-icons mdc-icon-button__icon cart-header" onClick={()=>{history.push('/carts/')}} data-badge={6}>shopping_cart</i>
-                        <i className="material-icons mdc-icon-button__icon" data-badge={10}>notifications</i>
-                        <i className="material-icons mdc-icon-button__icon" data-badge={0?0:null}
-                        >chat_bubble</i>
+                        <i className="material-icons mdc-icon-button__icon cart-header" onClick={()=>{history.push('/carts/')}} data-badge={0?null:null}>shopping_cart</i>
+                        {/*<i className="material-icons mdc-icon-button__icon" data-badge={10}>notifications</i>*/}
+                        {/*<i className="material-icons mdc-icon-button__icon" data-badge={0?0:null}*/}
+                        {/*>chat_bubble</i>*/}
                     </div>
                     <div className="header-btn">
                         <Link className='button-primary' to={'/login'}>Login</Link>
-                        <Link className='button-outline-primary' to={'/register'}>Mochamad Yudi Sobari</Link>
+                        <Link className='button-outline-primary' to={'/register'}>Register</Link>
                     </div>
                     <div className="mobile-menu" onClick={()=>setDrawer(!drawer)}>
                         <i className="material-icons mdc-icon-button__icon" data-badge={10}>reorder</i>

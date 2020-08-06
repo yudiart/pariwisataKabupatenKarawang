@@ -19,11 +19,15 @@ header {
       padding: 5px;
       grid-area: main-header;
       display: grid;
-      grid-template-areas: 'logo menu menu  icon button ';
+      grid-template-areas: 'logo menu menu menu  icon button ';
       grid-template-rows: 60px 1fr 0;
       grid-template-columns: 200px 0.9fr;
       box-sizing: border-box;
       align-items: center;
+      .btn-back{
+        grid-area: btnback;
+        display: none;
+      }
       .logo-brand{
         grid-area: logo;
         font-size: 20px;
@@ -58,26 +62,12 @@ header {
         grid-area: menu;
         align-items: center;
         display: grid;
-        grid-template-areas: 'category fsearch fsearch ';
-        grid-template-columns: 100px 200px;
+        grid-template-areas: ' fsearch';
+        grid-template-columns:100%;
         box-sizing: border-box;
 
         @media screen and (max-width: 900px){
-          grid-template-columns: 0 200px;
-        }
-        .category-items{
-          display: flex;
-          grid-area: category;
-          span{
-            padding:10px;
-            align-items: center;
-            cursor:pointer;
-            font-size: 13px;
-            color:gray;
-          }
-          @media screen and (max-width: 900px){
-            display: none;
-          }
+          grid-template-columns: 100%;
         }
         .header-search{
           grid-area: fsearch;
@@ -185,8 +175,18 @@ header {
         }
       }
       @media screen and (max-width: 900px){
-        grid-template-areas: 'logo menu menu  icon button mobileMenu';
-        grid-template-columns: 10px 0.9fr;
+        grid-template-areas: 'btnback menu menu  icon button mobileMenu';
+        grid-template-columns: 50px 0.9fr;
+
+        .btn-back-active{
+          cursor:pointer;
+          display: flex;
+          justify-content: center;
+
+          &:active{
+            transform: scale(1.05);
+          }
+        }
       }
     }
 

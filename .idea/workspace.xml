@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/logokrw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/productResult/MainProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/productsingle/ProductDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/productsingle/ProductDisplayImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/productsingle/ProductFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodonesia" beforeDir="false" afterPath="$PROJECT_DIR$/vodonesia" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodonesia.pub" beforeDir="false" afterPath="$PROJECT_DIR$/vodonesia.pub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/Data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/product.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/slick/Slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/slick/Slick.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/slick/SlickTheme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/slick/SlickTheme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/products/ProductResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/products/ProductResult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/products/ProductSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/products/ProductSingle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,25 +60,25 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\views" />
       <recent name="F:\file yudi\program\skripsi\client\src\views\header" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout\navbar" />
       <recent name="F:\file yudi\program\skripsi\" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\src\views" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components" />
       <recent name="F:\file yudi\program\skripsi\client\src\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\src\actions" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components\Dashboard" />
+      <recent name="F:\file yudi\program\skripsi\client\src\views\products" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components" />
+      <recent name="F:\file yudi\program\skripsi\client\public" />
+      <recent name="F:\file yudi\program\skripsi\client\src\views" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -224,7 +238,9 @@
       <workItem from="1596497877715" duration="17918000" />
       <workItem from="1596560404157" duration="272000" />
       <workItem from="1596560777106" duration="1396000" />
-      <workItem from="1596562204992" duration="12327000" />
+      <workItem from="1596562204992" duration="17196000" />
+      <workItem from="1596632260086" duration="7523000" />
+      <workItem from="1596707330415" duration="4835000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
@@ -258,10 +274,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="229" y="166" width="815" height="685" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1596566718624" />
-    <state x="586" y="197" key="#Inspections" timestamp="1587944576189">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="586" y="197" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1587944576189" />
     <state x="552" y="177" key="#Intentions" timestamp="1596489753189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -290,26 +302,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="780" y="326" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595281459362" />
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596495985088">
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596743335840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596495985088" />
+    <state x="1170" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596743335840" />
     <state x="451" y="87" key="CommitChangelistDialog2" timestamp="1596556192154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="451" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596556192154" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1596570491224">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1596578109074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596570491224" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596578109074" />
     <state x="628" y="297" key="EditFileWatcherDialog" timestamp="1595270012241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="628" y="297" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595270012241" />
-    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1596497776507">
+    <state x="260" y="274" key="FileChooserDialogImpl" timestamp="1596637520566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596497776507" />
+    <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596637520566" />
     <state width="1876" height="274" key="GridCell.Tab.0.bottom" timestamp="1596552516418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

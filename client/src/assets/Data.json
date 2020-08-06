@@ -36,7 +36,89 @@
           "berat": 1000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1129175480,
@@ -50,7 +132,7 @@
           "https://s3.ap-northeast-2.amazonaws.com/vodonesia.id/Room/1594318345541_11536495_657299981071149_2631163536472261220_o.jpg",
           "https://s3.ap-northeast-2.amazonaws.com/vodonesia.id/Room/1594318345541_11536495_657299981071149_2631163536472261220_o.jpg"
         ],
-        "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet ",
         "terjual": 180,
         "stock": 215,
         "discount": 20,
@@ -60,7 +142,89 @@
           "berat": 5000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1564975312,
@@ -84,7 +248,89 @@
           "berat": 20000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 8776689574,
@@ -108,7 +354,89 @@
           "berat": 20000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       }
     ],
     "products": [
@@ -124,7 +452,7 @@
           "https://s3.ap-northeast-2.amazonaws.com/vodonesia.id/Room/1594318345541_11536495_657299981071149_2631163536472261220_o.jpg",
           "https://s3.ap-northeast-2.amazonaws.com/vodonesia.id/Room/1594318345541_11536495_657299981071149_2631163536472261220_o.jpg"
         ],
-        "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet \n\n Lorem ipsum dolor sit amet Lorem ipsum dolor \n\n Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor sit amet Lorem ipsum dolor\n\n Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet \n\n Lorem ipsum dolor sit amet Lorem ipsum dolor \n\n Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor sit amet Lorem ipsum dolor\n\n Lorem ipsum dolor sit amet Lorem ipsum dolor",
         "terjual": 2,
         "stock": 12,
         "discount": 0,
@@ -134,7 +462,20 @@
             "berat": 1000,
             "kondisi": "baru",
             "asuransi": 1
+          },
+
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
           }
+        ]
       },
       {
         "id": 4110800520,
@@ -157,7 +498,19 @@
           "berat": 5000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1129175480,
@@ -181,7 +534,19 @@
             "berat": 5000,
             "kondisi": "baru",
             "asuransi": 1
+          },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
           }
+        ]
       },
       {
         "id": 2548812659,
@@ -200,12 +565,23 @@
         "stock": 215,
         "discount": 20,
         "harga": 34899999,
-        "detail":
+        "detail": {
+          "berat": 20000,
+          "kondisi": "baru",
+          "asuransi": 1
+        },
+          "ulasan": [
           {
-            "berat": 20000,
-            "kondisi": "baru",
-            "asuransi": 1
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
           }
+        ]
       },
       {
         "id": 1564975312,
@@ -229,7 +605,19 @@
             "berat": 20000,
             "kondisi": "baru",
             "asuransi": 1
+          },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
           }
+        ]
       },
       {
         "id": 6602565598,
@@ -248,12 +636,23 @@
         "stock": 215,
         "discount": 20,
         "harga": 38000000,
-        "detail":
+        "detail": {
+          "berat": 20000,
+          "kondisi": "baru",
+          "asuransi": 1
+        },
+          "ulasan": [
           {
-            "berat": 20000,
-            "kondisi": "baru",
-            "asuransi": 1
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
           }
+        ]
       },
       {
         "id": 8776689574,
@@ -277,7 +676,19 @@
             "berat": 20000,
             "kondisi": "baru",
             "asuransi": 1
+          },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
           }
+        ]
       },
       {
         "id": 8802118439,
@@ -296,12 +707,23 @@
         "stock": 215,
         "discount": 20,
         "harga": 45000000,
-        "detail":
+        "detail": {
+          "berat": 5000,
+          "kondisi": "baru",
+          "asuransi": 1
+        },
+          "ulasan": [
           {
-            "berat": 5000,
-            "kondisi": "baru",
-            "asuransi": 1
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
           }
+        ]
       },
       {
         "id": 1387553544,
@@ -325,7 +747,19 @@
             "berat": 1000,
             "kondisi": "baru",
             "asuransi": 1
+          },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
           }
+        ]
       },
       {
         "id": 2265339259,
@@ -348,12 +782,93 @@
         "stock": 215,
         "discount": 10,
         "harga": 45000000,
-        "detail":
+        "detail": {
+          "berat": 500,
+          "kondisi": "baru",
+          "asuransi": 1
+        },
+        "ulasan": [
           {
-            "berat": 500,
-            "kondisi": "baru",
-            "asuransi": 1
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
           }
+        ]
       },
       {
         "id": 1164620722,
@@ -381,7 +896,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620723,
@@ -409,7 +936,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620724,
@@ -437,7 +976,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620725,
@@ -465,7 +1016,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620727,
@@ -493,7 +1056,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620728,
@@ -521,7 +1096,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620729,
@@ -549,7 +1136,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620730,
@@ -577,7 +1176,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620731,
@@ -605,7 +1216,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620732,
@@ -633,7 +1256,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620733,
@@ -661,7 +1296,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620734,
@@ -689,7 +1336,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620735,
@@ -717,7 +1376,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620736,
@@ -745,7 +1416,19 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620737,
@@ -773,7 +1456,89 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       },
       {
         "id": 1164620738,
@@ -801,7 +1566,89 @@
           "berat": 2000,
           "kondisi": "baru",
           "asuransi": 1
-        }
+        },
+        "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
       }
     ]
   },
@@ -832,7 +1679,89 @@
               "berat": 1000,
               "kondisi": "baru",
               "asuransi": 1
-            }
+            },
+            "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
           },
           {
             "id": 1164620739,
@@ -860,7 +1789,89 @@
               "berat": 2000,
               "kondisi": "baru",
               "asuransi": 1
-            }
+            },
+            "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
           },
           {
             "id": 1129175480,
@@ -884,7 +1895,89 @@
               "berat": 5000,
               "kondisi": "baru",
               "asuransi": 1
-            }
+            },
+            "ulasan": [
+          {
+            "users": 1,
+            "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          },
+          {
+            "users": 2,
+            "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+            "date": 1596736837883
+          }
+        ]
           },
           {
             "id": 1564975312,
@@ -908,7 +2001,89 @@
               "berat": 20000,
               "kondisi": "baru",
               "asuransi": 1
-            }
+            },
+            "ulasan": [
+              {
+                "users": 1,
+                "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              }
+            ]
           },
           {
             "id": 8776689574,
@@ -932,7 +2107,89 @@
               "berat": 20000,
               "kondisi": "baru",
               "asuransi": 1
-            }
+            },
+            "ulasan": [
+              {
+                "users": 1,
+                "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              },
+              {
+                "users": 2,
+                "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+                "date": 1596736837883
+              }
+            ]
           }
         ]
       },
@@ -962,7 +2219,89 @@
             "berat": 1000,
             "kondisi": "baru",
             "asuransi": 1
-          }
+          },
+          "ulasan": [
+            {
+              "users": 1,
+              "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            }
+          ]
         },
         {
           "id": 1164620740,
@@ -990,7 +2329,89 @@
             "berat": 2000,
             "kondisi": "baru",
             "asuransi": 1
-          }
+          },
+          "ulasan": [
+            {
+              "users": 1,
+              "text": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            },
+            {
+              "users": 2,
+              "text": "Lorem ipsum dolor sit amet \n lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet\n lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "date": 1596736837883
+            }
+          ]
         }
       ]
     }

@@ -16,21 +16,20 @@
 }
 
 
-
 .display-product{
-  min-height:400px;
+  min-height:500px;
+  margin-bottom: 20px;
   width: 100%;
   display: grid;
-  grid-template-areas: 'image preview preview';
-  //grid-gap: 10px;
-  grid-template-rows: 300px 50px;
+  grid-template-areas: 'image preview';
+  grid-gap: 30px;
   grid-template-columns: 40% 49.2%;
   .display-image-product{
     background:white;
+    top:90px;
     height:330px;
-    top:80px;
     grid-area: image;
-    z-index: 0;
+    z-index: 1;
     position:sticky;
     @include display-image-product;
 
@@ -43,41 +42,68 @@
 
   .display-preview-product{
     z-index: 1;
+    min-height:700px;
     grid-area: preview;
-    .product-category{
-      span{
-        display: flex;
-        align-content: center;
-        align-items: center;
-        font-size: 14px;
-        font-weight: bold;
-        i{
-          font-size: 20px;
-          padding:0 10px 0 10px;
-          color:$color-primary
+
+    .product-header{
+      position:sticky;
+      top:70px;
+      background: white;
+      .product-category{
+        padding-top: 20px;
+        span{
+          display: flex;
+          align-content: center;
+          align-items: center;
+          font-size: 14px;
+          font-weight: bold;
+          i{
+            font-size: 20px;
+            padding:0 10px 0 10px;
+            color:$color-primary
+          }
+        }
+        .btn-back{
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          height:50px;
+          width:100px;
+          font-weight: bold;
+          color:lighten($color-gray, 30%);
+          i{
+            padding:10px;
+          }
+          &:hover{
+            transition:0.2s;
+            color:lighten($color-gray, 10%);
+          }
+          @media screen and (max-width: 900px){
+            display: none;
+          }
         }
       }
-    }
-    .product-name{
-      padding:20px 10px 0 10px;
-      h1{
-        font-size: 20px;
-      }
+      .product-name{
+        padding:20px 10px 0 10px;
+        h1{
+          font-size: 20px;
+        }
 
-      .detail{
-        padding:5px 0 5px 0;
-        small{
-          color:lighten($color-gray, 10%);
-          letter-spacing: -0.5px;
-          font-weight: bold;
+        .detail{
+          padding:5px 0 5px 0;
+          small{
+            color:lighten($color-gray, 10%);
+            letter-spacing: -0.5px;
+            font-weight: bold;
+          }
         }
       }
     }
     .product-details{
       padding:20px 10px 0 10px ;
-
+      min-height:100%;
       .product-info{
-
+        min-height:700px;
         .product-harga{
           @include productdetail;
 
@@ -203,16 +229,121 @@
 
           }
         }
+        .product-deskripsi{
+          margin:10px 0;
+          outline: none;
+          ul{
+            border-bottom: 5px solid lighten($color-gray, 50%);
+            border-radius:2px;
+            outline: none;
+            margin-bottom: 10px;
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            li{
+              outline: none;
+              border-radius:10px;
+              margin-right:5px;
+              margin-bottom: 5px;
+              font-weight: bold;
+              padding: 10px 5px;
+              color:lighten($color-gray, 10%);
+              text-align: left;
+              cursor: pointer;
+              -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+              box-shadow: none;
+
+              &:hover{
+                transition:0.2s;
+                border-radius:10px;
+                background: lighten($color-gray, 50%);
+              }
+            }
+            .active{
+              background: lighten($color-gray, 50%);
+              color:lighten($color-primary, 20%);
+            }
+          }
+          .tab-deskripsi{
+
+            .product-description{
+              min-height:500px;
+              margin-top: 20px;
+              display: none;
+              h3{
+                color:lighten($color-gray, 10%);
+                letter-spacing: -0.5px;
+                font-weight: bold;
+              }
+              p{
+                color:lighten($color-gray, 10%);
+                text-align: justify;
+              }
+              @media screen and (max-width: 900px){
+                margin-bottom: 20px;
+              }
+            }
+            .product-ulasan{
+              display: none;
+              margin-top: 20px;
+            }
+            .active{
+              display: block;
+              .ulasan-item{
+                margin-bottom: 30px;
+                border-bottom: 2px solid lighten($color-gray, 45%);
+                min-height:70px;
+                display: grid;
+                grid-template-areas: 'image ulasan';
+                grid-gap: 20px;
+                grid-template-columns: 70px 0.95fr;
+                .user-image{
+                  grid-area: image;
+                  display: flex;
+                  justify-content: center;
+                  img{
+                    width:60px;
+                    height:60px;
+                    object-fit: cover;
+                    border-radius:10px;
+                  }
+                }
+                .user-ulasan{
+                  grid-area: ulasan;
+                  margin-bottom: 10px;
+                  display: block;
+                  span{
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    color:lighten($color-primary, 20%);
+                    font-size: 12px;
+                  }
+                  small{
+                    text-align: justify;
+                    color:lighten($color-gray, 10%);
+                    letter-spacing: 0.1px;
+                    font-size: 14px;
+                  }
+                }
+              }
+
+            }
+          }
+        }
       }
     }
     @media screen and(max-width: 900px){
       margin-left:  2%;
       margin-right: 2%;
+
     }
   }
 
   @media screen and (max-width: 900px){
     display: inline-block;
+    min-height:1000px;
   }
 }
 
