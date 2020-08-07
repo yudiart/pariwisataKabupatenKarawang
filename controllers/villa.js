@@ -103,10 +103,58 @@ exports.CreateProfile = async (req, res) => {
         res.status(500).send("Server Error in Profile.js");
     }
 }
+exports.AddRooms = async (req,res)=>{
 
+    const {
+        roomName,
+        description,
+        limit,
+        harga,
+        tipeKamar,
+        ac,
+        tv,
+        bedtype,
+        wifi,
+        other
+    } = req.body;
+    //Build profile object to insert into database
+    const villaFields = {};
+    villaFields.user = req.user.id;
+    villaFields.rooms = [{}];
+    if (roomName)       villaFields.rooms.roomName    = roomName;
+    if (description)    villaFields.rooms.description = description;
+    if (limit)          villaFields.rooms.limit       = limit;
+    if (harga)          villaFields.rooms.harga       = harga;
+    if (tipeKamar)      villaFields.rooms.tipeKamar   = tipeKamar;
+
+
+    //Build address
+    villaFields.rooms.fasilitas={};
+    if (ac)  villaFields.rooms.fasilitas.ac = ac;
+    if (tv)  villaFields.rooms.fasilitas.tv = tv;
+    if (bedtype)   villaFields.rooms.fasilitas.bedtype = bedtype;
+    if (wifi)      villaFields.rooms.fasilitas.wifi = wifi;
+    if (other)    villaFields.rooms.fasilitas.other = other;
+
+    try {
+        let villa = await Villa.findOne({ user: req.user.id });
+        if (villa) {
+            //update!
+            villa = await Villa.insertMany({rooms:villaFields});
+            return res.json(villa);
+        }
+        // villa = new Villa(villaFields);
+        await villa.rooms.save();
+        res.json(villa);
+
+    } catch (err) {
+        console.error(err.message)
+        res.status(500).send("Server errror in posts.js")
+    }
+}
 exports.PublicMe =  async (req, res) => {
     try {
-        const villa = await Villa.find().populate("villa");
+        const villa = await Villa.find().sort({ date: -1 });
         await res.json(villa);
     } catch (err) {
         console.error(err.message);

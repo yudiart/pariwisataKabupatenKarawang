@@ -14,7 +14,7 @@ import Spinner from "../../assets/Spinner";
 import Header from "../../components/Header/Header";
 import {getVillas} from "../../actions/villa";
 
-const Home = ({
+const Homes = ({
     auth,
     getVillas,
     getAllRooms,
@@ -47,7 +47,7 @@ useEffect(()=>{
         </Fragment>
     )
 }
-Home.propTypes = {
+Homes.propTypes = {
     isAuthenticated: PropTypes.bool,
     getVillas: PropTypes.func.isRequired,
     getCurrentProfile: PropTypes.func.isRequired,
@@ -70,4 +70,4 @@ export default connect(
         getAllRooms,
         getVillas
     }
-)(Home);
+)(Homes);

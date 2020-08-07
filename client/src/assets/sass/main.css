@@ -1,9 +1,10 @@
-/* Error: expected ";".
- *     ,
- * 113 |           @include info
- *     |                        ^
- *     '
- *   components\main.scss 113:24    @import
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "src/assets/sass/bootstrap/carousel";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   components\_products.scss 1:9  @import
+ *   components\main.scss 4:9       @import
  *   components\component.scss 3:9  @import
  *   main.scss 4:9                  root stylesheet */
 
@@ -15,5 +16,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a     \2577 \a 113 \2502            @include info\d\a     \2502                         ^\a     \2575 \a   components\\main.scss 113:24    @import\a   components\\component.scss 3:9  @import\a   main.scss 4:9                  root stylesheet';
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"src/assets/sass/bootstrap/carousel\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   components\\_products.scss 1:9  @import\a   components\\main.scss 4:9       @import\a   components\\component.scss 3:9  @import\a   main.scss 4:9                  root stylesheet";
 }

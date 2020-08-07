@@ -2,9 +2,10 @@ const express = require("express");
 const router = express.Router();
 const auth = require("../../middleware/auth");
 const { check } = require("express-validator");
-const {signup,login,loadUser} = require("../../controllers/auth");
+const {signup,login,loadUser,getAllUsers} = require("../../controllers/auth");
 
 router.get("/", auth,loadUser);
+router.get("/all", getAllUsers);
 router.post(
   "/login",
   [

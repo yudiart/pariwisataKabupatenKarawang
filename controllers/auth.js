@@ -82,6 +82,17 @@ exports.loadUser = async (req, res) => {
     }
 }
 
+exports.getAllUsers = async (req,res)=>{
+    try {
+        const users = await User.find().sort({ date: -1 });
+        const filterUser = users.filter(user=>user.role !== 'admin' && user.role !== 'customer')
+        await res.json(filterUser);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send("Server errror in posts.js");
+    }
+}
+
 exports.login = async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {

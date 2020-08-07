@@ -1,6 +1,4 @@
 const express = require("express");
-// const request = require('request');
-// const config = require('config');
 const router = express.Router();
 const { check, validationResult } = require("express-validator");
 const auth = require("../../middleware/auth");
@@ -13,6 +11,7 @@ const role ={
 const {
     ImageUpload,
     Me,
+    AddRooms,
     CreateProfile,
     PublicMe,
     ProfileMe,
@@ -39,6 +38,8 @@ router.post("/", [auth,Role(role.villa),
         ]
     ],CreateProfile);
 //@access Public
+
+router.put('/rooms',[auth,Role(role.villa)],AddRooms)
 router.get("/",PublicMe);
 //@access Public
 router.get("/profile/:villa_id", ProfileMe);

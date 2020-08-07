@@ -1,7 +1,8 @@
 import {
     GET_CARTS,
     GET_CART_ITEM,COUNT_CART,
-    ADD_CART
+    ADD_CART,
+    CLEAR_CARTS
 } from "../actions/types";
 
 //Create initial state
@@ -39,6 +40,14 @@ export default function(state = initialState, action) {
                 ...state,
                 item: payload,
                 loading: false
+            }
+        case CLEAR_CARTS:
+            return {
+                ...state,
+                carts: null,
+                item: null,
+                loading: true,
+                count: null
             }
         default:
             return state;

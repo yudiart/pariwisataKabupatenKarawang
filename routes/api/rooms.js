@@ -33,7 +33,7 @@ router.post("/upload", auth,Role(role.villa), (req,res)=>{
         });
         const room = await newRoom.save();
         await res.json(room);
-            console.log(newImage)
+
     })
 });
 //Upload File in local Storage
@@ -67,6 +67,7 @@ router.post("/upload", auth,Role(role.villa), (req,res)=>{
 //@access Private
 router.put("/:id", auth,Role(role.villa), async (req, res) => {
     const {
+        images,
         roomName,
         description,
         limit,
@@ -80,7 +81,6 @@ router.put("/:id", auth,Role(role.villa), async (req, res) => {
     } = req.body;
     const roomFields = {};
     roomFields.user = req.user.id;
-    //Build fasilitas
     roomFields.fasilitas={};
     if (ac)             roomFields.fasilitas.ac = ac;
     if (tv)             roomFields.fasilitas.tv = tv;
@@ -89,7 +89,10 @@ router.put("/:id", auth,Role(role.villa), async (req, res) => {
     if (other)          roomFields.fasilitas.other = other;
     try {
         let kamar = await Room.findById( req.params._id);
+        console.log(kamar)
         const dataUpdate =({
+            user:req.user.id,
+            images: images,
             roomName: roomName,
             description:description,
             limit:limit,
@@ -101,7 +104,7 @@ router.put("/:id", auth,Role(role.villa), async (req, res) => {
             kamar = await Room.findOneAndUpdate(
                 {id: req.params.id},
                 {$set: dataUpdate},
-                {new: true}
+                {new: false}
             );
             return res.json(kamar);
         }
@@ -116,9 +119,6 @@ router.put("/:id", auth,Role(role.villa), async (req, res) => {
 });
 
 
-//@route POST api/Room
-//@desc Update Room By Id
-//@access Private
 router.post(
     "/:id_kamar",
     [
@@ -195,12 +195,9 @@ router.post(
     }
 );
 
-
-//@route GET api/Rooms
-//@desc Get all Rooms
-//@access public
 router.get("/",  async (req, res) => {
     try {
+        //Profile model, pertains to the database id!
         const room = await Room.find().sort({ date: -1 });
         await res.json(room);
     } catch (err) {

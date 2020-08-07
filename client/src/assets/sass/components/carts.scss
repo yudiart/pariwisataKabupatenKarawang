@@ -216,9 +216,9 @@
                   align-items: center;
                   padding:10px;
                   height:20px;
-                  h4{
-                    color:$color-primary;
-                    font-size: 18px;
+                  p{
+                    color:lighten($color-gray, 20%);
+                    font-size: 14px;
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;

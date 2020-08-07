@@ -6,7 +6,7 @@ import BannerPromotion from "../components/banner/BannerPromotion";
 
 const Main = (props)=>{
     let history = useHistory()
-    let {products,promo} = props
+    let {products,promo,rooms} = props
     let product = products.map((items)=>items).slice(0,10)
 
     const ItemProducts = (

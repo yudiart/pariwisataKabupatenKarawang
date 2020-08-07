@@ -30,6 +30,7 @@ app.use((req, res, next) => {
   next();
 });
 
+
 //Define routes
 app.use("/api/auth", cors(),require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));

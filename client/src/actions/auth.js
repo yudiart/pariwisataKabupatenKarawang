@@ -8,7 +8,7 @@ import {
   LOGIN_FAIL,
   LOGIN_SUCCESS,
   LOGOUT,
-  CLEAR_VILLA, CLEAR_ADMIN, CLEAR_PROFILE
+  CLEAR_VILLA, CLEAR_ADMIN, CLEAR_PROFILE, CLEAR_CARTS
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
 import {Redirect} from "react-router";
@@ -33,6 +33,8 @@ export const loadUser = () => async dispatch => {
     });
   }
 };
+
+
 
 //Registers the user
 export const register = ({ fullname, email, password}) => async dispatch => {
@@ -99,11 +101,12 @@ export const login = ({email, password,isChecked,dashboard}) => async dispatch =
   }
 };
 
+
 //Logout user and clear the profile
-export const logout = ({history}) => dispatch => {
+export const logout = () => dispatch => {
+  dispatch({ type: LOGOUT });
+  dispatch({ type: CLEAR_CARTS });
   dispatch({ type: CLEAR_VILLA });
   dispatch({ type: CLEAR_PROFILE });
-  dispatch({ type: LOGOUT });
   dispatch({ type: CLEAR_ADMIN });
-  return <Redirect to={'/login'}/>
 };

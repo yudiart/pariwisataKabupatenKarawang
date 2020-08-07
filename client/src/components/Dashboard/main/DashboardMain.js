@@ -23,6 +23,7 @@ const DashboardMain = ({auth:{user}})=>{
                 padding: theme.spacing(3),
         }
     }))
+
     const classes = dashStyle();
     return (
         <main className={classes.content}>

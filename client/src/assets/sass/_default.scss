@@ -35,7 +35,18 @@ main{
   }
 }
 
-
+.loadingacount{
+  z-index: 100;
+  overflow: hidden;
+  width:100%;
+  min-height: 800px;
+  top:0;
+  left:0;
+  //opacity: 0.4;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 footer{
   background: darken($color-gray, 30%);
 }

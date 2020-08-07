@@ -2,7 +2,12 @@ import axios from "axios";
 import {
     GET_CARTS,
     GET_CART_ITEM,
-    CARTS_ERROR, COUNT_CART
+    ERROR_GET_ALL_USER,
+    ERROR_GET_CURRENT_USER,
+    CLEAR_CARTS,
+    CARTS_ERROR,
+    COUNT_CART,
+    GET_ALL_USERS
 } from "./types";
 
 export const addCarts = ()=> async dispatch => {
@@ -44,5 +49,21 @@ export const getCountCarts = ()=> async dispatch =>{
         });
     }catch(err){
 
+    }
+}
+
+export const getAllUserById = ()=> async dispatch =>{
+    try{
+        const res = await axios.get('/api/auth/all');
+
+        dispatch({
+            type: GET_ALL_USERS,
+            payload: res.data
+        });
+    }catch(err){
+        dispatch({
+            type:CLEAR_CARTS,
+            payload: { msg: err.response.statusText, status: err.response.status }
+        });
     }
 }

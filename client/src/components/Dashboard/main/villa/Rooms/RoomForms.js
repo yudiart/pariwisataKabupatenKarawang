@@ -102,7 +102,6 @@ const RoomForms = ({setAlert,addRoom,history,profile:{profile}})=>{
                                 setTimeout(()=>setUploadPercentage(0),3000)
                             }})
                         const {_id,images} = ress.data
-                        console.log(images)
                         setUploadFile({images,_id})
 
                     }catch(err){
@@ -140,10 +139,12 @@ const RoomForms = ({setAlert,addRoom,history,profile:{profile}})=>{
     const onDescriptionChange = e =>{setDescriptionValue(e.target.value)}
     const onLimitChange = e =>{setLimitValue(e.target.value)}
     const onTipeKamarChange = e =>{setTipeKamarValue(e.target.value)}
+    console.log(uploadFile.images)
     const onSubmit =async (e)=>{
         e.preventDefault()
         const idR = uploadFile._id
         const formData ={
+            images: uploadFile.images,
             roomName: roomNameValue,
             description: descriptionValue,
             harga: hargaValue,
@@ -162,7 +163,6 @@ const RoomForms = ({setAlert,addRoom,history,profile:{profile}})=>{
         // Make sure to revoke the data uris to avoid memory leaks
         files.forEach(file => URL.revokeObjectURL(file.preview));
     }, [files]);
-    console.log(uploadFile.images)
     const handleUnClick =(e)=>{
         e.preventDefault()
         if (profile !== null){

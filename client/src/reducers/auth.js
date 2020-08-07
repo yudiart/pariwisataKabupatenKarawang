@@ -14,7 +14,6 @@ const initialState = {
   token: localStorage.getItem("token"),
   isAuthenticated: null,
   loading: true,
-  location:null,
   user: null
 };
 
@@ -27,7 +26,6 @@ export default function(state = initialState, action) {
         ...state,
         isAuthenticated: true,
         loading: false,
-        location:payload,
         user: payload
       };
     case REGISTER_FAIL:
@@ -41,7 +39,6 @@ export default function(state = initialState, action) {
         token: null,
         isAuthenticated: false,
         loading: false,
-        location:null,
         user:null
       };
     case LOGIN_SUCCESS:

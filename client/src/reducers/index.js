@@ -7,10 +7,12 @@ import room from "./room";
 import villa from "./villa";
 import admin from "./admin";
 import cart from './cart';
+import users from "./users";
 
 export default combineReducers({
     alert,
     auth,
+    users,
     profile,
     post,
     cart,

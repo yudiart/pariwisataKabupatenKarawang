@@ -25,34 +25,36 @@ router.put("/",auth,Role(role.customer),async (req, res) => {
         room,
         travel
     } = req.body;
-    const newRoom = {
-        room
-    };
     const newTrav = {
         travel
     }
     try {
+        const resultRooms = await Room.findOne({_id:room})
         const carts = await Carts.findOne({ user: req.user.id });
+        const cartItem = carts.rooms.some((items)=> items._id.toString()  === room.toString())
         const rooms =  carts.rooms;
         const trav = carts.travels;
         if(rooms.length < 10 || trav.length < 10){
-            if(room && travel){
-                carts.rooms.unshift(newRoom)
-                carts.travels.unshift(newTrav)
-                const cart = await carts.save()
-                await res.json(cart)
-            }else if(room && !travel){
-                carts.rooms.unshift(newRoom)
-                const cart = await carts.save()
-                await res.json(cart)
-            }else if(!room && travel){
-                carts.travels.unshift(newTrav)
-                const cart = await carts.save()
-                await res.json(cart)
+            if (cartItem === false){
+                if(room && travel){
+                    carts.rooms.unshift(resultRooms)
+                    carts.travels.unshift(newTrav)
+                    const cart = await carts.save()
+                    await res.json(cart)
+                }else if(room && !travel){
+                    carts.rooms.unshift(resultRooms)
+                    const cart = await carts.save()
+                    await res.json(cart)
+                }else if(!room && travel){
+                    carts.travels.unshift(newTrav)
+                    const cart = await carts.save()
+                    await res.json(cart)
+                }else{
+                    return res.status(404).json({ msg: "Cart unknown" });
+                }
             }else{
-                return res.status(404).json({ msg: "Cart unknown" });
+                return res.status(404).json({ msg: "Product sudah ada" });
             }
-
         }else{
             return res.status(404).json({ msg: "Cart is over limit, fill Cart max 10 items" });
         }
@@ -65,8 +67,8 @@ router.put("/",auth,Role(role.customer),async (req, res) => {
 
 router.get("/",auth,Role(ROLE.customer), async (req, res) => {
         try {
-            const carts = await Carts.findOne({ user: req.user.id })
-            await res.json(carts)
+            const carts = await Carts.findOne({ user: req.user.id }).sort({date: -1})
+            res.json(carts)
         }catch (err) {
             console.error(err.message);
             res.status(500).send("Server errror in posts.js");

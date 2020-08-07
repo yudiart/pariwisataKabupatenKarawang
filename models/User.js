@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const UserSchema = new mongoose.Schema({
   role:{
     type: String,
-    enum: ['customer','villa']
+    enum: ['customer','villa','admin']
   },
   email: {
     type: String,
@@ -12,14 +12,6 @@ const UserSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true
-  },
-  confirmed:{
-    type: Boolean,
-    default: false
-  },
-  resetLink:{
-    type:String,
-    default:''
   },
   isAdmin:{
     type: Boolean,

@@ -53,6 +53,11 @@ export const COVID_ERROR = "COVID_ERROR";
 //Admin ========================================
 export const GET_ADMIN = "GET_ADMIN";
 export const GET_ALL_USERS = "GET_ALL_USERS";
+export const GET_CURRENT_USER = "GET_CURRENT_USER";
+export const ERROR_GET_CURRENT_USER = "ERROR_GET_CURRENT_USER";
+export const ERROR_GET_ALL_USER = "ERROR_GET_ALL_USER";
+export const CLEAR_ALL_USERS = "CLEAR_ALL_USERS";
+export const CLEAR_CURRENT_USERS = "CLEAR_CURRENT_USERS";
 export const GET_ALL_ROOMS = "GET_ALL_ROOMS";
 export const CLEAR_ROOM = "CLEAR_ROOM";
 export const GET_ALL_BY_VILLAS = "GET_ALL_BY_VILLAS";
@@ -80,6 +85,7 @@ export const GET_CARTS = "GET_CARTS";
 export const ADD_CART = "ADD_CART";
 export const DELETE_ITEM_CART = "DELETE_ITEM_CART";
 export const COUNT_CART = "COUNT_CART";
+export const CLEAR_CARTS = "CLEAR_CARTS";
 export const CARTS_ERROR = "CARTS_ERROR";
 export const GET_CART_ITEM = "GET_CART_ITEM";
 
