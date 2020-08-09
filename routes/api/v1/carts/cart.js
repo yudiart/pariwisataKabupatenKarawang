@@ -65,6 +65,19 @@ router.put("/",auth,Role(role.customer),async (req, res) => {
     }
 );
 
+router.put('/update/:id',auth,Role(role.customer),async (req,res)=>{
+    const {
+        order,
+        harga
+    } =req.body
+    try{
+
+    }catch (err) {
+        console.error(err.message)
+        res.status(500).send('gagal update carts order')
+    }
+
+})
 router.get("/",auth,Role(ROLE.customer), async (req, res) => {
         try {
             const carts = await Carts.findOne({ user: req.user.id }).sort({date: -1})

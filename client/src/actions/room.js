@@ -6,8 +6,9 @@ import {
     GET_KAMARS,
     UPDATE_WISHLIST,
     DELETE_KAMAR,
-    GET_KAMAR, IMAGE_UPLOAD, CLEAR_ROOM,
+    GET_KAMAR, IMAGE_UPLOAD, CLEAR_ROOM, LOGIN_SUCCESS,
 } from "./types";
+import {loadUser} from "./auth";
 
 
 //Get Rooms
@@ -168,6 +169,30 @@ export const getRoom = id => async dispatch => {
     }
 };
 
+export const updateCartRooms =()=> async dispatch =>{
+
+    try {
+        const res = await axios.put(`/api/v1/cart/update/${'id'}`,'test',  {
+            headers:{
+                "Content-Type": "application/json",
+            }
+        })
+
+
+        dispatch({
+            type: LOGIN_SUCCESS,
+            payload: res.data
+        });
+    } catch (err) {
+        const errors = err.response.data.errors;
+
+        if (errors) {
+            errors.forEach(error =>
+                dispatch(setAlert("Incorrect Email or Password", "danger"))
+            );
+        }
+    }
+}
 
 export const clearRoom = ()=> async dispatch =>{
     try{

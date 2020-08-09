@@ -22,7 +22,7 @@ const KategoriPilihan = ()=>{
         nextArrow: <PrevArrow />,
         infinite: true,
         speed: 100,
-        slidesToShow: 3,
+        slidesToShow: 2,
         responsive: [
             {
                 breakpoint: 1385,
@@ -64,11 +64,9 @@ const KategoriPilihan = ()=>{
     };
 
     const kategoriList = [
-        {kategori:"Kesehatan", icon:"favorite"},
-        {kategori:"Pendidikan", icon:"school"},
-        {kategori:"Makanan", icon:"fastfood"},
-        {kategori:"Kecantikan", icon:"opacity"},
-        {kategori:"Fashion", icon:"insights"}
+        {kategori:"Travels", icon:"favorite"},
+        {kategori:"Villa", icon:"school"},
+        {kategori:"Rooms", icon:"fastfood"}
     ]
     return(
         <div className="product-kategori">

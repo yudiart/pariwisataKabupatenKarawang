@@ -12,6 +12,47 @@ button{
   }
 }
 
+@mixin navigation-bar{
+  display: block;
+  color:$color-gray;
+  i{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    &[data-badge] {
+      position: relative;
+      &:after {
+        font-family: Arial, sans-serif;
+        content: attr(data-badge);
+        position: absolute;
+        background: $color-pink;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:15px;
+        padding: 0.3em;
+        color: $color-white;
+        font-size: 10px;
+        max-height: 20px;
+        left: 20px;
+        top: -5px;
+      }
+    }
+  }
+  small{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
 
 main{
   padding: 0 18%;
@@ -32,6 +73,90 @@ main{
     overflow: hidden;
     margin:0;
     padding:0;
+  }
+}
+
+
+//Navigation Bottom Bar
+.bottom-navigation{
+  display: none;
+
+  @media screen and (max-width: 649px){
+    display: block;
+    cursor: default;
+    z-index: 8;
+    background:white;
+    //border-top:1px solid lighten($color-gray, 10%);
+    box-shadow: 0 0 5px lighten($color-gray, 10%);
+    height:60px;
+    left:0;
+    bottom:0;
+    right:0;
+    position: fixed;
+
+    .navigation-grid{
+      height:100%;
+      display: grid;
+      color:$color-primary;
+      grid-template-areas: 'home official carts account';
+      grid-template-columns: 25%;
+     .navigation-home{
+       cursor: pointer;
+       grid-area: home;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       .nav-home{
+         @include navigation-bar;
+       }
+     }
+      .navigation-official{
+        cursor: pointer;
+        grid-area: official;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-official{
+          @include navigation-bar;
+        }
+      }
+      .navigation-carts{
+        cursor: pointer;
+        grid-area: carts;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-carts{
+          @include navigation-bar;
+        }
+      }
+      .navigation-account{
+        cursor: pointer;
+        grid-area: account;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-account{
+          display: block;
+          @include navigation-bar;
+        }
+      }
+    }
+  }
+}
+
+//buat spinner
+.spinner-loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:100%;
+  bottom: 0;
+  position:fixed;
+  .spinner-item{
+    width:100px;
+    height:100px;
   }
 }
 

@@ -91,7 +91,7 @@ const NavigasiBar = ({logout,getCarts,cart,isAuthenticated,auth,profile})=>{
                             <i className="material-icons mdc-icon-button__icon" data-badge={0?0:null}
                             >chat_bubble</i>
                             </>
-                        : <i className="material-icons mdc-icon-button__icon cart-header"></i>}
+                        : <i className="material-icons mdc-icon-button__icon cart-header"/>}
                     </div>
                     <div className="header-btn">
                         {isAuthenticated && !auth.loading?

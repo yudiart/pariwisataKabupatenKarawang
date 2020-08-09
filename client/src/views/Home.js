@@ -10,6 +10,7 @@ import {getAllRooms} from "../actions/room";
 import {getVillas} from "../actions/villa";
 import {getCurrentProfile} from "../actions/profile";
 import Spinner from "../assets/Spinner";
+import BottomBar from "../components/bottomBar/BottomBar";
 
 let {product:{products,promo}} = Data
 const Home =({getAllRooms,isAuthenticated,auth, getVillas,room,villa})=>{
@@ -30,9 +31,10 @@ const Home =({getAllRooms,isAuthenticated,auth, getVillas,room,villa})=>{
                 </div>
             :
                 <>
-                <NavigasiBar setSearch={setSearch} search={search} products={products}/>
-                <Main products={products} promo={promo} rooms={room.rooms}/>
-                <Footer/>
+                    <NavigasiBar setSearch={setSearch} search={search} products={products}/>
+                    <Main products={products} promo={promo} rooms={room.rooms}/>
+                    <BottomBar/>
+                    <Footer/>
                 </>
             }
         </Fragment>
