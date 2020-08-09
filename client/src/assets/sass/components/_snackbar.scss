@@ -1,24 +1,61 @@
 .snackbar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  border-radius:10px;
-  background: $color-red;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  z-index: 100;
-  left: 50%;
-  bottom:60px;
+  @media screen  and (min-width: 650px) and (max-width: 2000px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    border-radius:10px;
+    background: $color-red;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    bottom: 30px;
+
+
+  }
+  @media screen and (max-width: 649px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    min-width: 250px;
+    border-radius:10px;
+    background: $color-red;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right:0;
+    bottom: 60px;
+  }
+  @-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @-webkit-keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+  @keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
 }
 .show{
-  visibility: visible; /* Show the snackbar */
-  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-  However, delay the fade out process for 2.5 seconds */
-  //-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  //animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  visibility: visible;
 }

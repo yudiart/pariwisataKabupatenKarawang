@@ -14,6 +14,7 @@ const NavigasiBar = ({logout,getCarts,cart,isAuthenticated,auth,profile})=>{
     let history = useHistory()
     let {pathname} =  history.location
     const [snackbar,setSnackbar] = useState(0)
+    const [Logout,setLogout] = useState(0)
     const [search,setSearch] = useState({
         search:''
     })
@@ -42,6 +43,12 @@ const NavigasiBar = ({logout,getCarts,cart,isAuthenticated,auth,profile})=>{
             setSearch({search:''})
         }
 
+    }
+    const handleLogout =(e)=>{
+        e.preventDefault()
+        setDrawer(!drawer)
+        setLogout(!Logout)
+        setTimeout(()=>{ setLogout(Logout) }, 3000);
     }
     const resultCarBadge = isAuthenticated && !cart.loading ? cart.carts.rooms.length : null
     return(
@@ -110,16 +117,22 @@ const NavigasiBar = ({logout,getCarts,cart,isAuthenticated,auth,profile})=>{
                     </div>
                 </div>
             </div>
-            <div className={`drawerHeader ${drawer ? `drawerShow` : 'drawerUnShow'}`} >
+            <div className={`drawerHeader ${drawer ? `drawerShow` : 'drawerUnShow'}`}>
                 <p className="closebtn" onClick={()=>setDrawer(0)} >&times;</p>
-                <Link to={''} className='linkbtn'>Home</Link>
-                <Link to={''} className='linkbtn'>Services</Link>
-                <Link to={''} className='linkbtn'>Clients</Link>
-                <Link to={''} className='linkbtn'>Contact</Link>
+                <Link to={'/'} onClick={()=>setDrawer(!drawer)} className='linkbtn'>Home</Link>
+                <Link to={'/'} onClick={()=>setDrawer(!drawer)} className='linkbtn'>Services</Link>
+                <Link to={'/'} onClick={()=>setDrawer(!drawer)} className='linkbtn'>Clients</Link>
+                <Link to={'/'} onClick={()=>setDrawer(!drawer)} className='linkbtn'>Contact</Link>
                 <div className="divider-drawer"/>
-
-                <Link to={''} className='linkbtn'>Settings</Link>
-                <Link to={''} className='linkbtn'>Logout</Link>
+                {isAuthenticated && !auth.loading?
+                    <>
+                        <Link to={''} className='linkbtn'>Settings</Link>
+                        <div className="logout" onClick={logout}>
+                            <div onClick={(e)=> handleLogout(e)}
+                                 className='linkbtn'>Logout</div>
+                        </div>
+                    </>
+                :null}
             </div>
             <div className="search" style={{display:open?'flex':'none'}}>
                 <div className="search__result">
@@ -129,6 +142,7 @@ const NavigasiBar = ({logout,getCarts,cart,isAuthenticated,auth,profile})=>{
                 <div className="search__close" onClick={()=>{setOpen(0)}}/>
             </div>
             <div className={`snackbar ${snackbar?`show`:null}`}><i className="material-icons mdc-icon-button__icon">notification_important</i>Tidak boleh kosong</div>
+            <div className={`snackbar ${Logout?`show`:null}`}><i className="material-icons mdc-icon-button__icon">notification_important</i>Anda telah Logout</div>
         </header>
     )
 }

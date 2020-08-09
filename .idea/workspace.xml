@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/bottomBar/BottomBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/account/Account.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/official/Officials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/Spinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/Spinner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/_default.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_snackbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_snackbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/carts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/carts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Kategori/KategoriPilihan.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Kategori/KategoriPilihan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/bottomBar/BottomBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/bottomBar/BottomBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routing/Routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/v1/carts/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/v1/carts/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +231,7 @@
       <workItem from="1596793238192" duration="46507000" />
       <workItem from="1596887725266" duration="1446000" />
       <workItem from="1596891173449" duration="2817000" />
-      <workItem from="1596969659696" duration="26561000" />
+      <workItem from="1596969659696" duration="29480000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>

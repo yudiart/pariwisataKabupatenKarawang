@@ -42,7 +42,7 @@ const BottomBar = ({isAuthenticated})=>{
                         </div>
                     </div>
                     <div className="navigation-account">
-                        <div className="nav-account" onClick={()=>{history.push('/account')}}>
+                        <div className="nav-account" onClick={()=>{isAuthenticated?history.push('/account'):history.push('/login')}} style={{color:isAuthenticated?'':'#DBDBDB'}}>
                             <i className="material-icons mdc-icon-button__icon style-outline ">account_circle</i>
                             <small>Account</small>
                         </div>
