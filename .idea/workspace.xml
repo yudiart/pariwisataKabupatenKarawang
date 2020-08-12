@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/login.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_auth.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/authentication.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/carts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/carts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routing/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Home/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/carts/Carts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/carts/Carts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +229,7 @@
       <workItem from="1597076669227" duration="6597000" />
       <workItem from="1597174258482" duration="3832000" />
       <workItem from="1597223407572" duration="546000" />
-      <workItem from="1597229726610" duration="8394000" />
+      <workItem from="1597229726610" duration="9241000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
