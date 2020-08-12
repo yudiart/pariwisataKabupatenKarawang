@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/views/account/Account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/official/Officials.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/login.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_auth.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/authentication.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_snackbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_snackbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/bottomBar/BottomBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/bottomBar/BottomBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routing/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/header/NavigasiBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_products.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/carts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/carts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routing/PrivateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Home/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/carts/Carts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/carts/Carts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,25 +56,25 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\src\components" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets\sass" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets\sass\components" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\src\views\products" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\views" />
       <recent name="F:\file yudi\program\skripsi\client\src\views\header" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout\navbar" />
       <recent name="F:\file yudi\program\skripsi\" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+      <recent name="F:\file yudi\program\skripsi\client\src\components" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets\sass" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets\sass\components" />
+      <recent name="F:\file yudi\program\skripsi\client\src\views\products" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -231,7 +240,12 @@
       <workItem from="1596793238192" duration="46507000" />
       <workItem from="1596887725266" duration="1446000" />
       <workItem from="1596891173449" duration="2817000" />
-      <workItem from="1596969659696" duration="29480000" />
+      <workItem from="1596969659696" duration="29823000" />
+      <workItem from="1597058954238" duration="579000" />
+      <workItem from="1597076669227" duration="6597000" />
+      <workItem from="1597174258482" duration="3832000" />
+      <workItem from="1597223407572" duration="546000" />
+      <workItem from="1597229726610" duration="8394000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
@@ -385,10 +399,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1096" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596807729805" />
-    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup" timestamp="1597010726380">
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup" timestamp="1597092749054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597010726380" />
+    <state x="1096" y="162" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597092749054" />
     <state x="769" y="386" key="webDeployment.PermissionsDialog" timestamp="1596564534855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -434,7 +448,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/cart/Cart.js</url>
-          <line>78</line>
+          <line>79</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

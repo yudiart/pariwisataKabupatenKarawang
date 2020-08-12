@@ -8,6 +8,7 @@ import {setAlert} from "../../actions/alert";
 import {getAllUserById, getCarts} from "../../actions/cart";
 import {getAllRooms} from "../../actions/room";
 import {getVillas} from "../../actions/villa";
+import BottomBar from "../../components/bottomBar/BottomBar";
 let {product:{products},cart} = Data
 const Carts = ({getAllRooms,getVillas,room,villa})=>{
     useEffect(()=>{
@@ -19,9 +20,8 @@ const Carts = ({getAllRooms,getVillas,room,villa})=>{
     return(
         <Fragment>
             <NavigasiBar setSearch={setSearch} search={search} products={products}/>
-            <main>
                 <Cart  room={room} villa={villa} />
-            </main>
+            <BottomBar/>
         </Fragment>
     )
 }

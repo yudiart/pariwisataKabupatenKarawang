@@ -53,7 +53,26 @@
     transition:0.2s;
   }
 }
-
+@mixin btn-back{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height:50px;
+  width:100px;
+  font-weight: bold;
+  color:lighten($color-gray, 30%);
+  i{
+    font-size: 30px;
+    padding:10px;
+  }
+  &:hover{
+    transition:0.2s;
+    color:lighten($color-gray, 10%);
+  }
+  @media screen and (min-width: 900px){
+    display: none;
+  }
+}
 
 .banner__next-arrow{
   position:absolute;

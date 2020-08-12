@@ -17,6 +17,7 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
         updateCartRooms()
     },[getCarts,updateCartRooms])
     const [Carts, setCarts] = useState([])
+    const [showDetail, setShowDetail] = useState(0)
 
     useEffect(()=>{
         setCarts(cart)
@@ -107,20 +108,22 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
                         </div>
                     </div>
                     <div className="product-item-process">
-                        {/*<div className="item-notes">*/}
-                        {/*    <p>Catatan untuk penjual</p>*/}
-                        {/*</div>*/}
+                        <div className="item-notes">
+                            <p>Catatan untuk penjual</p>
+                        </div>
                         <div className="item-process">
                             <div className="product-jumlah-input" key={index} data-idx={`${index}`}>
                                 <i className="material-icons mdc-icon-button__icon" data-badge={10}>notifications</i>
                                 <button
                                     name={'btn-min'}
+                                    className="btn-proccess"
                                     type="button"
                                     data-idx={`${index}`}
                                     onClick={(e)=>handleChange(e)}
                                 >-</button>
                                 <input
                                     name="order"
+                                    className="input-proccess"
                                     data-idx={`${index}`}
                                     onChange={(e)=>handleChange(e)}
                                     type="number"
@@ -129,6 +132,7 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
                                 />
                                 <button
                                     name={'btn-plus'}
+                                    className={"btn-proccess"}
                                     type="button"
                                     data-idx={`${index}`}
                                     onClick={(e)=>handleChange(e)}
@@ -167,6 +171,10 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
                             :null}
                     </div>
                 </form>
+                <div className="proccess-product-fixed" style={{background:showDetail?'#007bff':null}} onClick={()=>setShowDetail(!showDetail)}>
+                    <i className="material-icons mdc-icon-button__icon">style</i>
+                    <span>Total</span>
+                </div>
                 <div className="proccess-product">
                     <div className="join-member-promo">
                         <div className="promo-join" onClick={()=>{
@@ -184,6 +192,32 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
                     <div className="btn-product">
                         <button>Bayar</button>
                     </div>
+                </div>
+
+                <div className={`${showDetail?'showing':'product-show'}`} >
+                    <div className="display-product-show">
+                        <div className="close-btn">
+                            <i className="material-icons mdc-icon-button__icon" onClick={()=>setShowDetail(!showDetail)}>close</i>
+                        </div>
+                        <div className="join-member-promo">
+                            <div className="promo-join" onClick={()=>{
+                                console.log('Join Member')}}>
+                                <span>Join member eksklusif</span>
+                            </div>
+                        </div>
+                        <div className="ringkasan-product">
+                            <h4>Total Harga</h4>
+                            <div className="ringkasan-detail">
+                                <span>Rp.
+                                    {/*{Math.round(total).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".")}    */}
+                                </span>
+                            </div>
+                        </div>
+                        <div className="btn-product">
+                            <button>Bayar</button>
+                        </div>
+                    </div>
+                    <div className={`background-product-show`} onClick={()=>setShowDetail(!showDetail)}/>
                 </div>
             </div>
         </div>

@@ -1,0 +1,183 @@
+@import "auth";
+@import "button";
+
+.auth{
+  @include auth;
+  background: lighten($color-gray, 50%);
+  .auth__wrapper{
+    width:100%;
+    height:90vh;
+    .header{
+      height:10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h4{
+        font-size: 25px;
+        color: lighten($color-primary, 10%);
+      }
+    }
+    .btn-back{
+      padding:0 20px;
+      @include btn-back;
+    }
+    .auth-body{
+      @media screen and (min-width: 900px){
+        display: grid;
+        grid-template-areas: 'info form';
+        grid-gap: 50px;
+        grid-template-columns: 50% 50%;
+        padding:0 10%;
+      }
+      .info{
+        grid-area: info;
+        width:100%;
+        .image-preview{
+          align-items: center;
+          justify-content: flex-end;
+          display: flex;
+          img{
+            width:500px;
+            height:50vh;
+
+            @media screen and (max-width: 1100px){
+              width: 100%;
+            }
+          }
+        }
+        p{color:lighten($color-gray,10%)}
+        @media screen and (max-width: 900px){
+          display: none;
+        }
+      }
+      .form-auth{
+        grid-area: form;
+        display: flex;
+        justify-content: center;
+        width:400px;
+
+        .box-auth{
+          width:100%;
+          box-shadow: 0 0 5px lighten($color-gray, 30%);
+          border-radius:5px;
+          padding:10% 5%;
+          background: lighten($color-gray, 53%);
+          .header-form{
+            height:10vh;
+            display: block;
+            @media screen and (max-width: 900px){
+              margin-top: 0;
+            }
+            h4{
+              font-size: 25px;
+              color: lighten($color-gray, 10%);
+              text-align: center;
+
+              @media screen and (max-width: 900px){
+                text-align: center;
+                font-size: 18px;
+              }
+            }
+            p{
+              padding-top: 10px;
+              text-align: justify;
+              color: lighten($color-gray, 20%);
+
+              .btn-link-auth{
+                color:lighten($color-primary, 10%);
+                letter-spacing: -0.5px;
+                font-weight: bold;
+              }
+              @media screen and (max-width: 900px){
+                text-align: center;
+                font-size: 14px;
+              }
+            }
+
+          }
+          .input-group{
+            margin:5px 0;
+            input{
+              width:100%;
+              outline:none;
+              margin:0 0 5px 0;
+              padding:0 20px;
+              font-size: 15px;
+              letter-spacing: 0.2px;
+              height:5vh;
+              color: lighten($color-gray, 10%);
+              border-radius:10px;
+              box-shadow: 0 0 5px lighten($color-gray, 50%);
+              border:1px solid lighten($color-gray, 40%);
+              background:$color-white;
+              &::placeholder{
+                color: lighten($color-gray, 30%)
+              }
+              &:focus{
+                border:2px solid lighten($color-primary, 20%);
+              }
+              @media screen and (max-width: 900px){
+                box-shadow: none;
+              }
+            }
+            i{
+              //cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width:6vh;
+              position: absolute;
+              z-index: 1;
+              height: 5vh;
+              top:0;
+              cursor:pointer !important; Text-Decoration: None !important;
+              color:lighten($color-gray, 40%);
+              right:0;
+              &:hover{
+                transition:0.1s;
+                color:lighten($color-gray, 20%);
+              }
+            }
+            button{
+              cursor: pointer;
+              width:100%;
+              outline:none;
+              border:none;
+              margin:0 0 5px 0;
+              height:4vh;
+              border-radius:10px;
+              background:lighten($color-primary, 10%);
+              letter-spacing: -0.4px;
+              color:white;
+              font-weight: bold;
+
+              &:hover{
+                transition:0.2s;
+                background:lighten($color-primary, 0%);
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 900px){
+          padding:2% 0;
+          width: 100%;
+        }
+      }
+      .ketentuan{
+        p{
+          text-align: justify-all;
+          font-size: 12px;
+          color:lighten($color-gray,15%);
+
+          a{
+            font-weight: bold;
+            color:lighten($color-primary,20%)
+          }
+        }
+      }
+      @media screen and (max-width: 900px){
+        margin:0 5%;
+      }
+    }
+  }
+}
