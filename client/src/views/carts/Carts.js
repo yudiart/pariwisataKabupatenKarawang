@@ -20,7 +20,9 @@ const Carts = ({getAllRooms,getVillas,room,villa})=>{
     return(
         <Fragment>
             <NavigasiBar setSearch={setSearch} search={search} products={products}/>
+            <main>
                 <Cart  room={room} villa={villa} />
+            </main>
             <BottomBar/>
         </Fragment>
     )
