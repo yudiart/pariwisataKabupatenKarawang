@@ -75,3 +75,108 @@
 
     }
 }
+
+@mixin card-ringkasan{
+  width: 300px;
+  cursor: default;
+  box-shadow: 0 0 10px lighten($color-dark, 60%);
+  border-radius:10px;
+  margin-left: 10px;
+  height:300px;
+  position:sticky;
+  display: block;
+  grid-area:proccess;
+
+  .join-member-promo{
+    display: block;
+    padding:15px 20px;
+    width:100%;
+    border-bottom: 8px solid lighten($color-gray,45%);
+    .promo-join{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border:1px solid lighten($color-gray, 30%);
+      border-radius:10px;
+      padding:15px 0;
+      transition:0.2s;
+
+      &:hover{
+        transition:0.2s;
+        border:1px solid lighten($color-primary, 10%);
+        box-shadow: 0 0 4px  lighten($color-primary, 25%);
+        i{
+          color:lighten($color-primary, 10%)
+        }
+      }
+    }
+  }
+  .ringkasan-product{
+    cursor: default;
+    display: block;
+    padding:20px;
+    width:100%;
+    h4{
+      color: lighten($color-gray, 30%);
+    }
+    .ringkasan-detail {
+      padding: 20px 0;
+      display: grid;
+      grid-template-areas: 'small span';
+      grid-template-columns: 50% 50%;
+      cursor: default;
+      small {
+        padding:5px;
+        font-size: 15px;
+        color: lighten($color-gray, 30%);
+        grid-area: small;
+
+      }
+
+      span {
+        display: flex;
+        justify-content: center;
+        padding:5px;
+        cursor: pointer;
+        border-radius:5px;
+        align-items: center;
+        color: lighten($color-primary,10%);
+        font-weight: bold;
+        grid-area: span;
+      }
+    }
+  }
+
+  .btn-product{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    height:50px;
+    padding:10px 20px 0 20px;
+    border-top: 2px solid lighten($color-gray,45%);
+    button{
+      outline: none;
+      border:none;
+      border-radius:10px;
+      background: lighten($color-primary, 10%);
+      color:$color-white;
+      font-weight: bold;
+      height: 40px;
+      width:100%;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    display: none;
+  }
+}

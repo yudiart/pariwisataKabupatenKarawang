@@ -10,6 +10,7 @@ import ProductResult from "../views/products/ProductResult";
 import Carts from "../views/carts/Carts";
 import Account from "../views/account/Account";
 import Officials from "../views/official/Officials";
+import Checkout from "../views/checkout/Checkout";
 const Routes = ()=>{
     return(
         <section>
@@ -23,6 +24,7 @@ const Routes = ()=>{
                 <Route path="/search&q=:search" render={({ match }) => <ProductResult match={match}/>}/>
                 <PrivateRoute exact path='/carts/' component={Carts}/>
                 <Route exact path="/register" component={Register}/>
+                <Route exact path="/checkout" component={Checkout}/>
                 <Route exact path="/login" component={Login}/>
                 <Route exact path="/CreateProfile" component={CreateProfile}/>
             </Switch>

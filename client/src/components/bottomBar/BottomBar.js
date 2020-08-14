@@ -1,14 +1,16 @@
-import React, {Fragment, useState} from 'react'
+import React, {Fragment, useEffect, useState} from 'react'
 import {useHistory} from 'react-router-dom'
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {logout} from "../../actions/auth";
 import {getCarts} from "../../actions/cart";
 
-const BottomBar = ({isAuthenticated})=>{
+const BottomBar = ({isAuthenticated,getCarts})=>{
     let history = useHistory();
-
     const [snackbar,setSnackbar] = useState(0)
+    useEffect(()=>{
+        getCarts()
+    },[getCarts])
 
     return(
         <Fragment>

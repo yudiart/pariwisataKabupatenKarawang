@@ -1,0 +1,5 @@
+@mixin container_promo{
+  @media screen and (min-width: 900px){
+    padding:0 20%;
+  }
+}

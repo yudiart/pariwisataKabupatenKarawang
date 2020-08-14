@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44ad3ca-7920-473f-b9bb-fb44b4e7e37a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/animation/wave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/checkOut.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_promo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/checkout/Checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]2/logokrw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]2/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/Data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/components/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/components/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/bottomBar/BottomBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/bottomBar/BottomBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routing/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routing/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/carts/Carts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/carts/Carts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,25 +62,25 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets/sass/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\file yudi\program\skripsi\client\src\assets\sass\components" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets\sass" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets\images" />
+      <recent name="F:\file yudi\program\skripsi\client\src\views" />
+      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\file yudi\program\skripsi\client\src\views" />
       <recent name="F:\file yudi\program\skripsi\client\src\views\header" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\layout\navbar" />
       <recent name="F:\file yudi\program\skripsi\" />
       <recent name="F:\file yudi\program\skripsi\client\src\components\dashboard\admin\header\sideDrawer" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\file yudi\program\skripsi\client\src\assets" />
-      <recent name="F:\file yudi\program\skripsi\client\src\components" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets\sass" />
-      <recent name="F:\file yudi\program\skripsi\client\src\assets\sass\components" />
-      <recent name="F:\file yudi\program\skripsi\client\src\views\products" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -229,7 +251,8 @@
       <workItem from="1597076669227" duration="6597000" />
       <workItem from="1597174258482" duration="3832000" />
       <workItem from="1597223407572" duration="546000" />
-      <workItem from="1597229726610" duration="9241000" />
+      <workItem from="1597229726610" duration="9851000" />
+      <workItem from="1597316888009" duration="16108000" />
     </task>
     <task id="LOCAL-00001" summary="[REMAKE]LAYOUT">
       <created>1592610558891</created>
@@ -311,22 +334,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="260" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596796801310" />
-    <state width="1876" height="274" key="GridCell.Tab.0.bottom" timestamp="1596552516418">
+    <state width="900" height="173" key="GridCell.Tab.0.bottom" timestamp="1597441662937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596552516418" />
-    <state width="1876" height="274" key="GridCell.Tab.0.center" timestamp="1596552516418">
+    <state width="900" height="173" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597441662937" />
+    <state width="900" height="173" key="GridCell.Tab.0.center" timestamp="1597441662937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596552516418" />
-    <state width="1876" height="274" key="GridCell.Tab.0.left" timestamp="1596552516418">
+    <state width="900" height="173" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597441662937" />
+    <state width="900" height="173" key="GridCell.Tab.0.left" timestamp="1597441662936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596552516418" />
-    <state width="1876" height="274" key="GridCell.Tab.0.right" timestamp="1596552516418">
+    <state width="900" height="173" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597441662936" />
+    <state width="900" height="173" key="GridCell.Tab.0.right" timestamp="1597441662937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596552516418" />
+    <state width="900" height="173" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597441662937" />
     <state x="184" y="85" key="MergeDialog" timestamp="1596570482113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -355,10 +378,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="565" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594206800282" />
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596541455152">
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597440353022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596541455152" />
+    <state x="1052" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597440353022" />
     <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1595281549926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -417,7 +440,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>19</line>
+          <line>23</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -432,7 +455,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/cart/Cart.js</url>
-          <line>79</line>
+          <line>75</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

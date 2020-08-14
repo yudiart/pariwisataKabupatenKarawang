@@ -1,0 +1,327 @@
+@import "components/promo";
+@import "components/card";
+
+
+@mixin display-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__Checkout{
+  width:100vm;
+  min-height: 80vh;
+  margin-bottom: 100px;
+
+  .jumbotron{
+    z-index: 1;
+    width: 100vm;
+    display: block;
+    background: lighten($color-primary, 10%);
+    height:50vh;
+    @include container_promo;
+    .jumbotron-head{
+      @include display-flex;
+      height:30vh;
+      img{
+        border-radius:10px;
+        width:150px;
+        color:lighten($color-primary,20%);
+
+        @media screen and (max-width: 900px){
+          display: none;
+        }
+      }
+      h1{
+        color:white;
+      }
+      @media screen and (max-width: 900px){
+        height:20vh;
+      }
+    }
+
+    //Animation
+    .wave {
+      background-size:1400px 100px;
+      height: 10vh;
+      position: absolute;
+      bottom: 0;
+      top: 40.2vh;
+      right: 0;
+      width: 100%;
+      @keyframes animate {
+        0%{background-position-x:0;}
+        100%{background-position-x: 1400px;}
+      }
+      @-webkit-keyframes animate {
+        0%{background-position-x:0;}
+        100%{
+          background-position-x: 1400px;
+        }
+      }
+
+      @media screen and(max-width: 900px){
+        top:20vh;
+      }
+    }
+    .wave1{
+      -webkit-animation: animate 22s  linear infinite;
+      animation:animate 22s  linear infinite;
+      opacity: 0.6;
+      animation-delay:0s;
+    }
+    .wave2{
+      -webkit-animation: animate 50s  linear infinite;
+      animation:animate 50s  linear infinite;
+      opacity: 0.5;
+      animation-delay:15s;
+    }
+    .wave3{
+      -webkit-animation: animate 30s  linear infinite;
+      animation:animate 30s  linear infinite;
+      opacity: 0.8;
+      animation-delay: 3s;
+    }
+    .wave4{
+      -webkit-animation: animate 10s linear infinite;
+      animation:animate 10s linear infinite;
+      opacity: 0.4;
+      animation-delay: 10s;
+    }
+    .wave5{
+      -webkit-animation: animate 5s linear infinite;
+      animation:animate 5s linear infinite;
+      opacity: 0.3;
+      animation-delay: 10s;
+    }
+    .wave6{
+      -webkit-animation: animate 40s linear infinite;
+      animation:animate 40s linear infinite;
+      opacity: 0.2;
+      animation-delay: 10s;
+    }
+
+    @media screen and (max-width: 900px){
+      height:30vh;
+    }
+  }
+
+  .box-checkout{
+    min-height:50vh;
+    position: absolute;
+    top:20vh;
+    z-index: 3;
+    width:100%;
+    .checkout-detail{
+      background:white;
+      box-shadow: 0 0 5px lighten($color-gray, 20%);
+      width:100%;
+      min-height: 50vh;
+      margin-bottom: 50px;
+      border-radius:20px;
+      display: grid;
+      grid-template-areas: 'left right';
+      grid-template-columns: 70% 30%;
+      padding:5% 2.5%;
+      .left-checkout{
+        grid-area: left;
+        border-radius:20px;
+
+        .address-details{
+          display: block;
+          min-height:100px;
+          border-bottom: 2px solid lighten($color-gray, 48%);
+
+          .address-detail{
+            min-height:100px;
+            .address-title{
+              padding:0 10px;
+              color: lighten($color-gray,10%);
+            }
+            .address-body{
+              border-radius:10px;
+              padding:10px 10px;
+              span{
+                font-weight: bold;
+                font-size: 14px;
+                color:lighten($color-gray,20%);
+              }
+              p{
+                color: lighten($color-gray,20%);
+                font-size: 14px;
+              }
+            }
+          }
+          .btn-change-address{
+            height:50px;
+            display: flex;
+            align-items: center;
+            button{
+              cursor: pointer;
+              outline:none;
+              border:none;
+              background:none;
+              height:30px;
+              width:120px;
+              border-radius:10px;
+              box-shadow: 0 0 2px lighten($color-gray, 20%);
+
+              &:hover{
+                transition:0.2s;
+                box-shadow: 0 0 2px darken($color-gray, 10%);
+              }
+            }
+          }
+        }
+        .checkout-item{
+          margin:2% 0;
+          display: grid;
+          padding:20px 0;
+          border-bottom: 1px solid lighten($color-gray, 48%);
+          grid-template-areas: 'leftItem rightItem';
+          grid-template-columns: 60% 40%;
+          .left-checkout-item{
+            grid-area: leftItem;
+            padding:0 10px;
+            display: flex;
+            grid-gap: 10px;
+            align-items: center;
+            height:100px;
+            .checkout-item-image{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img{
+                width:70px;
+                border-radius:20px;
+                height:70px;
+                object-fit: cover;
+              }
+            }
+            .checkout-item-detail{
+              width:100%;
+              overflow: hidden;
+              white-space: nowrap;
+              h3{
+                font-size: 15px;
+                width:100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: lighten($color-gray,10%);
+
+              }
+              h4{
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                height:40px;
+                color: lighten($color-primary,10%);
+              }
+              span{
+                display: flex;
+                align-items: center;
+                color: lighten($color-gray,10%);
+              }
+            }
+          }
+          .right-checkout-item{
+            padding: 20px 10px;
+            grid-area: rightItem;
+            border-radius:20px;
+
+            .dropdown-kurir{
+              width:100%;
+              height:40px;
+              border-radius:10px;
+              background: $color-primary;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color:white;
+            }
+          }
+
+          @media screen and (max-width: 445px){
+            display: block;
+          }
+        }
+      }
+      .right-checkout{
+        grid-area: right;
+        border-radius:20px;
+        display: flex;
+        justify-content: flex-end;
+        .proccess-product{
+          z-index: 4;
+          top:20px;
+          @include card-ringkasan;
+        }
+      }
+
+      @media screen and (max-width: 900px){
+        grid-template-areas: 'left';
+        grid-template-columns: 100%;
+      }
+    }
+
+    @media screen and (min-width: 1600px){
+      padding:0 20%;
+    }
+    @media screen and (min-width: 900px) and (max-width: 1599px){
+      padding:0 10%;
+    }
+    @media screen and (min-width:500px)and (max-width: 900px){
+      width: 80%;
+      margin:0 10%;
+      top:15vh;
+
+    }
+    @media screen and (max-width: 499px){
+      top:15vh;
+      height: 100vh;
+      width: 96%;
+      margin:0 2%;
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    bottom:200px;
+  }
+}
+
+
+.proccess-product-fixed{
+  display: none;
+  @media screen and (max-width: 900px){
+    cursor: pointer;
+    border-radius:20px;
+    background: lighten($color-primary, 20%);
+    padding:10px;
+    bottom: 70px;
+    min-width: 200px;
+    right: 20px;
+    width: 100px;
+    z-index: 8;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i{
+      color:white;
+      font-size: 20px;
+    }
+    span{
+      margin-left: 5px;
+      font-weight: bold;
+      color:white;
+      font-size: 12px;
+    }
+
+    &:active{
+      transition:0.5s;
+      background: lighten($color-primary, 10%);
+    }
+    &:focus{
+      background: lighten($color-primary, 10%);
+    }
+  }
+}

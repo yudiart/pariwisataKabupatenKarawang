@@ -1,11 +1,15 @@
+// import express from "express";
+// import React from 'react'
+// import {renderToString} from 'react-dom'
+// import App from './client/src/App'
+
+
 const express = require("express");
 const connectDB = require("./config/db");
 const path = require("path");
 const cors = require('cors');
 const app = express();
 const bodyParser = require('body-parser');
-const fileUpload =require('express-fileupload')
-// const multer = require('multer');
 
 //Connect DB
 connectDB();
@@ -21,7 +25,7 @@ app.use((req, res, next) => {
   const allowedOrigin = [
       'http://localhost:3000',
       'http://localhost:3001',
-      'http://vodonesia.herokuapp.com',
+      'vodonesia.herokuapp.com',
       'vodonesia.id'
   ];
   res.header("Access-Control-Allow-Origin", process.env.ORIGIN || allowedOrigin);

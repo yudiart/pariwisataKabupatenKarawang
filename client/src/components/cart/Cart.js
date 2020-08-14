@@ -12,17 +12,15 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
     if(!isAuthenticated){
         history.push('/')
     }
+    const [Carts, setCarts] = useState([])
+    useEffect(()=>{
+        setCarts(cart)
+    })
     useEffect(()=>{
         getCarts()
         updateCartRooms()
     },[getCarts,updateCartRooms])
-    const [Carts, setCarts] = useState([])
     const [showDetail, setShowDetail] = useState(0)
-
-    useEffect(()=>{
-        setCarts(cart)
-    })
-
     const handleChange = (e) => {
         // e.preventDefault();
         let name = e.target.name,
@@ -30,7 +28,6 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
             checkbox = e.target.checked,
             idx = e.target.dataset.idx
         let items = {...Carts}
-        const status = items.carts.rooms.map(items=>items.status)
         if (name === 'btn-min') {
             if (items.carts["rooms"][idx]["order"] <=1){
                 items.carts["rooms"][idx]["order"]= items.carts["rooms"][idx]["order"]
@@ -51,15 +48,14 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
         else if (name === 'checkAll'){
             items.carts["rooms"].forEach((checked) => {
                 checked.status = checkbox
-
             })
         }
         setCarts(items)
-        console.log(items)
     }
-    useEffect(()=>{
-        setCarts(cart)
-    })
+    const getRooms = Carts.loading === false ?Carts.carts.rooms.map(item=>item):null
+    const productFiltered = Carts.loading === false ?getRooms.filter(item=>item.status === true):null
+    const harga = Carts.loading === false ?productFiltered.map(item=>(item.harga * item.order)):null
+    const totalHarga = Carts.loading === false ?harga.reduce((a, b)=>{return a + b}, 0):null
 
     const onSubmit = (e)=>{
         e.preventDefault()
@@ -152,7 +148,7 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
                             <input
                                 type="checkbox"
                                 name="checkAll"
-                                checked={Carts.loading === false?Carts.carts.rooms.every((a)=> a.status):null}
+                                checked={Carts.loading === false?Carts.carts.rooms.every((a)=> a.status):false}
                                 className="check"
                                 onChange={(e)=>handleChange(e)}/>
                             <span className="checkmark"/>
@@ -186,10 +182,10 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
                         <h4>Ringkasan Belanja</h4>
                         <div className="ringkasan-detail">
                             <small>Total Harga</small>
-                            {/*<span>Rp. {Math.round(total).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".")}</span>*/}
+                            <span>Rp. {Math.round(totalHarga).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".")}</span>
                         </div>
                     </div>
-                    <div className="btn-product">
+                    <div className="btn-product" onClick={()=>history.push({pathname: '/checkout', state: { checkOut: productFiltered }})}>
                         <button>Bayar</button>
                     </div>
                 </div>
@@ -209,11 +205,11 @@ const Cart = ({isAuthenticated,getCarts,updateCartRooms,cart,room,villa})=>{
                             <h4>Total Harga</h4>
                             <div className="ringkasan-detail">
                                 <span>Rp.
-                                    {/*{Math.round(total).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".")}    */}
+                                    {Math.round(totalHarga).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ".")}
                                 </span>
                             </div>
                         </div>
-                        <div className="btn-product">
+                        <div className="btn-product" onClick={()=>history.push({pathname: '/checkout', state: { checkOut: productFiltered }})}>
                             <button>Bayar</button>
                         </div>
                     </div>
