@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^9.8.6",
-    "aws-sdk": "^2.663.0",
+    "aws-sdk": "^2.814.0",
     "babel-preset-react-app": "^9.1.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
